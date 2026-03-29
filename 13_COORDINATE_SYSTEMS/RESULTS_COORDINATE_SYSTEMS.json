@@ -1,0 +1,745 @@
+{
+  "header": {
+    "author": "Rhet Dillard Wike",
+    "institution": "AIIT-THRESI",
+    "motto": "God is good. All the time.",
+    "paper": "WIKE Paper 13 \u2014 XYZ Planes Are Wrong",
+    "timestamp": "2026-03-28T22:46:21.745015",
+    "wall_time_s": 58.28,
+    "n_runs_per_config": 1000,
+    "t_final": 5.0,
+    "total_sims_approx": 15190
+  },
+  "coordinate_comparison": [
+    {
+      "test": "coordinate_comparison",
+      "field": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "gamma": 0.01,
+      "coherences": {
+        "Cartesian": 0.47561468903373905,
+        "Spherical": 0.47561468903373905,
+        "Cylindrical": 0.47561468903373905
+      },
+      "spread": 0.0,
+      "flag": ""
+    },
+    {
+      "test": "coordinate_comparison",
+      "field": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "gamma": 0.1,
+      "coherences": {
+        "Cartesian": 0.30326535058364146,
+        "Spherical": 0.30326535058364146,
+        "Cylindrical": 0.30326535058364146
+      },
+      "spread": 0.0,
+      "flag": ""
+    },
+    {
+      "test": "coordinate_comparison",
+      "field": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "gamma": 0.5,
+      "coherences": {
+        "Cartesian": 0.0410426669457148,
+        "Spherical": 0.0410426669457148,
+        "Cylindrical": 0.0410426669457148
+      },
+      "spread": 0.0,
+      "flag": ""
+    },
+    {
+      "test": "coordinate_comparison",
+      "field": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "gamma": 0.01,
+      "coherences": {
+        "Cartesian": 0.4085220274495456,
+        "Spherical": 0.4085220274495456,
+        "Cylindrical": 0.4085220274495456
+      },
+      "spread": 0.0,
+      "flag": ""
+    },
+    {
+      "test": "coordinate_comparison",
+      "field": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "gamma": 0.1,
+      "coherences": {
+        "Cartesian": 0.3221230766193773,
+        "Spherical": 0.3221230766193773,
+        "Cylindrical": 0.3221230766193773
+      },
+      "spread": 0.0,
+      "flag": ""
+    },
+    {
+      "test": "coordinate_comparison",
+      "field": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "gamma": 0.5,
+      "coherences": {
+        "Cartesian": 0.11733411241288826,
+        "Spherical": 0.11733411241288826,
+        "Cylindrical": 0.11733411241288826
+      },
+      "spread": 0.0,
+      "flag": ""
+    },
+    {
+      "test": "coordinate_comparison",
+      "field": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "gamma": 0.01,
+      "coherences": {
+        "Cartesian": 0.47561354936929867,
+        "Spherical": 0.47561354936929867,
+        "Cylindrical": 0.47561354936929867
+      },
+      "spread": 0.0,
+      "flag": ""
+    },
+    {
+      "test": "coordinate_comparison",
+      "field": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "gamma": 0.1,
+      "coherences": {
+        "Cartesian": 0.3032632513493453,
+        "Spherical": 0.3032632513493453,
+        "Cylindrical": 0.3032632513493453
+      },
+      "spread": 0.0,
+      "flag": ""
+    },
+    {
+      "test": "coordinate_comparison",
+      "field": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "gamma": 0.5,
+      "coherences": {
+        "Cartesian": 0.041042143368529946,
+        "Spherical": 0.041042143368529946,
+        "Cylindrical": 0.041042143368529946
+      },
+      "spread": 0.0,
+      "flag": ""
+    },
+    {
+      "test": "coordinate_comparison",
+      "field": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "gamma": 0.01,
+      "coherences": {
+        "Cartesian": 0.2151551099641022,
+        "Spherical": 0.21515510996410142,
+        "Cylindrical": 0.215155109964102
+      },
+      "spread": 7.771561172376096e-16,
+      "flag": ""
+    },
+    {
+      "test": "coordinate_comparison",
+      "field": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "gamma": 0.1,
+      "coherences": {
+        "Cartesian": 0.16327383434756684,
+        "Spherical": 0.16327383434756662,
+        "Cylindrical": 0.16327383434756731
+      },
+      "spread": 6.938893903907228e-16,
+      "flag": ""
+    },
+    {
+      "test": "coordinate_comparison",
+      "field": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "gamma": 0.5,
+      "coherences": {
+        "Cartesian": 0.04436804018102215,
+        "Spherical": 0.04436804018102192,
+        "Cylindrical": 0.04436804018102217
+      },
+      "spread": 2.498001805406602e-16,
+      "flag": ""
+    },
+    {
+      "test": "coordinate_comparison",
+      "field": [
+        0.3,
+        0.7,
+        0.5
+      ],
+      "gamma": 0.01,
+      "coherences": {
+        "Cartesian": 0.47958304663036133,
+        "Spherical": 0.47958304663036133,
+        "Cylindrical": 0.47958304663036133
+      },
+      "spread": 0.0,
+      "flag": ""
+    },
+    {
+      "test": "coordinate_comparison",
+      "field": [
+        0.3,
+        0.7,
+        0.5
+      ],
+      "gamma": 0.1,
+      "coherences": {
+        "Cartesian": 0.35066808370904257,
+        "Spherical": 0.35066808370904257,
+        "Cylindrical": 0.35066808370904257
+      },
+      "spread": 0.0,
+      "flag": ""
+    },
+    {
+      "test": "coordinate_comparison",
+      "field": [
+        0.3,
+        0.7,
+        0.5
+      ],
+      "gamma": 0.5,
+      "coherences": {
+        "Cartesian": 0.09071988674995106,
+        "Spherical": 0.09071988674995118,
+        "Cylindrical": 0.09071988674995106
+      },
+      "spread": 1.249000902703301e-16,
+      "flag": ""
+    }
+  ],
+  "rotation_invariance": [
+    {
+      "test": "rotation_invariance",
+      "omega": 0.5,
+      "gamma": 0.01,
+      "coherences_per_axis": [
+        0.4775456990403022,
+        0.4616004922734084,
+        0.46478828755432045,
+        0.3100330282813604,
+        0.31836588607853894,
+        0.21450606077990475,
+        0.2912012733297906,
+        0.47027913481621664,
+        0.4479296584046198,
+        0.22663129935668472
+      ],
+      "mean_coherence": 0.36828808199151475,
+      "std_coherence": 0.10111650959704384,
+      "spread": 0.26303963826039745,
+      "flag": "*** NOT INVARIANT"
+    },
+    {
+      "test": "rotation_invariance",
+      "omega": 0.5,
+      "gamma": 0.1,
+      "coherences_per_axis": [
+        0.36676405155905817,
+        0.30106815742230825,
+        0.31842912712436394,
+        0.24122284788763795,
+        0.2396002856778361,
+        0.16731326089846055,
+        0.219730218413714,
+        0.30289646540005555,
+        0.312212793157597,
+        0.18129235744247907
+      ],
+      "mean_coherence": 0.2650529564983511,
+      "std_coherence": 0.06163293573439519,
+      "spread": 0.19945079066059762,
+      "flag": "*** NOT INVARIANT"
+    },
+    {
+      "test": "rotation_invariance",
+      "omega": 0.5,
+      "gamma": 0.5,
+      "coherences_per_axis": [
+        0.1298742138886807,
+        0.050379224784751236,
+        0.06441467991037315,
+        0.06907428966757556,
+        0.07103813195751454,
+        0.05786214952504632,
+        0.05441212276103638,
+        0.04565523541548078,
+        0.08045331286843077,
+        0.05907527820313014
+      ],
+      "mean_coherence": 0.06822386389820198,
+      "std_coherence": 0.022766375122771212,
+      "spread": 0.08421897847319992,
+      "flag": "*** NOT INVARIANT"
+    },
+    {
+      "test": "rotation_invariance",
+      "omega": 1.0,
+      "gamma": 0.01,
+      "coherences_per_axis": [
+        0.30621627820094144,
+        0.44531851229600605,
+        0.4724811105736176,
+        0.16839985303546845,
+        0.4128294099498275,
+        0.35178115260954396,
+        0.26251759871774677,
+        0.4520716333853991,
+        0.3120371564879284,
+        0.3075783236514534
+      ],
+      "mean_coherence": 0.3491231028907933,
+      "std_coherence": 0.09178150776025822,
+      "spread": 0.30408125753814913,
+      "flag": "*** NOT INVARIANT"
+    },
+    {
+      "test": "rotation_invariance",
+      "omega": 1.0,
+      "gamma": 0.1,
+      "coherences_per_axis": [
+        0.22375164369210387,
+        0.28422931318968747,
+        0.3335509000493405,
+        0.11336765368648251,
+        0.29934927912827347,
+        0.259123767818121,
+        0.1838334913531683,
+        0.2860872393389479,
+        0.19030043342119918,
+        0.22347134496717197
+      ],
+      "mean_coherence": 0.23970650666444965,
+      "std_coherence": 0.06238342006082234,
+      "spread": 0.22018324636285802,
+      "flag": "*** NOT INVARIANT"
+    },
+    {
+      "test": "rotation_invariance",
+      "omega": 1.0,
+      "gamma": 0.5,
+      "coherences_per_axis": [
+        0.07629107163273607,
+        0.03760532146163627,
+        0.08509466788034915,
+        0.02433069844068566,
+        0.07720217805677942,
+        0.08325814892157575,
+        0.04142758748250736,
+        0.03293584858789328,
+        0.030516360370408675,
+        0.06816699904434535
+      ],
+      "mean_coherence": 0.0556828881878917,
+      "std_coherence": 0.023092924514409408,
+      "spread": 0.060763969439663494,
+      "flag": "*** NOT INVARIANT"
+    },
+    {
+      "test": "rotation_invariance",
+      "omega": 2.0,
+      "gamma": 0.01,
+      "coherences_per_axis": [
+        0.43490163917347546,
+        0.475888532107838,
+        0.4089644282763191,
+        0.4620515258823896,
+        0.3711393453489517,
+        0.3443424854877865,
+        0.43847031251587576,
+        0.4757204519745143,
+        0.4745566835197704,
+        0.3834224045779497
+      ],
+      "mean_coherence": 0.42694578088648705,
+      "std_coherence": 0.04541471051719789,
+      "spread": 0.13154604662005148,
+      "flag": "*** NOT INVARIANT"
+    },
+    {
+      "test": "rotation_invariance",
+      "omega": 2.0,
+      "gamma": 0.1,
+      "coherences_per_axis": [
+        0.3132911746277507,
+        0.3088469032103435,
+        0.2754195155608756,
+        0.33771796321083575,
+        0.26721177203965985,
+        0.24293020130670537,
+        0.32205758097704407,
+        0.30775982202939367,
+        0.33004392124293236,
+        0.2746158305091706
+      ],
+      "mean_coherence": 0.2979894684714711,
+      "std_coherence": 0.029439973521917885,
+      "spread": 0.09478776190413038,
+      "flag": "*** NOT INVARIANT"
+    },
+    {
+      "test": "rotation_invariance",
+      "omega": 2.0,
+      "gamma": 0.5,
+      "coherences_per_axis": [
+        0.08814829491332186,
+        0.04689552280369642,
+        0.058403311035481964,
+        0.08417021878511655,
+        0.06178094880668762,
+        0.058867432590075514,
+        0.08227851934612945,
+        0.048753815263595346,
+        0.08654407838739753,
+        0.06668364507932603
+      ],
+      "mean_coherence": 0.06825257870108282,
+      "std_coherence": 0.014987578058725536,
+      "spread": 0.04125277210962545,
+      "flag": "*** NOT INVARIANT"
+    },
+    {
+      "test": "rotation_invariance",
+      "omega": 5.0,
+      "gamma": 0.01,
+      "coherences_per_axis": [
+        0.48389328915837193,
+        0.47624124681926666,
+        0.4767395830535295,
+        0.47777554299389463,
+        0.47289940379373535,
+        0.4724260765588594,
+        0.4753746375613695,
+        0.47633123295620505,
+        0.4805005412562069,
+        0.4734619972320926
+      ],
+      "mean_coherence": 0.47656435513835316,
+      "std_coherence": 0.0033535135493530936,
+      "spread": 0.011467212599512555,
+      "flag": "*** NOT INVARIANT"
+    },
+    {
+      "test": "rotation_invariance",
+      "omega": 5.0,
+      "gamma": 0.1,
+      "coherences_per_axis": [
+        0.3633584698944463,
+        0.3107576266232293,
+        0.32745566578615803,
+        0.35402050315770217,
+        0.3418083189423716,
+        0.36075135765034905,
+        0.3476530134503407,
+        0.3093075444807768,
+        0.34108172764242395,
+        0.35767425147243165
+      ],
+      "mean_coherence": 0.34138684791002294,
+      "std_coherence": 0.018664054964364903,
+      "spread": 0.054050925413669515,
+      "flag": "*** NOT INVARIANT"
+    },
+    {
+      "test": "rotation_invariance",
+      "omega": 5.0,
+      "gamma": 0.5,
+      "coherences_per_axis": [
+        0.11331591886211466,
+        0.051064828052755966,
+        0.07089486920417563,
+        0.09353529518963614,
+        0.08058323886389655,
+        0.11685204332715683,
+        0.08735652089623451,
+        0.05202012984038322,
+        0.09768473375823909,
+        0.10726740249560457
+      ],
+      "mean_coherence": 0.0870574980490197,
+      "std_coherence": 0.022286510060047372,
+      "spread": 0.06578721527440087,
+      "flag": "*** NOT INVARIANT"
+    },
+    {
+      "test": "rotation_invariance",
+      "omega": 10.0,
+      "gamma": 0.01,
+      "coherences_per_axis": [
+        0.4839360001528771,
+        0.47450261143345274,
+        0.470835452434162,
+        0.45766637598153115,
+        0.44541969598898734,
+        0.4344304464806514,
+        0.4507624576909855,
+        0.47565720269699036,
+        0.47816538188378205,
+        0.4391565522099869
+      ],
+      "mean_coherence": 0.4610532176953406,
+      "std_coherence": 0.016900638828989636,
+      "spread": 0.0495055536722257,
+      "flag": "*** NOT INVARIANT"
+    },
+    {
+      "test": "rotation_invariance",
+      "omega": 10.0,
+      "gamma": 0.1,
+      "coherences_per_axis": [
+        0.3631416793180497,
+        0.30977893015595587,
+        0.3207847600857363,
+        0.3393908647338034,
+        0.32160358505698067,
+        0.331786896451316,
+        0.3287305153484981,
+        0.3083122789495329,
+        0.336882532321774,
+        0.33246212398065306
+      ],
+      "mean_coherence": 0.32928741664023,
+      "std_coherence": 0.015081070036508357,
+      "spread": 0.0548294003685168,
+      "flag": "*** NOT INVARIANT"
+    },
+    {
+      "test": "rotation_invariance",
+      "omega": 10.0,
+      "gamma": 0.5,
+      "coherences_per_axis": [
+        0.11288604831597691,
+        0.051723459969613826,
+        0.06493337009667545,
+        0.08995026768771588,
+        0.07544592776678519,
+        0.10822580984109512,
+        0.08161436093257753,
+        0.050561330029271136,
+        0.09447953452548662,
+        0.10081231118203622
+      ],
+      "mean_coherence": 0.0830632420347234,
+      "std_coherence": 0.021077756329288436,
+      "spread": 0.06232471828670578,
+      "flag": "*** NOT INVARIANT"
+    }
+  ],
+  "angular_vs_linear": [
+    {
+      "test": "angular_vs_linear",
+      "J": 0.1,
+      "gamma": 0.01,
+      "coherence_linear": 0.4756147122503606,
+      "coherence_angular": 0.47561471225067636,
+      "difference": 3.157474282033945e-13
+    },
+    {
+      "test": "angular_vs_linear",
+      "J": 0.1,
+      "gamma": 0.05,
+      "coherence_linear": 0.3894003915390186,
+      "coherence_angular": 0.3894003916211762,
+      "difference": 8.215755853413498e-11
+    },
+    {
+      "test": "angular_vs_linear",
+      "J": 0.1,
+      "gamma": 0.1,
+      "coherence_linear": 0.30326532992148897,
+      "coherence_angular": 0.3032653304688502,
+      "difference": 5.473612119111237e-10
+    },
+    {
+      "test": "angular_vs_linear",
+      "J": 0.1,
+      "gamma": 0.5,
+      "coherence_linear": 0.04104250875705087,
+      "coherence_angular": 0.04104249725619992,
+      "difference": 1.1500850952139707e-08
+    },
+    {
+      "test": "angular_vs_linear",
+      "J": 0.5,
+      "gamma": 0.01,
+      "coherence_linear": 0.47561471225035723,
+      "coherence_angular": 0.475614712250357,
+      "difference": 2.220446049250313e-16
+    },
+    {
+      "test": "angular_vs_linear",
+      "J": 0.5,
+      "gamma": 0.05,
+      "coherence_linear": 0.38940039153570444,
+      "coherence_angular": 0.38940039153598777,
+      "difference": 2.8332891588433995e-13
+    },
+    {
+      "test": "angular_vs_linear",
+      "J": 0.5,
+      "gamma": 0.1,
+      "coherence_linear": 0.30326532985639004,
+      "coherence_angular": 0.303265329862879,
+      "difference": 6.488976023177884e-12
+    },
+    {
+      "test": "angular_vs_linear",
+      "J": 0.5,
+      "gamma": 0.5,
+      "coherence_linear": 0.04104249942303427,
+      "coherence_angular": 0.041042499930815005,
+      "difference": 5.077807341269391e-10
+    },
+    {
+      "test": "angular_vs_linear",
+      "J": 1.0,
+      "gamma": 0.01,
+      "coherence_linear": 0.47561471225035706,
+      "coherence_angular": 0.47561471225035734,
+      "difference": 2.7755575615628914e-16
+    },
+    {
+      "test": "angular_vs_linear",
+      "J": 1.0,
+      "gamma": 0.05,
+      "coherence_linear": 0.3894003915357022,
+      "coherence_angular": 0.38940039153571326,
+      "difference": 1.1046719095020308e-14
+    },
+    {
+      "test": "angular_vs_linear",
+      "J": 1.0,
+      "gamma": 0.1,
+      "coherence_linear": 0.30326532985631843,
+      "coherence_angular": 0.30326532985660093,
+      "difference": 2.824962486158711e-13
+    },
+    {
+      "test": "angular_vs_linear",
+      "J": 1.0,
+      "gamma": 0.5,
+      "coherence_linear": 0.041042499312191276,
+      "coherence_angular": 0.04104250081330946,
+      "difference": 1.5011181811463992e-09
+    },
+    {
+      "test": "angular_vs_linear",
+      "J": 2.0,
+      "gamma": 0.01,
+      "coherence_linear": 0.47561471225035695,
+      "coherence_angular": 0.4756147122503571,
+      "difference": 1.6653345369377348e-16
+    },
+    {
+      "test": "angular_vs_linear",
+      "J": 2.0,
+      "gamma": 0.05,
+      "coherence_linear": 0.3894003915357025,
+      "coherence_angular": 0.38940039153570305,
+      "difference": 5.551115123125783e-16
+    },
+    {
+      "test": "angular_vs_linear",
+      "J": 2.0,
+      "gamma": 0.1,
+      "coherence_linear": 0.30326532985631827,
+      "coherence_angular": 0.3032653298563256,
+      "difference": 7.327471962526033e-15
+    },
+    {
+      "test": "angular_vs_linear",
+      "J": 2.0,
+      "gamma": 0.5,
+      "coherence_linear": 0.04104249931211504,
+      "coherence_angular": 0.04104249935973301,
+      "difference": 4.761797206542795e-11
+    },
+    {
+      "test": "angular_vs_linear",
+      "J": 5.0,
+      "gamma": 0.01,
+      "coherence_linear": 0.47561471225035706,
+      "coherence_angular": 0.47561471225035773,
+      "difference": 6.661338147750939e-16
+    },
+    {
+      "test": "angular_vs_linear",
+      "J": 5.0,
+      "gamma": 0.05,
+      "coherence_linear": 0.3894003915357006,
+      "coherence_angular": 0.38940039153570344,
+      "difference": 2.831068712794149e-15
+    },
+    {
+      "test": "angular_vs_linear",
+      "J": 5.0,
+      "gamma": 0.1,
+      "coherence_linear": 0.3032653298563187,
+      "coherence_angular": 0.3032653298563179,
+      "difference": 8.326672684688674e-16
+    },
+    {
+      "test": "angular_vs_linear",
+      "J": 5.0,
+      "gamma": 0.5,
+      "coherence_linear": 0.04104249931179306,
+      "coherence_angular": 0.0410424993121635,
+      "difference": 3.704397899539913e-13
+    }
+  ],
+  "summary": {
+    "test1_max_spread": 7.771561172376096e-16,
+    "test1_coordinate_invariant": true,
+    "test2_mean_spread": 0.11315263246558026,
+    "test2_max_spread": 0.30408125753814913,
+    "test2_not_invariant_count": 15,
+    "test2_total_configs": 15,
+    "test3_mean_linear_coh": 0.3023307337198318,
+    "test3_mean_angular_coh": 0.3023307332794792,
+    "test3_mean_diff": 7.097325761817874e-10
+  }
+}

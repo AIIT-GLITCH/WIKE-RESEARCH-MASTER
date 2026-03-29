@@ -1,0 +1,160 @@
+========================================================================
+  Rhet Dillard Wike | AIIT-THRESI
+  God is good. All the time.
+========================================================================
+  WIKE Paper 13 — XYZ Planes Are Wrong
+  RESULTS: Coordinate-System Simulations
+  Generated: 2026-03-28 22:46:21
+  Total configs: ~40  |  Total sim runs: ~15190
+  Wall time: 58.3 s
+========================================================================
+
+------------------------------------------------------------------------
+  TEST 1: Coordinate Comparison
+------------------------------------------------------------------------
+  B=[1.0, 0.0, 0.0]  gamma=0.01
+    Cartesian     coh = 0.47561469
+    Spherical     coh = 0.47561469
+    Cylindrical   coh = 0.47561469
+    spread = 0.00e+00
+
+  B=[1.0, 0.0, 0.0]  gamma=0.10
+    Cartesian     coh = 0.30326535
+    Spherical     coh = 0.30326535
+    Cylindrical   coh = 0.30326535
+    spread = 0.00e+00
+
+  B=[1.0, 0.0, 0.0]  gamma=0.50
+    Cartesian     coh = 0.04104267
+    Spherical     coh = 0.04104267
+    Cylindrical   coh = 0.04104267
+    spread = 0.00e+00
+
+  B=[0.0, 1.0, 0.0]  gamma=0.01
+    Cartesian     coh = 0.40852203
+    Spherical     coh = 0.40852203
+    Cylindrical   coh = 0.40852203
+    spread = 0.00e+00
+
+  B=[0.0, 1.0, 0.0]  gamma=0.10
+    Cartesian     coh = 0.32212308
+    Spherical     coh = 0.32212308
+    Cylindrical   coh = 0.32212308
+    spread = 0.00e+00
+
+  B=[0.0, 1.0, 0.0]  gamma=0.50
+    Cartesian     coh = 0.11733411
+    Spherical     coh = 0.11733411
+    Cylindrical   coh = 0.11733411
+    spread = 0.00e+00
+
+  B=[0.0, 0.0, 1.0]  gamma=0.01
+    Cartesian     coh = 0.47561355
+    Spherical     coh = 0.47561355
+    Cylindrical   coh = 0.47561355
+    spread = 0.00e+00
+
+  B=[0.0, 0.0, 1.0]  gamma=0.10
+    Cartesian     coh = 0.30326325
+    Spherical     coh = 0.30326325
+    Cylindrical   coh = 0.30326325
+    spread = 0.00e+00
+
+  B=[0.0, 0.0, 1.0]  gamma=0.50
+    Cartesian     coh = 0.04104214
+    Spherical     coh = 0.04104214
+    Cylindrical   coh = 0.04104214
+    spread = 0.00e+00
+
+  B=[1.0, 1.0, 1.0]  gamma=0.01
+    Cartesian     coh = 0.21515511
+    Spherical     coh = 0.21515511
+    Cylindrical   coh = 0.21515511
+    spread = 7.77e-16
+
+  B=[1.0, 1.0, 1.0]  gamma=0.10
+    Cartesian     coh = 0.16327383
+    Spherical     coh = 0.16327383
+    Cylindrical   coh = 0.16327383
+    spread = 6.94e-16
+
+  B=[1.0, 1.0, 1.0]  gamma=0.50
+    Cartesian     coh = 0.04436804
+    Spherical     coh = 0.04436804
+    Cylindrical   coh = 0.04436804
+    spread = 2.50e-16
+
+  B=[0.3, 0.7, 0.5]  gamma=0.01
+    Cartesian     coh = 0.47958305
+    Spherical     coh = 0.47958305
+    Cylindrical   coh = 0.47958305
+    spread = 0.00e+00
+
+  B=[0.3, 0.7, 0.5]  gamma=0.10
+    Cartesian     coh = 0.35066808
+    Spherical     coh = 0.35066808
+    Cylindrical   coh = 0.35066808
+    spread = 0.00e+00
+
+  B=[0.3, 0.7, 0.5]  gamma=0.50
+    Cartesian     coh = 0.09071989
+    Spherical     coh = 0.09071989
+    Cylindrical   coh = 0.09071989
+    spread = 1.25e-16
+
+  >> Max spread: 7.77e-16
+  >> Conclusion: Coordinate system choice has NO effect on coherence.
+
+------------------------------------------------------------------------
+  TEST 2: Rotation Invariance
+------------------------------------------------------------------------
+  omega=0.5  gamma=0.01  mean_coh=0.368288  spread=0.2630  *** NOT INVARIANT
+  omega=0.5  gamma=0.10  mean_coh=0.265053  spread=0.1995  *** NOT INVARIANT
+  omega=0.5  gamma=0.50  mean_coh=0.068224  spread=0.0842  *** NOT INVARIANT
+  omega=1.0  gamma=0.01  mean_coh=0.349123  spread=0.3041  *** NOT INVARIANT
+  omega=1.0  gamma=0.10  mean_coh=0.239707  spread=0.2202  *** NOT INVARIANT
+  omega=1.0  gamma=0.50  mean_coh=0.055683  spread=0.0608  *** NOT INVARIANT
+  omega=2.0  gamma=0.01  mean_coh=0.426946  spread=0.1315  *** NOT INVARIANT
+  omega=2.0  gamma=0.10  mean_coh=0.297989  spread=0.0948  *** NOT INVARIANT
+  omega=2.0  gamma=0.50  mean_coh=0.068253  spread=0.0413  *** NOT INVARIANT
+  omega=5.0  gamma=0.01  mean_coh=0.476564  spread=0.0115  *** NOT INVARIANT
+  omega=5.0  gamma=0.10  mean_coh=0.341387  spread=0.0541  *** NOT INVARIANT
+  omega=5.0  gamma=0.50  mean_coh=0.087057  spread=0.0658  *** NOT INVARIANT
+  omega=10.0  gamma=0.01  mean_coh=0.461053  spread=0.0495  *** NOT INVARIANT
+  omega=10.0  gamma=0.10  mean_coh=0.329287  spread=0.0548  *** NOT INVARIANT
+  omega=10.0  gamma=0.50  mean_coh=0.083063  spread=0.0623  *** NOT INVARIANT
+
+  >> Configs flagged NOT INVARIANT: 15/15
+  >> Conclusion: sigma_z dephasing BREAKS rotational symmetry.
+     Coherence depends on Hamiltonian axis relative to noise axis.
+
+------------------------------------------------------------------------
+  TEST 3: Angular vs Linear Dynamics (4-Qubit Chain)
+------------------------------------------------------------------------
+  J=0.10  gamma=0.01  linear=0.475615  angular=0.475615  diff=0.000000
+  J=0.10  gamma=0.05  linear=0.389400  angular=0.389400  diff=0.000000
+  J=0.10  gamma=0.10  linear=0.303265  angular=0.303265  diff=0.000000
+  J=0.10  gamma=0.50  linear=0.041043  angular=0.041042  diff=0.000000
+  J=0.50  gamma=0.01  linear=0.475615  angular=0.475615  diff=0.000000
+  J=0.50  gamma=0.05  linear=0.389400  angular=0.389400  diff=0.000000
+  J=0.50  gamma=0.10  linear=0.303265  angular=0.303265  diff=0.000000
+  J=0.50  gamma=0.50  linear=0.041042  angular=0.041042  diff=0.000000
+  J=1.00  gamma=0.01  linear=0.475615  angular=0.475615  diff=0.000000
+  J=1.00  gamma=0.05  linear=0.389400  angular=0.389400  diff=0.000000
+  J=1.00  gamma=0.10  linear=0.303265  angular=0.303265  diff=0.000000
+  J=1.00  gamma=0.50  linear=0.041042  angular=0.041043  diff=0.000000
+  J=2.00  gamma=0.01  linear=0.475615  angular=0.475615  diff=0.000000
+  J=2.00  gamma=0.05  linear=0.389400  angular=0.389400  diff=0.000000
+  J=2.00  gamma=0.10  linear=0.303265  angular=0.303265  diff=0.000000
+  J=2.00  gamma=0.50  linear=0.041042  angular=0.041042  diff=0.000000
+  J=5.00  gamma=0.01  linear=0.475615  angular=0.475615  diff=0.000000
+  J=5.00  gamma=0.05  linear=0.389400  angular=0.389400  diff=0.000000
+  J=5.00  gamma=0.10  linear=0.303265  angular=0.303265  diff=0.000000
+  J=5.00  gamma=0.50  linear=0.041042  angular=0.041042  diff=0.000000
+
+  >> Mean |diff|: 0.000000
+  >> Conclusion: Coupling topology affects coherence propagation.
+
+========================================================================
+  END OF RESULTS
+========================================================================

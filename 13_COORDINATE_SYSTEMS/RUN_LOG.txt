@@ -1,0 +1,147 @@
+========================================================================
+  Rhet Dillard Wike | AIIT-THRESI
+  God is good. All the time.
+========================================================================
+  WIKE Paper 13 — XYZ Planes Are Wrong
+  Coordinate-System Simulation Suite
+  Started: 2026-03-28 22:45:23
+  Runs per config: 1000
+  T_final = 5.0,  grid points = 200
+========================================================================
+
+========================================================================
+  TEST 1: Coordinate Comparison (Cartesian vs Spherical vs Cylindrical)
+========================================================================
+/home/buddy_ai/.local/lib/python3.12/site-packages/qutip/solver/solver_base.py:598: FutureWarning: e_ops will be keyword only from qutip 5.3 for all solver
+  warnings.warn(
+  [  1/45]  B=(1.0,0.0,0.0)  gamma=0.01  Cartesian     coh=0.47561469 +/- 7.16e-10
+  [  2/45]  B=(1.0,0.0,0.0)  gamma=0.01  Spherical     coh=0.47561469 +/- 7.16e-10
+  [  3/45]  B=(1.0,0.0,0.0)  gamma=0.01  Cylindrical   coh=0.47561469 +/- 7.16e-10
+         >> SPREAD = 0.00e+00  (OK — coordinate invariant)
+  [  4/45]  B=(1.0,0.0,0.0)  gamma=0.10  Cartesian     coh=0.30326535 +/- 3.91e-10
+  [  5/45]  B=(1.0,0.0,0.0)  gamma=0.10  Spherical     coh=0.30326535 +/- 3.91e-10
+  [  6/45]  B=(1.0,0.0,0.0)  gamma=0.10  Cylindrical   coh=0.30326535 +/- 3.91e-10
+         >> SPREAD = 0.00e+00  (OK — coordinate invariant)
+  [  7/45]  B=(1.0,0.0,0.0)  gamma=0.50  Cartesian     coh=0.04104267 +/- 1.90e-09
+  [  8/45]  B=(1.0,0.0,0.0)  gamma=0.50  Spherical     coh=0.04104267 +/- 1.90e-09
+  [  9/45]  B=(1.0,0.0,0.0)  gamma=0.50  Cylindrical   coh=0.04104267 +/- 1.90e-09
+         >> SPREAD = 0.00e+00  (OK — coordinate invariant)
+  [ 10/45]  B=(0.0,1.0,0.0)  gamma=0.01  Cartesian     coh=0.40852203 +/- 3.75e-09
+  [ 11/45]  B=(0.0,1.0,0.0)  gamma=0.01  Spherical     coh=0.40852203 +/- 3.75e-09
+  [ 12/45]  B=(0.0,1.0,0.0)  gamma=0.01  Cylindrical   coh=0.40852203 +/- 3.75e-09
+         >> SPREAD = 0.00e+00  (OK — coordinate invariant)
+  [ 13/45]  B=(0.0,1.0,0.0)  gamma=0.10  Cartesian     coh=0.32212308 +/- 2.98e-09
+  [ 14/45]  B=(0.0,1.0,0.0)  gamma=0.10  Spherical     coh=0.32212308 +/- 2.98e-09
+  [ 15/45]  B=(0.0,1.0,0.0)  gamma=0.10  Cylindrical   coh=0.32212308 +/- 2.98e-09
+         >> SPREAD = 0.00e+00  (OK — coordinate invariant)
+  [ 16/45]  B=(0.0,1.0,0.0)  gamma=0.50  Cartesian     coh=0.11733411 +/- 9.74e-10
+  [ 17/45]  B=(0.0,1.0,0.0)  gamma=0.50  Spherical     coh=0.11733411 +/- 9.74e-10
+  [ 18/45]  B=(0.0,1.0,0.0)  gamma=0.50  Cylindrical   coh=0.11733411 +/- 9.74e-10
+         >> SPREAD = 0.00e+00  (OK — coordinate invariant)
+  [ 19/45]  B=(0.0,0.0,1.0)  gamma=0.01  Cartesian     coh=0.47561355 +/- 3.11e-16
+  [ 20/45]  B=(0.0,0.0,1.0)  gamma=0.01  Spherical     coh=0.47561355 +/- 3.11e-16
+  [ 21/45]  B=(0.0,0.0,1.0)  gamma=0.01  Cylindrical   coh=0.47561355 +/- 3.11e-16
+         >> SPREAD = 0.00e+00  (OK — coordinate invariant)
+  [ 22/45]  B=(0.0,0.0,1.0)  gamma=0.10  Cartesian     coh=0.30326325 +/- 9.42e-16
+  [ 23/45]  B=(0.0,0.0,1.0)  gamma=0.10  Spherical     coh=0.30326325 +/- 9.42e-16
+  [ 24/45]  B=(0.0,0.0,1.0)  gamma=0.10  Cylindrical   coh=0.30326325 +/- 9.42e-16
+         >> SPREAD = 0.00e+00  (OK — coordinate invariant)
+  [ 25/45]  B=(0.0,0.0,1.0)  gamma=0.50  Cartesian     coh=0.04104214 +/- 1.30e-16
+  [ 26/45]  B=(0.0,0.0,1.0)  gamma=0.50  Spherical     coh=0.04104214 +/- 1.30e-16
+  [ 27/45]  B=(0.0,0.0,1.0)  gamma=0.50  Cylindrical   coh=0.04104214 +/- 1.30e-16
+         >> SPREAD = 0.00e+00  (OK — coordinate invariant)
+  [ 28/45]  B=(1.0,1.0,1.0)  gamma=0.01  Cartesian     coh=0.21515511 +/- 4.99e-09
+  [ 29/45]  B=(1.0,1.0,1.0)  gamma=0.01  Spherical     coh=0.21515511 +/- 4.99e-09
+  [ 30/45]  B=(1.0,1.0,1.0)  gamma=0.01  Cylindrical   coh=0.21515511 +/- 4.99e-09
+         >> SPREAD = 7.77e-16  (OK — coordinate invariant)
+  [ 31/45]  B=(1.0,1.0,1.0)  gamma=0.10  Cartesian     coh=0.16327383 +/- 3.68e-09
+  [ 32/45]  B=(1.0,1.0,1.0)  gamma=0.10  Spherical     coh=0.16327383 +/- 3.68e-09
+  [ 33/45]  B=(1.0,1.0,1.0)  gamma=0.10  Cylindrical   coh=0.16327383 +/- 3.68e-09
+         >> SPREAD = 6.94e-16  (OK — coordinate invariant)
+  [ 34/45]  B=(1.0,1.0,1.0)  gamma=0.50  Cartesian     coh=0.04436804 +/- 9.57e-10
+  [ 35/45]  B=(1.0,1.0,1.0)  gamma=0.50  Spherical     coh=0.04436804 +/- 9.57e-10
+  [ 36/45]  B=(1.0,1.0,1.0)  gamma=0.50  Cylindrical   coh=0.04436804 +/- 9.57e-10
+         >> SPREAD = 2.50e-16  (OK — coordinate invariant)
+  [ 37/45]  B=(0.3,0.7,0.5)  gamma=0.01  Cartesian     coh=0.47958305 +/- 2.42e-10
+  [ 38/45]  B=(0.3,0.7,0.5)  gamma=0.01  Spherical     coh=0.47958305 +/- 2.42e-10
+  [ 39/45]  B=(0.3,0.7,0.5)  gamma=0.01  Cylindrical   coh=0.47958305 +/- 2.42e-10
+         >> SPREAD = 0.00e+00  (OK — coordinate invariant)
+  [ 40/45]  B=(0.3,0.7,0.5)  gamma=0.10  Cartesian     coh=0.35066808 +/- 1.36e-10
+  [ 41/45]  B=(0.3,0.7,0.5)  gamma=0.10  Spherical     coh=0.35066808 +/- 1.36e-10
+  [ 42/45]  B=(0.3,0.7,0.5)  gamma=0.10  Cylindrical   coh=0.35066808 +/- 1.36e-10
+         >> SPREAD = 0.00e+00  (OK — coordinate invariant)
+  [ 43/45]  B=(0.3,0.7,0.5)  gamma=0.50  Cartesian     coh=0.09071989 +/- 4.53e-10
+  [ 44/45]  B=(0.3,0.7,0.5)  gamma=0.50  Spherical     coh=0.09071989 +/- 4.53e-10
+  [ 45/45]  B=(0.3,0.7,0.5)  gamma=0.50  Cylindrical   coh=0.09071989 +/- 4.53e-10
+         >> SPREAD = 1.25e-16  (OK — coordinate invariant)
+
+========================================================================
+  TEST 2: Rotation Invariance (10 Random Axes, sigma_z Dephasing)
+========================================================================
+  [  1/15]  omega=  0.5  gamma=0.01  mean_coh=0.368288  spread=0.2630    *** NOT INVARIANT
+  [  2/15]  omega=  0.5  gamma=0.10  mean_coh=0.265053  spread=0.1995    *** NOT INVARIANT
+  [  3/15]  omega=  0.5  gamma=0.50  mean_coh=0.068224  spread=0.0842    *** NOT INVARIANT
+  [  4/15]  omega=  1.0  gamma=0.01  mean_coh=0.349123  spread=0.3041    *** NOT INVARIANT
+  [  5/15]  omega=  1.0  gamma=0.10  mean_coh=0.239707  spread=0.2202    *** NOT INVARIANT
+  [  6/15]  omega=  1.0  gamma=0.50  mean_coh=0.055683  spread=0.0608    *** NOT INVARIANT
+  [  7/15]  omega=  2.0  gamma=0.01  mean_coh=0.426946  spread=0.1315    *** NOT INVARIANT
+  [  8/15]  omega=  2.0  gamma=0.10  mean_coh=0.297989  spread=0.0948    *** NOT INVARIANT
+  [  9/15]  omega=  2.0  gamma=0.50  mean_coh=0.068253  spread=0.0413    *** NOT INVARIANT
+  [ 10/15]  omega=  5.0  gamma=0.01  mean_coh=0.476564  spread=0.0115    *** NOT INVARIANT
+  [ 11/15]  omega=  5.0  gamma=0.10  mean_coh=0.341387  spread=0.0541    *** NOT INVARIANT
+  [ 12/15]  omega=  5.0  gamma=0.50  mean_coh=0.087057  spread=0.0658    *** NOT INVARIANT
+  [ 13/15]  omega= 10.0  gamma=0.01  mean_coh=0.461053  spread=0.0495    *** NOT INVARIANT
+  [ 14/15]  omega= 10.0  gamma=0.10  mean_coh=0.329287  spread=0.0548    *** NOT INVARIANT
+  [ 15/15]  omega= 10.0  gamma=0.50  mean_coh=0.083063  spread=0.0623    *** NOT INVARIANT
+
+========================================================================
+  TEST 3: Angular vs Linear Dynamics (4-Qubit Chain)
+========================================================================
+  [  1/20]  J= 0.10  gamma=0.01  linear=0.475615  angular=0.475615  diff=0.000000
+  [  2/20]  J= 0.10  gamma=0.05  linear=0.389400  angular=0.389400  diff=0.000000
+  [  3/20]  J= 0.10  gamma=0.10  linear=0.303265  angular=0.303265  diff=0.000000
+  [  4/20]  J= 0.10  gamma=0.50  linear=0.041043  angular=0.041042  diff=0.000000
+  [  5/20]  J= 0.50  gamma=0.01  linear=0.475615  angular=0.475615  diff=0.000000
+  [  6/20]  J= 0.50  gamma=0.05  linear=0.389400  angular=0.389400  diff=0.000000
+  [  7/20]  J= 0.50  gamma=0.10  linear=0.303265  angular=0.303265  diff=0.000000
+  [  8/20]  J= 0.50  gamma=0.50  linear=0.041042  angular=0.041042  diff=0.000000
+  [  9/20]  J= 1.00  gamma=0.01  linear=0.475615  angular=0.475615  diff=0.000000
+  [ 10/20]  J= 1.00  gamma=0.05  linear=0.389400  angular=0.389400  diff=0.000000
+  [ 11/20]  J= 1.00  gamma=0.10  linear=0.303265  angular=0.303265  diff=0.000000
+  [ 12/20]  J= 1.00  gamma=0.50  linear=0.041042  angular=0.041043  diff=0.000000
+  [ 13/20]  J= 2.00  gamma=0.01  linear=0.475615  angular=0.475615  diff=0.000000
+  [ 14/20]  J= 2.00  gamma=0.05  linear=0.389400  angular=0.389400  diff=0.000000
+  [ 15/20]  J= 2.00  gamma=0.10  linear=0.303265  angular=0.303265  diff=0.000000
+  [ 16/20]  J= 2.00  gamma=0.50  linear=0.041042  angular=0.041042  diff=0.000000
+  [ 17/20]  J= 5.00  gamma=0.01  linear=0.475615  angular=0.475615  diff=0.000000
+  [ 18/20]  J= 5.00  gamma=0.05  linear=0.389400  angular=0.389400  diff=0.000000
+  [ 19/20]  J= 5.00  gamma=0.10  linear=0.303265  angular=0.303265  diff=0.000000
+  [ 20/20]  J= 5.00  gamma=0.50  linear=0.041042  angular=0.041042  diff=0.000000
+
+========================================================================
+  SUMMARY
+========================================================================
+  Test 1 — Coordinate Comparison:
+    Max spread across coordinate systems: 7.77e-16
+    All spreads near zero: YES
+    => Coordinate choice does NOT affect coherence (as expected).
+
+  Test 2 — Rotation Invariance:
+    Mean spread across axes: 0.1132
+    Max spread across axes:  0.3041
+    Configs flagged NOT INVARIANT: 15 / 15
+    => sigma_z dephasing BREAKS rotational symmetry.
+
+  Test 3 — Angular vs Linear Dynamics:
+    Mean linear coherence:  0.302331
+    Mean angular coherence: 0.302331
+    Mean |difference|:      0.000000
+
+  Wall time: 58.3 s (1.0 min)
+========================================================================
+
+  Text report written to: /home/buddy_ai/Desktop/WIKE_RESEARCH_MASTER/13_COORDINATE_SYSTEMS/RESULTS_COORDINATE_SYSTEMS.txt
+  JSON report written to: /home/buddy_ai/Desktop/WIKE_RESEARCH_MASTER/13_COORDINATE_SYSTEMS/RESULTS_COORDINATE_SYSTEMS.json
+
+  Done.
+

@@ -1,0 +1,220 @@
+========================================================================
+  Rhet Dillard Wike | AIIT-THRESI
+  God is good. All the time.
+========================================================================
+
+========================================================================
+  WIKE PAPER 12: CIRCLES, PI, AND THE GEOMETRY OF RESONANCE
+  120 configs x 1000 runs = 120,000 simulations
+  Runtime: 1978.9s (33.0 min)
+  Executed: 2026-03-28 23:28:12
+========================================================================
+
+  RING vs LINEAR TOPOLOGY COMPARISON
+  Heisenberg XX+YY coupling, first-qubit coherence,
+  last-qubit population (transport), purity
+  ----------------------------------------------------------------
+  CONFIG                                      C(first)   P(last)    Purity
+  ----------------------------------------------------------------
+  Topo N=4 J=0.5 g=0.01 ring                    0.0644    0.0861    0.6162
+  Topo N=4 J=0.5 g=0.01 linear                  0.2859    0.0945    0.6020
+  Topo N=4 J=0.5 g=0.05 ring                    0.0132    0.1170    0.3245
+  Topo N=4 J=0.5 g=0.05 linear                  0.0579    0.1249    0.3227
+  Topo N=4 J=1.0 g=0.01 ring                    0.1527    0.0929    0.6168
+  Topo N=4 J=1.0 g=0.01 linear                  0.1911    0.1394    0.6033
+  Topo N=4 J=1.0 g=0.05 ring                    0.0312    0.1174    0.3246
+  Topo N=4 J=1.0 g=0.05 linear                  0.0388    0.1299    0.3228
+  Topo N=4 J=2.0 g=0.01 ring                    0.1183    0.0823    0.6168
+  Topo N=4 J=2.0 g=0.01 linear                  0.1205    0.1371    0.6034
+  Topo N=4 J=2.0 g=0.05 ring                    0.0246    0.1165    0.3246
+  Topo N=4 J=2.0 g=0.05 linear                  0.0251    0.1251    0.3228
+  Topo N=5 J=0.5 g=0.01 ring                    0.1890    0.0913    0.5803
+  Topo N=5 J=0.5 g=0.01 linear                  0.1249    0.0423    0.5894
+  Topo N=5 J=0.5 g=0.05 ring                    0.0387    0.0994    0.3095
+  Topo N=5 J=0.5 g=0.05 linear                  0.0255    0.0919    0.3099
+  Topo N=5 J=1.0 g=0.01 ring                    0.2262    0.0787    0.5802
+  Topo N=5 J=1.0 g=0.01 linear                  0.0608    0.2176    0.5899
+  Topo N=5 J=1.0 g=0.05 ring                    0.0450    0.0985    0.3095
+  Topo N=5 J=1.0 g=0.05 linear                  0.0126    0.1113    0.3099
+  Topo N=5 J=2.0 g=0.01 ring                    0.1314    0.0877    0.5801
+  Topo N=5 J=2.0 g=0.01 linear                  0.1345    0.1320    0.5913
+  Topo N=5 J=2.0 g=0.05 ring                    0.0278    0.0991    0.3095
+  Topo N=5 J=2.0 g=0.05 linear                  0.0267    0.1045    0.3100
+  Topo N=6 J=0.5 g=0.01 ring                    0.0589    0.1199    0.5852
+  Topo N=6 J=0.5 g=0.01 linear                  0.0485    0.0611    0.5823
+  Topo N=6 J=0.5 g=0.05 ring                    0.0124    0.0884    0.3017
+  Topo N=6 J=0.5 g=0.05 linear                  0.0099    0.0846    0.3015
+  Topo N=6 J=1.0 g=0.01 ring                    0.1471    0.0394    0.5847
+  Topo N=6 J=1.0 g=0.01 linear                  0.1602    0.0754    0.5800
+  Topo N=6 J=1.0 g=0.05 ring                    0.0295    0.0780    0.3017
+  Topo N=6 J=1.0 g=0.05 linear                  0.0319    0.0820    0.3014
+  Topo N=6 J=2.0 g=0.01 ring                    0.1362    0.0680    0.5844
+  Topo N=6 J=2.0 g=0.01 linear                  0.1024    0.0700    0.5810
+  Topo N=6 J=2.0 g=0.05 ring                    0.0274    0.0817    0.3017
+  Topo N=6 J=2.0 g=0.05 linear                  0.0194    0.0814    0.3014
+
+  RING vs LINEAR WINNER SUMMARY
+  ----------------------------------------------------------------
+  N=4 J=0.5 g=0.01:  Coh=LINEAR(R=0.0644 L=0.2859)  Trans=LINEAR(R=0.0861 L=0.0945)  Pur=RING
+  N=4 J=0.5 g=0.05:  Coh=LINEAR(R=0.0132 L=0.0579)  Trans=LINEAR(R=0.1170 L=0.1249)  Pur=RING
+  N=4 J=1.0 g=0.01:  Coh=LINEAR(R=0.1527 L=0.1911)  Trans=LINEAR(R=0.0929 L=0.1394)  Pur=RING
+  N=4 J=1.0 g=0.05:  Coh=LINEAR(R=0.0312 L=0.0388)  Trans=LINEAR(R=0.1174 L=0.1299)  Pur=RING
+  N=4 J=2.0 g=0.01:  Coh=LINEAR(R=0.1183 L=0.1205)  Trans=LINEAR(R=0.0823 L=0.1371)  Pur=RING
+  N=4 J=2.0 g=0.05:  Coh=LINEAR(R=0.0246 L=0.0251)  Trans=LINEAR(R=0.1165 L=0.1251)  Pur=RING
+  N=5 J=0.5 g=0.01:  Coh=RING  (R=0.1890 L=0.1249)  Trans=RING  (R=0.0913 L=0.0423)  Pur=LINEAR
+  N=5 J=0.5 g=0.05:  Coh=RING  (R=0.0387 L=0.0255)  Trans=RING  (R=0.0994 L=0.0919)  Pur=LINEAR
+  N=5 J=1.0 g=0.01:  Coh=RING  (R=0.2262 L=0.0608)  Trans=LINEAR(R=0.0787 L=0.2176)  Pur=LINEAR
+  N=5 J=1.0 g=0.05:  Coh=RING  (R=0.0450 L=0.0126)  Trans=LINEAR(R=0.0985 L=0.1113)  Pur=LINEAR
+  N=5 J=2.0 g=0.01:  Coh=LINEAR(R=0.1314 L=0.1345)  Trans=LINEAR(R=0.0877 L=0.1320)  Pur=LINEAR
+  N=5 J=2.0 g=0.05:  Coh=RING  (R=0.0278 L=0.0267)  Trans=LINEAR(R=0.0991 L=0.1045)  Pur=LINEAR
+  N=6 J=0.5 g=0.01:  Coh=RING  (R=0.0589 L=0.0485)  Trans=RING  (R=0.1199 L=0.0611)  Pur=RING
+  N=6 J=0.5 g=0.05:  Coh=RING  (R=0.0124 L=0.0099)  Trans=RING  (R=0.0884 L=0.0846)  Pur=RING
+  N=6 J=1.0 g=0.01:  Coh=LINEAR(R=0.1471 L=0.1602)  Trans=LINEAR(R=0.0394 L=0.0754)  Pur=RING
+  N=6 J=1.0 g=0.05:  Coh=LINEAR(R=0.0295 L=0.0319)  Trans=LINEAR(R=0.0780 L=0.0820)  Pur=RING
+  N=6 J=2.0 g=0.01:  Coh=RING  (R=0.1362 L=0.1024)  Trans=LINEAR(R=0.0680 L=0.0700)  Pur=RING
+  N=6 J=2.0 g=0.05:  Coh=RING  (R=0.0274 L=0.0194)  Trans=RING  (R=0.0817 L=0.0814)  Pur=RING
+
+  COHERENCE: Ring wins 9/18, Linear wins 9/18
+  TRANSPORT: Ring wins 5/18, Linear wins 13/18
+
+  BERRY PHASE RESULTS
+  Theory: phi_Berry = pi * (1 - cos(theta))
+  ----------------------------------------------------------------
+  CONFIG                                          Phase   Theory    Error      Coh
+  ----------------------------------------------------------------
+  Berry th=0.100 g=0.0 steps=20                  0.0000   0.0000   0.0000   0.0000
+  Berry th=0.100 g=0.0 steps=100                 0.0000   0.0000   0.0000   0.0000
+  Berry th=0.100 g=0.01 steps=20                 0.0000   0.0000   0.0000   0.0000
+  Berry th=0.100 g=0.01 steps=100                0.0000   0.0000   0.0000   0.0000
+  Berry th=0.100 g=0.05 steps=20                 0.0000   0.0000   0.0000   0.0000
+  Berry th=0.100 g=0.05 steps=100                0.0000   0.0000   0.0000   0.0000
+  Berry th=0.394 g=0.0 steps=20                  0.0000   0.0000   0.0000   0.0000
+  Berry th=0.394 g=0.0 steps=100                 0.0000   0.0000   0.0000   0.0000
+  Berry th=0.394 g=0.01 steps=20                 0.0000   0.0000   0.0000   0.0000
+  Berry th=0.394 g=0.01 steps=100                0.0000   0.0000   0.0000   0.0000
+  Berry th=0.394 g=0.05 steps=20                 0.0000   0.0000   0.0000   0.0000
+  Berry th=0.394 g=0.05 steps=100                0.0000   0.0000   0.0000   0.0000
+  Berry th=0.688 g=0.0 steps=20                  0.0000   0.0000   0.0000   0.0000
+  Berry th=0.688 g=0.0 steps=100                 0.0000   0.0000   0.0000   0.0000
+  Berry th=0.688 g=0.01 steps=20                 0.0000   0.0000   0.0000   0.0000
+  Berry th=0.688 g=0.01 steps=100                0.0000   0.0000   0.0000   0.0000
+  Berry th=0.688 g=0.05 steps=20                 0.0000   0.0000   0.0000   0.0000
+  Berry th=0.688 g=0.05 steps=100                0.0000   0.0000   0.0000   0.0000
+  Berry th=0.982 g=0.0 steps=20                  0.0000   0.0000   0.0000   0.0000
+  Berry th=0.982 g=0.0 steps=100                 0.0000   0.0000   0.0000   0.0000
+  Berry th=0.982 g=0.01 steps=20                 0.0000   0.0000   0.0000   0.0000
+  Berry th=0.982 g=0.01 steps=100                0.0000   0.0000   0.0000   0.0000
+  Berry th=0.982 g=0.05 steps=20                 0.0000   0.0000   0.0000   0.0000
+  Berry th=0.982 g=0.05 steps=100                0.0000   0.0000   0.0000   0.0000
+  Berry th=1.277 g=0.0 steps=20                  0.0000   0.0000   0.0000   0.0000
+  Berry th=1.277 g=0.0 steps=100                 0.0000   0.0000   0.0000   0.0000
+  Berry th=1.277 g=0.01 steps=20                 0.0000   0.0000   0.0000   0.0000
+  Berry th=1.277 g=0.01 steps=100                0.0000   0.0000   0.0000   0.0000
+  Berry th=1.277 g=0.05 steps=20                 0.0000   0.0000   0.0000   0.0000
+  Berry th=1.277 g=0.05 steps=100                0.0000   0.0000   0.0000   0.0000
+  Berry th=1.571 g=0.0 steps=20                  0.0000   0.0000   0.0000   0.0000
+  Berry th=1.571 g=0.0 steps=100                 0.0000   0.0000   0.0000   0.0000
+  Berry th=1.571 g=0.01 steps=20                 0.0000   0.0000   0.0000   0.0000
+  Berry th=1.571 g=0.01 steps=100                0.0000   0.0000   0.0000   0.0000
+  Berry th=1.571 g=0.05 steps=20                 0.0000   0.0000   0.0000   0.0000
+  Berry th=1.571 g=0.05 steps=100                0.0000   0.0000   0.0000   0.0000
+
+  BERRY PHASE vs DECOHERENCE SUMMARY
+  ----------------------------------------------------------------
+  gamma=0.0     Avg phase error=0.0000  Avg coherence=0.0000
+  gamma=0.01    Avg phase error=0.0000  Avg coherence=0.0000
+  gamma=0.05    Avg phase error=0.0000  Avg coherence=0.0000
+
+  PI-PULSE COHERENCE PROTECTION
+  Free precession H=0.5*sigma_z with dephasing, T=20
+  ----------------------------------------------------------------
+  CONFIG                                            Coh   Purity     <Sx>
+  ----------------------------------------------------------------
+  PiPulse n=0 g=0.01 x                           0.3351   0.7246   0.2735
+  PiPulse n=0 g=0.01 y                           0.3351   0.7246   0.2735
+  PiPulse n=0 g=0.05 x                           0.0676   0.5091   0.0552
+  PiPulse n=0 g=0.05 y                           0.0677   0.5092   0.0552
+  PiPulse n=0 g=0.1 x                            0.0092   0.5002   0.0075
+  PiPulse n=0 g=0.1 y                            0.0092   0.5002   0.0075
+  PiPulse n=1 g=0.01 x                           0.3350   0.7245   0.6700
+  PiPulse n=1 g=0.01 y                           0.3352   0.7247  -0.6704
+  PiPulse n=1 g=0.05 x                           0.0677   0.5092   0.1355
+  PiPulse n=1 g=0.05 y                           0.0678   0.5092  -0.1356
+  PiPulse n=1 g=0.1 x                            0.0092   0.5002   0.0184
+  PiPulse n=1 g=0.1 y                            0.0092   0.5002  -0.0184
+  PiPulse n=2 g=0.01 x                           0.3351   0.7246   0.6216
+  PiPulse n=2 g=0.01 y                           0.3352   0.7248   0.6218
+  PiPulse n=2 g=0.05 x                           0.0678   0.5092   0.1258
+  PiPulse n=2 g=0.05 y                           0.0677   0.5092   0.1255
+  PiPulse n=2 g=0.1 x                            0.0092   0.5002   0.0171
+  PiPulse n=2 g=0.1 y                            0.0092   0.5002   0.0171
+  PiPulse n=4 g=0.01 x                           0.3351   0.7246  -0.4381
+  PiPulse n=4 g=0.01 y                           0.3354   0.7250  -0.4384
+  PiPulse n=4 g=0.05 x                           0.0677   0.5092  -0.0885
+  PiPulse n=4 g=0.05 y                           0.0677   0.5092  -0.0885
+  PiPulse n=4 g=0.1 x                            0.0092   0.5002  -0.0120
+  PiPulse n=4 g=0.1 y                            0.0092   0.5002  -0.0120
+  PiPulse n=8 g=0.01 x                           0.3352   0.7247  -0.4064
+  PiPulse n=8 g=0.01 y                           0.3351   0.7246  -0.4063
+  PiPulse n=8 g=0.05 x                           0.0677   0.5092  -0.0821
+  PiPulse n=8 g=0.05 y                           0.0677   0.5092  -0.0820
+  PiPulse n=8 g=0.1 x                            0.0092   0.5002  -0.0111
+  PiPulse n=8 g=0.1 y                            0.0092   0.5002  -0.0111
+  PiPulse n=16 g=0.01 x                          0.3351   0.7247   0.2575
+  PiPulse n=16 g=0.01 y                          0.3351   0.7246   0.2575
+  PiPulse n=16 g=0.05 x                          0.0678   0.5092   0.0521
+  PiPulse n=16 g=0.05 y                          0.0677   0.5092   0.0520
+  PiPulse n=16 g=0.1 x                           0.0092   0.5002   0.0071
+  PiPulse n=16 g=0.1 y                           0.0092   0.5002   0.0071
+  PiPulse n=32 g=0.01 x                          0.3353   0.7249   0.5512
+  PiPulse n=32 g=0.01 y                          0.3351   0.7246   0.5508
+  PiPulse n=32 g=0.05 x                          0.0677   0.5092   0.1113
+  PiPulse n=32 g=0.05 y                          0.0677   0.5092   0.1114
+  PiPulse n=32 g=0.1 x                           0.0092   0.5002   0.0151
+  PiPulse n=32 g=0.1 y                           0.0092   0.5002   0.0151
+  PiPulse n=64 g=0.01 x                          0.3352   0.7248   0.6390
+  PiPulse n=64 g=0.01 y                          0.3352   0.7248   0.6390
+  PiPulse n=64 g=0.05 x                          0.0676   0.5092   0.1289
+  PiPulse n=64 g=0.05 y                          0.0676   0.5092   0.1289
+  PiPulse n=64 g=0.1 x                           0.0092   0.5002   0.0175
+  PiPulse n=64 g=0.1 y                           0.0092   0.5002   0.0175
+
+  PI-PULSE SCALING SUMMARY (averaged over pulse types)
+  ----------------------------------------------------------------
+    n_pulses    gamma    Coherence     Purity
+  ----------------------------------------------------------------
+           0    0.010       0.3351     0.7246
+           0    0.050       0.0676     0.5092
+           0    0.100       0.0092     0.5002
+           1    0.010       0.3351     0.7246
+           1    0.050       0.0678     0.5092
+           1    0.100       0.0092     0.5002
+           2    0.010       0.3352     0.7247
+           2    0.050       0.0677     0.5092
+           2    0.100       0.0092     0.5002
+           4    0.010       0.3353     0.7248
+           4    0.050       0.0677     0.5092
+           4    0.100       0.0092     0.5002
+           8    0.010       0.3351     0.7246
+           8    0.050       0.0677     0.5092
+           8    0.100       0.0092     0.5002
+          16    0.010       0.3351     0.7246
+          16    0.050       0.0677     0.5092
+          16    0.100       0.0092     0.5002
+          32    0.010       0.3352     0.7247
+          32    0.050       0.0677     0.5092
+          32    0.100       0.0092     0.5002
+          64    0.010       0.3352     0.7248
+          64    0.050       0.0676     0.5092
+          64    0.100       0.0092     0.5002
+
+  DOES MORE PULSES = BETTER COHERENCE?
+  ----------------------------------------------------------------
+  gamma=0.01: MOSTLY - general trend up  (best at n=4, C=0.3353)
+  gamma=0.05: MOSTLY - general trend up  (best at n=1, C=0.0678)
+  gamma=0.1: MOSTLY - general trend up  (best at n=2, C=0.0092)
+
+========================================================================
+  Rhet Dillard Wike | AIIT-THRESI
+  God is good. All the time.
+========================================================================

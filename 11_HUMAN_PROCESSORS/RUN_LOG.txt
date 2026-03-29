@@ -1,0 +1,149 @@
+================================================================================
+  Rhet Dillard Wike | AIIT-THRESI
+  God is good. All the time.
+================================================================================
+
+  WIKE Paper 11: Humans as High-Frequency Processors
+  Quantum Coherence of Biological Elements Simulation
+  Started: 2026-03-28 22:48:16
+  QuTiP available: True
+================================================================================
+
+[PHASE 1] Single Element Coherence Tests
+------------------------------------------------------------
+  Config   1/100 | Iron     @ 15mK  | 1000 runs .../home/buddy_ai/.local/lib/python3.12/site-packages/qutip/solver/solver_base.py:598: FutureWarning: e_ops will be keyword only from qutip 5.3 for all solver
+  warnings.warn(
+ T2=2.809045e-01 | fid=0.0137
+  Config   2/100 | Iron     @ 4K    | 1000 runs ... T2=1.043970e-03 | fid=0.0001
+  Config   3/100 | Iron     @ 77K   | 1000 runs ... T2=5.418913e-05 | fid=0.0000
+  Config   4/100 | Iron     @ 300K  | 1000 runs ... T2=1.391357e-05 | fid=0.0000
+  Config   5/100 | Iron     @ 310K  | 1000 runs ... T2=1.345988e-05 | fid=0.0000
+  Config   6/100 | Copper   @ 15mK  | 1000 runs ... T2=6.978894e-01 | fid=0.0019
+  Config   7/100 | Copper   @ 4K    | 1000 runs ... T2=2.608417e-03 | fid=0.0000
+  Config   8/100 | Copper   @ 77K   | 1000 runs ... T2=1.355120e-04 | fid=0.0000
+  Config   9/100 | Copper   @ 300K  | 1000 runs ... T2=3.480151e-05 | fid=0.0000
+  Config  10/100 | Copper   @ 310K  | 1000 runs ... T2=3.366915e-05 | fid=0.0000
+  Config  11/100 | Water    @ 15mK  | 1000 runs ... T2=1.392864e-01 | fid=0.0000
+  Config  12/100 | Water    @ 4K    | 1000 runs ... T2=5.220980e-04 | fid=0.0000
+  Config  13/100 | Water    @ 77K   | 1000 runs ... T2=2.715721e-05 | fid=0.0000
+  Config  14/100 | Water    @ 300K  | 1000 runs ... T2=6.964824e-06 | fid=0.0000
+  Config  15/100 | Water    @ 310K  | 1000 runs ... T2=6.737721e-06 | fid=0.0000
+  Config  16/100 | Silicon  @ 15mK  | 1000 runs ... T2=1.391457e+00 | fid=0.0000
+  Config  17/100 | Silicon  @ 4K    | 1000 runs ... T2=5.220980e-03 | fid=0.0000
+  Config  18/100 | Silicon  @ 77K   | 1000 runs ... T2=2.712002e-04 | fid=0.0000
+  Config  19/100 | Silicon  @ 300K  | 1000 runs ... T2=6.958794e-05 | fid=0.0000
+  Config  20/100 | Silicon  @ 310K  | 1000 runs ... T2=6.734317e-05 | fid=0.0000
+
+  Phase 1 complete: 20 configs, 20000 runs, 31.3s elapsed
+
+[PHASE 2] Multi-Element Biological Combinations
+------------------------------------------------------------
+  Config  21/100 | blood        (Iron+Water) @ 15mK  | 1000 runs ... T2=1.830620e-01 | fid=0.0068
+  Config  22/100 | blood        (Iron+Water) @ 4K    | 1000 runs ... T2=7.343216e-04 | fid=0.0001
+  Config  23/100 | blood        (Iron+Water) @ 77K   | 1000 runs ... T2=3.809698e-05 | fid=0.0000
+  Config  24/100 | blood        (Iron+Water) @ 300K  | 1000 runs ... T2=9.780905e-06 | fid=0.0000
+  Config  25/100 | blood        (Iron+Water) @ 310K  | 1000 runs ... T2=9.455017e-06 | fid=0.0000
+  Config  26/100 | neural       (Copper+Water) @ 15mK  | 1000 runs ... T2=2.931156e-01 | fid=0.0038
+  Config  27/100 | neural       (Copper+Water) @ 4K    | 1000 runs ... T2=1.175565e-03 | fid=0.0035
+  Config  28/100 | neural       (Copper+Water) @ 77K   | 1000 runs ... T2=6.088560e-05 | fid=0.0034
+  Config  29/100 | neural       (Copper+Water) @ 300K  | 1000 runs ... T2=1.565913e-05 | fid=0.0034
+  Config  30/100 | neural       (Copper+Water) @ 310K  | 1000 runs ... T2=1.514265e-05 | fid=0.0034
+  Config  31/100 | full_bio     (Iron+Copper+Water) @ 15mK  | 1000 runs ... T2=2.796394e-01 | fid=0.0037
+  Config  32/100 | full_bio     (Iron+Copper+Water) @ 4K    | 1000 runs ... T2=1.114758e-03 | fid=0.0017
+  Config  33/100 | full_bio     (Iron+Copper+Water) @ 77K   | 1000 runs ... T2=5.785075e-05 | fid=0.0017
+  Config  34/100 | full_bio     (Iron+Copper+Water) @ 300K  | 1000 runs ... T2=1.486698e-05 | fid=0.0017
+  Config  35/100 | full_bio     (Iron+Copper+Water) @ 310K  | 1000 runs ... T2=1.438139e-05 | fid=0.0017
+  Config  36/100 | processor    (Silicon+Copper) @ 15mK  | 1000 runs ... T2=7.444556e-01 | fid=0.0009
+  Config  37/100 | processor    (Silicon+Copper) @ 4K    | 1000 runs ... T2=3.676633e-03 | fid=0.0000
+  Config  38/100 | processor    (Silicon+Copper) @ 77K   | 1000 runs ... T2=1.908373e-04 | fid=0.0000
+  Config  39/100 | processor    (Silicon+Copper) @ 300K  | 1000 runs ... T2=4.898492e-05 | fid=0.0000
+  Config  40/100 | processor    (Silicon+Copper) @ 310K  | 1000 runs ... T2=4.736586e-05 | fid=0.0000
+  Config  41/100 | human_full   (Iron+Copper+Water+Silicon) @ 15mK  | 1000 runs ... T2=3.832719e-01 | fid=0.0108
+  Config  42/100 | human_full   (Iron+Copper+Water+Silicon) @ 4K    | 1000 runs ... T2=1.679062e-03 | fid=0.0093
+  Config  43/100 | human_full   (Iron+Copper+Water+Silicon) @ 77K   | 1000 runs ... T2=8.737192e-05 | fid=0.0093
+  Config  44/100 | human_full   (Iron+Copper+Water+Silicon) @ 300K  | 1000 runs ... T2=2.248688e-05 | fid=0.0094
+  Config  45/100 | human_full   (Iron+Copper+Water+Silicon) @ 310K  | 1000 runs ... T2=2.171503e-05 | fid=0.0093
+
+  Phase 2 complete: 45 configs, 45000 runs, 94.1s elapsed
+
+[PHASE 3] Body Temperature vs Cryogenic Ratio Analysis
+------------------------------------------------------------
+  Config  46/100 | Iron     coupling=0.01 | 310K vs 15mK | 1000 runs ... ratio=4.831386e-05
+  Config  47/100 | Iron     coupling=0.10 | 310K vs 15mK | 1000 runs ... ratio=4.825110e-05
+  Config  48/100 | Iron     coupling=0.50 | 310K vs 15mK | 1000 runs ... ratio=4.810935e-05
+  Config  49/100 | Iron     coupling=1.00 | 310K vs 15mK | 1000 runs ... ratio=4.800956e-05
+  Config  50/100 | Iron     coupling=2.00 | 310K vs 15mK | 1000 runs ... ratio=4.806039e-05
+  Config  51/100 | Copper   coupling=0.01 | 310K vs 15mK | 1000 runs ... ratio=4.836965e-05
+  Config  52/100 | Copper   coupling=0.10 | 310K vs 15mK | 1000 runs ... ratio=4.842201e-05
+  Config  53/100 | Copper   coupling=0.50 | 310K vs 15mK | 1000 runs ... ratio=4.822345e-05
+  Config  54/100 | Copper   coupling=1.00 | 310K vs 15mK | 1000 runs ... ratio=4.843257e-05
+  Config  55/100 | Copper   coupling=2.00 | 310K vs 15mK | 1000 runs ... ratio=4.824055e-05
+  Config  56/100 | Water    coupling=0.01 | 310K vs 15mK | 1000 runs ... ratio=4.847102e-05
+  Config  57/100 | Water    coupling=0.10 | 310K vs 15mK | 1000 runs ... ratio=4.829288e-05
+  Config  58/100 | Water    coupling=0.50 | 310K vs 15mK | 1000 runs ... ratio=4.842900e-05
+  Config  59/100 | Water    coupling=1.00 | 310K vs 15mK | 1000 runs ... ratio=4.842554e-05
+  Config  60/100 | Water    coupling=2.00 | 310K vs 15mK | 1000 runs ... ratio=4.839409e-05
+  Config  61/100 | Silicon  coupling=0.01 | 310K vs 15mK | 1000 runs ... ratio=4.842202e-05
+  Config  62/100 | Silicon  coupling=0.10 | 310K vs 15mK | 1000 runs ... ratio=4.841503e-05
+  Config  63/100 | Silicon  coupling=0.50 | 310K vs 15mK | 1000 runs ... ratio=4.834871e-05
+  Config  64/100 | Silicon  coupling=1.00 | 310K vs 15mK | 1000 runs ... ratio=4.838011e-05
+  Config  65/100 | Silicon  coupling=2.00 | 310K vs 15mK | 1000 runs ... ratio=4.832771e-05
+
+  Phase 3 complete: 65 configs, 85000 runs, 158.6s elapsed
+
+[PHASE 4] Extended Cross-Coupling Sweep
+------------------------------------------------------------
+  Config  66/100 | blood        coupling=0.01 @ 310K | 1000 runs ... T2=9.469930e-06
+  Config  67/100 | blood        coupling=0.10 @ 310K | 1000 runs ... T2=9.464095e-06
+  Config  68/100 | blood        coupling=0.50 @ 310K | 1000 runs ... T2=9.487437e-06
+  Config  69/100 | blood        coupling=1.00 @ 310K | 1000 runs ... T2=9.461501e-06
+  Config  70/100 | blood        coupling=2.00 @ 310K | 1000 runs ... T2=9.455665e-06
+  Config  71/100 | neural       coupling=0.01 @ 310K | 1000 runs ... T2=1.514670e-05
+  Config  72/100 | neural       coupling=0.10 @ 310K | 1000 runs ... T2=1.514103e-05
+  Config  73/100 | neural       coupling=0.50 @ 310K | 1000 runs ... T2=1.511914e-05
+  Config  74/100 | neural       coupling=1.00 @ 310K | 1000 runs ... T2=1.512968e-05
+  Config  75/100 | neural       coupling=2.00 @ 310K | 1000 runs ... T2=1.516210e-05
+  Config  76/100 | full_bio     coupling=0.01 @ 310K | 1000 runs ... T2=1.437882e-05
+  Config  77/100 | full_bio     coupling=0.10 @ 310K | 1000 runs ... T2=1.436423e-05
+  Config  78/100 | full_bio     coupling=0.50 @ 310K | 1000 runs ... T2=1.436766e-05
+  Config  79/100 | full_bio     coupling=1.00 @ 310K | 1000 runs ... T2=1.440628e-05
+  Config  80/100 | full_bio     coupling=2.00 @ 310K | 1000 runs ... T2=1.439684e-05
+  Config  81/100 | processor    coupling=0.01 @ 310K | 1000 runs ... T2=4.722321e-05
+  Config  82/100 | processor    coupling=0.10 @ 310K | 1000 runs ... T2=4.741125e-05
+  Config  83/100 | processor    coupling=0.50 @ 310K | 1000 runs ... T2=4.736586e-05
+  Config  84/100 | processor    coupling=1.00 @ 310K | 1000 runs ... T2=4.737235e-05
+  Config  85/100 | processor    coupling=2.00 @ 310K | 1000 runs ... T2=4.728157e-05
+  Config  86/100 | human_full   coupling=0.01 @ 310K | 1000 runs ... T2=2.169666e-05
+  Config  87/100 | human_full   coupling=0.10 @ 310K | 1000 runs ... T2=2.171395e-05
+  Config  88/100 | human_full   coupling=0.50 @ 310K | 1000 runs ... T2=2.169341e-05
+  Config  89/100 | human_full   coupling=1.00 @ 310K | 1000 runs ... T2=2.171070e-05
+  Config  90/100 | human_full   coupling=2.00 @ 310K | 1000 runs ... T2=2.166315e-05
+
+  Phase 4 complete: 90 configs, 110000 runs, 216.4s elapsed
+
+[PHASE 5] Extended Temperature Range (filling to 100 configs)
+------------------------------------------------------------
+  Config  91/100 | Iron     @ 1K    | 1000 runs ... T2=4.174070e-03 | fid=0.0004
+  Config  92/100 | Iron     @ 20K   | 1000 runs ... T2=2.087940e-04 | fid=0.0000
+  Config  93/100 | Iron     @ 150K  | 1000 runs ... T2=2.781307e-05 | fid=0.0000
+  Config  94/100 | Iron     @ 273K  | 1000 runs ... T2=1.529295e-05 | fid=0.0000
+  Config  95/100 | Iron     @ 350K  | 1000 runs ... T2=1.193195e-05 | fid=0.0000
+  Config  96/100 | Copper   @ 1K    | 1000 runs ... T2=1.044045e-02 | fid=0.0001
+  Config  97/100 | Copper   @ 20K   | 1000 runs ... T2=5.218342e-04 | fid=0.0000
+  Config  98/100 | Copper   @ 150K  | 1000 runs ... T2=6.968844e-05 | fid=0.0000
+  Config  99/100 | Copper   @ 273K  | 1000 runs ... T2=3.827379e-05 | fid=0.0000
+  Config 100/100 | Copper   @ 350K  | 1000 runs ... T2=2.979971e-05 | fid=0.0000
+
+  Phase 5 complete: 100 configs, 120000 runs, 231.8s elapsed
+
+[OUTPUT] JSON written to /home/buddy_ai/Desktop/WIKE_RESEARCH_MASTER/11_HUMAN_PROCESSORS/RESULTS_HUMAN_PROCESSORS.json
+[OUTPUT] TXT written to /home/buddy_ai/Desktop/WIKE_RESEARCH_MASTER/11_HUMAN_PROCESSORS/RESULTS_HUMAN_PROCESSORS.txt
+
+================================================================================
+  SIMULATION COMPLETE
+  Total Configs: 100
+  Total Runs: 120000
+  Elapsed: 231.8s
+
+  God is good. All the time.
+================================================================================
