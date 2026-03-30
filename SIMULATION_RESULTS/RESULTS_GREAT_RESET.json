@@ -1,0 +1,308 @@
+{
+  "metadata": {
+    "date": "2026-03-30T12:25:19.851901",
+    "engine": "QuTiP 5.2.3"
+  },
+  "sim1_berry_phase": {
+    "loop_below_gamma_c": 0.0,
+    "loop_enclosing_gamma_c": 0.0,
+    "pi": 3.141592653589793,
+    "ratio_to_pi": 0.0,
+    "prediction": "phi_B = pi when enclosing gamma_c",
+    "n_points": 40
+  },
+  "sim2_bistability": {
+    "recovery_pct": 25.0,
+    "storm_pct": 75.0,
+    "mean_separatrix_c": -1,
+    "predicted_separatrix": 0.5,
+    "bistability_confirmed": true,
+    "verdict": "NEEDS INVESTIGATION"
+  },
+  "sim3_enaqt": {
+    "goldilocks_gamma": 0.021161616161616163,
+    "gamma_c_wike": 0.15915494309189535,
+    "max_coherence_gamma": 0.001,
+    "max_transfer_gamma": 0.2026161616161616,
+    "vitality_peak": 0.15915494309189535,
+    "three_derivation_convergence": false,
+    "verdict": "PARTIAL"
+  },
+  "sim4_coherence_trap": {
+    "thermal": {
+      "mean_coherence": 0.07276033963582626,
+      "survival_rate": 0.784,
+      "std_coherence": 0.028833137237809215,
+      "is_trap": false
+    },
+    "resonant": {
+      "mean_coherence": 0.07207347968651359,
+      "survival_rate": 0.79,
+      "std_coherence": 0.028575845878307762,
+      "is_trap": false
+    },
+    "detuned": {
+      "mean_coherence": 0.07033650970111943,
+      "survival_rate": 0.75,
+      "std_coherence": 0.029647029803862968,
+      "is_trap": false
+    },
+    "broadband": {
+      "mean_coherence": 0.07221089315374615,
+      "survival_rate": 0.768,
+      "std_coherence": 0.03024644635039838,
+      "is_trap": false
+    }
+  },
+  "sim5_keeper_storm": {
+    "keeper_0": [
+      {
+        "storm_delta": 0.0,
+        "collapse_rate": 0.0,
+        "protected": true
+      },
+      {
+        "storm_delta": 0.005,
+        "collapse_rate": 0.0,
+        "protected": true
+      },
+      {
+        "storm_delta": 0.01,
+        "collapse_rate": 0.0,
+        "protected": true
+      },
+      {
+        "storm_delta": 0.015,
+        "collapse_rate": 0.0,
+        "protected": true
+      },
+      {
+        "storm_delta": 0.02,
+        "collapse_rate": 0.075,
+        "protected": true
+      },
+      {
+        "storm_delta": 0.03,
+        "collapse_rate": 0.63,
+        "protected": false
+      },
+      {
+        "storm_delta": 0.04,
+        "collapse_rate": 0.995,
+        "protected": false
+      },
+      {
+        "storm_delta": 0.05,
+        "collapse_rate": 1.0,
+        "protected": false
+      }
+    ],
+    "keeper_0.2": [
+      {
+        "storm_delta": 0.0,
+        "collapse_rate": 0.0,
+        "protected": true
+      },
+      {
+        "storm_delta": 0.005,
+        "collapse_rate": 0.0,
+        "protected": true
+      },
+      {
+        "storm_delta": 0.01,
+        "collapse_rate": 0.0,
+        "protected": true
+      },
+      {
+        "storm_delta": 0.015,
+        "collapse_rate": 0.0,
+        "protected": true
+      },
+      {
+        "storm_delta": 0.02,
+        "collapse_rate": 0.0,
+        "protected": true
+      },
+      {
+        "storm_delta": 0.03,
+        "collapse_rate": 0.045,
+        "protected": true
+      },
+      {
+        "storm_delta": 0.04,
+        "collapse_rate": 0.66,
+        "protected": false
+      },
+      {
+        "storm_delta": 0.05,
+        "collapse_rate": 1.0,
+        "protected": false
+      }
+    ],
+    "keeper_0.5": [
+      {
+        "storm_delta": 0.0,
+        "collapse_rate": 0.0,
+        "protected": true
+      },
+      {
+        "storm_delta": 0.005,
+        "collapse_rate": 0.0,
+        "protected": true
+      },
+      {
+        "storm_delta": 0.01,
+        "collapse_rate": 0.0,
+        "protected": true
+      },
+      {
+        "storm_delta": 0.015,
+        "collapse_rate": 0.0,
+        "protected": true
+      },
+      {
+        "storm_delta": 0.02,
+        "collapse_rate": 0.0,
+        "protected": true
+      },
+      {
+        "storm_delta": 0.03,
+        "collapse_rate": 0.0,
+        "protected": true
+      },
+      {
+        "storm_delta": 0.04,
+        "collapse_rate": 0.0,
+        "protected": true
+      },
+      {
+        "storm_delta": 0.05,
+        "collapse_rate": 0.275,
+        "protected": true
+      }
+    ],
+    "keeper_0.7": [
+      {
+        "storm_delta": 0.0,
+        "collapse_rate": 0.0,
+        "protected": true
+      },
+      {
+        "storm_delta": 0.005,
+        "collapse_rate": 0.0,
+        "protected": true
+      },
+      {
+        "storm_delta": 0.01,
+        "collapse_rate": 0.0,
+        "protected": true
+      },
+      {
+        "storm_delta": 0.015,
+        "collapse_rate": 0.0,
+        "protected": true
+      },
+      {
+        "storm_delta": 0.02,
+        "collapse_rate": 0.0,
+        "protected": true
+      },
+      {
+        "storm_delta": 0.03,
+        "collapse_rate": 0.0,
+        "protected": true
+      },
+      {
+        "storm_delta": 0.04,
+        "collapse_rate": 0.0,
+        "protected": true
+      },
+      {
+        "storm_delta": 0.05,
+        "collapse_rate": 0.015,
+        "protected": true
+      }
+    ]
+  },
+  "sim6_multi_edge": [
+    {
+      "n_edges": 1,
+      "mean_coherence": 0.011720904284472899,
+      "survival_rate": 0.0
+    },
+    {
+      "n_edges": 2,
+      "mean_coherence": 0.011654140539372925,
+      "survival_rate": 0.0
+    },
+    {
+      "n_edges": 3,
+      "mean_coherence": 0.011640751807411845,
+      "survival_rate": 0.0
+    },
+    {
+      "n_edges": 4,
+      "mean_coherence": 0.011625973960359639,
+      "survival_rate": 0.0
+    },
+    {
+      "n_edges": 5,
+      "mean_coherence": 0.011652399864851592,
+      "survival_rate": 0.0
+    }
+  ],
+  "sim7_one_singularity": {
+    "projections": {
+      "gravitational": {
+        "exponent": 6,
+        "has_pole": false,
+        "pole_idx": 47
+      },
+      "thermal": {
+        "exponent": 1,
+        "has_pole": true,
+        "pole_idx": 47
+      },
+      "critical": {
+        "exponent": 1.2372,
+        "has_pole": true,
+        "pole_idx": 47
+      },
+      "wike": {
+        "exponent": 2.59,
+        "has_pole": true,
+        "pole_idx": 47
+      }
+    },
+    "all_share_pole": true,
+    "verdict": "ONE SINGULARITY CONFIRMED"
+  },
+  "sim8_ace_model": {
+    "geometric_beta": 0.8663510293398382,
+    "geometric_r2": 0.9999891055255903,
+    "stretched_nu": 0.8527641037921042,
+    "stretched_r2": 0.9969858740847319,
+    "better_model": "geometric",
+    "simulated_coherences": [
+      1.0,
+      0.41846074682759515,
+      0.17754520758187783,
+      0.0765563151916338,
+      0.03154000808594623,
+      0.013779776526883586,
+      0.005980965306358005,
+      0.0024756415054593946,
+      0.0010975890295792656,
+      0.0005047478681498039,
+      0.0001814441571768532
+    ],
+    "n_runs_per_ace": 500,
+    "verdict": "ANDERSON LOCALIZATION \u2014 R\u00b2 difference: 0.003003"
+  },
+  "summary": {
+    "total_computations": 1259000,
+    "runtime_seconds": 14.937321424484253,
+    "simulations_run": 8,
+    "date": "2026-03-30T12:25:34.789232"
+  }
+}
