@@ -1,0 +1,88 @@
+BERRY PHASE TEST RESULTS
+Date: 2026-03-30T12:19:44.377029
+QuTiP: 5.2.3
+gamma_c: 0.0622
+Verdict: INCONCLUSIVE
+
+============================================================
+PART 1: STEADY STATE GEOMETRIC PHASE
+============================================================
+
+NOT_ENCLOSING_1: Above gamma_c, small loop
+  Pancharatnam: +0.000000 * pi
+  Uhlmann:     +0.000000 * pi
+  Crosses gamma_c: False
+
+NOT_ENCLOSING_2: Far above gamma_c
+  Pancharatnam: +0.000000 * pi
+  Uhlmann:     +0.000000 * pi
+  Crosses gamma_c: False
+
+NOT_ENCLOSING_3: Below gamma_c, tiny loop
+  Pancharatnam: +0.000000 * pi
+  Uhlmann:     +0.000000 * pi
+  Crosses gamma_c: False
+
+NOT_ENCLOSING_4: Below gamma_c, small loop
+  Pancharatnam: +0.000000 * pi
+  Uhlmann:     +0.000000 * pi
+  Crosses gamma_c: False
+
+ENCLOSING_1: Centered on gamma_c, medium loop
+  Pancharatnam: +0.000000 * pi
+  Uhlmann:     +0.000000 * pi
+  Crosses gamma_c: True
+
+ENCLOSING_2: Centered on gamma_c, large loop
+  Pancharatnam: +0.000000 * pi
+  Uhlmann:     +0.000000 * pi
+  Crosses gamma_c: True
+
+ENCLOSING_3: Centered on gamma_c, very large loop
+  Pancharatnam: +0.000000 * pi
+  Uhlmann:     +0.000000 * pi
+  Crosses gamma_c: True
+
+ENCLOSING_4: Near gamma_c, crosses boundary
+  Pancharatnam: +0.000000 * pi
+  Uhlmann:     +0.000000 * pi
+  Crosses gamma_c: True
+
+============================================================
+PART 4: RADIUS SWEEP
+============================================================
+
+ Radius/gc | Crosses |   Panch (pi) |     Uhl (pi)
+--------------------------------------------------
+    0.0100 |    True |    +0.000000 |    +0.000000
+    0.0614 |    True |    +0.000000 |    +0.000000
+    0.1128 |    True |    +0.000000 |    +0.000000
+    0.1641 |    True |    +0.000000 |    +0.000000
+    0.2155 |    True |    +0.000000 |    +0.000000
+    0.2669 |    True |    +0.000000 |    +0.000000
+    0.3183 |    True |    +0.000000 |    +0.000000
+    0.3697 |    True |    +0.000000 |    +0.000000
+    0.4210 |    True |    +0.000000 |    +0.000000
+    0.4724 |    True |    +0.000000 |    +0.000000
+    0.5238 |    True |    +0.000000 |    +0.000000
+    0.5752 |    True |    +0.000000 |    +0.000000
+    0.6266 |    True |    +0.000000 |    +0.000000
+    0.6779 |    True |    +0.000000 |    +0.000000
+    0.7293 |    True |    +0.000000 |    +0.000000
+    0.7807 |    True |    +0.000000 |    +0.000000
+    0.8321 |    True |    +0.000000 |    +0.000000
+    0.8834 |    True |    +0.000000 |    +0.000000
+    0.9348 |    True |    +0.000000 |    +0.000000
+    0.9862 |    True |    +0.000000 |    +0.000000
+    1.0376 |    True |    +0.000000 |    +0.000000
+    1.0890 |    True |    +0.000000 |    +0.000000
+    1.1403 |    True |    +0.000000 |    +0.000000
+    1.1917 |    True |    +0.000000 |    +0.000000
+    1.2431 |    True |    +0.000000 |    +0.000000
+    1.2945 |    True |    +0.000000 |    +0.000000
+    1.3459 |    True |    +0.000000 |    +0.000000
+    1.3972 |    True |    +0.000000 |    +0.000000
+    1.4486 |    True |    +0.000000 |    +0.000000
+    1.5000 |    True |    +0.000000 |    +0.000000
+
+VERDICT: INCONCLUSIVE

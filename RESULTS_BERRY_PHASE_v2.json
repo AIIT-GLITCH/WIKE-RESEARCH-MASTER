@@ -1,0 +1,622 @@
+{
+  "metadata": {
+    "date": "2026-03-30T12:22:06.490736",
+    "qutip_version": "5.2.3",
+    "gamma_c": 0.0622,
+    "version": "v2_fixed"
+  },
+  "control_pure_state": [
+    {
+      "theta_deg": 29.999999999999996,
+      "computed_pi": 1.866025581853776,
+      "analytic_pi": -0.1339745962155613,
+      "error_rad": 6.283185866600908
+    },
+    {
+      "theta_deg": 45.0,
+      "computed_pi": 1.7071070719726475,
+      "analytic_pi": -0.2928932188134524,
+      "error_rad": 6.283186220711062
+    },
+    {
+      "theta_deg": 59.99999999999999,
+      "computed_pi": 1.5000003084253317,
+      "analytic_pi": -0.49999999999999983,
+      "error_rad": 6.283186276126342
+    },
+    {
+      "theta_deg": 90.0,
+      "computed_pi": 0.9999999999999997,
+      "analytic_pi": -0.9999999999999999,
+      "error_rad": 6.2831853071795845
+    },
+    {
+      "theta_deg": 119.99999999999999,
+      "computed_pi": 0.499999691574682,
+      "analytic_pi": -1.4999999999999998,
+      "error_rad": 6.283184338232872
+    },
+    {
+      "theta_deg": 180.0,
+      "computed_pi": 7.498786578285487e-33,
+      "analytic_pi": -2.0,
+      "error_rad": 6.283185307179586
+    }
+  ],
+  "dephasing_sweep": [
+    {
+      "gamma": 0,
+      "gamma_over_gc": 0.0,
+      "geometric_phase_pi": -0.004267347060853863,
+      "coherence_rotating": 0.4998679057296899,
+      "coherence_static": 0.5000000000000004,
+      "measurable": true
+    },
+    {
+      "gamma": 0.001,
+      "gamma_over_gc": 0.016077170418006433,
+      "geometric_phase_pi": -0.005218161537014114,
+      "coherence_rotating": 0.33511162666329564,
+      "coherence_static": 0.335159969947516,
+      "measurable": true
+    },
+    {
+      "gamma": 0.005,
+      "gamma_over_gc": 0.08038585209003216,
+      "geometric_phase_pi": -0.011622520287477674,
+      "coherence_rotating": 0.06770998867739748,
+      "coherence_static": 0.0676674055849431,
+      "measurable": true
+    },
+    {
+      "gamma": 0.01,
+      "gamma_over_gc": 0.1607717041800643,
+      "geometric_phase_pi": -0.0316776278777755,
+      "coherence_rotating": 0.009202909217445451,
+      "coherence_static": 0.009157611565973413,
+      "measurable": true
+    },
+    {
+      "gamma": 0.02,
+      "gamma_over_gc": 0.3215434083601286,
+      "geometric_phase_pi": -0.20397710330276483,
+      "coherence_rotating": 0.00020808506254873618,
+      "coherence_static": 0.0001677309919983738,
+      "measurable": true
+    },
+    {
+      "gamma": 0.03,
+      "gamma_over_gc": 0.48231511254019294,
+      "geometric_phase_pi": -0.44110330423937744,
+      "coherence_rotating": 1.7402733303299658e-05,
+      "coherence_static": 3.0723176572242797e-06,
+      "measurable": true
+    },
+    {
+      "gamma": 0.04,
+      "gamma_over_gc": 0.6430868167202572,
+      "geometric_phase_pi": -0.49765098843595196,
+      "coherence_rotating": 2.7027546893101467e-06,
+      "coherence_static": 5.625897703456174e-08,
+      "measurable": true
+    },
+    {
+      "gamma": 0.05,
+      "gamma_over_gc": 0.8038585209003216,
+      "geometric_phase_pi": -0.8282929176656526,
+      "coherence_rotating": 5.612389501110577e-07,
+      "coherence_static": 1.9757086936519132e-09,
+      "measurable": true
+    },
+    {
+      "gamma": 0.0311,
+      "gamma_over_gc": 0.5,
+      "geometric_phase_pi": -0.45786602015219097,
+      "coherence_rotating": 1.361965488808885e-05,
+      "coherence_static": 1.978420071719479e-06,
+      "measurable": true
+    },
+    {
+      "gamma": 0.04976,
+      "gamma_over_gc": 0.8,
+      "geometric_phase_pi": -0.03418381272073266,
+      "coherence_rotating": 7.159184942471878e-07,
+      "coherence_static": 1.1224957345708056e-08,
+      "measurable": true
+    },
+    {
+      "gamma": 0.05598,
+      "gamma_over_gc": 0.9,
+      "geometric_phase_pi": 0.9569416674196234,
+      "coherence_rotating": 4.3711288382601096e-08,
+      "coherence_static": 8.00645765908152e-09,
+      "measurable": true
+    },
+    {
+      "gamma": 0.0622,
+      "gamma_over_gc": 1.0,
+      "geometric_phase_pi": -0.1916795196006741,
+      "coherence_rotating": 1.3208143139781253e-09,
+      "coherence_static": 2.8587444296739437e-08,
+      "measurable": true
+    },
+    {
+      "gamma": 0.06842000000000001,
+      "gamma_over_gc": 1.1,
+      "geometric_phase_pi": 0.9903913748946146,
+      "coherence_rotating": 1.639351234234233e-08,
+      "coherence_static": 1.6011578618417652e-08,
+      "measurable": true
+    },
+    {
+      "gamma": 0.0933,
+      "gamma_over_gc": 1.5,
+      "geometric_phase_pi": 0.0023473186408905474,
+      "coherence_rotating": 1.8828657451132374e-08,
+      "coherence_static": 2.4175270646840932e-08,
+      "measurable": true
+    },
+    {
+      "gamma": 0.1244,
+      "gamma_over_gc": 2.0,
+      "geometric_phase_pi": -0.9792186025303591,
+      "coherence_rotating": 5.743597979659669e-09,
+      "coherence_static": 1.2278707204979662e-08,
+      "measurable": true
+    },
+    {
+      "gamma": 0.1,
+      "gamma_over_gc": 1.6077170418006432,
+      "geometric_phase_pi": -0.006350872923875033,
+      "coherence_rotating": 2.4079812714047002e-08,
+      "coherence_static": 3.870701169511608e-08,
+      "measurable": true
+    },
+    {
+      "gamma": 0.2,
+      "gamma_over_gc": 3.2154340836012865,
+      "geometric_phase_pi": -0.996758064312417,
+      "coherence_rotating": 2.4017173752940406e-08,
+      "coherence_static": 8.913611472035217e-09,
+      "measurable": true
+    },
+    {
+      "gamma": 0.5,
+      "gamma_over_gc": 8.038585209003216,
+      "geometric_phase_pi": -0.002669023988523434,
+      "coherence_rotating": 3.2489543438097924e-09,
+      "coherence_static": 7.706663306898942e-10,
+      "measurable": true
+    },
+    {
+      "gamma": 1.0,
+      "gamma_over_gc": 16.077170418006432,
+      "geometric_phase_pi": -0.9809715686039457,
+      "coherence_rotating": 4.398548187304867e-09,
+      "coherence_static": 4.037915246319701e-10,
+      "measurable": true
+    }
+  ],
+  "fine_gamma_sweep": [
+    {
+      "gamma": 0.0,
+      "gamma_over_gc": 0.0,
+      "berry_pi": -0.004267347060853863,
+      "coherence": 0.4998679057296899,
+      "measurable": true
+    },
+    {
+      "gamma": 0.0029463157894736845,
+      "gamma_over_gc": 0.04736842105263159,
+      "berry_pi": -0.007709128690438838,
+      "coherence": 0.1538883256115507,
+      "measurable": true
+    },
+    {
+      "gamma": 0.005892631578947369,
+      "gamma_over_gc": 0.09473684210526317,
+      "berry_pi": -0.013890423613427483,
+      "coherence": 0.047394168833537115,
+      "measurable": true
+    },
+    {
+      "gamma": 0.008838947368421054,
+      "gamma_over_gc": 0.14210526315789476,
+      "berry_pi": -0.02506603394484926,
+      "coherence": 0.014616312830450211,
+      "measurable": true
+    },
+    {
+      "gamma": 0.011785263157894738,
+      "gamma_over_gc": 0.18947368421052635,
+      "berry_pi": -0.04519183636653929,
+      "coherence": 0.004528494212458116,
+      "measurable": true
+    },
+    {
+      "gamma": 0.014731578947368422,
+      "gamma_over_gc": 0.2368421052631579,
+      "berry_pi": -0.08050101442644877,
+      "coherence": 0.0014239759973030503,
+      "measurable": true
+    },
+    {
+      "gamma": 0.017677894736842108,
+      "gamma_over_gc": 0.2842105263157895,
+      "berry_pi": -0.1393072703130685,
+      "coherence": 0.0004674407217178515,
+      "measurable": true
+    },
+    {
+      "gamma": 0.02062421052631579,
+      "gamma_over_gc": 0.3315789473684211,
+      "berry_pi": -0.22310069741988153,
+      "coherence": 0.00017006365943258948,
+      "measurable": true
+    },
+    {
+      "gamma": 0.023570526315789476,
+      "gamma_over_gc": 0.3789473684210527,
+      "berry_pi": -0.3150819973328249,
+      "coherence": 7.266491117184547e-05,
+      "measurable": true
+    },
+    {
+      "gamma": 0.02651684210526316,
+      "gamma_over_gc": 0.42631578947368426,
+      "berry_pi": -0.3932696384684674,
+      "coherence": 3.5618492818181476e-05,
+      "measurable": true
+    },
+    {
+      "gamma": 0.029463157894736844,
+      "gamma_over_gc": 0.4736842105263158,
+      "berry_pi": -0.4397308768499979,
+      "coherence": 1.9236729558684973e-05,
+      "measurable": true
+    },
+    {
+      "gamma": 0.03240947368421053,
+      "gamma_over_gc": 0.5210526315789474,
+      "berry_pi": -0.47199528697595355,
+      "coherence": 1.06755968337529e-05,
+      "measurable": true
+    },
+    {
+      "gamma": 0.035355789473684215,
+      "gamma_over_gc": 0.568421052631579,
+      "berry_pi": -0.4733673707586757,
+      "coherence": 6.27969053588791e-06,
+      "measurable": true
+    },
+    {
+      "gamma": 0.0383021052631579,
+      "gamma_over_gc": 0.6157894736842107,
+      "berry_pi": -0.4758244500250395,
+      "coherence": 3.7089133950320595e-06,
+      "measurable": true
+    },
+    {
+      "gamma": 0.04124842105263158,
+      "gamma_over_gc": 0.6631578947368422,
+      "berry_pi": -0.3869924582537783,
+      "coherence": 2.6175000995973064e-06,
+      "measurable": true
+    },
+    {
+      "gamma": 0.044194736842105266,
+      "gamma_over_gc": 0.7105263157894738,
+      "berry_pi": -0.8344759941963292,
+      "coherence": 6.539537188686457e-07,
+      "measurable": true
+    },
+    {
+      "gamma": 0.04714105263157895,
+      "gamma_over_gc": 0.7578947368421054,
+      "berry_pi": -0.9099505778121995,
+      "coherence": 6.933798194375702e-07,
+      "measurable": true
+    },
+    {
+      "gamma": 0.05008736842105264,
+      "gamma_over_gc": 0.8052631578947369,
+      "berry_pi": -0.016693889683916326,
+      "coherence": 4.171244995507544e-07,
+      "measurable": true
+    },
+    {
+      "gamma": 0.05303368421052632,
+      "gamma_over_gc": 0.8526315789473685,
+      "berry_pi": 0.9621845398744037,
+      "coherence": 4.555985076270878e-08,
+      "measurable": true
+    },
+    {
+      "gamma": 0.05598,
+      "gamma_over_gc": 0.9,
+      "berry_pi": 0.9569416674196234,
+      "coherence": 4.3711288382601096e-08,
+      "measurable": true
+    },
+    {
+      "gamma": 0.05598,
+      "gamma_over_gc": 0.9,
+      "berry_pi": 0.9569416674196234,
+      "coherence": 4.3711288382601096e-08,
+      "measurable": true
+    },
+    {
+      "gamma": 0.056634736842105265,
+      "gamma_over_gc": 0.9105263157894737,
+      "berry_pi": -0.004486628558551788,
+      "coherence": 2.258858871437749e-07,
+      "measurable": true
+    },
+    {
+      "gamma": 0.05728947368421053,
+      "gamma_over_gc": 0.9210526315789475,
+      "berry_pi": -0.9664017801043336,
+      "coherence": 3.095081078863572e-08,
+      "measurable": true
+    },
+    {
+      "gamma": 0.05794421052631579,
+      "gamma_over_gc": 0.9315789473684212,
+      "berry_pi": -0.9987601488309489,
+      "coherence": 1.6764089260255009e-07,
+      "measurable": true
+    },
+    {
+      "gamma": 0.058598947368421056,
+      "gamma_over_gc": 0.9421052631578948,
+      "berry_pi": 0.008100561973851459,
+      "coherence": 1.1672321473990462e-08,
+      "measurable": true
+    },
+    {
+      "gamma": 0.05925368421052632,
+      "gamma_over_gc": 0.9526315789473685,
+      "berry_pi": -0.011300898370589934,
+      "coherence": 5.152178831207211e-08,
+      "measurable": true
+    },
+    {
+      "gamma": 0.05990842105263158,
+      "gamma_over_gc": 0.9631578947368422,
+      "berry_pi": -0.9984856744898131,
+      "coherence": 1.391545722880678e-07,
+      "measurable": true
+    },
+    {
+      "gamma": 0.060563157894736847,
+      "gamma_over_gc": 0.9736842105263159,
+      "berry_pi": -0.004878420535318086,
+      "coherence": 8.949777996669708e-08,
+      "measurable": true
+    },
+    {
+      "gamma": 0.06121789473684211,
+      "gamma_over_gc": 0.9842105263157895,
+      "berry_pi": -0.9948261908177591,
+      "coherence": 9.56153239342604e-08,
+      "measurable": true
+    },
+    {
+      "gamma": 0.061872631578947374,
+      "gamma_over_gc": 0.9947368421052633,
+      "berry_pi": -0.004866183665485831,
+      "coherence": 3.825602416568811e-08,
+      "measurable": true
+    },
+    {
+      "gamma": 0.06252736842105264,
+      "gamma_over_gc": 1.0052631578947369,
+      "berry_pi": 0.9951975781552176,
+      "coherence": 1.846619935773672e-07,
+      "measurable": true
+    },
+    {
+      "gamma": 0.0631821052631579,
+      "gamma_over_gc": 1.0157894736842106,
+      "berry_pi": -0.008073285057426693,
+      "coherence": 2.0085805398191353e-08,
+      "measurable": true
+    },
+    {
+      "gamma": 0.06383684210526316,
+      "gamma_over_gc": 1.0263157894736843,
+      "berry_pi": 0.9929090803650058,
+      "coherence": 1.12288860650699e-08,
+      "measurable": true
+    },
+    {
+      "gamma": 0.06449157894736843,
+      "gamma_over_gc": 1.036842105263158,
+      "berry_pi": 0.9989552506634297,
+      "coherence": 8.186503986064175e-09,
+      "measurable": true
+    },
+    {
+      "gamma": 0.06514631578947369,
+      "gamma_over_gc": 1.0473684210526317,
+      "berry_pi": -0.998598594879624,
+      "coherence": 4.498232003527803e-08,
+      "measurable": true
+    },
+    {
+      "gamma": 0.06580105263157895,
+      "gamma_over_gc": 1.0578947368421054,
+      "berry_pi": 0.9981190271949539,
+      "coherence": 3.2570455252236746e-08,
+      "measurable": true
+    },
+    {
+      "gamma": 0.06645578947368422,
+      "gamma_over_gc": 1.0684210526315792,
+      "berry_pi": -0.9732452700901273,
+      "coherence": 1.3969902006383454e-08,
+      "measurable": true
+    },
+    {
+      "gamma": 0.06711052631578948,
+      "gamma_over_gc": 1.0789473684210529,
+      "berry_pi": 0.0015927528289649577,
+      "coherence": 2.0744532800499155e-08,
+      "measurable": true
+    },
+    {
+      "gamma": 0.06776526315789475,
+      "gamma_over_gc": 1.0894736842105264,
+      "berry_pi": 0.02031131400970454,
+      "coherence": 1.8332558635935847e-08,
+      "measurable": true
+    },
+    {
+      "gamma": 0.06842000000000001,
+      "gamma_over_gc": 1.1,
+      "berry_pi": 0.9903913748946146,
+      "coherence": 1.639351234234233e-08,
+      "measurable": true
+    },
+    {
+      "gamma": 0.06842000000000001,
+      "gamma_over_gc": 1.1,
+      "berry_pi": 0.9903913748946146,
+      "coherence": 1.639351234234233e-08,
+      "measurable": true
+    },
+    {
+      "gamma": 0.08118736842105265,
+      "gamma_over_gc": 1.3052631578947371,
+      "berry_pi": 0.9928460300560771,
+      "coherence": 6.980618713996654e-08,
+      "measurable": true
+    },
+    {
+      "gamma": 0.09395473684210527,
+      "gamma_over_gc": 1.510526315789474,
+      "berry_pi": 0.00572300878388703,
+      "coherence": 3.4363355649961844e-08,
+      "measurable": true
+    },
+    {
+      "gamma": 0.1067221052631579,
+      "gamma_over_gc": 1.7157894736842105,
+      "berry_pi": 0.9969920433882842,
+      "coherence": 1.2892458386148566e-08,
+      "measurable": true
+    },
+    {
+      "gamma": 0.11948947368421053,
+      "gamma_over_gc": 1.9210526315789476,
+      "berry_pi": -0.03209310323104352,
+      "coherence": 1.7875638630189435e-09,
+      "measurable": true
+    },
+    {
+      "gamma": 0.13225684210526317,
+      "gamma_over_gc": 2.1263157894736846,
+      "berry_pi": 0.0004989825626222195,
+      "coherence": 2.3249456178140017e-08,
+      "measurable": true
+    },
+    {
+      "gamma": 0.1450242105263158,
+      "gamma_over_gc": 2.3315789473684214,
+      "berry_pi": -0.012673050742192752,
+      "coherence": 9.608411179413724e-09,
+      "measurable": true
+    },
+    {
+      "gamma": 0.15779157894736842,
+      "gamma_over_gc": 2.536842105263158,
+      "berry_pi": -0.9992886834954371,
+      "coherence": 1.172148481997072e-08,
+      "measurable": true
+    },
+    {
+      "gamma": 0.17055894736842106,
+      "gamma_over_gc": 2.742105263157895,
+      "berry_pi": 0.003218996484860925,
+      "coherence": 2.9099429212322502e-08,
+      "measurable": true
+    },
+    {
+      "gamma": 0.1833263157894737,
+      "gamma_over_gc": 2.947368421052632,
+      "berry_pi": 0.006255734011412695,
+      "coherence": 1.7520449621884187e-08,
+      "measurable": true
+    },
+    {
+      "gamma": 0.19609368421052634,
+      "gamma_over_gc": 3.1526315789473687,
+      "berry_pi": 7.351384433225778e-05,
+      "coherence": 8.398011518263258e-09,
+      "measurable": true
+    },
+    {
+      "gamma": 0.20886105263157895,
+      "gamma_over_gc": 3.3578947368421055,
+      "berry_pi": 0.9992173022089234,
+      "coherence": 1.1733941155924259e-08,
+      "measurable": true
+    },
+    {
+      "gamma": 0.22162842105263159,
+      "gamma_over_gc": 3.5631578947368423,
+      "berry_pi": 0.0015700288457174473,
+      "coherence": 1.0576263105945352e-08,
+      "measurable": true
+    },
+    {
+      "gamma": 0.23439578947368422,
+      "gamma_over_gc": 3.768421052631579,
+      "berry_pi": -0.9211817479991814,
+      "coherence": 1.501872090338189e-09,
+      "measurable": true
+    },
+    {
+      "gamma": 0.24716315789473683,
+      "gamma_over_gc": 3.973684210526316,
+      "berry_pi": 0.005902364011871584,
+      "coherence": 1.3911811500116294e-08,
+      "measurable": true
+    },
+    {
+      "gamma": 0.2599305263157895,
+      "gamma_over_gc": 4.178947368421053,
+      "berry_pi": -0.9968969581168491,
+      "coherence": 2.4246458994632513e-08,
+      "measurable": true
+    },
+    {
+      "gamma": 0.27269789473684214,
+      "gamma_over_gc": 4.3842105263157904,
+      "berry_pi": -0.9979372912465823,
+      "coherence": 1.767334999752781e-08,
+      "measurable": true
+    },
+    {
+      "gamma": 0.2854652631578948,
+      "gamma_over_gc": 4.589473684210527,
+      "berry_pi": -0.9970251607241226,
+      "coherence": 2.2248293518899645e-08,
+      "measurable": true
+    },
+    {
+      "gamma": 0.2982326315789474,
+      "gamma_over_gc": 4.794736842105264,
+      "berry_pi": 0.003959028339927838,
+      "coherence": 2.6930036612431634e-09,
+      "measurable": true
+    },
+    {
+      "gamma": 0.311,
+      "gamma_over_gc": 5.0,
+      "berry_pi": 0.010355870205015055,
+      "coherence": 5.567806448649038e-09,
+      "measurable": true
+    }
+  ]
+}

@@ -1,0 +1,668 @@
+{
+  "metadata": {
+    "date": "2026-03-30T12:18:40.239149",
+    "gamma_c": 0.0622,
+    "omega_base": 1.0,
+    "n_loop_points": 200,
+    "framework": "QuTiP 5.2.3"
+  },
+  "tests": [
+    {
+      "name": "NOT_ENCLOSING_1",
+      "description": "Above gamma_c, small loop",
+      "gamma_center": 0.1244,
+      "omega_center": 1.0,
+      "radius": 0.01866,
+      "expected_encloses_gc": false,
+      "actually_crosses_gc": "False",
+      "pancharatnam_phase_rad": 0.0,
+      "pancharatnam_phase_pi": 0.0,
+      "uhlmann_phase_rad": 0.0,
+      "uhlmann_phase_pi": 0.0,
+      "mean_coherence": 3.8996583739958624e-17,
+      "min_coherence": 0.0,
+      "max_coherence": 1.3877787807814457e-16,
+      "gamma_range": [
+        0.10574,
+        0.14306
+      ],
+      "coherence_at_points": [
+        0.0,
+        5.551115123125783e-17,
+        0.0,
+        5.551115123125783e-17,
+        2.7755575615628914e-17,
+        0.0,
+        8.326672684688674e-17,
+        0.0,
+        2.7755575615628914e-17,
+        2.7755575615628914e-17
+      ]
+    },
+    {
+      "name": "NOT_ENCLOSING_2",
+      "description": "Far above gamma_c",
+      "gamma_center": 0.1866,
+      "omega_center": 1.0,
+      "radius": 0.0311,
+      "expected_encloses_gc": false,
+      "actually_crosses_gc": "False",
+      "pancharatnam_phase_rad": 0.0,
+      "pancharatnam_phase_pi": 0.0,
+      "uhlmann_phase_rad": 0.0,
+      "uhlmann_phase_pi": 0.0,
+      "mean_coherence": 3.3861802251067274e-17,
+      "min_coherence": 0.0,
+      "max_coherence": 1.3877787807814457e-16,
+      "gamma_range": [
+        0.1555,
+        0.21769999999999998
+      ],
+      "coherence_at_points": [
+        2.7755575615628914e-17,
+        0.0,
+        8.326672684688674e-17,
+        0.0,
+        5.551115123125783e-17,
+        5.551115123125783e-17,
+        2.7755575615628914e-17,
+        5.551115123125783e-17,
+        2.7755575615628914e-17,
+        0.0
+      ]
+    },
+    {
+      "name": "NOT_ENCLOSING_3",
+      "description": "Below gamma_c, tiny loop",
+      "gamma_center": 0.01866,
+      "omega_center": 1.0,
+      "radius": 0.00622,
+      "expected_encloses_gc": false,
+      "actually_crosses_gc": "False",
+      "pancharatnam_phase_rad": 0.0,
+      "pancharatnam_phase_pi": 0.0,
+      "uhlmann_phase_rad": 0.0,
+      "uhlmann_phase_pi": 0.0,
+      "mean_coherence": 4.274358644806853e-17,
+      "min_coherence": 0.0,
+      "max_coherence": 1.3877787807814457e-16,
+      "gamma_range": [
+        0.01244,
+        0.02488
+      ],
+      "coherence_at_points": [
+        2.7755575615628914e-17,
+        5.551115123125783e-17,
+        1.1102230246251565e-16,
+        2.7755575615628914e-17,
+        0.0,
+        1.1102230246251565e-16,
+        0.0,
+        1.3877787807814457e-16,
+        2.7755575615628914e-17,
+        0.0
+      ]
+    },
+    {
+      "name": "NOT_ENCLOSING_4",
+      "description": "Below gamma_c, small loop",
+      "gamma_center": 0.0311,
+      "omega_center": 1.0,
+      "radius": 0.01244,
+      "expected_encloses_gc": false,
+      "actually_crosses_gc": "False",
+      "pancharatnam_phase_rad": 0.0,
+      "pancharatnam_phase_pi": 0.0,
+      "uhlmann_phase_rad": 0.0,
+      "uhlmann_phase_pi": 0.0,
+      "mean_coherence": 4.191091917959966e-17,
+      "min_coherence": 0.0,
+      "max_coherence": 1.3877787807814457e-16,
+      "gamma_range": [
+        0.01866,
+        0.043539999999999995
+      ],
+      "coherence_at_points": [
+        2.7755575615628914e-17,
+        8.326672684688674e-17,
+        5.551115123125783e-17,
+        5.551115123125783e-17,
+        2.7755575615628914e-17,
+        2.7755575615628914e-17,
+        2.7755575615628914e-17,
+        0.0,
+        5.551115123125783e-17,
+        2.7755575615628914e-17
+      ]
+    },
+    {
+      "name": "ENCLOSING_1",
+      "description": "Centered on gamma_c, medium loop",
+      "gamma_center": 0.0622,
+      "omega_center": 1.0,
+      "radius": 0.0311,
+      "expected_encloses_gc": true,
+      "actually_crosses_gc": "True",
+      "pancharatnam_phase_rad": 0.0,
+      "pancharatnam_phase_pi": 0.0,
+      "uhlmann_phase_rad": 0.0,
+      "uhlmann_phase_pi": 0.0,
+      "mean_coherence": 4.177214130152151e-17,
+      "min_coherence": 0.0,
+      "max_coherence": 1.3877787807814457e-16,
+      "gamma_range": [
+        0.0311,
+        0.0933
+      ],
+      "coherence_at_points": [
+        2.7755575615628914e-17,
+        1.1102230246251565e-16,
+        2.7755575615628914e-17,
+        5.551115123125783e-17,
+        2.7755575615628914e-17,
+        2.7755575615628914e-17,
+        0.0,
+        0.0,
+        2.7755575615628914e-17,
+        5.551115123125783e-17
+      ]
+    },
+    {
+      "name": "ENCLOSING_2",
+      "description": "Centered on gamma_c, large loop",
+      "gamma_center": 0.0622,
+      "omega_center": 1.0,
+      "radius": 0.04976,
+      "expected_encloses_gc": true,
+      "actually_crosses_gc": "True",
+      "pancharatnam_phase_rad": 0.0,
+      "pancharatnam_phase_pi": 0.0,
+      "uhlmann_phase_rad": 0.0,
+      "uhlmann_phase_pi": 0.0,
+      "mean_coherence": 4.288236432614667e-17,
+      "min_coherence": 0.0,
+      "max_coherence": 1.3877787807814457e-16,
+      "gamma_range": [
+        0.01244,
+        0.11196
+      ],
+      "coherence_at_points": [
+        2.7755575615628914e-17,
+        5.551115123125783e-17,
+        0.0,
+        2.7755575615628914e-17,
+        5.551115123125783e-17,
+        1.1102230246251565e-16,
+        0.0,
+        2.7755575615628914e-17,
+        0.0,
+        8.326672684688674e-17
+      ]
+    },
+    {
+      "name": "ENCLOSING_3",
+      "description": "Centered on gamma_c, very large loop",
+      "gamma_center": 0.0622,
+      "omega_center": 1.0,
+      "radius": 0.07464,
+      "expected_encloses_gc": true,
+      "actually_crosses_gc": "True",
+      "pancharatnam_phase_rad": 0.0,
+      "pancharatnam_phase_pi": 0.0,
+      "uhlmann_phase_rad": 0.0,
+      "uhlmann_phase_pi": 0.0,
+      "mean_coherence": 3.9690473130349345e-17,
+      "min_coherence": 0.0,
+      "max_coherence": 1.3877787807814457e-16,
+      "gamma_range": [
+        1e-06,
+        0.13684
+      ],
+      "coherence_at_points": [
+        0.0,
+        0.0,
+        2.7755575615628914e-17,
+        2.7755575615628914e-17,
+        0.0,
+        0.0,
+        0.0,
+        2.7755575615628914e-17,
+        8.326672684688674e-17,
+        2.7755575615628914e-17
+      ]
+    },
+    {
+      "name": "ENCLOSING_4",
+      "description": "Near gamma_c, crosses boundary",
+      "gamma_center": 0.04976,
+      "omega_center": 1.0,
+      "radius": 0.05598,
+      "expected_encloses_gc": true,
+      "actually_crosses_gc": "True",
+      "pancharatnam_phase_rad": 0.0,
+      "pancharatnam_phase_pi": 0.0,
+      "uhlmann_phase_rad": 0.0,
+      "uhlmann_phase_pi": 0.0,
+      "mean_coherence": 4.3576253716537396e-17,
+      "min_coherence": 0.0,
+      "max_coherence": 1.3877787807814457e-16,
+      "gamma_range": [
+        1e-06,
+        0.10574
+      ],
+      "coherence_at_points": [
+        0.0,
+        5.551115123125783e-17,
+        0.0,
+        2.7755575615628914e-17,
+        5.551115123125783e-17,
+        0.0,
+        0.0,
+        8.326672684688674e-17,
+        2.7755575615628914e-17,
+        8.326672684688674e-17
+      ]
+    }
+  ],
+  "adiabatic_tests": [
+    {
+      "name": "NOT_ENCLOSING_1_adiabatic",
+      "pancharatnam_phase_pi": 0.0,
+      "uhlmann_phase_pi": 0.0,
+      "final_overlap_abs": 0.5009945987884201,
+      "final_overlap_phase": 0.0,
+      "mean_coherence": 0.07540900930546848
+    },
+    {
+      "name": "NOT_ENCLOSING_2_adiabatic",
+      "pancharatnam_phase_pi": 0.0,
+      "uhlmann_phase_pi": 0.0,
+      "final_overlap_abs": 0.500044355765914,
+      "final_overlap_phase": 0.0,
+      "mean_coherence": 0.0489013447647511
+    },
+    {
+      "name": "NOT_ENCLOSING_3_adiabatic",
+      "pancharatnam_phase_pi": 0.0,
+      "uhlmann_phase_pi": 0.0,
+      "final_overlap_abs": 0.6966864069762431,
+      "final_overlap_phase": 0.0,
+      "mean_coherence": 0.3228379056579105
+    },
+    {
+      "name": "NOT_ENCLOSING_4_adiabatic",
+      "pancharatnam_phase_pi": 0.0,
+      "uhlmann_phase_pi": 0.0,
+      "final_overlap_abs": 0.6055947131318512,
+      "final_overlap_phase": 0.0,
+      "mean_coherence": 0.24829676776337212
+    },
+    {
+      "name": "ENCLOSING_1_adiabatic",
+      "pancharatnam_phase_pi": 0.0,
+      "uhlmann_phase_pi": 0.0,
+      "final_overlap_abs": 0.5223004194291792,
+      "final_overlap_phase": 0.0,
+      "mean_coherence": 0.1407750870786959
+    },
+    {
+      "name": "ENCLOSING_2_adiabatic",
+      "pancharatnam_phase_pi": 0.0,
+      "uhlmann_phase_pi": 0.0,
+      "final_overlap_abs": 0.5223004498241633,
+      "final_overlap_phase": 0.0,
+      "mean_coherence": 0.1346866081218505
+    },
+    {
+      "name": "ENCLOSING_3_adiabatic",
+      "pancharatnam_phase_pi": 0.0,
+      "uhlmann_phase_pi": 0.0,
+      "final_overlap_abs": 0.5206500776706217,
+      "final_overlap_phase": 0.0,
+      "mean_coherence": 0.1257999654833602
+    },
+    {
+      "name": "ENCLOSING_4_adiabatic",
+      "pancharatnam_phase_pi": 0.0,
+      "uhlmann_phase_pi": 0.0,
+      "final_overlap_abs": 0.5402584624752886,
+      "final_overlap_phase": 0.0,
+      "mean_coherence": 0.16232037406471317
+    }
+  ],
+  "pure_state_control": [
+    {
+      "theta_rad": 0.5235987755982988,
+      "theta_deg": 29.999999999999996,
+      "computed_phase_rad": 0.0,
+      "computed_phase_pi": 0.0,
+      "analytic_phase_rad": -0.42089360723846625,
+      "analytic_phase_pi": -0.1339745962155613,
+      "error_rad": 0.42089360723846625
+    },
+    {
+      "theta_rad": 0.7853981633974483,
+      "theta_deg": 45.0,
+      "computed_phase_rad": 0.0,
+      "computed_phase_pi": 0.0,
+      "analytic_phase_rad": -0.92015118451061,
+      "analytic_phase_pi": -0.2928932188134524,
+      "error_rad": 0.92015118451061
+    },
+    {
+      "theta_rad": 1.0471975511965976,
+      "theta_deg": 59.99999999999999,
+      "computed_phase_rad": 0.0,
+      "computed_phase_pi": 0.0,
+      "analytic_phase_rad": -1.5707963267948961,
+      "analytic_phase_pi": -0.49999999999999983,
+      "error_rad": 1.5707963267948961
+    },
+    {
+      "theta_rad": 1.5707963267948966,
+      "theta_deg": 90.0,
+      "computed_phase_rad": 0.0,
+      "computed_phase_pi": 0.0,
+      "analytic_phase_rad": -3.1415926535897927,
+      "analytic_phase_pi": -0.9999999999999999,
+      "error_rad": 3.1415926535897927
+    },
+    {
+      "theta_rad": 2.0943951023931953,
+      "theta_deg": 119.99999999999999,
+      "computed_phase_rad": 0.0,
+      "computed_phase_pi": 0.0,
+      "analytic_phase_rad": -4.712388980384689,
+      "analytic_phase_pi": -1.4999999999999998,
+      "error_rad": 4.712388980384689
+    },
+    {
+      "theta_rad": 2.356194490192345,
+      "theta_deg": 135.0,
+      "computed_phase_rad": 0.0,
+      "computed_phase_pi": 0.0,
+      "analytic_phase_rad": -5.363034122668976,
+      "analytic_phase_pi": -1.7071067811865475,
+      "error_rad": 5.363034122668976
+    }
+  ],
+  "radius_sweep": [
+    {
+      "radius": 0.000622,
+      "radius_over_gc": 0.01,
+      "crosses_gc": "True",
+      "pancharatnam_pi": 0.0,
+      "uhlmann_pi": 0.0,
+      "gamma_min": 0.061578,
+      "gamma_max": 0.062822
+    },
+    {
+      "radius": 0.003817793103448276,
+      "radius_over_gc": 0.06137931034482759,
+      "crosses_gc": "True",
+      "pancharatnam_pi": 0.0,
+      "uhlmann_pi": 0.0,
+      "gamma_min": 0.05838220689655172,
+      "gamma_max": 0.06601779310344827
+    },
+    {
+      "radius": 0.007013586206896552,
+      "radius_over_gc": 0.11275862068965517,
+      "crosses_gc": "True",
+      "pancharatnam_pi": 0.0,
+      "uhlmann_pi": 0.0,
+      "gamma_min": 0.05518641379310345,
+      "gamma_max": 0.06921358620689655
+    },
+    {
+      "radius": 0.010209379310344826,
+      "radius_over_gc": 0.16413793103448274,
+      "crosses_gc": "True",
+      "pancharatnam_pi": 0.0,
+      "uhlmann_pi": 0.0,
+      "gamma_min": 0.051990620689655175,
+      "gamma_max": 0.07240937931034483
+    },
+    {
+      "radius": 0.013405172413793102,
+      "radius_over_gc": 0.21551724137931033,
+      "crosses_gc": "True",
+      "pancharatnam_pi": 0.0,
+      "uhlmann_pi": 0.0,
+      "gamma_min": 0.048794827586206894,
+      "gamma_max": 0.0756051724137931
+    },
+    {
+      "radius": 0.01660096551724138,
+      "radius_over_gc": 0.26689655172413795,
+      "crosses_gc": "True",
+      "pancharatnam_pi": 0.0,
+      "uhlmann_pi": 0.0,
+      "gamma_min": 0.04559903448275862,
+      "gamma_max": 0.07880096551724138
+    },
+    {
+      "radius": 0.019796758620689654,
+      "radius_over_gc": 0.3182758620689655,
+      "crosses_gc": "True",
+      "pancharatnam_pi": 0.0,
+      "uhlmann_pi": 0.0,
+      "gamma_min": 0.04240324137931034,
+      "gamma_max": 0.08199675862068966
+    },
+    {
+      "radius": 0.02299255172413793,
+      "radius_over_gc": 0.3696551724137931,
+      "crosses_gc": "True",
+      "pancharatnam_pi": 0.0,
+      "uhlmann_pi": 0.0,
+      "gamma_min": 0.03920744827586207,
+      "gamma_max": 0.08519255172413792
+    },
+    {
+      "radius": 0.026188344827586207,
+      "radius_over_gc": 0.4210344827586207,
+      "crosses_gc": "True",
+      "pancharatnam_pi": 0.0,
+      "uhlmann_pi": 0.0,
+      "gamma_min": 0.036011655172413795,
+      "gamma_max": 0.0883883448275862
+    },
+    {
+      "radius": 0.029384137931034483,
+      "radius_over_gc": 0.4724137931034483,
+      "crosses_gc": "True",
+      "pancharatnam_pi": 0.0,
+      "uhlmann_pi": 0.0,
+      "gamma_min": 0.032815862068965515,
+      "gamma_max": 0.09158413793103448
+    },
+    {
+      "radius": 0.032579931034482756,
+      "radius_over_gc": 0.5237931034482758,
+      "crosses_gc": "True",
+      "pancharatnam_pi": 0.0,
+      "uhlmann_pi": 0.0,
+      "gamma_min": 0.029620068965517242,
+      "gamma_max": 0.09477993103448276
+    },
+    {
+      "radius": 0.03577572413793103,
+      "radius_over_gc": 0.5751724137931034,
+      "crosses_gc": "True",
+      "pancharatnam_pi": 0.0,
+      "uhlmann_pi": 0.0,
+      "gamma_min": 0.02642427586206897,
+      "gamma_max": 0.09797572413793103
+    },
+    {
+      "radius": 0.0389715172413793,
+      "radius_over_gc": 0.6265517241379309,
+      "crosses_gc": "True",
+      "pancharatnam_pi": 0.0,
+      "uhlmann_pi": 0.0,
+      "gamma_min": 0.023228482758620696,
+      "gamma_max": 0.1011715172413793
+    },
+    {
+      "radius": 0.04216731034482758,
+      "radius_over_gc": 0.6779310344827586,
+      "crosses_gc": "True",
+      "pancharatnam_pi": 0.0,
+      "uhlmann_pi": 0.0,
+      "gamma_min": 0.020032689655172416,
+      "gamma_max": 0.10436731034482757
+    },
+    {
+      "radius": 0.045363103448275856,
+      "radius_over_gc": 0.7293103448275862,
+      "crosses_gc": "True",
+      "pancharatnam_pi": 0.0,
+      "uhlmann_pi": 0.0,
+      "gamma_min": 0.016836896551724143,
+      "gamma_max": 0.10756310344827585
+    },
+    {
+      "radius": 0.048558896551724136,
+      "radius_over_gc": 0.7806896551724137,
+      "crosses_gc": "True",
+      "pancharatnam_pi": 0.0,
+      "uhlmann_pi": 0.0,
+      "gamma_min": 0.013641103448275863,
+      "gamma_max": 0.11075889655172413
+    },
+    {
+      "radius": 0.05175468965517241,
+      "radius_over_gc": 0.8320689655172413,
+      "crosses_gc": "True",
+      "pancharatnam_pi": 0.0,
+      "uhlmann_pi": 0.0,
+      "gamma_min": 0.01044531034482759,
+      "gamma_max": 0.11395468965517241
+    },
+    {
+      "radius": 0.05495048275862068,
+      "radius_over_gc": 0.8834482758620689,
+      "crosses_gc": "True",
+      "pancharatnam_pi": 0.0,
+      "uhlmann_pi": 0.0,
+      "gamma_min": 0.007249517241379316,
+      "gamma_max": 0.11715048275862068
+    },
+    {
+      "radius": 0.05814627586206896,
+      "radius_over_gc": 0.9348275862068965,
+      "crosses_gc": "True",
+      "pancharatnam_pi": 0.0,
+      "uhlmann_pi": 0.0,
+      "gamma_min": 0.004053724137931036,
+      "gamma_max": 0.12034627586206896
+    },
+    {
+      "radius": 0.061342068965517235,
+      "radius_over_gc": 0.9862068965517241,
+      "crosses_gc": "True",
+      "pancharatnam_pi": 0.0,
+      "uhlmann_pi": 0.0,
+      "gamma_min": 0.0008579310344827631,
+      "gamma_max": 0.12354206896551723
+    },
+    {
+      "radius": 0.06453786206896552,
+      "radius_over_gc": 1.0375862068965518,
+      "crosses_gc": "True",
+      "pancharatnam_pi": 0.0,
+      "uhlmann_pi": 0.0,
+      "gamma_min": 1e-06,
+      "gamma_max": 0.1267378620689655
+    },
+    {
+      "radius": 0.06773365517241378,
+      "radius_over_gc": 1.0889655172413792,
+      "crosses_gc": "True",
+      "pancharatnam_pi": 0.0,
+      "uhlmann_pi": 0.0,
+      "gamma_min": 1e-06,
+      "gamma_max": 0.1299336551724138
+    },
+    {
+      "radius": 0.07092944827586206,
+      "radius_over_gc": 1.1403448275862067,
+      "crosses_gc": "True",
+      "pancharatnam_pi": 0.0,
+      "uhlmann_pi": 0.0,
+      "gamma_min": 1e-06,
+      "gamma_max": 0.13312944827586207
+    },
+    {
+      "radius": 0.07412524137931034,
+      "radius_over_gc": 1.1917241379310344,
+      "crosses_gc": "True",
+      "pancharatnam_pi": 0.0,
+      "uhlmann_pi": 0.0,
+      "gamma_min": 1e-06,
+      "gamma_max": 0.13632524137931035
+    },
+    {
+      "radius": 0.07732103448275861,
+      "radius_over_gc": 1.2431034482758618,
+      "crosses_gc": "True",
+      "pancharatnam_pi": 0.0,
+      "uhlmann_pi": 0.0,
+      "gamma_min": 1e-06,
+      "gamma_max": 0.1395210344827586
+    },
+    {
+      "radius": 0.08051682758620689,
+      "radius_over_gc": 1.2944827586206895,
+      "crosses_gc": "True",
+      "pancharatnam_pi": 0.0,
+      "uhlmann_pi": 0.0,
+      "gamma_min": 1e-06,
+      "gamma_max": 0.14271682758620688
+    },
+    {
+      "radius": 0.08371262068965517,
+      "radius_over_gc": 1.3458620689655172,
+      "crosses_gc": "True",
+      "pancharatnam_pi": 0.0,
+      "uhlmann_pi": 0.0,
+      "gamma_min": 1e-06,
+      "gamma_max": 0.14591262068965516
+    },
+    {
+      "radius": 0.08690841379310345,
+      "radius_over_gc": 1.3972413793103449,
+      "crosses_gc": "True",
+      "pancharatnam_pi": 0.0,
+      "uhlmann_pi": 0.0,
+      "gamma_min": 1e-06,
+      "gamma_max": 0.14910841379310344
+    },
+    {
+      "radius": 0.09010420689655171,
+      "radius_over_gc": 1.4486206896551723,
+      "crosses_gc": "True",
+      "pancharatnam_pi": 0.0,
+      "uhlmann_pi": 0.0,
+      "gamma_min": 1e-06,
+      "gamma_max": 0.15230420689655172
+    },
+    {
+      "radius": 0.0933,
+      "radius_over_gc": 1.5,
+      "crosses_gc": "True",
+      "pancharatnam_pi": 0.0,
+      "uhlmann_pi": 0.0,
+      "gamma_min": 1e-06,
+      "gamma_max": 0.1555
+    }
+  ],
+  "verdict": "INCONCLUSIVE",
+  "summary": {
+    "enclosing_panch_mean": 0.0,
+    "not_enclosing_panch_mean": 0.0,
+    "enclosing_uhl_mean": 0.0,
+    "not_enclosing_uhl_mean": 0.0
+  }
+}
