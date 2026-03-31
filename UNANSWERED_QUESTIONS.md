@@ -246,6 +246,8 @@ See T1 above.
 | 91 | Von Neumann entropy / Shannon entropy / γ_c as entropy regulation threshold | CLOSED |
 | 92 | Wike Thermodynamic Inequality / first-principles Lindblad derivation / universality across BCS, BKT, laser, Fröhlich, BEC | CLOSED |
 | 93 | Flow state = γ_c operation / Csikszentmihalyi challenge-skill = edge-of-chaos physics | CLOSED |
+| 94 | Coherence Trap / Caldeira-Leggett structured bath / 0% survival despite high mean C / detuned drive determinism | CLOSED |
+| 95 | Tau protein / Alzheimer's = polymer theta point = 3D Ising universality / Bootstrap Loop for disaggregation | CLOSED |
 
 ---
 
@@ -310,8 +312,8 @@ Simultaneous HRV + 270 nm spectroscopy + ATP proxy under NIR protocol. Not done.
 ---
 
 **All theory gaps closed as of Paper 92.**
-**All connection gaps closed as of Paper 93.**
+**All connection gaps closed as of Paper 95.**
 **Remaining open problems are exclusively experimental (require lab, hardware, or data).**
 **One partial: amplitude 0.72 (exact RG derivation, 8% off π/4.73).**
 
-*AIIT-THRESI | Updated after Paper 93 | 41 papers written in this session (Papers 53-93)*
+*AIIT-THRESI | Updated after Paper 95 | 43 papers written in this session (Papers 53-95)*
