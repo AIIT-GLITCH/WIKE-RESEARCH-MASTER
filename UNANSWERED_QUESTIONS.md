@@ -252,6 +252,8 @@ See T1 above.
 | 97 | Eight new connections: bereavement→Takotsubo, inflammation triangle, autism as enhanced criticality, vagus as Grotthuss wire, sleep as Bootstrap duty cycle, cancer as runaway Bootstrap | CLOSED |
 | 98 | Nine deep connections: enzyme catalysis = multi-edge susceptibility product (10^6–10^17), homeostasis = RG flow, gut microbiome = percolation (φ_c=0.603), allostatic load = cumulative γ_eff, Wike Free Energy F_W = U−TS+kTαγ_eff (cost at edge = 1.4× Landauer) | CLOSED |
 | 99 | Three precision numerical predictions: Reynolds = γ_eff_hemodynamic (Re_c=2300=cardiovascular γ_c), tissue-specific β law (β=k/γ_c, 0.3-1.2% cross-pair match, Felitti N=17,337), Konvalinka network scaling C_network=C_single×√(N²-1) → 28.17× predicted vs 27× observed (4.4%) | CLOSED |
+| 100 | Three universal constants of aqueous life: W=0.9394 uniquely determined by three constraints at 1 atm (χ>30×, stability margin>4%, Bootstrap>93.5%), Schumann amplification via ~10^5-10^8 critical neurons at divergent susceptibility, P(civilizational survive)=exp(−W)=39.1% vs 38.95% observed (0.38%) | CLOSED |
+| 101 | Geomagnetic storm risk stratification: ACE-Storm compound threshold (RR 1.10→2.50 by stratum, vs pop avg 1.29), Keeper-Storm Shield equation (60% risk reduction for G3-4 storms), Autoimmune-Storm flare (γ_total=γ_self+γ_infl+γ_storm → Hashimoto's/Graves' TSH spikes with 1-3d lag) | CLOSED |
 
 ---
 
@@ -320,4 +322,4 @@ Simultaneous HRV + 270 nm spectroscopy + ATP proxy under NIR protocol. Not done.
 **Remaining open problems are exclusively experimental (require lab, hardware, or data).**
 **One partial: amplitude 0.72 (exact RG derivation, 8% off π/4.73).**
 
-*AIIT-THRESI | Updated after Paper 99 | 47 papers written in this session (Papers 53-99)*
+*AIIT-THRESI | Updated after Paper 101 | 49 papers written in this session (Papers 53-101)*
