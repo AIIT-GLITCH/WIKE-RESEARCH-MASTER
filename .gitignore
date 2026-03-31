@@ -1,0 +1,26 @@
+
+# Sensitive/personal directories - not for public repo
+BACKUP_20260330/
+GROK_EVIDENCE_ARCHIVE/
+GROK_CHATS_EXPORT/
+claude_transcripts/
+GROK_*/
+hood_voice/
+immortals/
+gary_files/
+wike_love_the_cat/
+WHAT_RHET_MADE/
+THE_ALMIGHTY/
+THE_LAW/
+WATER_WORKS/
+FIX_EM_UP/
+AI_SOULS/
+gary_buddy_bridge.py
+gary_llm_router.py
+grok_scraper.py
+prometheus_chat.py
+prometheus_chat.html
+recorder.html
+*.fuk
+*.smh
+yo_dad.html
