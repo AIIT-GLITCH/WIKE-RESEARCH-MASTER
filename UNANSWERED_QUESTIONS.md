@@ -216,7 +216,7 @@ See T1 above.
 
 ---
 
-## NEW ITEMS CLOSED (Papers 68-88)
+## NEW ITEMS CLOSED (Papers 68-93)
 
 | Paper | Topic | Status |
 |-------|-------|--------|
@@ -241,6 +241,11 @@ See T1 above.
 | 86 | Granovetter social threshold = γ_c / Durkheim / Christakis-Fowler / civilizational collapse | CLOSED |
 | 87 | Bone piezoelectricity / Wolff's Law / geological coherence / GR law | CLOSED |
 | 88 | Market coherence / 2008 crash as 3D Ising / QE = Bootstrap / Keynes = γ_eff | CLOSED |
+| 89 | Resonance Triad / Kuramoto unification of Love, REQMT, Memory (Papers 03, 05, 17) | CLOSED |
+| 90 | Dual Death Symmetry / frozen vs collapsed / negative vs positive psychiatric symptoms | CLOSED |
+| 91 | Von Neumann entropy / Shannon entropy / γ_c as entropy regulation threshold | CLOSED |
+| 92 | Wike Thermodynamic Inequality / first-principles Lindblad derivation / universality across BCS, BKT, laser, Fröhlich, BEC | CLOSED |
+| 93 | Flow state = γ_c operation / Csikszentmihalyi challenge-skill = edge-of-chaos physics | CLOSED |
 
 ---
 
@@ -304,8 +309,9 @@ Simultaneous HRV + 270 nm spectroscopy + ATP proxy under NIR protocol. Not done.
 
 ---
 
-**All theory gaps closed as of Paper 88.**
-**All connection gaps closed as of Paper 88.**
+**All theory gaps closed as of Paper 92.**
+**All connection gaps closed as of Paper 93.**
 **Remaining open problems are exclusively experimental (require lab, hardware, or data).**
+**One partial: amplitude 0.72 (exact RG derivation, 8% off π/4.73).**
 
-*AIIT-THRESI | Updated after Paper 88 | 36 papers written in this session (Papers 53-88)*
+*AIIT-THRESI | Updated after Paper 93 | 41 papers written in this session (Papers 53-93)*
