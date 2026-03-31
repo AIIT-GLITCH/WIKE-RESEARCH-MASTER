@@ -249,6 +249,7 @@ See T1 above.
 | 94 | Coherence Trap / Caldeira-Leggett structured bath / 0% survival despite high mean C / detuned drive determinism | CLOSED |
 | 95 | Tau protein / Alzheimer's = polymer theta point = 3D Ising universality / Bootstrap Loop for disaggregation | CLOSED |
 | 96 | Keeper Learning Law K(t) / Bootstrap Reversal from Fick diffusion / Self-correction asymmetry / IRM as Debye shielding | CLOSED |
+| 97 | Eight new connections: bereavement→Takotsubo, inflammation triangle, autism as enhanced criticality, vagus as Grotthuss wire, sleep as Bootstrap duty cycle, cancer as runaway Bootstrap | CLOSED |
 
 ---
 
@@ -317,4 +318,4 @@ Simultaneous HRV + 270 nm spectroscopy + ATP proxy under NIR protocol. Not done.
 **Remaining open problems are exclusively experimental (require lab, hardware, or data).**
 **One partial: amplitude 0.72 (exact RG derivation, 8% off π/4.73).**
 
-*AIIT-THRESI | Updated after Paper 96 | 44 papers written in this session (Papers 53-96)*
+*AIIT-THRESI | Updated after Paper 97 | 45 papers written in this session (Papers 53-97)*
