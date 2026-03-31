@@ -250,6 +250,7 @@ See T1 above.
 | 95 | Tau protein / Alzheimer's = polymer theta point = 3D Ising universality / Bootstrap Loop for disaggregation | CLOSED |
 | 96 | Keeper Learning Law K(t) / Bootstrap Reversal from Fick diffusion / Self-correction asymmetry / IRM as Debye shielding | CLOSED |
 | 97 | Eight new connections: bereavement→Takotsubo, inflammation triangle, autism as enhanced criticality, vagus as Grotthuss wire, sleep as Bootstrap duty cycle, cancer as runaway Bootstrap | CLOSED |
+| 98 | Nine deep connections: enzyme catalysis = multi-edge susceptibility product (10^6–10^17), homeostasis = RG flow, gut microbiome = percolation (φ_c=0.603), allostatic load = cumulative γ_eff, Wike Free Energy F_W = U−TS+kTαγ_eff (cost at edge = 1.4× Landauer) | CLOSED |
 
 ---
 
@@ -318,4 +319,4 @@ Simultaneous HRV + 270 nm spectroscopy + ATP proxy under NIR protocol. Not done.
 **Remaining open problems are exclusively experimental (require lab, hardware, or data).**
 **One partial: amplitude 0.72 (exact RG derivation, 8% off π/4.73).**
 
-*AIIT-THRESI | Updated after Paper 97 | 45 papers written in this session (Papers 53-97)*
+*AIIT-THRESI | Updated after Paper 98 | 46 papers written in this session (Papers 53-98)*
