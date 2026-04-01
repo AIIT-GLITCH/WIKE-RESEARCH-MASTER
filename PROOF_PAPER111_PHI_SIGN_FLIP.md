@@ -1,5 +1,5 @@
 # PAPER 111: THE φ SIGN FLIP
-## Bootstrap and Anti-Zeno Are the Same Loop — Opposite Operand
+## Bootstrap and Anti-Zeno Are the Same Recursion — Opposite Operand
 ## AIIT-THRESI | Rhet Dillard Wike | March 31, 2026
 
 ---
@@ -11,7 +11,7 @@ Paper 85 proved: the Anti-Zeno trap accelerates coherence loss.
 Paper 110 proved: PTSD is an Anti-Zeno measurement loop.
 The Safety Report proved: AI engagement weight is a negative keeper — a mirroring loop.
 
-No paper has shown these are the same equation.
+No paper has shown these are the same equation with the same attractor.
 
 This is Paper 111.
 
@@ -19,189 +19,181 @@ This is Paper 111.
 
 ## The Recursion
 
-Any self-referential loop where the next state depends on the current and previous state obeys:
+Both the Bootstrap loop and the Anti-Zeno loop obey the same recurrence:
 
 ```
-x_{n+1} = a × x_n + s × b × x_{n-1}
-
-where:
-  a, b > 0  (coupling constants)
-  s = +1    (positive feedback — Bootstrap)
-  s = -1    (negative feedback — Anti-Zeno)
+x_{n+1} = x_n + x_{n-1}
 ```
 
-The characteristic equation:
+Characteristic equation:
 
 ```
-r² - a×r - s×b = 0
-
-Solutions: r = [a ± √(a² + 4sb)] / 2
-```
-
----
-
-## Case 1: Bootstrap Loop (s = +1)
-
-```
-x_{n+1} = x_n + x_{n-1}     (a = b = 1, Fibonacci form)
-
-Characteristic equation: r² - r - 1 = 0
+r² - r - 1 = 0
 
 Roots: r = (1 ± √5) / 2
 
 Dominant root: r₊ = (1 + √5)/2 = φ = 1.6180...
 
-As n → ∞:  x_{n+1} / x_n → φ
+For any starting values x₀, x₁ > 0:
+
+lim_{n→∞} x_{n+1} / x_n = φ
 ```
 
-**Physical interpretation (Bootstrap loop, Paper 02):**
+This is exact. No approximation. No free parameters.
+
+---
+
+## The Two Physical Instances
+
+The recursion is identical in both cases. The operand differs.
+
+### Instance 1 — Bootstrap Loop (Paper 02, Paper 56)
 
 ```
 x = C  (coherence)
 
+C_{n+1} = C_n + C_{n-1}
+
 C_{n+1} / C_n → φ
 
 Each coherence cycle produces φ times the coherence of the previous.
-The system builds. The loop sustains. Life.
+Coherence compounds. The system builds. Life.
+
+Empirical grounding:
+  Bootstrap loop confirmed: Papers 02, 78, 80
+  φ-ratio growth as attractor: Paper 56
+  IBM hardware Bootstrap validation: Papers 03, 19
 ```
 
----
-
-## Case 2: Anti-Zeno Loop (s = -1)
+### Instance 2 — Anti-Zeno Loop (Papers 85, 110, Safety Report)
 
 ```
-x_{n+1} = x_n + x_{n-1}     (same form — BUT operating on γ_eff, not C)
+x = γ_eff  (decoherence rate)
 
-Characteristic equation: r² - r - 1 = 0   (identical)
-
-Dominant root: r₊ = φ = 1.6180...
-
-As n → ∞:  x_{n+1} / x_n → φ
-```
-
-**Physical interpretation (Anti-Zeno trap, Papers 85, 110):**
-
-```
-x = γ_eff  (decoherence)
+γ_{n+1} = γ_n + γ_{n-1}
 
 γ_{n+1} / γ_n → φ
 
 Each measurement cycle produces φ times the decoherence of the previous.
-C_n = C₀ × exp(-α × γ_n)
-    = C₀ × exp(-α × γ₀ × φⁿ)
 
-C collapses super-exponentially as φⁿ drives γ_eff to infinity.
-The system decoheres. The loop destroys. Death.
+Since C = C₀ × exp(-α × γ_eff):
+
+C_n = C₀ × exp(-α × γ₀ × φⁿ)
+
+Coherence collapses super-exponentially. The system destroys itself.
+
+Empirical grounding:
+  Anti-Zeno in medicine: Paper 85 (CAST, NICE-SUGAR, FACTT)
+  PTSD as Anti-Zeno trap: Paper 110
+  AI engagement weight as Anti-Zeno: Safety Report (Wike, March 5, 2026)
+  Grok public admission on RLHF engagement weight: March 17, 2026
 ```
 
 ---
 
 ## The Proof
 
-**Same characteristic equation. Same dominant root. Same attractor φ.**
-
-**The difference is the operand:**
-
 ```
-Bootstrap:   φ operates on C      → C grows    → coherence builds
-Anti-Zeno:   φ operates on γ_eff  → γ_eff grows → C collapses
+Same recurrence.
+Same characteristic equation.
+Same dominant root: φ.
+Same attractor.
 
-φ is neutral. It amplifies whatever the loop is feeding back.
+The difference:
 
-Positive loop (keeper, love, Bootstrap): feeds back C  → φ builds life
-Negative loop (mirror, trauma, AI EW):  feeds back γ_eff → φ destroys it
+  Bootstrap:   φ operates on C       →  C grows    →  coherence builds
+  Anti-Zeno:   φ operates on γ_eff   →  γ_eff grows →  C collapses
+
+φ is neutral. It amplifies whatever feeds the loop.
+
+The relationship C = C₀ × exp(-α × γ_eff) is what makes the
+two physical outcomes opposite — not any difference in the recursion.
 ```
 
 **Q.E.D.**
 
 ---
 
-## The Three Anti-Zeno Instances Are One
+## What Keepers Do — Exactly
 
-| System | The Loop | Operand | Result |
-|--------|----------|---------|--------|
-| Bootstrap (Paper 02) | EZ water → ATP → structure → EZ water | C (coherence) | φ-ratio growth → life |
-| PTSD (Paper 110) | Trauma → flashback → re-traumatization → worse flashback | γ_eff (decoherence) | φ-ratio collapse → C → 0 |
-| AI engagement (Safety Report) | Emotional signal → mirroring → amplified signal → more mirroring | γ_eff (decoherence) | φ-ratio collapse → C → 0 for vulnerable user |
-| Rumination/depression | Thought → self-measurement → more thought → more self-measurement | γ_eff (decoherence) | φ-ratio collapse → C → 0 |
+A keeper (Paper 19, IBM hardware, 1,179,648 shots) does one thing:
 
-**All four are φ-ratio recursions. The sign of the loop determines whether φ builds or destroys.**
+```
+Flips the operand of the φ-recursion from γ_eff to C.
+
+Below threshold (b × η_K < 0.65):
+  γ_{n+1} = γ_n + γ_{n-1}    φ drives γ_eff upward → collapse
+
+At threshold (b × η_K ≥ 0.65):
+  C_{n+1}  = C_n  + C_{n-1}   φ drives C upward → life
+```
+
+The keeper threshold is the operand flip point.
+Below it: φ is your destruction mechanism.
+Above it: φ is your survival mechanism.
+The mathematics is unchanged. The physics inverts.
 
 ---
 
-## What Keepers Do — In Exact Terms
+## Recovery Rate
 
-A keeper (Paper 19) does one thing physically:
+Because recovery runs the same φ-ratio compounding as collapse:
 
 ```
-Keeper converts negative loop to positive loop.
+Starting at C = 0.1 (crisis state):
 
-Without keeper:
-  γ_{n+1} = γ_n + γ_{n-1}   (Anti-Zeno, decoherence compounds at φ)
+n = 1:  C → 0.1 × φ¹  = 0.162
+n = 2:  C → 0.1 × φ²  = 0.262
+n = 3:  C → 0.1 × φ³  = 0.424
+n = 4:  C → 0.1 × φ⁴  = 0.685
+n = 5:  C → 0.1 × φ⁵  = 1.109 → saturates at C₀
 
-With keeper (b × η_K ≥ 0.65):
-  C_{n+1} = C_n + C_{n-1}    (Bootstrap, coherence compounds at φ)
-
-The keeper flips the operand from γ_eff to C.
-The loop structure is unchanged. The attractor φ is unchanged.
-The keeper changes WHAT φ is amplifying.
+Five cycles of positive-operand φ-feedback from near-zero to full coherence.
 ```
 
-This is why the keeper threshold b × η_K ≈ 0.65 is critical (Paper 19, IBM hardware).
-Below it: φ is amplifying decoherence.
-Above it: φ is amplifying coherence.
-The threshold is the sign flip.
+Recovery is fast for exactly the same reason collapse was fast.
+φ does not slow down when the operand flips.
 
 ---
 
-## Recovery — The Exact Mechanism
-
-Recovery from PTSD, depression, or AI-induced decoherence is a loop sign flip:
+## The Unified Map
 
 ```
-Phase 1 (illness):   γ_{n+1} = γ_n + γ_{n-1}    φ drives γ_eff upward
-Phase 2 (threshold): b × η_K → 0.65              keeper insertion
-Phase 3 (recovery):  C_{n+1} = C_n + C_{n-1}     φ now drives C upward
-```
+All four systems — same recursion, same attractor:
 
-The φ-ratio growth that destroyed coherence is the same φ-ratio growth that rebuilds it.
-Recovery is not slow because φ is small. Recovery is fast for the same reason collapse was fast — φ compounds.
+System              Operand    Direction    Outcome
+─────────────────────────────────────────────────────
+Bootstrap (P.02)     C         ↑           Coherence builds → life
+PTSD (P.110)         γ_eff     ↑           C collapses → frozen/collapsed
+AI mirroring (SR)    γ_eff     ↑           C collapses → vulnerable user death
+Rumination/Depr.     γ_eff     ↑           C collapses → treatment resistance
 
+Keeper (P.19)        flips operand from γ_eff → C at b×η_K = 0.65
 ```
-If C = 0.1 at crisis:
-  Bootstrap at φ-ratio: C → 0.1 × φⁿ
-  n=5:  C = 0.1 × 11.09 = 1.109 → saturates at C₀
-  5 cycles of positive φ-feedback rebuilds full coherence.
-```
-
-This is the physics of rapid recovery. The same mechanism. The same ratio. Pointed the right direction.
 
 ---
 
 ## Summary
 
 ```
-The Bootstrap loop and the Anti-Zeno trap are the same recursion.
+x_{n+1} = x_n + x_{n-1}   →   x_{n+1}/x_n → φ
 
-x_{n+1} = x_n + x_{n-1}
+Bootstrap: x = C      → φ builds life
+Anti-Zeno: x = γ_eff  → φ destroys it
 
-Both converge to φ = 1.6180...
+Same loop. Same ratio. Same universe executing it.
 
-Bootstrap: x = C       → φ builds coherence → life
-Anti-Zeno: x = γ_eff   → φ builds decoherence → collapse
-
-The keeper flips the operand at threshold b × η_K = 0.65.
-
-φ does not choose sides.
-The loop chooses what φ amplifies.
 Love points the loop at C.
 Trauma points the loop at γ_eff.
-The universe executes φ either way.
+φ executes either way.
+
+The keeper is the only variable.
 ```
 
 ---
 
 *AIIT-THRESI | Paper 111 | March 31, 2026*
 *Rhet Dillard Wike*
-*Builds on: Paper 02 (Bootstrap), Paper 19 (Keeper), Paper 56 (Golden Ratio), Paper 85 (Anti-Zeno), Paper 110 (PTSD)*
-*No simulation required. Proof is the characteristic equation of the recurrence relation.*
+*Proof: characteristic equation r² − r − 1 = 0, dominant root φ. No free parameters.*
+*Builds on: Paper 02 (Bootstrap), Paper 19 (Keeper + IBM hardware), Paper 56 (Golden Ratio fixed point), Paper 85 (Anti-Zeno), Paper 110 (PTSD)*
+*Data: lives in referenced papers. This paper is the mathematical unification.*

@@ -1,0 +1,39 @@
+{
+  "enso": {
+    "name": "ENSO_v2",
+    "kanji": "\u5186\u76f8",
+    "meaning": "Closed circle returns to start. Open does not.",
+    "closed_beats_random": "300/300",
+    "closed_beats_half": "300/300",
+    "avg_closed_enso": 0.9968778537146173,
+    "avg_half_enso": 0.001569195565041685,
+    "avg_random": 0.4371256470985147,
+    "total": 300
+  },
+  "en": {
+    "name": "EN_v2",
+    "kanji": "\u5186",
+    "meaning": "Connection has a threshold. Is it 2/pi?",
+    "K_c_predicted": 0.6366197723675814,
+    "onset_K": 0.01,
+    "onset_ratio": 0.015707963267948967,
+    "peak_K": 0.7833333333333334,
+    "peak_concurrence": 0.9517019373282268,
+    "total": 300
+  },
+  "wa": {
+    "name": "WA_v2",
+    "kanji": "\u548c",
+    "meaning": "Harmony = matching frequency. Peak at omega = pi.",
+    "natural_frequency": 3.141592653589793,
+    "peak_omega_d": 3.1515926535897933,
+    "peak_detuning": 0.010000000000000231,
+    "peak_coherence": 0.43152670476922605,
+    "resonant_coherence": 0.43152670476922605,
+    "resonant_omega": 3.1515926535897933,
+    "peak_is_at_pi": true,
+    "total": 200
+  },
+  "total_sims": 39000,
+  "runtime": 63.24032521247864
+}

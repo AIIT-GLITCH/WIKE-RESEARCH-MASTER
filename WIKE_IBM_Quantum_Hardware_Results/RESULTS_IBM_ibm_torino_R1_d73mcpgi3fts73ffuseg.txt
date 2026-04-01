@@ -1,0 +1,138 @@
+========================================================================
+  WIKE COHERENCE PRINCIPLE -- IBM QUANTUM HARDWARE RESULTS
+  Backend: ibm_torino (133 qubits)
+  Job ID: d73mcpgi3fts73ffuseg
+  Shots: 4096 per circuit | Circuits: 70
+  Total measurements: 286,720
+  Hardware time: 88.0s
+  Executed: 2026-03-28 00:27:25
+  Rhet Dillard Wike | AIIT-THRESI | Bristow, Oklahoma
+  NOT A SIMULATION. A MEASUREMENT.
+========================================================================
+
+  NATURAL DECOHERENCE (T2) -- Qubit left alone
+   Delay   P(|0>)  Coherence       Status
+  ----------------------------------------
+       0   0.8760     0.7520     COHERENT
+       2   0.8718     0.7437     COHERENT
+       5   0.8655     0.7310     COHERENT
+      10   0.8755     0.7510     COHERENT
+      15   0.8765     0.7529     COHERENT
+      20   0.8833     0.7666     COHERENT
+      30   0.8738     0.7476     COHERENT
+      40   0.8733     0.7466     COHERENT
+      50   0.8743     0.7485     COHERENT
+      60   0.8667     0.7334     COHERENT
+      80   0.8679     0.7358     COHERENT
+     100   0.8735     0.7471     COHERENT
+     150   0.8704     0.7407     COHERENT
+     200   0.8706     0.7412     COHERENT
+
+  HAHN ECHO -- One gentle correction at midpoint
+   Delay   P(|0>)  Coherence       Status
+  ----------------------------------------
+       0   0.8611     0.7222     COHERENT
+       2   0.8716     0.7432     COHERENT
+       5   0.8716     0.7432     COHERENT
+      10   0.8643     0.7285     COHERENT
+      15   0.8660     0.7319     COHERENT
+      20   0.8835     0.7671     COHERENT
+      30   0.8694     0.7388     COHERENT
+      40   0.8772     0.7544     COHERENT
+      50   0.8669     0.7339     COHERENT
+      60   0.8728     0.7456     COHERENT
+      80   0.8721     0.7441     COHERENT
+     100   0.8667     0.7334     COHERENT
+     150   0.8730     0.7461     COHERENT
+     200   0.8674     0.7349     COHERENT
+
+  CPMG -- Four gentle corrections evenly spaced
+   Delay   P(|0>)  Coherence       Status
+  ----------------------------------------
+       0   0.8652     0.7305     COHERENT
+       2   0.8735     0.7471     COHERENT
+       5   0.8735     0.7471     COHERENT
+      10   0.8745     0.7490     COHERENT
+      15   0.8679     0.7358     COHERENT
+      20   0.8669     0.7339     COHERENT
+      30   0.8657     0.7314     COHERENT
+      40   0.8721     0.7441     COHERENT
+      50   0.8711     0.7422     COHERENT
+      60   0.8655     0.7310     COHERENT
+      80   0.8782     0.7563     COHERENT
+     100   0.8667     0.7334     COHERENT
+     150   0.8704     0.7407     COHERENT
+     200   0.8745     0.7490     COHERENT
+
+  RESONANT PROTECTION -- Gentle matched-frequency drive
+   Delay   P(|0>)  Coherence       Status
+  ----------------------------------------
+       0   0.8650     0.7300     COHERENT
+       2   0.8792     0.7583     COHERENT
+       5   0.8730     0.7461     COHERENT
+      10   0.8674     0.7349     COHERENT
+      15   0.8655     0.7310     COHERENT
+      20   0.8630     0.7261     COHERENT
+      30   0.8569     0.7139     COHERENT
+      40   0.8472     0.6943     COHERENT
+      50   0.8262     0.6523     COHERENT
+      60   0.8115     0.6230     COHERENT
+      80   0.7644     0.5288     COHERENT
+     100   0.6917     0.3833      PARTIAL
+     150   0.5339     0.0679    COLLAPSED
+     200   0.3384     0.0000    COLLAPSED
+
+  DETUNED FORCE -- Random wrong-frequency forcing
+   Delay   P(|0>)  Coherence       Status
+  ----------------------------------------
+       0   0.8650     0.7300     COHERENT
+       2   0.1472     0.0000    COLLAPSED
+       5   0.7361     0.4722      PARTIAL
+      10   0.6121     0.2241      PARTIAL
+      15   0.4900     0.0000    COLLAPSED
+      20   0.8687     0.7373     COHERENT
+      30   0.7803     0.5605     COHERENT
+      40   0.7639     0.5278     COHERENT
+      50   0.2173     0.0000    COLLAPSED
+      60   0.4268     0.0000    COLLAPSED
+      80   0.8672     0.7344     COHERENT
+     100   0.1636     0.0000    COLLAPSED
+     150   0.1208     0.0000    COLLAPSED
+     200   0.5042     0.0083    COLLAPSED
+
+========================================================================
+  COMPARISON AT EACH DELAY POINT
+========================================================================
+
+   Delay       T2     Echo     CPMG    Reson   Detune
+  --------------------------------------------------
+       0   0.7520   0.7222   0.7305   0.7300   0.7300
+       2   0.7437   0.7432   0.7471   0.7583   0.0000
+       5   0.7310   0.7432   0.7471   0.7461   0.4722
+      10   0.7510   0.7285   0.7490   0.7349   0.2241
+      15   0.7529   0.7319   0.7358   0.7310   0.0000
+      20   0.7666   0.7671   0.7339   0.7261   0.7373
+      30   0.7476   0.7388   0.7314   0.7139   0.5605
+      40   0.7466   0.7544   0.7441   0.6943   0.5278
+      50   0.7485   0.7339   0.7422   0.6523   0.0000
+      60   0.7334   0.7456   0.7310   0.6230   0.0000
+      80   0.7358   0.7441   0.7563   0.5288   0.7344
+     100   0.7471   0.7334   0.7334   0.3833   0.0000
+     150   0.7407   0.7461   0.7407   0.0679   0.0000
+     200   0.7412   0.7349   0.7490   0.0000   0.0083
+
+========================================================================
+  THIS IS NOT A SIMULATION.
+  These measurements came from ibm_torino,
+  a 133-qubit superconducting quantum processor
+  running at approximately 15 millikelvin.
+
+  466,900 QuTiP simulations predicted these results.
+  Now the real hardware confirms or denies.
+
+  God is good. All the time.
+  Rhet Dillard Wike | AIIT-THRESI | Bristow, Oklahoma
+========================================================================
+
+  ibm_torino complete: d73mcpgi3fts73ffuseg
+

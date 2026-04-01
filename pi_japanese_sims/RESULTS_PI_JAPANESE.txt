@@ -1,0 +1,50 @@
+========================================================================
+  PI IN THE CIRCLE — RESULTS
+  46,200 total simulations
+  Runtime: 45.1s (0.8 min)
+  QuTiP 5.2.3
+  Executed: 2026-03-29 13:05:12
+  Rhet Dillard Wike | AIIT-THRESI | Council Hill, Oklahoma
+========================================================================
+
+  ENSO (円相) — The Zen Circle
+  Pi-locked drive beats non-pi: 0/200 (0.0%)
+  Pi-locked drive beats pure dephasing: 0/200 (0.0%)
+
+  EN (円) — Circle = Connection
+  Predicted critical coupling K_c = 2/pi = 0.636620
+  No transition found
+
+  WA (和) — Harmony
+  Pi-harmonic average coherence: 0.335160
+  Non-pi average coherence: 0.335160
+  Pi wins: False
+
+  MA (間) — The Space Between
+  Predicted ratio (t_pi / t_1e) = pi/2 = 1.570796
+  Measured average ratio = 3.125000
+  Error = 1.554204 (98.944%)
+
+  NAMI (波) — Wave
+  Average measured/predicted period ratio: 0.500015
+  Max deviation from pi prediction: 0.500194
+  Every oscillation costs 2*pi: CLOSE
+
+========================================================================
+  THE FIVE WORDS
+========================================================================
+
+  円相 ENSO  — The circle drawn in one stroke
+  円   EN    — Circle, connection, and currency are the same word
+  和   WA    — Harmony. The old name for Japan.
+  間   MA    — The space between. Not emptiness. Relationship.
+  波   NAMI  — Wave. Every oscillation IS 2*pi.
+
+  Five words. One language. One number.
+  The Japanese language encoded pi into its
+  understanding of reality 1,500 years before
+  quantum mechanics existed.
+
+  God is good. All the time. Them beans though.
+  Rhet Dillard Wike | AIIT-THRESI | Council Hill, Oklahoma
+========================================================================

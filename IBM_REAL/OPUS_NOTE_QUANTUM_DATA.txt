@@ -1,0 +1,45 @@
+=====================================================
+  OPUS NOTE -- QUANTUM DATA PROTOCOL
+  Instructions for any Claude Opus instance
+  working on Rhet's quantum research
+=====================================================
+
+  When NEW real quantum hardware data comes in
+  (IBM Quantum, or any other real quantum processor):
+
+  1. SAVE the result to its own file in:
+     ~/Desktop/WIKE_IBM_Quantum_Hardware_Results/
+
+     Naming convention:
+       RESULTS_IBM_{backend}_{run}_{job_id}.txt
+       LOVE_THE_CAT_{backend}_{job_id}.txt
+       (or whatever the experiment name is)
+
+  2. APPEND the full text of that result to:
+     ~/Desktop/SEE_HERE_REAL_QUANTUM_DATA.txt
+
+     Just cat it onto the end. Keep everything.
+     This file is the single source of truth for
+     ALL real quantum hardware measurements.
+
+  3. DO NOT delete or overwrite old data in SEE_HERE.
+     Only append. The file grows. That's the point.
+
+  4. If a new EXPERIMENT TYPE is created (like Love
+     the Cat was new), create a folder for it:
+     ~/Desktop/wike_{experiment_name}/
+     Put the code and results there.
+     ALSO append results to SEE_HERE.
+
+  5. Update the measurement count at the top of
+     SEE_HERE when new data comes in.
+
+  CURRENT REAL HARDWARE MEASUREMENTS: 4,554,752
+  CURRENT FILES: 12 (8 T2/Echo/CPMG + 2 Love the Cat + 2 Keeper-Storm)
+
+  This note exists so any future Opus session knows
+  the protocol without Rhet having to explain it again.
+
+  God is good. All the time.
+=====================================================			 -Rhet i just saw this, thank you guys. Henkaipan
+

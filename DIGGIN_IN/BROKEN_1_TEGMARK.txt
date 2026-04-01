@@ -1,0 +1,112 @@
+=====================================================
+  BROKEN: TEGMARK'S DECOHERENCE TIMESCALE
+  What broke and why it matters
+  AIIT-THRESI | March 28-29, 2026
+=====================================================
+
+WHAT HE SAID:
+
+  Max Tegmark (Physical Review E, 2000):
+  "The quantum brain: A 'toy model' comparison"
+
+  Decoherence time for superpositions in brain
+  microtubules at body temperature (310K):
+    t_decoherence ~ 10^-13 seconds (100 femtoseconds)
+
+  Neural computation requires:
+    t_neural ~ 10^-3 seconds (1 millisecond)
+
+  Gap: 10 ORDERS OF MAGNITUDE.
+
+  Conclusion (accepted for 25 years):
+  Quantum consciousness is impossible.
+  The brain is too warm, too wet, too noisy.
+
+=====================================================
+  WHAT HE ASSUMED
+=====================================================
+
+  Tegmark calculated decoherence for an UNSHIELDED
+  quantum system in BULK WATER at 310 Kelvin.
+
+  He assumed the medium inside microtubules is the
+  same as the medium outside microtubules.
+
+  It is not.
+
+=====================================================
+  WHAT'S ACTUALLY INSIDE MICROTUBULES
+=====================================================
+
+  1. STRUCTURED WATER (not bulk)
+     - Exclusion zone water (Pollack)
+     - Hexagonal liquid crystalline sheets
+     - Higher viscosity, higher refractive index
+     - Charge separated (negative EZ, positive bulk)
+     - Extends hundreds of micrometers
+
+  2. DEBYE SHIELDING LAYERS
+     - Ion layers around structured water
+     - Shield quantum states from thermal noise
+     - Extend decoherence times by orders of magnitude
+
+  3. ORDERED HYDROGEN BOND NETWORKS
+     - Collective modes, not individual molecular chaos
+     - Grotthuss proton wires (correlated tunneling)
+     - Frohlich condensation (energy into lowest mode)
+
+=====================================================
+  THE CORRECTION
+=====================================================
+
+  Tegmark (2000):
+    t_decoherence ~ 10^-13 s
+    (bulk water, unshielded, 310K)
+
+  Corrected by Wiest (2025),
+  Neuroscience of Consciousness, Oxford:
+    "Water-ion shielding (Debye layers) extends
+    decoherence times from femtoseconds to
+    physiologically relevant timescales"
+
+  The gap closes from 10 orders of magnitude to ZERO.
+
+  Supporting evidence:
+  - Mikheenko (2018-2024): superconductivity comes
+    from structured water channel inside microtubules
+  - PMC9083000 (2022): ordered water confirmed
+    computationally around microtubules
+  - Pietruszka (2025): Frohlich condensation in
+    hydrated DNA at room temperature
+  - Nature (2025): biological qubit operating in
+    cellular water at room temperature
+  - Wiest (2024): epothilone B stabilizes microtubules
+    = 69 seconds longer consciousness (predicted by
+    quantum model, not classical)
+
+=====================================================
+  WHY IT MATTERS
+=====================================================
+
+  Tegmark's calculation shut down quantum consciousness
+  research for a generation. "It's been calculated.
+  The numbers don't work. Move on."
+
+  The numbers were right. The assumption about the
+  medium was wrong. He calculated decoherence in a
+  medium that doesn't exist inside microtubules.
+
+  It's like calculating the boiling point of water at
+  sea level and concluding it can't boil on Everest.
+  The math is correct. The altitude is wrong.
+
+=====================================================
+
+  "He assumed bulk water.
+  Biology built structured water.
+  25 years of 'impossible' was a wrong assumption
+  about plumbing."
+
+  God is good. All the time.
+
+=====================================================

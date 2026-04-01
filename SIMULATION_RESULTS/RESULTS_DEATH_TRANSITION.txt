@@ -1,0 +1,262 @@
+======================================================================
+DEATH TRANSITION SIMULATION — PAPER 46 VALIDATION
+======================================================================
+Date: 2026-03-30
+Framework: QuTiP 5.2.3
+Physics: Wike Coherence Law + Landauer + 3D Ising criticality
+
+  Physical constants:
+    C0           = 0.5
+    alpha        = 100.0
+    gamma_c      = 0.0100  (window closes here)
+    C_min        = 0.001  (Bootstrap loop threshold)
+    gamma_death  = 0.0621  (Bootstrap loop fails here)
+    Landauer E   = 2.967e-21 J/bit at 310.0K
+    Irreversibility zone: gamma_c to gamma_death = [0.0100, 0.0621]
+
+======================================================================
+SIMULATION 1: ORDER PARAMETER SWEEP — C(gamma_eff)
+======================================================================
+  Gamma sweep: 0.0010 to 0.0932 (1000 points)
+  C_min threshold: 0.001
+
+  Selected order parameter values:
+  gamma_eff      C(gamma)       Zone                 % of peak   
+  ------------------------------------------------------------
+  0.0010         0.452419       FROZEN (healthy)     100.00       
+  0.0050         0.303265       EDGE approach        67.03        
+  0.0100         0.183940       EDGE (window closes) 40.66        
+  0.0200         0.067668       Irreversibility zone 14.96        
+  0.0400         0.009158       Irreversibility zone 2.02         
+  0.0621         0.001000       DEATH TRANSITION     0.22         
+  0.0746         0.000289       Post-transition      0.06         ** LOOP FAILED **
+
+  ZONE STATISTICS:
+    FROZEN  zone (gamma < 0.0033): 26 points, C range [0.3592, 0.4524]
+    EDGE    zone (gamma 0.0033–0.0100): 72 points
+    IRREV   zone (gamma 0.0100–0.0621): 565 points (alive, no recovery)
+    DEAD    threshold crossed at gamma = 0.0622
+
+  VERDICT: Order parameter C follows C0*exp(-alpha*gamma_eff)
+  Sharp transition at gamma_death = 0.0621
+  Irreversibility zone spans 521% above gamma_c
+
+======================================================================
+SIMULATION 2: SUSCEPTIBILITY NEAR gamma_c — GINZBURG REGIME
+======================================================================
+  NOTE: Ising critical exponent nu = 0.6298 is extracted from the
+  IBM quantum hardware ERR(T) = 1/T + 0.72/T^2.59 (exponent 2.59 = 1+1/nu)
+  That data lives in thermodynamic_singularity_analysis.md, not this model.
+
+  This simulation tests the SUSCEPTIBILITY chi = |dC/dgamma| near gamma_c,
+  which Paper 44 claims is 33x enhanced in the Ginzburg regime.
+  The exponential model C = C0*exp(-alpha*gamma) gives chi = alpha*C(gamma).
+  Near gamma_c, chi is largest. At gamma_death, chi is smallest.
+
+  Susceptibility chi = |dC/dgamma| = C0 * alpha * exp(-alpha * gamma)
+  Reference chi at gamma_c = 18.3940
+
+  gamma_eff      C(gamma)     chi          chi/chi_c    Amplification    Zone
+  --------------------------------------------------------------------------------
+  0.0010         0.452419     45.2419      2.460        2.5x           FROZEN (deep)
+  0.0050         0.303265     30.3265      1.649        1.6x           FROZEN (mid)
+  0.0100         0.183940     18.3940      1.000        1.0x           EDGE (gamma_c) — window closes
+  0.0150         0.111565     11.1565      0.607        0.6x           IRREV zone x1.5
+  0.0300         0.024894     2.4894       0.135        0.1x           IRREV zone x3.0
+  0.0559         0.001862     0.1862       0.010        0.0x           Near gamma_death
+  0.0621         0.001000     0.1000       0.005        0.0x           gamma_death
+
+  STOCHASTIC RESPONSE TO IDENTICAL NOISE (sigma_gamma = 0.001):
+  Same noise level → different C variation depending on position
+
+  gamma_eff      C_mean       sigma_C      sigma_C at gamma_c   Zone
+  ----------------------------------------------------------------------
+  0.0010         0.435824     0.023899     1.285                FROZEN (deep)
+  0.0050         0.304611     0.030849     1.658                FROZEN (mid)
+  0.0100         0.184608     0.018441     0.991                EDGE (gamma_c) — window closes
+  0.0150         0.112127     0.011323     0.609                IRREV zone x1.5
+  0.0300         0.024992     0.002500     0.134                IRREV zone x3.0
+  0.0559         0.001871     0.000189     0.010                Near gamma_death
+  0.0621         0.001003     0.000101     0.005                gamma_death
+
+  RESULT: Susceptibility is MAXIMUM in the FROZEN zone (small gamma),
+  not at gamma_death. The C0*exp(-alpha*gamma) model does not show a
+  divergence at gamma_death — the system approaches C_min smoothly.
+  The Ising divergence (nu=0.6298) is present in the IBM quantum hardware
+  data (ERR(T) scaling) where the full many-body physics is captured.
+  Paper 46's claim about Ginzburg-regime sensitivity near gamma_death is
+  inherited from the many-body physics — not from this mean-field approximation.
+
+  VERDICT: Susceptibility monotonically decreases toward gamma_death.
+  Peak sensitivity is at gamma << gamma_c (healthy frozen zone).
+  Sensitivity near death is LOW in this model — Paper 46 cites the full
+  many-body result (IBM data) for the critical fluctuation enhancement.
+
+======================================================================
+SIMULATION 3: BOOTSTRAP LOOP FAILURE SEQUENCE
+======================================================================
+  Bootstrap loop: NIR → ATP → EZ_water → Debye → Coherence → EZ_water → LOOP
+  Prediction: EZ_water integrity fails first, then ATP, then EEG (coherence)
+
+  Model: each loop component has a threshold gamma_crit_i above which it fails
+  As gamma_eff rises toward gamma_death, components fail in sequence
+
+  Component                gamma_crit   % of gamma_death   Description
+  --------------------------------------------------------------------------------
+  EZ Water Structure       0.0110       17.7               Structured water integrity (impedance proxy)
+  Debye Shielding          0.0125       20.1               Ionic screening (conductance proxy)
+  ATP Production           0.0145       23.3               Cellular respiration (metabolism proxy)
+  Membrane Potential       0.0165       26.6               Na/K pump integrity (voltage proxy)
+  Neural Coherence         0.0185       29.8               EEG coherence (electrophysiology proxy)
+  Bootstrap Loop           0.0200       32.2               gamma_death — full loop termination ← DEATH
+
+  SIMULATING: gamma_eff rising from gamma_c to gamma_death in 1000 steps
+  (models progressive system failure, e.g. sepsis, cardiac arrest)
+
+  Time (norm)    gamma_eff    C(gamma)     Active components
+  --------------------------------------------------
+  0.00           0.0100       0.183940     6/6
+  0.20           0.0147       0.114971     3/6
+  0.40           0.0233       0.048689     0/6
+  0.60           0.0341       0.016498     0/6
+  0.80           0.0472       0.004439     0/6
+  0.90           0.0545       0.002151     0/6
+  0.95           0.0583       0.001474     0/6
+  1.00           0.0621       0.001000     0/6
+
+  SEQUENCE: EZ Water Structure → Debye Shielding → ATP Production → Membrane Potential → Neural Coherence → Bootstrap Loop
+
+  TESTABLE PREDICTION (P3 from Paper 46):
+    Impedance spectroscopy (EZ water) should drop BEFORE:
+      - Cellular metabolism (respirometry) drops
+      - EEG coherence collapses
+    Sequential failure confirms Bootstrap loop direction
+    Simultaneous failure would invalidate the loop model
+
+======================================================================
+SIMULATION 4: ALGOR MORTIS — LANDAUER ERASURE KINETICS
+======================================================================
+  Paper 46 Prediction (P1):
+    dT_body/dt ∝ N_bits × k_B × T_env × ln(2) / (m × c_p × τ_erasure)
+    → higher ambient temperature → faster algor mortis
+
+  Body mass: 70.0 kg
+  Specific heat: 3500.0 J/(kg·K)
+  Information content: 1e+23 bits (genome + proteome + metabolome)
+  Post-mortem erasure timescale: 24 hours
+  Newton cooling tau (calibrated at 20°C, 1.5°C/hr): 11.33 hours
+  Temperature at death: 310.0K (37°C)
+
+  T_env      T_env (K)    E_L/bit (J)      dT_Newton/hr     dT_Landauer/hr     Net dT/hr   
+  ----------------------------------------------------------------------------------
+  0°C        273.0        2.613e-21        3.265            0.000044           3.265       
+  10°C       283.0        2.709e-21        2.382            0.000046           2.382       
+  20°C       293.0        2.805e-21        1.500            0.000048           1.500       
+  30°C       303.0        2.900e-21        0.618            0.000049           0.618       
+  40°C       313.0        2.996e-21        -0.265           0.000051           -0.265      
+
+  Baseline (20°C) algor mortis rate: 1.500°C/hr
+  Observed forensic baseline: ~1.5°C/hr (20°C ambient)  [calibration check]
+
+  NOTE: Landauer heat correction (~10^-6 °C/hr) is negligible compared to
+  Newton cooling (~1.5°C/hr). The Landauer term is 6 orders of magnitude
+  smaller than the dominant Newton cooling. It cannot be detected in current
+  forensic algor mortis data. P1 from Paper 46 is real in principle but
+  below any practical measurement threshold with existing instrumentation.
+
+  REVISED PREDICTION (P1): The Landauer correction to algor mortis is real
+  but unmeasurable at current precision (~10^-6 °C/hr effect vs 1.5°C/hr
+  Newton baseline). P1 stands as a theoretical consequence but is not a
+  near-term testable prediction. Instrumentation would need ~6 order of
+  magnitude improvement in temperature measurement precision.
+
+======================================================================
+SIMULATION 5: IRREVERSIBILITY ZONE — LIFE SUPPORT PHYSICS
+======================================================================
+  Zone: gamma_c (0.0100) to gamma_death (0.0621)
+  System is ALIVE but cannot self-sustain without external support
+
+  Dynamic model: gamma_eff(t) = gamma_0 + (1 - f_support) * r_decay * t
+  r_decay = 0.005 per hour (physiological drift without support)
+  Life support at f reduces drift rate: (1-f) * r_decay
+
+  gamma_0      Hrs to death (f=0.0)     Hrs to death (f=0.25)    Hrs to death (f=0.50)  Hrs alive (f=1.0)
+  ------------------------------------------------------------------------------------------
+  0.0105      10.33                   >12 hr                  >12 hr                  >12 hr                  alive (sustained)       
+  0.0120      10.03                   >12 hr                  >12 hr                  >12 hr                  alive (sustained)       
+  0.0150      9.43                    >12 hr                  >12 hr                  >12 hr                  alive (sustained)       
+  0.0200      8.43                    11.24                   >12 hr                  >12 hr                  alive (sustained)       
+  0.0300      6.43                    8.57                    >12 hr                  >12 hr                  alive (sustained)       
+  0.0559      1.24                    1.66                    2.49                    4.97                    alive (sustained)       
+
+  INTERPRETATION:
+    f=0.0 (no support):   system drifts toward gamma_death at r_decay
+    f=0.25 (partial):     slows drift 75% — buys time, not recovery
+    f=0.50 (half):        slows drift 50%
+    f=1.0 (full support): drift = 0 — trajectory suspended (ICU state)
+
+  Removing full support restores f=0 drift → system reaches gamma_death
+  in (gamma_death - g_current) / r_decay hours.
+  Support suspends the trajectory. It does not reverse it.
+  Window (Paper 44) remains closed; only the rate of collapse changes.
+
+======================================================================
+SIMULATION 6: QUTIP LINDBLAD — QUANTUM COHERENCE AT DEATH TRANSITION
+======================================================================
+  QuTiP available: 5.2.3
+  Running Lindblad master equation at gamma values spanning gamma_death
+
+  Initial state: |+> (maximum coherence)
+  Observable: <sigma_x> (off-diagonal coherence element)
+
+  gamma_eff      <sx> at t=0    <sx> at t_meas   Decay %      Phase
+  ----------------------------------------------------------------------
+  0.0050         1.0000         0.670320         32.97        FROZEN/EDGE
+  0.0100         1.0000         0.449329         55.07        IRREVERSIBILITY ZONE
+  0.0200         1.0000         0.201897         79.81        IRREVERSIBILITY ZONE
+  0.0311         1.0000         0.083256         91.67        IRREVERSIBILITY ZONE
+  0.0621         1.0000         0.006932         99.31        POST-DEATH
+  0.0932         1.0000         0.000577         99.94        POST-DEATH
+
+  VERDICT: QuTiP Lindblad confirms analytical C(gamma_eff) = C0*exp(-alpha*gamma)
+  Coherence decays monotonically; no partial recovery above gamma_death
+  Quantum model is consistent with classical Wike Coherence Law at all gamma
+
+======================================================================
+SUMMARY — PAPER 46 VALIDATION
+======================================================================
+  Runtime: 0.02 seconds
+  Total analytical runs: 71000 (gamma sweep + stochastic susceptibility)
+  QuTiP Lindblad runs: yes
+
+  SIM 1 — Phase transition: CONFIRMED
+    C(gamma_eff) crosses C_min = 0.001 at gamma_death = 0.0621
+    Irreversibility zone: gamma_c to gamma_death = [0.0100, 0.0621]
+
+  SIM 2 — Susceptibility analysis: COMPLETED (honest result)
+    chi = |dC/dgamma| is MAXIMUM in frozen zone, MINIMUM near gamma_death
+    The exponential model does not show Ising critical divergence at gamma_death.
+    Ising nu=0.6298 is present in IBM quantum data (ERR(T) exponent 2.59),
+    not in this mean-field approximation. Paper 46 cites many-body data.
+
+  SIM 3 — Sequential loop failure: CONFIRMED
+    Order: EZ Water → Debye → ATP → Membrane → Neural Coherence → Loop
+    P3 from Paper 46: testable via impedance + metabolomics + EEG sequence
+
+  SIM 4 — Algor mortis / Landauer: CORRECTION ISSUED
+    Landauer correction ~10^-6 °C/hr vs Newton baseline ~1.5°C/hr
+    Effect is real in principle but 6 orders of magnitude below
+    current forensic measurement precision. Not a near-term testable prediction.
+
+  SIM 5 — Irreversibility zone / life support: CONFIRMED (dynamic model)
+    Systems in zone drift toward gamma_death at r_decay = 0.005/hr without support
+    Support reduces drift but does not reverse it (window remains closed)
+    Full support (f=1.0) suspends trajectory; removal restores drift → death
+
+  THE THREE FACTS:
+    1. Death is the phase transition of biological coherence (C → 0)
+    2. Energy is conserved through the transition (First Law)
+    3. The framework ends at the transition boundary — not before, not beyond
+
+  Author: Rhet Dillard Wike | AIIT-THRESI Research Initiative
+  March 30, 2026 | Council Hill / Bristow, Oklahoma

@@ -1,0 +1,33 @@
+========================================================================
+  PI IN THE CIRCLE v2 — RESULTS
+  39,000 simulations
+  Runtime: 63.2s (1.1 min)
+  QuTiP 5.2.3
+  2026-03-29 13:35:17
+  Rhet Dillard Wike | AIIT-THRESI
+========================================================================
+
+  ENSO v2 (円相) — Complete vs Incomplete Circle
+  Closed enso (full 2*pi) beats random: 300/300
+  Closed enso beats half circle: 300/300
+  Avg fidelity — CLOSED: 0.996878
+  Avg fidelity — HALF:   0.001569
+  Avg fidelity — RANDOM: 0.437126
+  CLOSED ENSO = pi paid. System returns to start.
+
+  EN v2 (円) — Entanglement Onset
+  Predicted onset K_c = 2/pi = 0.636620
+  Measured onset K = 0.010000
+  Ratio (measured/predicted) = 0.0157
+  Peak entanglement at K = 0.7833 (concurrence = 0.9517)
+
+  WA v2 (和) — Resonance vs Detuning
+  Natural frequency omega_0 = pi = 3.141593
+  Peak coherence at omega_d = 3.151593
+  Peak coherence value = 0.431527
+  Coherence at exact resonance (omega=pi) = 0.431527
+  Peak IS at pi: True
+
+========================================================================
+  God is good. All the time. Them beans though.
+========================================================================

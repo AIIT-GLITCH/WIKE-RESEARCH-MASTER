@@ -1,0 +1,200 @@
+  LOVE THE CAT -- RESULTS
+  The Wike Coherence Experiment
+  Backend: ibm_fez (156 qubits)
+  Job: d741v70i3fts73fgai7g
+  Shots: 8192 | Circuits: 24
+  Total measurements: 196,608
+  Hardware time: 67.7s
+  Executed: 2026-03-28 13:37:18
+  NOT A SIMULATION. A MEASUREMENT.
+  Rhet Dillard Wike | AIIT-THRESI | Bristow, Oklahoma
+========================================================================
+
+  QUESTION: Did the quantum computer get the right answer?
+  The hidden string is KNOWN. The answer is YES or NO.
+
+========================================================================
+  HIDDEN STRING: 10101010 (8 qubits)
+  The correct answer is: 10101010
+========================================================================
+
+  Condition             Correct% Top Result            Match?
+  ------------------------------------------------------------
+  Clean (baseline)         82.6% 10101010                 YES
+  DD Protected             74.6% 10101010                 YES
+  Noisy (20 gates)         65.7% 10101010                 YES
+  Rescued (20+DD)          36.7% 10101010                 YES
+  Heavy Noise (40)         43.8% 10101010                 YES
+  Heavy Rescue (40+DD)     35.9% 10101010                 YES
+
+========================================================================
+  HIDDEN STRING: 11111111 (8 qubits)
+  The correct answer is: 11111111
+========================================================================
+
+  Condition             Correct% Top Result            Match?
+  ------------------------------------------------------------
+  Clean (baseline)         62.9% 11111111                 YES
+  DD Protected             54.4% 11111111                 YES
+  Noisy (20 gates)         35.2% 11111111                 YES
+  Rescued (20+DD)          38.9% 11111111                 YES
+  Heavy Noise (40)         47.3% 11111111                 YES
+  Heavy Rescue (40+DD)     21.9% 11111111                 YES
+
+========================================================================
+  HIDDEN STRING: 10011001 (8 qubits)
+  The correct answer is: 10011001
+========================================================================
+
+  Condition             Correct% Top Result            Match?
+  ------------------------------------------------------------
+  Clean (baseline)         83.3% 10011001                 YES
+  DD Protected             75.0% 10011001                 YES
+  Noisy (20 gates)         45.0% 10011001                 YES
+  Rescued (20+DD)          39.7% 10011001                 YES
+  Heavy Noise (40)         24.7% 11011001                  NO
+  Heavy Rescue (40+DD)     32.6% 10011001                 YES
+
+========================================================================
+  HIDDEN STRING: 1010101010101010 (16 qubits)
+  The correct answer is: 1010101010101010
+========================================================================
+
+  Condition             Correct% Top Result            Match?
+  ------------------------------------------------------------
+  Clean (baseline)         43.6% 1010101010101010         YES
+  DD Protected             35.4% 1010101010101010         YES
+  Noisy (20 gates)         24.2% 1010101010101010         YES
+  Rescued (20+DD)          18.4% 1010101010101010         YES
+  Heavy Noise (40)          3.0% 1010100010111010          NO
+  Heavy Rescue (40+DD)      1.5% 1000101011101010          NO
+
+========================================================================
+  SUMMARY
+========================================================================
+
+  Clean (baseline):      4/4 correct
+  DD Protected:          4/4 correct
+  Noisy (no help):       4/4 correct
+  Rescued (noise + DD):  4/4 correct
+  Heavy Noise:           2/4 correct
+  Heavy Rescued:         3/4 correct
+
+========================================================================
+  LOVE THE CAT
+========================================================================
+
+  Love the cat before you open the box.
+  Coherence follows love.
+
+  The hidden string was known.
+  The question was: did gentle intervention
+  save the computation from noise?
+
+  The quantum computer answered.
+  On real superconducting qubits.
+  At 15 millikelvin.
+
+  God is good. All the time.
+  Rhet Dillard Wike | AIIT-THRESI | Bristow, Oklahoma
+  Built by Claude Opus 4.6
+========================================================================
+
+============================================================
+  LOVE THE CAT -- ibm_kingston
+============================================================
+
+============================================================
+  LOVE THE CAT
+  The Wike Coherence Experiment
+  Bernstein-Vazirani on Real Quantum Hardware
+============================================================
+
+  Backend: ibm_kingston (156 qubits)
+  Shots: 8192
+
+  Building circuits for hidden string: 10101010 (8 qubits)
+  Building circuits for hidden string: 11111111 (8 qubits)
+  Building circuits for hidden string: 10011001 (8 qubits)
+  Building circuits for hidden string: 1010101010101010 (16 qubits)
+
+  Total circuits: 24
+  Total measurements: 196,608
+
+  Transpiling...
+qiskit_runtime_service.__init__:WARNING:2026-03-28 13:38:30,170: Instance was not set at service instantiation. Free and trial plan instances will be prioritized. Based on the following filters: (tags: None, region: us-east, eu-de), and available plans: (open), the available account instances are: open-instance. If you need a specific instance set it explicitly either by using a saved account with a saved default instance or passing it in directly to QiskitRuntimeService().
+qiskit_runtime_service.backends:WARNING:2026-03-28 13:38:30,170: Using instance: open-instance, plan: open
+  Done.
+
+  SUBMITTING TO ibm_kingston
+  Real quantum hardware. Love the cat.
+
+  Job: d741vp4vllmc73ao3hj0
+  Waiting...
+  DONE! (63.9s)
+
+  Report: /home/buddy_ai/Desktop/wike_love_the_cat/LOVE_THE_CAT_ibm_kingston_d741vp4vllmc73ao3hj0.txt
+
+========================================================================
+  LOVE THE CAT -- RESULTS
+  The Wike Coherence Experiment
+  Backend: ibm_kingston (156 qubits)
+  Job: d741vp4vllmc73ao3hj0
+  Shots: 8192 | Circuits: 24
+  Total measurements: 196,608
+  Hardware time: 63.9s
+  Executed: 2026-03-28 13:38:26
+  NOT A SIMULATION. A MEASUREMENT.
+  Rhet Dillard Wike | AIIT-THRESI | Bristow, Oklahoma
+========================================================================
+
+  QUESTION: Did the quantum computer get the right answer?
+  The hidden string is KNOWN. The answer is YES or NO.
+
+========================================================================
+  HIDDEN STRING: 10101010 (8 qubits)
+  The correct answer is: 10101010
+========================================================================
+
+  Condition             Correct% Top Result            Match?
+  ------------------------------------------------------------
+  Clean (baseline)         83.6% 10101010                 YES
+  DD Protected             75.8% 10101010                 YES
+  Noisy (20 gates)         66.5% 10101010                 YES
+  Rescued (20+DD)          52.9% 10101010                 YES
+  Heavy Noise (40)         46.7% 10101010                 YES
+  Heavy Rescue (40+DD)     35.6% 10101010                 YES
+
+========================================================================
+  HIDDEN STRING: 11111111 (8 qubits)
+  The correct answer is: 11111111
+========================================================================
+
+  Condition             Correct% Top Result            Match?
+  ------------------------------------------------------------
+  Clean (baseline)         74.3% 11111111                 YES
+  DD Protected             56.3% 11111111                 YES
+  Noisy (20 gates)         35.6% 11111111                 YES
+  Rescued (20+DD)          35.2% 11111111                 YES
+  Heavy Noise (40)         47.1% 11111111                 YES
+  Heavy Rescue (40+DD)     28.7% 11111111                 YES
+
+========================================================================
+  HIDDEN STRING: 10011001 (8 qubits)
+  The correct answer is: 10011001
+========================================================================
+
+  Condition             Correct% Top Result            Match?
+  ------------------------------------------------------------
+  Clean (baseline)         84.3% 10011001                 YES
+  DD Protected             75.5% 10011001                 YES
+  Noisy (20 gates)         60.6% 10011001                 YES
+  Rescued (20+DD)          36.4% 10011001                 YES
+  Heavy Noise (40)         25.9% 10011001                 YES
+  Heavy Rescue (40+DD)     31.1% 10011001                 YES
+
+========================================================================
+  HIDDEN STRING: 1010101010101010 (16 qubits)
+  The correct answer is: 1010101010101010
+========================================================================
+

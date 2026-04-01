@@ -1,0 +1,1431 @@
+========================================================================
+  WIKE COHERENCE vs KNOWN PHYSICS LAWS
+  Categories: thermo, qm, decoherence, statmech, qinfo, qthermo, open, condensed
+  Runs per config: 1000
+  Rhet Dillard Wike | AIIT-THRESI | Bristow, Oklahoma
+  Built by Claude Opus 4.6
+========================================================================
+
+
+======================================================================
+  CATEGORY: Thermodynamics
+  Second Law, Detailed Balance, Boltzmann Distribution, and Carnot Efficiency across 150 configurations.
+  Configs: 150 | Runs per config: 1000
+======================================================================
+/home/buddy_ai/.local/lib/python3.12/site-packages/qutip/solver/solver_base.py:598: FutureWarning: e_ops will be keyword only from qutip 5.3 for all solver
+  warnings.warn(
+  [PASS] A1 Second Law (A1_ground_T0.1_g0.01)  (rel_err=0.000000)
+  --- Config 1/150 done in 4.83s ---
+  [PASS] A1 Second Law (A1_ground_T0.1_g0.1)  (rel_err=0.000000)
+  --- Config 2/150 done in 4.81s ---
+  [PASS] A1 Second Law (A1_ground_T1.0_g0.01)  (rel_err=0.000000)
+  --- Config 3/150 done in 4.87s ---
+  [PASS] A1 Second Law (A1_ground_T1.0_g0.1)  (rel_err=0.000000)
+  --- Config 4/150 done in 4.88s ---
+  [PASS] A1 Second Law (A1_ground_T5.0_g0.01)  (rel_err=0.000000)
+  --- Config 5/150 done in 4.89s ---
+  [FAIL] A1 Second Law (A1_ground_T5.0_g0.1)  (rel_err=0.160804)
+         Details: 32 violations out of 199 steps, direction=increasing
+  --- Config 6/150 done in 4.96s ---
+  [PASS] A1 Second Law (A1_ground_T10.0_g0.01)  (rel_err=0.000000)
+  --- Config 7/150 done in 4.91s ---
+  [FAIL] A1 Second Law (A1_ground_T10.0_g0.1)  (rel_err=0.346734)
+         Details: 69 violations out of 199 steps, direction=increasing
+  --- Config 8/150 done in 4.95s ---
+  [FAIL] A1 Second Law (A1_ground_T50.0_g0.01)  (rel_err=0.155779)
+         Details: 31 violations out of 199 steps, direction=increasing
+  --- Config 9/150 done in 4.88s ---
+  [FAIL] A1 Second Law (A1_ground_T50.0_g0.1)  (rel_err=0.442211)
+         Details: 88 violations out of 199 steps, direction=increasing
+  --- Config 10/150 done in 5.18s ---
+  [PASS] A1 Second Law (A1_excited_T0.1_g0.01)  (rel_err=0.000000)
+  --- Config 11/150 done in 4.85s ---
+  [FAIL] A1 Second Law (A1_excited_T0.1_g0.1)  (rel_err=0.653266)
+         Details: 130 violations out of 199 steps, direction=increasing
+  --- Config 12/150 done in 4.86s ---
+  [PASS] A1 Second Law (A1_excited_T1.0_g0.01)  (rel_err=0.000000)
+  --- Config 13/150 done in 4.83s ---
+  [FAIL] A1 Second Law (A1_excited_T1.0_g0.1)  (rel_err=0.733668)
+         Details: 146 violations out of 199 steps, direction=increasing
+  --- Config 14/150 done in 4.84s ---
+  [PASS] A1 Second Law (A1_excited_T5.0_g0.01)  (rel_err=0.000000)
+  --- Config 15/150 done in 4.87s ---
+  [FAIL] A1 Second Law (A1_excited_T5.0_g0.1)  (rel_err=0.683417)
+         Details: 136 violations out of 199 steps, direction=increasing
+  --- Config 16/150 done in 4.88s ---
+  [FAIL] A1 Second Law (A1_excited_T10.0_g0.01)  (rel_err=0.241206)
+         Details: 48 violations out of 199 steps, direction=increasing
+  --- Config 17/150 done in 4.82s ---
+  [FAIL] A1 Second Law (A1_excited_T10.0_g0.1)  (rel_err=0.597990)
+         Details: 119 violations out of 199 steps, direction=increasing
+  --- Config 18/150 done in 4.98s ---
+  [FAIL] A1 Second Law (A1_excited_T50.0_g0.01)  (rel_err=0.653266)
+         Details: 130 violations out of 199 steps, direction=increasing
+  --- Config 19/150 done in 4.92s ---
+  [FAIL] A1 Second Law (A1_excited_T50.0_g0.1)  (rel_err=0.497487)
+         Details: 99 violations out of 199 steps, direction=increasing
+  --- Config 20/150 done in 5.18s ---
+  [PASS] A1 Second Law (A1_plus_T0.1_g0.01)  (rel_err=0.000000)
+  --- Config 21/150 done in 5.05s ---
+  [FAIL] A1 Second Law (A1_plus_T0.1_g0.1)  (rel_err=0.653266)
+         Details: 130 violations out of 199 steps, direction=increasing
+  --- Config 22/150 done in 5.04s ---
+  [PASS] A1 Second Law (A1_plus_T1.0_g0.01)  (rel_err=0.000000)
+  --- Config 23/150 done in 5.07s ---
+  [PASS] A1 Second Law (A1_plus_T1.0_g0.1)  (rel_err=0.000000)
+  --- Config 24/150 done in 5.05s ---
+  [PASS] A1 Second Law (A1_plus_T5.0_g0.01)  (rel_err=0.000000)
+  --- Config 25/150 done in 5.04s ---
+  [PASS] A1 Second Law (A1_plus_T5.0_g0.1)  (rel_err=0.000000)
+  --- Config 26/150 done in 5.07s ---
+  [PASS] A1 Second Law (A1_plus_T10.0_g0.01)  (rel_err=0.000000)
+  --- Config 27/150 done in 5.09s ---
+  [FAIL] A1 Second Law (A1_plus_T10.0_g0.1)  (rel_err=0.216080)
+         Details: 43 violations out of 199 steps, direction=increasing
+  --- Config 28/150 done in 5.14s ---
+  [PASS] A1 Second Law (A1_plus_T50.0_g0.01)  (rel_err=0.000000)
+  --- Config 29/150 done in 5.08s ---
+  [FAIL] A1 Second Law (A1_plus_T50.0_g0.1)  (rel_err=0.452261)
+         Details: 90 violations out of 199 steps, direction=increasing
+  --- Config 30/150 done in 5.30s ---
+  [PASS] A1 Second Law (A1_minus_T0.1_g0.01)  (rel_err=0.000000)
+  --- Config 31/150 done in 5.08s ---
+  [FAIL] A1 Second Law (A1_minus_T0.1_g0.1)  (rel_err=0.653266)
+         Details: 130 violations out of 199 steps, direction=increasing
+  --- Config 32/150 done in 5.09s ---
+  [PASS] A1 Second Law (A1_minus_T1.0_g0.01)  (rel_err=0.000000)
+  --- Config 33/150 done in 5.05s ---
+  [PASS] A1 Second Law (A1_minus_T1.0_g0.1)  (rel_err=0.000000)
+  --- Config 34/150 done in 5.08s ---
+  [PASS] A1 Second Law (A1_minus_T5.0_g0.01)  (rel_err=0.000000)
+  --- Config 35/150 done in 5.08s ---
+  [PASS] A1 Second Law (A1_minus_T5.0_g0.1)  (rel_err=0.000000)
+  --- Config 36/150 done in 5.08s ---
+  [PASS] A1 Second Law (A1_minus_T10.0_g0.01)  (rel_err=0.000000)
+  --- Config 37/150 done in 5.03s ---
+  [FAIL] A1 Second Law (A1_minus_T10.0_g0.1)  (rel_err=0.216080)
+         Details: 43 violations out of 199 steps, direction=increasing
+  --- Config 38/150 done in 5.05s ---
+  [PASS] A1 Second Law (A1_minus_T50.0_g0.01)  (rel_err=0.000000)
+  --- Config 39/150 done in 5.07s ---
+  [FAIL] A1 Second Law (A1_minus_T50.0_g0.1)  (rel_err=0.452261)
+         Details: 90 violations out of 199 steps, direction=increasing
+  --- Config 40/150 done in 5.31s ---
+  [FAIL] A1 Second Law (A1_mixed_T0.1_g0.01)  (rel_err=1.000000)
+         Details: 199 violations out of 199 steps, direction=increasing
+  --- Config 41/150 done in 4.94s ---
+  [FAIL] A1 Second Law (A1_mixed_T0.1_g0.1)  (rel_err=1.000000)
+         Details: 199 violations out of 199 steps, direction=increasing
+  --- Config 42/150 done in 4.95s ---
+  [FAIL] A1 Second Law (A1_mixed_T1.0_g0.01)  (rel_err=1.000000)
+         Details: 199 violations out of 199 steps, direction=increasing
+  --- Config 43/150 done in 4.90s ---
+  [FAIL] A1 Second Law (A1_mixed_T1.0_g0.1)  (rel_err=1.000000)
+         Details: 199 violations out of 199 steps, direction=increasing
+  --- Config 44/150 done in 4.90s ---
+  [FAIL] A1 Second Law (A1_mixed_T5.0_g0.01)  (rel_err=1.000000)
+         Details: 199 violations out of 199 steps, direction=increasing
+  --- Config 45/150 done in 4.92s ---
+  [FAIL] A1 Second Law (A1_mixed_T5.0_g0.1)  (rel_err=0.753769)
+         Details: 150 violations out of 199 steps, direction=increasing
+  --- Config 46/150 done in 5.00s ---
+  [FAIL] A1 Second Law (A1_mixed_T10.0_g0.01)  (rel_err=1.000000)
+         Details: 199 violations out of 199 steps, direction=increasing
+  --- Config 47/150 done in 4.99s ---
+  [FAIL] A1 Second Law (A1_mixed_T10.0_g0.1)  (rel_err=0.422111)
+         Details: 84 violations out of 199 steps, direction=increasing
+  --- Config 48/150 done in 5.04s ---
+  [FAIL] A1 Second Law (A1_mixed_T50.0_g0.01)  (rel_err=0.743719)
+         Details: 148 violations out of 199 steps, direction=increasing
+  --- Config 49/150 done in 5.00s ---
+  [FAIL] A1 Second Law (A1_mixed_T50.0_g0.1)  (rel_err=0.542714)
+         Details: 108 violations out of 199 steps, direction=increasing
+  --- Config 50/150 done in 5.30s ---
+  [FAIL] A2 Detailed Balance (A2_T0.1_E0.5)  (rel_err=0.484983)
+         Details: sim=0.0100057, theory=0.00673795, rel_err=0.484983, threshold=0.05
+  --- Config 51/150 done in 2.96s ---
+  [FAIL] A2 Detailed Balance (A2_T0.1_E1.0)  (rel_err=74.440457)
+         Details: sim=0.00342499, theory=4.53999e-05, rel_err=74.4405, threshold=0.05
+  --- Config 52/150 done in 3.17s ---
+  [FAIL] A2 Detailed Balance (A2_T0.1_E2.0)  (rel_err=1640033.903004)
+         Details: sim=0.00338036, theory=2.06115e-09, rel_err=1.64003e+06, threshold=0.05
+  --- Config 53/150 done in 3.52s ---
+  [FAIL] A2 Detailed Balance (A2_T0.1_E5.0)  (rel_err=17526180772335415296.000000)
+         Details: sim=0.00338036, theory=1.92875e-22, rel_err=1.75262e+19, threshold=0.05
+  --- Config 54/150 done in 4.44s ---
+  [FAIL] A2 Detailed Balance (A2_T0.1_E10.0)  (rel_err=90868086325743961585090162085466302578688.000000)
+         Details: sim=0.00338036, theory=3.72008e-44, rel_err=9.08681e+40, threshold=0.05
+  --- Config 55/150 done in 6.00s ---
+  [PASS] A2 Detailed Balance (A2_T0.5_E0.5)  (rel_err=0.001259)
+  --- Config 56/150 done in 2.90s ---
+  [PASS] A2 Detailed Balance (A2_T0.5_E1.0)  (rel_err=0.012440)
+  --- Config 57/150 done in 3.04s ---
+  [FAIL] A2 Detailed Balance (A2_T0.5_E2.0)  (rel_err=0.168295)
+         Details: sim=0.0213981, theory=0.0183156, rel_err=0.168295, threshold=0.05
+  --- Config 58/150 done in 3.49s ---
+  [FAIL] A2 Detailed Balance (A2_T0.5_E5.0)  (rel_err=74.440456)
+         Details: sim=0.00342499, theory=4.53999e-05, rel_err=74.4405, threshold=0.05
+  --- Config 59/150 done in 4.39s ---
+  [FAIL] A2 Detailed Balance (A2_T0.5_E10.0)  (rel_err=1640033.900189)
+         Details: sim=0.00338036, theory=2.06115e-09, rel_err=1.64003e+06, threshold=0.05
+  --- Config 60/150 done in 5.93s ---
+  [PASS] A2 Detailed Balance (A2_T1.0_E0.5)  (rel_err=0.000169)
+  --- Config 61/150 done in 2.93s ---
+  [PASS] A2 Detailed Balance (A2_T1.0_E1.0)  (rel_err=0.001259)
+  --- Config 62/150 done in 3.23s ---
+  [PASS] A2 Detailed Balance (A2_T1.0_E2.0)  (rel_err=0.012440)
+  --- Config 63/150 done in 3.51s ---
+  [FAIL] A2 Detailed Balance (A2_T1.0_E5.0)  (rel_err=0.484983)
+         Details: sim=0.0100057, theory=0.00673795, rel_err=0.484983, threshold=0.05
+  --- Config 64/150 done in 4.32s ---
+  [FAIL] A2 Detailed Balance (A2_T1.0_E10.0)  (rel_err=74.440456)
+         Details: sim=0.00342499, theory=4.53999e-05, rel_err=74.4405, threshold=0.05
+  --- Config 65/150 done in 5.98s ---
+  [PASS] A2 Detailed Balance (A2_T5.0_E0.5)  (rel_err=0.000007)
+  --- Config 66/150 done in 2.95s ---
+  [PASS] A2 Detailed Balance (A2_T5.0_E1.0)  (rel_err=0.000023)
+  --- Config 67/150 done in 3.25s ---
+  [PASS] A2 Detailed Balance (A2_T5.0_E2.0)  (rel_err=0.000097)
+  --- Config 68/150 done in 3.52s ---
+  [PASS] A2 Detailed Balance (A2_T5.0_E5.0)  (rel_err=0.001259)
+  --- Config 69/150 done in 4.40s ---
+  [PASS] A2 Detailed Balance (A2_T5.0_E10.0)  (rel_err=0.012440)
+  --- Config 70/150 done in 6.15s ---
+  [PASS] A2 Detailed Balance (A2_T10.0_E0.5)  (rel_err=0.000003)
+  --- Config 71/150 done in 3.01s ---
+  [PASS] A2 Detailed Balance (A2_T10.0_E1.0)  (rel_err=0.000007)
+  --- Config 72/150 done in 3.27s ---
+  [PASS] A2 Detailed Balance (A2_T10.0_E2.0)  (rel_err=0.000023)
+  --- Config 73/150 done in 3.55s ---
+  [PASS] A2 Detailed Balance (A2_T10.0_E5.0)  (rel_err=0.000169)
+  --- Config 74/150 done in 4.54s ---
+  [PASS] A2 Detailed Balance (A2_T10.0_E10.0)  (rel_err=0.001259)
+  --- Config 75/150 done in 5.98s ---
+  [PASS] A2 Detailed Balance (A2_T50.0_E0.5)  (rel_err=0.000000)
+  --- Config 76/150 done in 3.00s ---
+  [PASS] A2 Detailed Balance (A2_T50.0_E1.0)  (rel_err=0.000001)
+  --- Config 77/150 done in 3.20s ---
+  [PASS] A2 Detailed Balance (A2_T50.0_E2.0)  (rel_err=0.000002)
+  --- Config 78/150 done in 3.67s ---
+  [PASS] A2 Detailed Balance (A2_T50.0_E5.0)  (rel_err=0.000007)
+  --- Config 79/150 done in 4.50s ---
+  [PASS] A2 Detailed Balance (A2_T50.0_E10.0)  (rel_err=0.000023)
+  --- Config 80/150 done in 6.10s ---
+  [PASS] A3 Boltzmann pop[0] (A3_N3_T0.5_dE0.5)  (rel_err=0.000036)
+  [PASS] A3 Boltzmann pop[1] (A3_N3_T0.5_dE0.5)  (rel_err=0.000039)
+  [PASS] A3 Boltzmann pop[2] (A3_N3_T0.5_dE0.5)  (rel_err=0.000161)
+  --- Config 81/150 done in 3.07s ---
+  [PASS] A3 Boltzmann pop[0] (A3_N3_T0.5_dE1.0)  (rel_err=0.000664)
+  [PASS] A3 Boltzmann pop[1] (A3_N3_T0.5_dE1.0)  (rel_err=0.003101)
+  [PASS] A3 Boltzmann pop[2] (A3_N3_T0.5_dE1.0)  (rel_err=0.013344)
+  --- Config 82/150 done in 3.80s ---
+  [PASS] A3 Boltzmann pop[0] (A3_N3_T0.5_dE2.0)  (rel_err=0.001111)
+  [FAIL] A3 Boltzmann pop[1] (A3_N3_T0.5_dE2.0)  (rel_err=0.051328)
+         Details: sim=0.0189032, theory=0.0179803, rel_err=0.0513279, threshold=0.05
+  [FAIL] A3 Boltzmann pop[2] (A3_N3_T0.5_dE2.0)  (rel_err=0.509777)
+         Details: sim=0.0004972, theory=0.00032932, rel_err=0.509777, threshold=0.05
+  --- Config 83/150 done in 4.73s ---
+  [PASS] A3 Boltzmann pop[0] (A3_N3_T1.0_dE0.5)  (rel_err=0.000000)
+  [PASS] A3 Boltzmann pop[1] (A3_N3_T1.0_dE0.5)  (rel_err=0.000000)
+  [PASS] A3 Boltzmann pop[2] (A3_N3_T1.0_dE0.5)  (rel_err=0.000000)
+  --- Config 84/150 done in 2.94s ---
+  [PASS] A3 Boltzmann pop[0] (A3_N3_T1.0_dE1.0)  (rel_err=0.000036)
+  [PASS] A3 Boltzmann pop[1] (A3_N3_T1.0_dE1.0)  (rel_err=0.000039)
+  [PASS] A3 Boltzmann pop[2] (A3_N3_T1.0_dE1.0)  (rel_err=0.000161)
+  --- Config 85/150 done in 3.47s ---
+  [PASS] A3 Boltzmann pop[0] (A3_N3_T1.0_dE2.0)  (rel_err=0.000664)
+  [PASS] A3 Boltzmann pop[1] (A3_N3_T1.0_dE2.0)  (rel_err=0.003101)
+  [PASS] A3 Boltzmann pop[2] (A3_N3_T1.0_dE2.0)  (rel_err=0.013344)
+  --- Config 86/150 done in 4.58s ---
+  [PASS] A3 Boltzmann pop[0] (A3_N3_T5.0_dE0.5)  (rel_err=0.000000)
+  [PASS] A3 Boltzmann pop[1] (A3_N3_T5.0_dE0.5)  (rel_err=0.000000)
+  [PASS] A3 Boltzmann pop[2] (A3_N3_T5.0_dE0.5)  (rel_err=0.000000)
+  --- Config 87/150 done in 3.01s ---
+  [PASS] A3 Boltzmann pop[0] (A3_N3_T5.0_dE1.0)  (rel_err=0.000000)
+  [PASS] A3 Boltzmann pop[1] (A3_N3_T5.0_dE1.0)  (rel_err=0.000000)
+  [PASS] A3 Boltzmann pop[2] (A3_N3_T5.0_dE1.0)  (rel_err=0.000000)
+  --- Config 88/150 done in 3.04s ---
+  [PASS] A3 Boltzmann pop[0] (A3_N3_T5.0_dE2.0)  (rel_err=0.000000)
+  [PASS] A3 Boltzmann pop[1] (A3_N3_T5.0_dE2.0)  (rel_err=0.000000)
+  [PASS] A3 Boltzmann pop[2] (A3_N3_T5.0_dE2.0)  (rel_err=0.000000)
+  --- Config 89/150 done in 3.89s ---
+  [PASS] A3 Boltzmann pop[0] (A3_N3_T20.0_dE0.5)  (rel_err=0.000000)
+  [PASS] A3 Boltzmann pop[1] (A3_N3_T20.0_dE0.5)  (rel_err=0.000000)
+  [PASS] A3 Boltzmann pop[2] (A3_N3_T20.0_dE0.5)  (rel_err=0.000000)
+  --- Config 90/150 done in 4.17s ---
+  [PASS] A3 Boltzmann pop[0] (A3_N3_T20.0_dE1.0)  (rel_err=0.000000)
+  [PASS] A3 Boltzmann pop[1] (A3_N3_T20.0_dE1.0)  (rel_err=0.000000)
+  [PASS] A3 Boltzmann pop[2] (A3_N3_T20.0_dE1.0)  (rel_err=0.000000)
+  --- Config 91/150 done in 3.46s ---
+  [PASS] A3 Boltzmann pop[0] (A3_N3_T20.0_dE2.0)  (rel_err=0.000000)
+  [PASS] A3 Boltzmann pop[1] (A3_N3_T20.0_dE2.0)  (rel_err=0.000000)
+  [PASS] A3 Boltzmann pop[2] (A3_N3_T20.0_dE2.0)  (rel_err=0.000000)
+  --- Config 92/150 done in 4.84s ---
+  [PASS] A3 Boltzmann pop[0] (A3_N4_T0.5_dE0.5)  (rel_err=0.001143)
+  [PASS] A3 Boltzmann pop[1] (A3_N4_T0.5_dE0.5)  (rel_err=0.000442)
+  [PASS] A3 Boltzmann pop[2] (A3_N4_T0.5_dE0.5)  (rel_err=0.004138)
+  [PASS] A3 Boltzmann pop[3] (A3_N4_T0.5_dE0.5)  (rel_err=0.008448)
+  --- Config 93/150 done in 3.47s ---
+  [PASS] A3 Boltzmann pop[0] (A3_N4_T0.5_dE1.0)  (rel_err=0.004177)
+  [PASS] A3 Boltzmann pop[1] (A3_N4_T0.5_dE1.0)  (rel_err=0.014734)
+  [FAIL] A3 Boltzmann pop[2] (A3_N4_T0.5_dE1.0)  (rel_err=0.088050)
+         Details: sim=0.0172371, theory=0.0158422, rel_err=0.0880496, threshold=0.05
+  [FAIL] A3 Boltzmann pop[3] (A3_N4_T0.5_dE1.0)  (rel_err=0.230173)
+         Details: sim=0.0026375, theory=0.00214401, rel_err=0.230173, threshold=0.05
+  --- Config 94/150 done in 4.37s ---
+  [PASS] A3 Boltzmann pop[0] (A3_N4_T0.5_dE2.0)  (rel_err=0.004395)
+  [FAIL] A3 Boltzmann pop[1] (A3_N4_T0.5_dE2.0)  (rel_err=0.179487)
+         Details: sim=0.0212074, theory=0.0179802, rel_err=0.179487, threshold=0.05
+  [FAIL] A3 Boltzmann pop[2] (A3_N4_T0.5_dE2.0)  (rel_err=2.883914)
+         Details: sim=0.00127904, theory=0.000329318, rel_err=2.88391, threshold=0.05
+  [FAIL] A3 Boltzmann pop[3] (A3_N4_T0.5_dE2.0)  (rel_err=22.864921)
+         Details: sim=0.000143946, theory=6.03168e-06, rel_err=22.8649, threshold=0.05
+  --- Config 95/150 done in 6.03s ---
+  [PASS] A3 Boltzmann pop[0] (A3_N4_T1.0_dE0.5)  (rel_err=0.000017)
+  [PASS] A3 Boltzmann pop[1] (A3_N4_T1.0_dE0.5)  (rel_err=0.000003)
+  [PASS] A3 Boltzmann pop[2] (A3_N4_T1.0_dE0.5)  (rel_err=0.000022)
+  [PASS] A3 Boltzmann pop[3] (A3_N4_T1.0_dE0.5)  (rel_err=0.000045)
+  --- Config 96/150 done in 3.33s ---
+  [PASS] A3 Boltzmann pop[0] (A3_N4_T1.0_dE1.0)  (rel_err=0.001143)
+  [PASS] A3 Boltzmann pop[1] (A3_N4_T1.0_dE1.0)  (rel_err=0.000442)
+  [PASS] A3 Boltzmann pop[2] (A3_N4_T1.0_dE1.0)  (rel_err=0.004138)
+  [PASS] A3 Boltzmann pop[3] (A3_N4_T1.0_dE1.0)  (rel_err=0.008448)
+  --- Config 97/150 done in 4.14s ---
+  [PASS] A3 Boltzmann pop[0] (A3_N4_T1.0_dE2.0)  (rel_err=0.004177)
+  [PASS] A3 Boltzmann pop[1] (A3_N4_T1.0_dE2.0)  (rel_err=0.014734)
+  [FAIL] A3 Boltzmann pop[2] (A3_N4_T1.0_dE2.0)  (rel_err=0.088050)
+         Details: sim=0.0172371, theory=0.0158422, rel_err=0.0880496, threshold=0.05
+  [FAIL] A3 Boltzmann pop[3] (A3_N4_T1.0_dE2.0)  (rel_err=0.230173)
+         Details: sim=0.0026375, theory=0.00214401, rel_err=0.230173, threshold=0.05
+  --- Config 98/150 done in 5.88s ---
+  [PASS] A3 Boltzmann pop[0] (A3_N4_T5.0_dE0.5)  (rel_err=0.000000)
+  [PASS] A3 Boltzmann pop[1] (A3_N4_T5.0_dE0.5)  (rel_err=0.000000)
+  [PASS] A3 Boltzmann pop[2] (A3_N4_T5.0_dE0.5)  (rel_err=0.000000)
+  [PASS] A3 Boltzmann pop[3] (A3_N4_T5.0_dE0.5)  (rel_err=0.000000)
+  --- Config 99/150 done in 3.33s ---
+  [PASS] A3 Boltzmann pop[0] (A3_N4_T5.0_dE1.0)  (rel_err=0.000000)
+  [PASS] A3 Boltzmann pop[1] (A3_N4_T5.0_dE1.0)  (rel_err=0.000000)
+  [PASS] A3 Boltzmann pop[2] (A3_N4_T5.0_dE1.0)  (rel_err=0.000000)
+  [PASS] A3 Boltzmann pop[3] (A3_N4_T5.0_dE1.0)  (rel_err=0.000000)
+  --- Config 100/150 done in 3.40s ---
+  [PASS] A3 Boltzmann pop[0] (A3_N4_T5.0_dE2.0)  (rel_err=0.000002)
+  [PASS] A3 Boltzmann pop[1] (A3_N4_T5.0_dE2.0)  (rel_err=0.000000)
+  [PASS] A3 Boltzmann pop[2] (A3_N4_T5.0_dE2.0)  (rel_err=0.000002)
+  [PASS] A3 Boltzmann pop[3] (A3_N4_T5.0_dE2.0)  (rel_err=0.000004)
+  --- Config 101/150 done in 4.54s ---
+  [PASS] A3 Boltzmann pop[0] (A3_N4_T20.0_dE0.5)  (rel_err=0.000000)
+  [PASS] A3 Boltzmann pop[1] (A3_N4_T20.0_dE0.5)  (rel_err=0.000000)
+  [PASS] A3 Boltzmann pop[2] (A3_N4_T20.0_dE0.5)  (rel_err=0.000000)
+  [PASS] A3 Boltzmann pop[3] (A3_N4_T20.0_dE0.5)  (rel_err=0.000000)
+  --- Config 102/150 done in 4.72s ---
+  [PASS] A3 Boltzmann pop[0] (A3_N4_T20.0_dE1.0)  (rel_err=0.000000)
+  [PASS] A3 Boltzmann pop[1] (A3_N4_T20.0_dE1.0)  (rel_err=0.000000)
+  [PASS] A3 Boltzmann pop[2] (A3_N4_T20.0_dE1.0)  (rel_err=0.000000)
+  [PASS] A3 Boltzmann pop[3] (A3_N4_T20.0_dE1.0)  (rel_err=0.000000)
+  --- Config 103/150 done in 3.80s ---
+  [PASS] A3 Boltzmann pop[0] (A3_N4_T20.0_dE2.0)  (rel_err=0.000000)
+  [PASS] A3 Boltzmann pop[1] (A3_N4_T20.0_dE2.0)  (rel_err=0.000000)
+  [PASS] A3 Boltzmann pop[2] (A3_N4_T20.0_dE2.0)  (rel_err=0.000000)
+  [PASS] A3 Boltzmann pop[3] (A3_N4_T20.0_dE2.0)  (rel_err=0.000000)
+  --- Config 104/150 done in 4.15s ---
+  [PASS] A3 Boltzmann pop[0] (A3_N5_T0.5_dE0.5)  (rel_err=0.006693)
+  [PASS] A3 Boltzmann pop[1] (A3_N5_T0.5_dE0.5)  (rel_err=0.000337)
+  [PASS] A3 Boltzmann pop[2] (A3_N5_T0.5_dE0.5)  (rel_err=0.019096)
+  [FAIL] A3 Boltzmann pop[3] (A3_N5_T0.5_dE0.5)  (rel_err=0.050035)
+         Details: sim=0.0332703, theory=0.0316849, rel_err=0.0500349, threshold=0.05
+  [FAIL] A3 Boltzmann pop[4] (A3_N5_T0.5_dE0.5)  (rel_err=0.081568)
+         Details: sim=0.012607, theory=0.0116562, rel_err=0.0815681, threshold=0.05
+  --- Config 105/150 done in 4.09s ---
+  [PASS] A3 Boltzmann pop[0] (A3_N5_T0.5_dE1.0)  (rel_err=0.012557)
+  [PASS] A3 Boltzmann pop[1] (A3_N5_T0.5_dE1.0)  (rel_err=0.036501)
+  [FAIL] A3 Boltzmann pop[2] (A3_N5_T0.5_dE1.0)  (rel_err=0.259286)
+         Details: sim=0.0199441, theory=0.0158376, rel_err=0.259286, threshold=0.05
+  [FAIL] A3 Boltzmann pop[3] (A3_N5_T0.5_dE1.0)  (rel_err=0.888982)
+         Details: sim=0.00404882, theory=0.00214339, rel_err=0.888982, threshold=0.05
+  [FAIL] A3 Boltzmann pop[4] (A3_N5_T0.5_dE1.0)  (rel_err=1.980383)
+         Details: sim=0.000864537, theory=0.000290076, rel_err=1.98038, threshold=0.05
+  --- Config 106/150 done in 5.40s ---
+  [PASS] A3 Boltzmann pop[0] (A3_N5_T0.5_dE2.0)  (rel_err=0.012153)
+  [FAIL] A3 Boltzmann pop[1] (A3_N5_T0.5_dE2.0)  (rel_err=0.439491)
+         Details: sim=0.0258823, theory=0.0179802, rel_err=0.439491, threshold=0.05
+  [FAIL] A3 Boltzmann pop[2] (A3_N5_T0.5_dE2.0)  (rel_err=9.522116)
+         Details: sim=0.00346513, theory=0.000329318, rel_err=9.52212, threshold=0.05
+  [FAIL] A3 Boltzmann pop[3] (A3_N5_T0.5_dE2.0)  (rel_err=129.627216)
+         Details: sim=0.000787901, theory=6.03168e-06, rel_err=129.627, threshold=0.05
+  [FAIL] A3 Boltzmann pop[4] (A3_N5_T0.5_dE2.0)  (rel_err=1005.418893)
+         Details: sim=0.000111183, theory=1.10474e-07, rel_err=1005.42, threshold=0.05
+  --- Config 107/150 done in 7.69s ---
+  [PASS] A3 Boltzmann pop[0] (A3_N5_T1.0_dE0.5)  (rel_err=0.000503)
+  [PASS] A3 Boltzmann pop[1] (A3_N5_T1.0_dE0.5)  (rel_err=0.000216)
+  [PASS] A3 Boltzmann pop[2] (A3_N5_T1.0_dE0.5)  (rel_err=0.000381)
+  [PASS] A3 Boltzmann pop[3] (A3_N5_T1.0_dE0.5)  (rel_err=0.001147)
+  [PASS] A3 Boltzmann pop[4] (A3_N5_T1.0_dE0.5)  (rel_err=0.001755)
+  --- Config 108/150 done in 3.77s ---
+  [PASS] A3 Boltzmann pop[0] (A3_N5_T1.0_dE1.0)  (rel_err=0.006693)
+  [PASS] A3 Boltzmann pop[1] (A3_N5_T1.0_dE1.0)  (rel_err=0.000337)
+  [PASS] A3 Boltzmann pop[2] (A3_N5_T1.0_dE1.0)  (rel_err=0.019096)
+  [FAIL] A3 Boltzmann pop[3] (A3_N5_T1.0_dE1.0)  (rel_err=0.050035)
+         Details: sim=0.0332703, theory=0.0316849, rel_err=0.0500349, threshold=0.05
+  [FAIL] A3 Boltzmann pop[4] (A3_N5_T1.0_dE1.0)  (rel_err=0.081568)
+         Details: sim=0.012607, theory=0.0116562, rel_err=0.0815681, threshold=0.05
+  --- Config 109/150 done in 5.05s ---
+  [PASS] A3 Boltzmann pop[0] (A3_N5_T1.0_dE2.0)  (rel_err=0.012557)
+  [PASS] A3 Boltzmann pop[1] (A3_N5_T1.0_dE2.0)  (rel_err=0.036501)
+  [FAIL] A3 Boltzmann pop[2] (A3_N5_T1.0_dE2.0)  (rel_err=0.259286)
+         Details: sim=0.0199441, theory=0.0158376, rel_err=0.259286, threshold=0.05
+  [FAIL] A3 Boltzmann pop[3] (A3_N5_T1.0_dE2.0)  (rel_err=0.888982)
+         Details: sim=0.00404882, theory=0.00214339, rel_err=0.888982, threshold=0.05
+  [FAIL] A3 Boltzmann pop[4] (A3_N5_T1.0_dE2.0)  (rel_err=1.980383)
+         Details: sim=0.000864537, theory=0.000290076, rel_err=1.98038, threshold=0.05
+  --- Config 110/150 done in 7.76s ---
+  [PASS] A3 Boltzmann pop[0] (A3_N5_T5.0_dE0.5)  (rel_err=0.000000)
+  [PASS] A3 Boltzmann pop[1] (A3_N5_T5.0_dE0.5)  (rel_err=0.000000)
+  [PASS] A3 Boltzmann pop[2] (A3_N5_T5.0_dE0.5)  (rel_err=0.000000)
+  [PASS] A3 Boltzmann pop[3] (A3_N5_T5.0_dE0.5)  (rel_err=0.000000)
+  [PASS] A3 Boltzmann pop[4] (A3_N5_T5.0_dE0.5)  (rel_err=0.000000)
+  --- Config 111/150 done in 3.63s ---
+  [PASS] A3 Boltzmann pop[0] (A3_N5_T5.0_dE1.0)  (rel_err=0.000000)
+  [PASS] A3 Boltzmann pop[1] (A3_N5_T5.0_dE1.0)  (rel_err=0.000000)
+  [PASS] A3 Boltzmann pop[2] (A3_N5_T5.0_dE1.0)  (rel_err=0.000000)
+  [PASS] A3 Boltzmann pop[3] (A3_N5_T5.0_dE1.0)  (rel_err=0.000000)
+  [PASS] A3 Boltzmann pop[4] (A3_N5_T5.0_dE1.0)  (rel_err=0.000000)
+  --- Config 112/150 done in 4.03s ---
+  [PASS] A3 Boltzmann pop[0] (A3_N5_T5.0_dE2.0)  (rel_err=0.000114)
+  [PASS] A3 Boltzmann pop[1] (A3_N5_T5.0_dE2.0)  (rel_err=0.000055)
+  [PASS] A3 Boltzmann pop[2] (A3_N5_T5.0_dE2.0)  (rel_err=0.000061)
+  [PASS] A3 Boltzmann pop[3] (A3_N5_T5.0_dE2.0)  (rel_err=0.000202)
+  [PASS] A3 Boltzmann pop[4] (A3_N5_T5.0_dE2.0)  (rel_err=0.000309)
+  --- Config 113/150 done in 5.72s ---
+  [PASS] A3 Boltzmann pop[0] (A3_N5_T20.0_dE0.5)  (rel_err=0.000000)
+  [PASS] A3 Boltzmann pop[1] (A3_N5_T20.0_dE0.5)  (rel_err=0.000000)
+  [PASS] A3 Boltzmann pop[2] (A3_N5_T20.0_dE0.5)  (rel_err=0.000000)
+  [PASS] A3 Boltzmann pop[3] (A3_N5_T20.0_dE0.5)  (rel_err=0.000000)
+  [PASS] A3 Boltzmann pop[4] (A3_N5_T20.0_dE0.5)  (rel_err=0.000000)
+  --- Config 114/150 done in 5.58s ---
+  [PASS] A3 Boltzmann pop[0] (A3_N5_T20.0_dE1.0)  (rel_err=0.000000)
+  [PASS] A3 Boltzmann pop[1] (A3_N5_T20.0_dE1.0)  (rel_err=0.000000)
+  [PASS] A3 Boltzmann pop[2] (A3_N5_T20.0_dE1.0)  (rel_err=0.000000)
+  [PASS] A3 Boltzmann pop[3] (A3_N5_T20.0_dE1.0)  (rel_err=0.000000)
+  [PASS] A3 Boltzmann pop[4] (A3_N5_T20.0_dE1.0)  (rel_err=0.000000)
+  --- Config 115/150 done in 4.25s ---
+  [PASS] A3 Boltzmann pop[0] (A3_N5_T20.0_dE2.0)  (rel_err=0.000000)
+  [PASS] A3 Boltzmann pop[1] (A3_N5_T20.0_dE2.0)  (rel_err=0.000000)
+  [PASS] A3 Boltzmann pop[2] (A3_N5_T20.0_dE2.0)  (rel_err=0.000000)
+  [PASS] A3 Boltzmann pop[3] (A3_N5_T20.0_dE2.0)  (rel_err=0.000000)
+  [PASS] A3 Boltzmann pop[4] (A3_N5_T20.0_dE2.0)  (rel_err=0.000000)
+  --- Config 116/150 done in 5.25s ---
+  [PASS] A3 Boltzmann pop[0] (A3_extra_0)  (rel_err=0.001118)
+  [FAIL] A3 Boltzmann pop[1] (A3_extra_0)  (rel_err=22.163962)
+         Details: sim=0.00105159, theory=4.53979e-05, rel_err=22.164, threshold=0.05
+  [FAIL] A3 Boltzmann pop[2] (A3_extra_0)  (rel_err=54332.851327)
+         Details: sim=0.000111985, theory=2.06106e-09, rel_err=54332.9, threshold=0.05
+  --- Config 117/150 done in 3.65s ---
+  [PASS] A3 Boltzmann pop[0] (A3_extra_1)  (rel_err=0.000000)
+  [PASS] A3 Boltzmann pop[1] (A3_extra_1)  (rel_err=0.000000)
+  [PASS] A3 Boltzmann pop[2] (A3_extra_1)  (rel_err=0.000000)
+  [PASS] A3 Boltzmann pop[3] (A3_extra_1)  (rel_err=0.000000)
+  [PASS] A3 Boltzmann pop[4] (A3_extra_1)  (rel_err=0.000000)
+  --- Config 118/150 done in 15.97s ---
+  [PASS] A3 Boltzmann pop[0] (A3_extra_2)  (rel_err=0.004277)
+  [FAIL] A3 Boltzmann pop[1] (A3_extra_2)  (rel_err=2484645253639762491144142967826538916525033650133076277525024358818483224707524984832.000000)
+         Details: sim=0.00343849, theory=1.3839e-87, rel_err=2.48465e+84, threshold=0.05
+  [FAIL] A3 Boltzmann pop[2] (A3_extra_2)  (rel_err=394111787423479052441183521014265544848806396736452257579866084294686747283691874746309692598678286596551721155068701841352261104874429718028368603599750831509984774193152.000000)
+         Details: sim=0.000754791, theory=1.91517e-174, rel_err=3.94112e+170, threshold=0.05
+  [FAIL] A3 Boltzmann pop[3] (A3_extra_2)  (rel_err=31642682642727556380892445133199195744081436686157696854565301747424796231350357687139015961679434269270813573158729821779054069703967489631607034408905413012247184703241865904313921845356218391812585890549195634825241397100100962282832721936023688482652160.000000)
+         Details: sim=8.38657e-05, theory=2.6504e-261, rel_err=3.16427e+256, threshold=0.05
+  --- Config 119/150 done in 5.79s ---
+  [PASS] A3 Boltzmann pop[0] (A3_extra_3)  (rel_err=0.000000)
+  [PASS] A3 Boltzmann pop[1] (A3_extra_3)  (rel_err=0.000000)
+  [PASS] A3 Boltzmann pop[2] (A3_extra_3)  (rel_err=0.000000)
+  [PASS] A3 Boltzmann pop[3] (A3_extra_3)  (rel_err=0.000000)
+  [PASS] A3 Boltzmann pop[4] (A3_extra_3)  (rel_err=0.000000)
+  --- Config 120/150 done in 6.17s ---
+  [PASS] A4 Carnot Bound (A4_Tc1.0_Th5.0_r1.5)  (rel_err=0.000000)
+  --- Config 121/150 done in 0.19s ---
+  [PASS] A4 Carnot Bound (A4_Tc1.0_Th5.0_r2.0)  (rel_err=0.000000)
+  --- Config 122/150 done in 0.19s ---
+  [PASS] A4 Carnot Bound (A4_Tc1.0_Th5.0_r3.0)  (rel_err=0.000000)
+  --- Config 123/150 done in 0.18s ---
+  [PASS] A4 Carnot Bound (A4_Tc1.0_Th5.0_r5.0)  (rel_err=0.000000)
+  --- Config 124/150 done in 0.18s ---
+  [PASS] A4 Carnot Bound (A4_Tc1.0_Th5.0_r10.0)  (rel_err=0.000000)
+  --- Config 125/150 done in 0.19s ---
+  [PASS] A4 Carnot Bound (A4_Tc1.0_Th10.0_r1.5)  (rel_err=0.000000)
+  --- Config 126/150 done in 0.18s ---
+  [PASS] A4 Carnot Bound (A4_Tc1.0_Th10.0_r2.0)  (rel_err=0.000000)
+  --- Config 127/150 done in 0.18s ---
+  [PASS] A4 Carnot Bound (A4_Tc1.0_Th10.0_r3.0)  (rel_err=0.000000)
+  --- Config 128/150 done in 0.19s ---
+  [PASS] A4 Carnot Bound (A4_Tc1.0_Th10.0_r5.0)  (rel_err=0.000000)
+  --- Config 129/150 done in 0.18s ---
+  [PASS] A4 Carnot Bound (A4_Tc1.0_Th10.0_r10.0)  (rel_err=0.000000)
+  --- Config 130/150 done in 0.18s ---
+  [PASS] A4 Carnot Bound (A4_Tc1.0_Th50.0_r1.5)  (rel_err=0.000000)
+  --- Config 131/150 done in 0.18s ---
+  [PASS] A4 Carnot Bound (A4_Tc1.0_Th50.0_r2.0)  (rel_err=0.000000)
+  --- Config 132/150 done in 0.18s ---
+  [PASS] A4 Carnot Bound (A4_Tc1.0_Th50.0_r3.0)  (rel_err=0.000000)
+  --- Config 133/150 done in 0.18s ---
+  [PASS] A4 Carnot Bound (A4_Tc1.0_Th50.0_r5.0)  (rel_err=0.000000)
+  --- Config 134/150 done in 0.18s ---
+  [PASS] A4 Carnot Bound (A4_Tc1.0_Th50.0_r10.0)  (rel_err=0.000000)
+  --- Config 135/150 done in 0.18s ---
+  [PASS] A4 Carnot Bound (A4_Tc2.0_Th10.0_r1.5)  (rel_err=0.000000)
+  --- Config 136/150 done in 0.18s ---
+  [PASS] A4 Carnot Bound (A4_Tc2.0_Th10.0_r2.0)  (rel_err=0.000000)
+  --- Config 137/150 done in 0.18s ---
+  [PASS] A4 Carnot Bound (A4_Tc2.0_Th10.0_r3.0)  (rel_err=0.000000)
+  --- Config 138/150 done in 0.18s ---
+  [PASS] A4 Carnot Bound (A4_Tc2.0_Th10.0_r5.0)  (rel_err=0.000000)
+  --- Config 139/150 done in 0.19s ---
+  [PASS] A4 Carnot Bound (A4_Tc2.0_Th10.0_r10.0)  (rel_err=0.000000)
+  --- Config 140/150 done in 0.18s ---
+  [PASS] A4 Carnot Bound (A4_Tc5.0_Th50.0_r1.5)  (rel_err=0.000000)
+  --- Config 141/150 done in 0.19s ---
+  [PASS] A4 Carnot Bound (A4_Tc5.0_Th50.0_r2.0)  (rel_err=0.000000)
+  --- Config 142/150 done in 0.18s ---
+  [PASS] A4 Carnot Bound (A4_Tc5.0_Th50.0_r3.0)  (rel_err=0.000000)
+  --- Config 143/150 done in 0.18s ---
+  [PASS] A4 Carnot Bound (A4_Tc5.0_Th50.0_r5.0)  (rel_err=0.000000)
+  --- Config 144/150 done in 0.18s ---
+  [PASS] A4 Carnot Bound (A4_Tc5.0_Th50.0_r10.0)  (rel_err=0.000000)
+  --- Config 145/150 done in 0.18s ---
+  [PASS] A4 Carnot Bound (A4_Tc0.5_Th20.0_r1.5)  (rel_err=0.000000)
+  --- Config 146/150 done in 0.18s ---
+  [PASS] A4 Carnot Bound (A4_Tc0.5_Th20.0_r2.0)  (rel_err=0.000000)
+  --- Config 147/150 done in 0.18s ---
+  [PASS] A4 Carnot Bound (A4_Tc0.5_Th20.0_r3.0)  (rel_err=0.000000)
+  --- Config 148/150 done in 0.18s ---
+  [PASS] A4 Carnot Bound (A4_Tc0.5_Th20.0_r5.0)  (rel_err=0.000000)
+  --- Config 149/150 done in 0.18s ---
+  [PASS] A4 Carnot Bound (A4_Tc0.5_Th20.0_r10.0)  (rel_err=0.000000)
+  --- Config 150/150 done in 0.18s ---
+
+  --------------------------------------------------
+  CATEGORY SUMMARY: Thermodynamics
+  Total checks: 271 | PASS: 206 | FAIL: 65
+  Pass rate: 76.0%
+  Time: 566.30s
+  --------------------------------------------------
+
+
+======================================================================
+  CATEGORY: QM Fundamentals
+  Born Rule, Heisenberg Uncertainty, Energy-Time Uncertainty, No-Cloning, Quantum Zeno, and Landau-Zener across 160 configurations.
+  Configs: 160 | Runs per config: 1000
+======================================================================
+  [PASS] B1 Born Rule P0 (B1_th0.100_g0.0)  (rel_err=0.000000)
+  [PASS] B1 Trace (B1_th0.100_g0.0)  (rel_err=0.000000)
+  --- Config 1/160 done in 1.09s ---
+  [PASS] B1 Born Rule P0 (B1_th0.100_g0.01)  (rel_err=0.000000)
+  [PASS] B1 Trace (B1_th0.100_g0.01)  (rel_err=0.000000)
+  --- Config 2/160 done in 1.21s ---
+  [PASS] B1 Born Rule P0 (B1_th0.100_g0.05)  (rel_err=0.000000)
+  [PASS] B1 Trace (B1_th0.100_g0.05)  (rel_err=0.000000)
+  --- Config 3/160 done in 1.22s ---
+  [PASS] B1 Born Rule P0 (B1_th0.100_g0.1)  (rel_err=0.000000)
+  [PASS] B1 Trace (B1_th0.100_g0.1)  (rel_err=0.000000)
+  --- Config 4/160 done in 1.22s ---
+  [PASS] B1 Born Rule P0 (B1_th0.427_g0.0)  (rel_err=0.000000)
+  [PASS] B1 Trace (B1_th0.427_g0.0)  (rel_err=0.000000)
+  --- Config 5/160 done in 1.10s ---
+  [PASS] B1 Born Rule P0 (B1_th0.427_g0.01)  (rel_err=0.000000)
+  [PASS] B1 Trace (B1_th0.427_g0.01)  (rel_err=0.000000)
+  --- Config 6/160 done in 1.19s ---
+  [PASS] B1 Born Rule P0 (B1_th0.427_g0.05)  (rel_err=0.000000)
+  [PASS] B1 Trace (B1_th0.427_g0.05)  (rel_err=0.000000)
+  --- Config 7/160 done in 1.22s ---
+  [PASS] B1 Born Rule P0 (B1_th0.427_g0.1)  (rel_err=0.000000)
+  [PASS] B1 Trace (B1_th0.427_g0.1)  (rel_err=0.000000)
+  --- Config 8/160 done in 1.24s ---
+  [PASS] B1 Born Rule P0 (B1_th0.754_g0.0)  (rel_err=0.000000)
+  [PASS] B1 Trace (B1_th0.754_g0.0)  (rel_err=0.000000)
+  --- Config 9/160 done in 1.11s ---
+  [PASS] B1 Born Rule P0 (B1_th0.754_g0.01)  (rel_err=0.000000)
+  [PASS] B1 Trace (B1_th0.754_g0.01)  (rel_err=0.000000)
+  --- Config 10/160 done in 1.20s ---
+  [PASS] B1 Born Rule P0 (B1_th0.754_g0.05)  (rel_err=0.000000)
+  [PASS] B1 Trace (B1_th0.754_g0.05)  (rel_err=0.000000)
+  --- Config 11/160 done in 1.22s ---
+  [PASS] B1 Born Rule P0 (B1_th0.754_g0.1)  (rel_err=0.000000)
+  [PASS] B1 Trace (B1_th0.754_g0.1)  (rel_err=0.000000)
+  --- Config 12/160 done in 1.23s ---
+  [PASS] B1 Born Rule P0 (B1_th1.081_g0.0)  (rel_err=0.000000)
+  [PASS] B1 Trace (B1_th1.081_g0.0)  (rel_err=0.000000)
+  --- Config 13/160 done in 1.10s ---
+  [PASS] B1 Born Rule P0 (B1_th1.081_g0.01)  (rel_err=0.000000)
+  [PASS] B1 Trace (B1_th1.081_g0.01)  (rel_err=0.000000)
+  --- Config 14/160 done in 1.19s ---
+  [PASS] B1 Born Rule P0 (B1_th1.081_g0.05)  (rel_err=0.000000)
+  [PASS] B1 Trace (B1_th1.081_g0.05)  (rel_err=0.000000)
+  --- Config 15/160 done in 1.20s ---
+  [PASS] B1 Born Rule P0 (B1_th1.081_g0.1)  (rel_err=0.000000)
+  [PASS] B1 Trace (B1_th1.081_g0.1)  (rel_err=0.000000)
+  --- Config 16/160 done in 1.21s ---
+  [PASS] B1 Born Rule P0 (B1_th1.407_g0.0)  (rel_err=0.000000)
+  [PASS] B1 Trace (B1_th1.407_g0.0)  (rel_err=0.000000)
+  --- Config 17/160 done in 1.09s ---
+  [PASS] B1 Born Rule P0 (B1_th1.407_g0.01)  (rel_err=0.000000)
+  [PASS] B1 Trace (B1_th1.407_g0.01)  (rel_err=0.000000)
+  --- Config 18/160 done in 1.21s ---
+  [PASS] B1 Born Rule P0 (B1_th1.407_g0.05)  (rel_err=0.000000)
+  [PASS] B1 Trace (B1_th1.407_g0.05)  (rel_err=0.000000)
+  --- Config 19/160 done in 1.22s ---
+  [PASS] B1 Born Rule P0 (B1_th1.407_g0.1)  (rel_err=0.000000)
+  [PASS] B1 Trace (B1_th1.407_g0.1)  (rel_err=0.000000)
+  --- Config 20/160 done in 1.23s ---
+  [PASS] B1 Born Rule P0 (B1_th1.734_g0.0)  (rel_err=0.000000)
+  [PASS] B1 Trace (B1_th1.734_g0.0)  (rel_err=0.000000)
+  --- Config 21/160 done in 1.07s ---
+  [PASS] B1 Born Rule P0 (B1_th1.734_g0.01)  (rel_err=0.000000)
+  [PASS] B1 Trace (B1_th1.734_g0.01)  (rel_err=0.000000)
+  --- Config 22/160 done in 1.20s ---
+  [PASS] B1 Born Rule P0 (B1_th1.734_g0.05)  (rel_err=0.000000)
+  [PASS] B1 Trace (B1_th1.734_g0.05)  (rel_err=0.000000)
+  --- Config 23/160 done in 1.22s ---
+  [PASS] B1 Born Rule P0 (B1_th1.734_g0.1)  (rel_err=0.000000)
+  [PASS] B1 Trace (B1_th1.734_g0.1)  (rel_err=0.000000)
+  --- Config 24/160 done in 1.22s ---
+  [PASS] B1 Born Rule P0 (B1_th2.061_g0.0)  (rel_err=0.000000)
+  [PASS] B1 Trace (B1_th2.061_g0.0)  (rel_err=0.000000)
+  --- Config 25/160 done in 1.07s ---
+  [PASS] B1 Born Rule P0 (B1_th2.061_g0.01)  (rel_err=0.000000)
+  [PASS] B1 Trace (B1_th2.061_g0.01)  (rel_err=0.000000)
+  --- Config 26/160 done in 1.21s ---
+  [PASS] B1 Born Rule P0 (B1_th2.061_g0.05)  (rel_err=0.000000)
+  [PASS] B1 Trace (B1_th2.061_g0.05)  (rel_err=0.000000)
+  --- Config 27/160 done in 1.21s ---
+  [PASS] B1 Born Rule P0 (B1_th2.061_g0.1)  (rel_err=0.000000)
+  [PASS] B1 Trace (B1_th2.061_g0.1)  (rel_err=0.000000)
+  --- Config 28/160 done in 1.22s ---
+  [PASS] B1 Born Rule P0 (B1_th2.388_g0.0)  (rel_err=0.000000)
+  [PASS] B1 Trace (B1_th2.388_g0.0)  (rel_err=0.000000)
+  --- Config 29/160 done in 1.07s ---
+  [PASS] B1 Born Rule P0 (B1_th2.388_g0.01)  (rel_err=0.000000)
+  [PASS] B1 Trace (B1_th2.388_g0.01)  (rel_err=0.000000)
+  --- Config 30/160 done in 1.19s ---
+  [PASS] B1 Born Rule P0 (B1_th2.388_g0.05)  (rel_err=0.000000)
+  [PASS] B1 Trace (B1_th2.388_g0.05)  (rel_err=0.000000)
+  --- Config 31/160 done in 1.21s ---
+  [PASS] B1 Born Rule P0 (B1_th2.388_g0.1)  (rel_err=0.000000)
+  [PASS] B1 Trace (B1_th2.388_g0.1)  (rel_err=0.000000)
+  --- Config 32/160 done in 1.22s ---
+  [PASS] B1 Born Rule P0 (B1_th2.715_g0.0)  (rel_err=0.000000)
+  [PASS] B1 Trace (B1_th2.715_g0.0)  (rel_err=0.000000)
+  --- Config 33/160 done in 1.07s ---
+  [PASS] B1 Born Rule P0 (B1_th2.715_g0.01)  (rel_err=0.000000)
+  [PASS] B1 Trace (B1_th2.715_g0.01)  (rel_err=0.000000)
+  --- Config 34/160 done in 1.21s ---
+  [PASS] B1 Born Rule P0 (B1_th2.715_g0.05)  (rel_err=0.000000)
+  [PASS] B1 Trace (B1_th2.715_g0.05)  (rel_err=0.000000)
+  --- Config 35/160 done in 1.20s ---
+  [PASS] B1 Born Rule P0 (B1_th2.715_g0.1)  (rel_err=0.000000)
+  [PASS] B1 Trace (B1_th2.715_g0.1)  (rel_err=0.000000)
+  --- Config 36/160 done in 1.23s ---
+  [PASS] B1 Born Rule P0 (B1_th3.042_g0.0)  (rel_err=0.000000)
+  [PASS] B1 Trace (B1_th3.042_g0.0)  (rel_err=0.000000)
+  --- Config 37/160 done in 1.10s ---
+  [PASS] B1 Born Rule P0 (B1_th3.042_g0.01)  (rel_err=0.000000)
+  [PASS] B1 Trace (B1_th3.042_g0.01)  (rel_err=0.000000)
+  --- Config 38/160 done in 1.21s ---
+  [PASS] B1 Born Rule P0 (B1_th3.042_g0.05)  (rel_err=0.000000)
+  [PASS] B1 Trace (B1_th3.042_g0.05)  (rel_err=0.000000)
+  --- Config 39/160 done in 1.21s ---
+  [PASS] B1 Born Rule P0 (B1_th3.042_g0.1)  (rel_err=0.000000)
+  [PASS] B1 Trace (B1_th3.042_g0.1)  (rel_err=0.000000)
+  --- Config 40/160 done in 1.23s ---
+  [PASS] B2 Heisenberg xp (B2_a0.5_g0.0)  (rel_err=0.000000)
+  --- Config 41/160 done in 4.48s ---
+  [PASS] B2 Heisenberg xp (B2_a0.5_g0.001)  (rel_err=0.000000)
+  --- Config 42/160 done in 3.83s ---
+  [PASS] B2 Heisenberg xp (B2_a0.5_g0.005)  (rel_err=0.000000)
+  --- Config 43/160 done in 3.79s ---
+  [PASS] B2 Heisenberg xp (B2_a0.5_g0.01)  (rel_err=0.000000)
+  --- Config 44/160 done in 3.78s ---
+  [PASS] B2 Heisenberg xp (B2_a0.5_g0.05)  (rel_err=0.000000)
+  --- Config 45/160 done in 3.96s ---
+  [PASS] B2 Heisenberg xp (B2_a1.0_g0.0)  (rel_err=0.000000)
+  --- Config 46/160 done in 4.10s ---
+  [PASS] B2 Heisenberg xp (B2_a1.0_g0.001)  (rel_err=0.000000)
+  --- Config 47/160 done in 4.37s ---
+  [PASS] B2 Heisenberg xp (B2_a1.0_g0.005)  (rel_err=0.000000)
+  --- Config 48/160 done in 4.41s ---
+  [PASS] B2 Heisenberg xp (B2_a1.0_g0.01)  (rel_err=0.000000)
+  --- Config 49/160 done in 4.42s ---
+  [PASS] B2 Heisenberg xp (B2_a1.0_g0.05)  (rel_err=0.000000)
+  --- Config 50/160 done in 4.69s ---
+  [PASS] B2 Heisenberg xp (B2_a2.0_g0.0)  (rel_err=0.000000)
+  --- Config 51/160 done in 4.61s ---
+  [PASS] B2 Heisenberg xp (B2_a2.0_g0.001)  (rel_err=0.000000)
+  --- Config 52/160 done in 4.86s ---
+  [PASS] B2 Heisenberg xp (B2_a2.0_g0.005)  (rel_err=0.000000)
+  --- Config 53/160 done in 4.88s ---
+  [PASS] B2 Heisenberg xp (B2_a2.0_g0.01)  (rel_err=0.000000)
+  --- Config 54/160 done in 5.00s ---
+  [PASS] B2 Heisenberg xp (B2_a2.0_g0.05)  (rel_err=0.000000)
+  --- Config 55/160 done in 4.93s ---
+  [PASS] B2 Heisenberg xp (B2_a3.0_g0.0)  (rel_err=0.000000)
+  --- Config 56/160 done in 5.83s ---
+  [PASS] B2 Heisenberg xp (B2_a3.0_g0.001)  (rel_err=0.000000)
+  --- Config 57/160 done in 6.20s ---
+  [PASS] B2 Heisenberg xp (B2_a3.0_g0.005)  (rel_err=0.000000)
+  --- Config 58/160 done in 6.21s ---
+  [PASS] B2 Heisenberg xp (B2_a3.0_g0.01)  (rel_err=0.000000)
+  --- Config 59/160 done in 6.22s ---
+  [PASS] B2 Heisenberg xp (B2_a3.0_g0.05)  (rel_err=0.000000)
+  --- Config 60/160 done in 6.17s ---
+  [PASS] B2 Heisenberg xp (B2_a5.0_g0.0)  (rel_err=0.000000)
+  --- Config 61/160 done in 5.23s ---
+  [PASS] B2 Heisenberg xp (B2_a5.0_g0.001)  (rel_err=0.000000)
+  --- Config 62/160 done in 5.54s ---
+  [PASS] B2 Heisenberg xp (B2_a5.0_g0.005)  (rel_err=0.000000)
+  --- Config 63/160 done in 6.55s ---
+  [PASS] B2 Heisenberg xp (B2_a5.0_g0.01)  (rel_err=0.000000)
+  --- Config 64/160 done in 6.54s ---
+  [PASS] B2 Heisenberg xp (B2_a5.0_g0.05)  (rel_err=0.000000)
+  --- Config 65/160 done in 5.78s ---
+  [PASS] B2 Heisenberg xp (B2_a8.0_g0.0)  (rel_err=0.000000)
+  --- Config 66/160 done in 5.07s ---
+  [PASS] B2 Heisenberg xp (B2_a8.0_g0.001)  (rel_err=0.000000)
+  --- Config 67/160 done in 5.45s ---
+  [PASS] B2 Heisenberg xp (B2_a8.0_g0.005)  (rel_err=0.000000)
+  --- Config 68/160 done in 5.44s ---
+  [PASS] B2 Heisenberg xp (B2_a8.0_g0.01)  (rel_err=0.000000)
+  --- Config 69/160 done in 5.38s ---
+  [PASS] B2 Heisenberg xp (B2_a8.0_g0.05)  (rel_err=0.000000)
+  --- Config 70/160 done in 5.39s ---
+  [FAIL] B3 Energy-Time (B3_w0.5_m0.1)  (rel_err=1.000000)
+         Details: sim=1.5e-13 >= 0.5, violation=0.5
+  --- Config 71/160 done in 2.80s ---
+  [PASS] B3 Energy-Time (B3_w0.5_m0.3)  (rel_err=0.000000)
+  --- Config 72/160 done in 2.80s ---
+  [FAIL] B3 Energy-Time (B3_w0.5_m0.5)  (rel_err=1.000000)
+         Details: sim=2.5e-13 >= 0.5, violation=0.5
+  --- Config 73/160 done in 2.79s ---
+  [PASS] B3 Energy-Time (B3_w0.5_m0.7)  (rel_err=0.000000)
+  --- Config 74/160 done in 2.78s ---
+  [FAIL] B3 Energy-Time (B3_w1.0_m0.1)  (rel_err=1.000000)
+         Details: sim=3e-13 >= 0.5, violation=0.5
+  --- Config 75/160 done in 2.83s ---
+  [PASS] B3 Energy-Time (B3_w1.0_m0.3)  (rel_err=0.000000)
+  --- Config 76/160 done in 2.85s ---
+  [FAIL] B3 Energy-Time (B3_w1.0_m0.5)  (rel_err=1.000000)
+         Details: sim=5e-13 >= 0.5, violation=0.5
+  --- Config 77/160 done in 2.86s ---
+  [PASS] B3 Energy-Time (B3_w1.0_m0.7)  (rel_err=0.000000)
+  --- Config 78/160 done in 2.85s ---
+  [FAIL] B3 Energy-Time (B3_w2.0_m0.1)  (rel_err=1.000000)
+         Details: sim=6e-13 >= 0.5, violation=0.5
+  --- Config 79/160 done in 2.94s ---
+  [PASS] B3 Energy-Time (B3_w2.0_m0.3)  (rel_err=0.000000)
+  --- Config 80/160 done in 2.93s ---
+  [FAIL] B3 Energy-Time (B3_w2.0_m0.5)  (rel_err=1.000000)
+         Details: sim=1e-12 >= 0.5, violation=0.5
+  --- Config 81/160 done in 2.92s ---
+  [PASS] B3 Energy-Time (B3_w2.0_m0.7)  (rel_err=0.000000)
+  --- Config 82/160 done in 2.94s ---
+  [FAIL] B3 Energy-Time (B3_w5.0_m0.1)  (rel_err=1.000000)
+         Details: sim=1.5e-12 >= 0.5, violation=0.5
+  --- Config 83/160 done in 3.13s ---
+  [PASS] B3 Energy-Time (B3_w5.0_m0.3)  (rel_err=0.000000)
+  --- Config 84/160 done in 3.15s ---
+  [FAIL] B3 Energy-Time (B3_w5.0_m0.5)  (rel_err=1.000000)
+         Details: sim=2.5e-12 >= 0.5, violation=0.5
+  --- Config 85/160 done in 3.11s ---
+  [PASS] B3 Energy-Time (B3_w5.0_m0.7)  (rel_err=0.000000)
+  --- Config 86/160 done in 3.14s ---
+  [FAIL] B3 Energy-Time (B3_w10.0_m0.1)  (rel_err=1.000000)
+         Details: sim=3e-12 >= 0.5, violation=0.5
+  --- Config 87/160 done in 3.50s ---
+  [PASS] B3 Energy-Time (B3_w10.0_m0.3)  (rel_err=0.000000)
+  --- Config 88/160 done in 3.41s ---
+  [FAIL] B3 Energy-Time (B3_w10.0_m0.5)  (rel_err=1.000000)
+         Details: sim=5e-12 >= 0.5, violation=0.5
+  --- Config 89/160 done in 3.42s ---
+  [PASS] B3 Energy-Time (B3_w10.0_m0.7)  (rel_err=0.000000)
+  --- Config 90/160 done in 3.44s ---
+  [PASS] B4 No-Cloning (B4_th0.100_cnot)  (rel_err=0.000000)
+  --- Config 91/160 done in 0.17s ---
+/home/buddy_ai/.local/lib/python3.12/site-packages/qutip/core/data/expm.py:146: LinAlgWarning: Matrix is singular. The result might be inaccurate or the array might not have a square root.
+  return Dense(scipy.linalg.sqrtm(matrix.as_ndarray()))
+  [PASS] B4 No-Cloning (B4_th0.100_swap)  (rel_err=0.000000)
+  --- Config 92/160 done in 0.17s ---
+  [PASS] B4 No-Cloning (B4_th0.427_cnot)  (rel_err=0.000000)
+  --- Config 93/160 done in 0.18s ---
+  [PASS] B4 No-Cloning (B4_th0.427_swap)  (rel_err=0.000000)
+  --- Config 94/160 done in 0.19s ---
+  [PASS] B4 No-Cloning (B4_th0.754_cnot)  (rel_err=0.000000)
+  --- Config 95/160 done in 0.18s ---
+  [PASS] B4 No-Cloning (B4_th0.754_swap)  (rel_err=0.000000)
+  --- Config 96/160 done in 0.19s ---
+  [PASS] B4 No-Cloning (B4_th1.081_cnot)  (rel_err=0.000000)
+  --- Config 97/160 done in 0.18s ---
+  [PASS] B4 No-Cloning (B4_th1.081_swap)  (rel_err=0.000000)
+  --- Config 98/160 done in 0.18s ---
+  [PASS] B4 No-Cloning (B4_th1.407_cnot)  (rel_err=0.000000)
+  --- Config 99/160 done in 0.18s ---
+  [PASS] B4 No-Cloning (B4_th1.407_swap)  (rel_err=0.000000)
+  --- Config 100/160 done in 0.18s ---
+  [PASS] B4 No-Cloning (B4_th1.734_cnot)  (rel_err=0.000000)
+  --- Config 101/160 done in 0.17s ---
+  [PASS] B4 No-Cloning (B4_th1.734_swap)  (rel_err=0.000000)
+  --- Config 102/160 done in 0.18s ---
+  [PASS] B4 No-Cloning (B4_th2.061_cnot)  (rel_err=0.000000)
+  --- Config 103/160 done in 0.18s ---
+  [PASS] B4 No-Cloning (B4_th2.061_swap)  (rel_err=0.000000)
+  --- Config 104/160 done in 0.19s ---
+  [PASS] B4 No-Cloning (B4_th2.388_cnot)  (rel_err=0.000000)
+  --- Config 105/160 done in 0.18s ---
+  [PASS] B4 No-Cloning (B4_th2.388_swap)  (rel_err=0.000000)
+  --- Config 106/160 done in 0.18s ---
+  [PASS] B4 No-Cloning (B4_th2.715_cnot)  (rel_err=0.000000)
+  --- Config 107/160 done in 0.18s ---
+  [PASS] B4 No-Cloning (B4_th2.715_swap)  (rel_err=0.000000)
+  --- Config 108/160 done in 0.18s ---
+  [PASS] B4 No-Cloning (B4_th3.042_cnot)  (rel_err=0.000000)
+  --- Config 109/160 done in 0.18s ---
+  [PASS] B4 No-Cloning (B4_th3.042_swap)  (rel_err=0.000000)
+  --- Config 110/160 done in 0.18s ---
+  [PASS] B5 Zeno (B5_n2_w0.5)  (rel_err=0.000000)
+  --- Config 111/160 done in 0.79s ---
+  [PASS] B5 Zeno (B5_n2_w1.0)  (rel_err=0.000000)
+  --- Config 112/160 done in 0.80s ---
+  [PASS] B5 Zeno (B5_n2_w2.0)  (rel_err=0.000000)
+  --- Config 113/160 done in 0.80s ---
+  [PASS] B5 Zeno (B5_n2_w5.0)  (rel_err=0.000005)
+  --- Config 114/160 done in 0.83s ---
+  [PASS] B5 Zeno (B5_n2_w10.0)  (rel_err=0.000001)
+  --- Config 115/160 done in 0.86s ---
+  [PASS] B5 Zeno (B5_n5_w0.5)  (rel_err=0.000000)
+  --- Config 116/160 done in 1.90s ---
+  [PASS] B5 Zeno (B5_n5_w1.0)  (rel_err=0.000000)
+  --- Config 117/160 done in 1.94s ---
+  [PASS] B5 Zeno (B5_n5_w2.0)  (rel_err=0.000000)
+  --- Config 118/160 done in 1.97s ---
+  [PASS] B5 Zeno (B5_n5_w5.0)  (rel_err=0.000001)
+  --- Config 119/160 done in 1.99s ---
+  [PASS] B5 Zeno (B5_n5_w10.0)  (rel_err=0.000003)
+  --- Config 120/160 done in 2.01s ---
+  [PASS] B5 Zeno (B5_n10_w0.5)  (rel_err=0.000000)
+  --- Config 121/160 done in 3.80s ---
+  [PASS] B5 Zeno (B5_n10_w1.0)  (rel_err=0.000000)
+  --- Config 122/160 done in 3.85s ---
+  [PASS] B5 Zeno (B5_n10_w2.0)  (rel_err=0.000000)
+  --- Config 123/160 done in 3.88s ---
+  [PASS] B5 Zeno (B5_n10_w5.0)  (rel_err=0.000000)
+  --- Config 124/160 done in 3.92s ---
+  [PASS] B5 Zeno (B5_n10_w10.0)  (rel_err=0.000001)
+  --- Config 125/160 done in 3.94s ---
+  [PASS] B5 Zeno (B5_n20_w0.5)  (rel_err=0.000000)
+  --- Config 126/160 done in 7.50s ---
+  [PASS] B5 Zeno (B5_n20_w1.0)  (rel_err=0.000000)
+  --- Config 127/160 done in 7.52s ---
+  [PASS] B5 Zeno (B5_n20_w2.0)  (rel_err=0.000000)
+  --- Config 128/160 done in 7.67s ---
+  [PASS] B5 Zeno (B5_n20_w5.0)  (rel_err=0.000000)
+  --- Config 129/160 done in 7.73s ---
+  [PASS] B5 Zeno (B5_n20_w10.0)  (rel_err=0.000000)
+  --- Config 130/160 done in 7.73s ---
+  [PASS] B5 Zeno (B5_n50_w0.5)  (rel_err=0.000000)
+  --- Config 131/160 done in 18.78s ---
+  [PASS] B5 Zeno (B5_n50_w1.0)  (rel_err=0.000000)
+  --- Config 132/160 done in 18.76s ---
+  [PASS] B5 Zeno (B5_n50_w2.0)  (rel_err=0.000000)
+  --- Config 133/160 done in 18.93s ---
+  [PASS] B5 Zeno (B5_n50_w5.0)  (rel_err=0.000000)
+  --- Config 134/160 done in 19.07s ---
+  [PASS] B5 Zeno (B5_n50_w10.0)  (rel_err=0.000000)
+  --- Config 135/160 done in 19.06s ---
+  [PASS] B6 Landau-Zener (B6_v0.1_d0.1)  (rel_err=0.061368)
+  --- Config 136/160 done in 45.44s ---
+  [FAIL] B6 Landau-Zener (B6_v0.1_d0.3)  (rel_err=1.122231)
+         Details: sim=0.516206, theory=0.243238, rel_err=1.12223, threshold=0.1
+  --- Config 137/160 done in 45.48s ---
+  [FAIL] B6 Landau-Zener (B6_v0.1_d0.5)  (rel_err=3.269373)
+         Details: sim=0.0841189, theory=0.0197029, rel_err=3.26937, threshold=0.1
+  --- Config 138/160 done in 45.37s ---
+  [FAIL] B6 Landau-Zener (B6_v0.1_d1.0)  (rel_err=696420.824129)
+         Details: sim=0.104952, theory=1.50702e-07, rel_err=696421, threshold=0.1
+  --- Config 139/160 done in 45.26s ---
+  [FAIL] B6 Landau-Zener (B6_v0.1_d2.0)  (rel_err=213840810142301710807203840.000000)
+         Details: sim=0.110297, theory=5.1579e-28, rel_err=2.13841e+26, threshold=0.1
+  --- Config 140/160 done in 45.26s ---
+  [PASS] B6 Landau-Zener (B6_v0.5_d0.1)  (rel_err=0.005267)
+  --- Config 141/160 done in 45.60s ---
+  [PASS] B6 Landau-Zener (B6_v0.5_d0.3)  (rel_err=0.042784)
+  --- Config 142/160 done in 45.22s ---
+  [PASS] B6 Landau-Zener (B6_v0.5_d0.5)  (rel_err=0.071290)
+  --- Config 143/160 done in 45.75s ---
+  [FAIL] B6 Landau-Zener (B6_v0.5_d1.0)  (rel_err=0.989887)
+         Details: sim=0.000437032, theory=0.0432139, rel_err=0.989887, threshold=0.1
+  --- Config 144/160 done in 45.50s ---
+  [FAIL] B6 Landau-Zener (B6_v0.5_d2.0)  (rel_err=10731.650544)
+         Details: sim=0.0374284, theory=3.48734e-06, rel_err=10731.7, threshold=0.1
+  --- Config 145/160 done in 46.03s ---
+  [PASS] B6 Landau-Zener (B6_v1.0_d0.1)  (rel_err=0.002081)
+  --- Config 146/160 done in 45.50s ---
+  [PASS] B6 Landau-Zener (B6_v1.0_d0.3)  (rel_err=0.018109)
+  --- Config 147/160 done in 45.60s ---
+  [PASS] B6 Landau-Zener (B6_v1.0_d0.5)  (rel_err=0.044530)
+  --- Config 148/160 done in 45.51s ---
+  [PASS] B6 Landau-Zener (B6_v1.0_d1.0)  (rel_err=0.095830)
+  --- Config 149/160 done in 45.95s ---
+  [FAIL] B6 Landau-Zener (B6_v1.0_d2.0)  (rel_err=14.616253)
+         Details: sim=0.0291625, theory=0.00186744, rel_err=14.6163, threshold=0.1
+  --- Config 150/160 done in 45.61s ---
+  [PASS] B6 Landau-Zener (B6_v5.0_d0.1)  (rel_err=0.000188)
+  --- Config 151/160 done in 45.59s ---
+  [PASS] B6 Landau-Zener (B6_v5.0_d0.3)  (rel_err=0.001735)
+  --- Config 152/160 done in 45.66s ---
+  [PASS] B6 Landau-Zener (B6_v5.0_d0.5)  (rel_err=0.005031)
+  --- Config 153/160 done in 45.85s ---
+  [PASS] B6 Landau-Zener (B6_v5.0_d1.0)  (rel_err=0.023527)
+  --- Config 154/160 done in 45.76s ---
+  [PASS] B6 Landau-Zener (B6_v5.0_d2.0)  (rel_err=0.087499)
+  --- Config 155/160 done in 45.45s ---
+  [PASS] B6 Landau-Zener (B6_v20.0_d0.1)  (rel_err=0.000006)
+  --- Config 156/160 done in 45.92s ---
+  [PASS] B6 Landau-Zener (B6_v20.0_d0.3)  (rel_err=0.000052)
+  --- Config 157/160 done in 45.95s ---
+  [PASS] B6 Landau-Zener (B6_v20.0_d0.5)  (rel_err=0.000155)
+  --- Config 158/160 done in 46.24s ---
+  [PASS] B6 Landau-Zener (B6_v20.0_d1.0)  (rel_err=0.000842)
+  --- Config 159/160 done in 45.98s ---
+  [PASS] B6 Landau-Zener (B6_v20.0_d2.0)  (rel_err=0.006913)
+  --- Config 160/160 done in 46.22s ---
+
+  --------------------------------------------------
+  CATEGORY SUMMARY: QM Fundamentals
+  Total checks: 200 | PASS: 183 | FAIL: 17
+  Pass rate: 91.5%
+  Time: 1572.27s
+  --------------------------------------------------
+
+
+======================================================================
+  CATEGORY: Decoherence Theory
+  T1/T2 relationship, decay shape analysis, einselection, and pointer states across 130 configurations.
+  Configs: 130 | Runs per config: 1000
+======================================================================
+  [PASS] C1 T2<=2*T1 (C1_gr0.01_gp0.0)  (rel_err=0.000023)
+  --- Config 1/130 done in 6.75s ---
+  [PASS] C1 T2<=2*T1 (C1_gr0.01_gp0.01)  (rel_err=0.000000)
+  --- Config 2/130 done in 6.87s ---
+  [PASS] C1 T2<=2*T1 (C1_gr0.01_gp0.05)  (rel_err=0.000000)
+  --- Config 3/130 done in 6.83s ---
+  [PASS] C1 T2<=2*T1 (C1_gr0.01_gp0.1)  (rel_err=0.000000)
+  --- Config 4/130 done in 6.82s ---
+  [PASS] C1 T2<=2*T1 (C1_gr0.01_gp0.5)  (rel_err=0.000000)
+  --- Config 5/130 done in 6.83s ---
+  [PASS] C1 T2<=2*T1 (C1_gr0.02_gp0.0)  (rel_err=0.000000)
+  --- Config 6/130 done in 6.71s ---
+  [PASS] C1 T2<=2*T1 (C1_gr0.02_gp0.01)  (rel_err=0.000000)
+  --- Config 7/130 done in 6.83s ---
+  [PASS] C1 T2<=2*T1 (C1_gr0.02_gp0.05)  (rel_err=0.000000)
+  --- Config 8/130 done in 6.83s ---
+  [PASS] C1 T2<=2*T1 (C1_gr0.02_gp0.1)  (rel_err=0.000000)
+  --- Config 9/130 done in 6.78s ---
+  [PASS] C1 T2<=2*T1 (C1_gr0.02_gp0.5)  (rel_err=0.000000)
+  --- Config 10/130 done in 6.81s ---
+  [PASS] C1 T2<=2*T1 (C1_gr0.05_gp0.0)  (rel_err=0.000745)
+  --- Config 11/130 done in 6.64s ---
+  [PASS] C1 T2<=2*T1 (C1_gr0.05_gp0.01)  (rel_err=0.000000)
+  --- Config 12/130 done in 6.82s ---
+  [PASS] C1 T2<=2*T1 (C1_gr0.05_gp0.05)  (rel_err=0.000000)
+  --- Config 13/130 done in 6.78s ---
+  [PASS] C1 T2<=2*T1 (C1_gr0.05_gp0.1)  (rel_err=0.000000)
+  --- Config 14/130 done in 6.74s ---
+  [PASS] C1 T2<=2*T1 (C1_gr0.05_gp0.5)  (rel_err=0.000000)
+  --- Config 15/130 done in 6.80s ---
+  [PASS] C1 T2<=2*T1 (C1_gr0.1_gp0.0)  (rel_err=0.000046)
+  --- Config 16/130 done in 6.55s ---
+  [PASS] C1 T2<=2*T1 (C1_gr0.1_gp0.01)  (rel_err=0.000000)
+  --- Config 17/130 done in 6.76s ---
+  [PASS] C1 T2<=2*T1 (C1_gr0.1_gp0.05)  (rel_err=0.000000)
+  --- Config 18/130 done in 6.66s ---
+  [PASS] C1 T2<=2*T1 (C1_gr0.1_gp0.1)  (rel_err=0.000000)
+  --- Config 19/130 done in 6.63s ---
+  [PASS] C1 T2<=2*T1 (C1_gr0.1_gp0.5)  (rel_err=0.000000)
+  --- Config 20/130 done in 6.76s ---
+  [PASS] C1 T2<=2*T1 (C1_gr0.2_gp0.0)  (rel_err=0.000018)
+  --- Config 21/130 done in 6.59s ---
+  [PASS] C1 T2<=2*T1 (C1_gr0.2_gp0.01)  (rel_err=0.000000)
+  --- Config 22/130 done in 6.76s ---
+  [PASS] C1 T2<=2*T1 (C1_gr0.2_gp0.05)  (rel_err=0.000000)
+  --- Config 23/130 done in 6.73s ---
+  [PASS] C1 T2<=2*T1 (C1_gr0.2_gp0.1)  (rel_err=0.000000)
+  --- Config 24/130 done in 6.78s ---
+  [PASS] C1 T2<=2*T1 (C1_gr0.2_gp0.5)  (rel_err=0.000000)
+  --- Config 25/130 done in 6.83s ---
+  [PASS] C1 T2<=2*T1 (C1_gr0.5_gp0.0)  (rel_err=0.000000)
+  --- Config 26/130 done in 6.73s ---
+  [PASS] C1 T2<=2*T1 (C1_gr0.5_gp0.01)  (rel_err=0.000000)
+  --- Config 27/130 done in 6.88s ---
+  [PASS] C1 T2<=2*T1 (C1_gr0.5_gp0.05)  (rel_err=0.000000)
+  --- Config 28/130 done in 6.88s ---
+  [PASS] C1 T2<=2*T1 (C1_gr0.5_gp0.1)  (rel_err=0.000000)
+  --- Config 29/130 done in 6.86s ---
+  [PASS] C1 T2<=2*T1 (C1_gr0.5_gp0.5)  (rel_err=0.000000)
+  --- Config 30/130 done in 6.89s ---
+  [PASS] C1 T2<=2*T1 (C1_gr1.0_gp0.0)  (rel_err=0.000000)
+  --- Config 31/130 done in 6.77s ---
+  [PASS] C1 T2<=2*T1 (C1_gr1.0_gp0.01)  (rel_err=0.000000)
+  --- Config 32/130 done in 6.93s ---
+  [PASS] C1 T2<=2*T1 (C1_gr1.0_gp0.05)  (rel_err=0.000000)
+  --- Config 33/130 done in 6.88s ---
+  [PASS] C1 T2<=2*T1 (C1_gr1.0_gp0.1)  (rel_err=0.000000)
+  --- Config 34/130 done in 6.96s ---
+  [PASS] C1 T2<=2*T1 (C1_gr1.0_gp0.5)  (rel_err=0.000000)
+  --- Config 35/130 done in 6.90s ---
+  [PASS] C1 T2<=2*T1 (C1_gr2.0_gp0.0)  (rel_err=0.000000)
+  --- Config 36/130 done in 6.86s ---
+  [PASS] C1 T2<=2*T1 (C1_gr2.0_gp0.01)  (rel_err=0.000000)
+  --- Config 37/130 done in 6.92s ---
+  [PASS] C1 T2<=2*T1 (C1_gr2.0_gp0.05)  (rel_err=0.000000)
+  --- Config 38/130 done in 7.01s ---
+  [PASS] C1 T2<=2*T1 (C1_gr2.0_gp0.1)  (rel_err=0.000000)
+  --- Config 39/130 done in 7.08s ---
+  [PASS] C1 T2<=2*T1 (C1_gr2.0_gp0.5)  (rel_err=0.000000)
+  --- Config 40/130 done in 7.17s ---
+  [PASS] C2 Markovian exp fit (C2_g0.05_white)  (rel_err=0.000000)
+  --- Config 41/130 done in 2.32s ---
+  [FAIL] C2 Non-Markovian signature (C2_g0.05_1_over_f)  (rel_err=1.000000)
+         Details: sim=0 >= 0.5, violation=0.5
+  --- Config 42/130 done in 23.89s ---
+  [PASS] C2 Non-Markovian signature (C2_g0.05_lorentzian)  (rel_err=0.000000)
+  --- Config 43/130 done in 23.58s ---
+  [PASS] C2 Markovian exp fit (C2_g0.16_white)  (rel_err=0.000000)
+  --- Config 44/130 done in 2.33s ---
+  [PASS] C2 Non-Markovian signature (C2_g0.16_1_over_f)  (rel_err=0.000000)
+  --- Config 45/130 done in 23.96s ---
+  [PASS] C2 Non-Markovian signature (C2_g0.16_lorentzian)  (rel_err=0.000000)
+  --- Config 46/130 done in 23.41s ---
+  [PASS] C2 Markovian exp fit (C2_g0.26_white)  (rel_err=0.000000)
+  --- Config 47/130 done in 2.33s ---
+  [PASS] C2 Non-Markovian signature (C2_g0.26_1_over_f)  (rel_err=0.000000)
+  --- Config 48/130 done in 23.59s ---
+  [PASS] C2 Non-Markovian signature (C2_g0.26_lorentzian)  (rel_err=0.000000)
+  --- Config 49/130 done in 23.41s ---
+  [PASS] C2 Markovian exp fit (C2_g0.37_white)  (rel_err=0.000000)
+  --- Config 50/130 done in 2.31s ---
+  [PASS] C2 Non-Markovian signature (C2_g0.37_1_over_f)  (rel_err=0.000000)
+  --- Config 51/130 done in 23.65s ---
+  [PASS] C2 Non-Markovian signature (C2_g0.37_lorentzian)  (rel_err=0.000000)
+  --- Config 52/130 done in 23.38s ---
+  [PASS] C2 Markovian exp fit (C2_g0.47_white)  (rel_err=0.000000)
+  --- Config 53/130 done in 2.36s ---
+  [PASS] C2 Non-Markovian signature (C2_g0.47_1_over_f)  (rel_err=0.000000)
+  --- Config 54/130 done in 23.61s ---
+  [FAIL] C2 Non-Markovian signature (C2_g0.47_lorentzian)  (rel_err=1.000000)
+         Details: sim=0 >= 0.5, violation=0.5
+  --- Config 55/130 done in 23.23s ---
+  [PASS] C2 Markovian exp fit (C2_g0.58_white)  (rel_err=0.000000)
+  --- Config 56/130 done in 2.34s ---
+  [FAIL] C2 Non-Markovian signature (C2_g0.58_1_over_f)  (rel_err=1.000000)
+         Details: sim=0 >= 0.5, violation=0.5
+  --- Config 57/130 done in 23.56s ---
+  [FAIL] C2 Non-Markovian signature (C2_g0.58_lorentzian)  (rel_err=1.000000)
+         Details: sim=0 >= 0.5, violation=0.5
+  --- Config 58/130 done in 23.05s ---
+  [PASS] C2 Markovian exp fit (C2_g0.68_white)  (rel_err=0.000000)
+  --- Config 59/130 done in 2.30s ---
+  [FAIL] C2 Non-Markovian signature (C2_g0.68_1_over_f)  (rel_err=1.000000)
+         Details: sim=0 >= 0.5, violation=0.5
+  --- Config 60/130 done in 23.28s ---
+  [FAIL] C2 Non-Markovian signature (C2_g0.68_lorentzian)  (rel_err=1.000000)
+         Details: sim=0 >= 0.5, violation=0.5
+  --- Config 61/130 done in 22.97s ---
+  [PASS] C2 Markovian exp fit (C2_g0.79_white)  (rel_err=0.000000)
+  --- Config 62/130 done in 2.31s ---
+  [FAIL] C2 Non-Markovian signature (C2_g0.79_1_over_f)  (rel_err=1.000000)
+         Details: sim=0 >= 0.5, violation=0.5
+  --- Config 63/130 done in 23.24s ---
+  [FAIL] C2 Non-Markovian signature (C2_g0.79_lorentzian)  (rel_err=1.000000)
+         Details: sim=0 >= 0.5, violation=0.5
+  --- Config 64/130 done in 22.80s ---
+  [PASS] C2 Markovian exp fit (C2_g0.89_white)  (rel_err=0.000000)
+  --- Config 65/130 done in 2.26s ---
+  [FAIL] C2 Non-Markovian signature (C2_g0.89_1_over_f)  (rel_err=1.000000)
+         Details: sim=0 >= 0.5, violation=0.5
+  --- Config 66/130 done in 23.21s ---
+  [FAIL] C2 Non-Markovian signature (C2_g0.89_lorentzian)  (rel_err=1.000000)
+         Details: sim=0 >= 0.5, violation=0.5
+  --- Config 67/130 done in 22.74s ---
+  [PASS] C2 Markovian exp fit (C2_g1.00_white)  (rel_err=0.000000)
+  --- Config 68/130 done in 2.37s ---
+  [FAIL] C2 Non-Markovian signature (C2_g1.00_1_over_f)  (rel_err=1.000000)
+         Details: sim=0 >= 0.5, violation=0.5
+  --- Config 69/130 done in 22.98s ---
+  [FAIL] C2 Non-Markovian signature (C2_g1.00_lorentzian)  (rel_err=1.000000)
+         Details: sim=0 >= 0.5, violation=0.5
+  --- Config 70/130 done in 22.77s ---
+  [FAIL] C3 Einselection (C3_g0.01_ne1)  (rel_err=0.999829)
+         Details: sim=0.999914 <= 0.5, violation=0.499914
+  --- Config 71/130 done in 6.08s ---
+  [FAIL] C3 Einselection (C3_g0.01_ne2)  (rel_err=0.999912)
+         Details: sim=0.999956 <= 0.5, violation=0.499956
+  --- Config 72/130 done in 6.49s ---
+  [FAIL] C3 Einselection (C3_g0.01_ne3)  (rel_err=0.999691)
+         Details: sim=0.999845 <= 0.5, violation=0.499845
+  --- Config 73/130 done in 7.10s ---
+  [FAIL] C3 Einselection (C3_g0.01_ne4)  (rel_err=0.999487)
+         Details: sim=0.999743 <= 0.5, violation=0.499743
+  --- Config 74/130 done in 8.89s ---
+  [FAIL] C3 Einselection (C3_g0.01_ne4)  (rel_err=0.999487)
+         Details: sim=0.999743 <= 0.5, violation=0.499743
+  --- Config 75/130 done in 8.89s ---
+  [FAIL] C3 Einselection (C3_g0.05_ne1)  (rel_err=0.999794)
+         Details: sim=0.999897 <= 0.5, violation=0.499897
+  --- Config 76/130 done in 6.16s ---
+  [FAIL] C3 Einselection (C3_g0.05_ne2)  (rel_err=0.999882)
+         Details: sim=0.999941 <= 0.5, violation=0.499941
+  --- Config 77/130 done in 6.60s ---
+  [FAIL] C3 Einselection (C3_g0.05_ne3)  (rel_err=0.999612)
+         Details: sim=0.999806 <= 0.5, violation=0.499806
+  --- Config 78/130 done in 7.22s ---
+  [FAIL] C3 Einselection (C3_g0.05_ne4)  (rel_err=0.999309)
+         Details: sim=0.999654 <= 0.5, violation=0.499654
+  --- Config 79/130 done in 9.21s ---
+  [FAIL] C3 Einselection (C3_g0.05_ne4)  (rel_err=0.999309)
+         Details: sim=0.999654 <= 0.5, violation=0.499654
+  --- Config 80/130 done in 9.29s ---
+  [FAIL] C3 Einselection (C3_g0.1_ne1)  (rel_err=0.999753)
+         Details: sim=0.999876 <= 0.5, violation=0.499876
+  --- Config 81/130 done in 6.17s ---
+  [FAIL] C3 Einselection (C3_g0.1_ne2)  (rel_err=0.999846)
+         Details: sim=0.999923 <= 0.5, violation=0.499923
+  --- Config 82/130 done in 6.61s ---
+  [FAIL] C3 Einselection (C3_g0.1_ne3)  (rel_err=0.999513)
+         Details: sim=0.999757 <= 0.5, violation=0.499757
+  --- Config 83/130 done in 7.34s ---
+  [FAIL] C3 Einselection (C3_g0.1_ne4)  (rel_err=0.999086)
+         Details: sim=0.999543 <= 0.5, violation=0.499543
+  --- Config 84/130 done in 9.72s ---
+  [FAIL] C3 Einselection (C3_g0.1_ne4)  (rel_err=0.999086)
+         Details: sim=0.999543 <= 0.5, violation=0.499543
+  --- Config 85/130 done in 9.66s ---
+  [FAIL] C3 Einselection (C3_g0.5_ne1)  (rel_err=0.999415)
+         Details: sim=0.999707 <= 0.5, violation=0.499707
+  --- Config 86/130 done in 6.22s ---
+  [FAIL] C3 Einselection (C3_g0.5_ne2)  (rel_err=0.999556)
+         Details: sim=0.999778 <= 0.5, violation=0.499778
+  --- Config 87/130 done in 6.88s ---
+  [FAIL] C3 Einselection (C3_g0.5_ne3)  (rel_err=0.998722)
+         Details: sim=0.999361 <= 0.5, violation=0.499361
+  --- Config 88/130 done in 8.20s ---
+  [FAIL] C3 Einselection (C3_g0.5_ne4)  (rel_err=0.997308)
+         Details: sim=0.998654 <= 0.5, violation=0.498654
+  --- Config 89/130 done in 13.09s ---
+  [FAIL] C3 Einselection (C3_g0.5_ne4)  (rel_err=0.997308)
+         Details: sim=0.998654 <= 0.5, violation=0.498654
+  --- Config 90/130 done in 13.12s ---
+  [FAIL] C3 Einselection (C3_g1.0_ne1)  (rel_err=0.998993)
+         Details: sim=0.999496 <= 0.5, violation=0.499496
+  --- Config 91/130 done in 6.30s ---
+  [FAIL] C3 Einselection (C3_g1.0_ne2)  (rel_err=0.999194)
+         Details: sim=0.999597 <= 0.5, violation=0.499597
+  --- Config 92/130 done in 7.24s ---
+  [FAIL] C3 Einselection (C3_g1.0_ne3)  (rel_err=0.997734)
+         Details: sim=0.998867 <= 0.5, violation=0.498867
+  --- Config 93/130 done in 9.25s ---
+  [FAIL] C3 Einselection (C3_g1.0_ne4)  (rel_err=0.995086)
+         Details: sim=0.997543 <= 0.5, violation=0.497543
+  --- Config 94/130 done in 17.45s ---
+  [FAIL] C3 Einselection (C3_g1.0_ne4)  (rel_err=0.995086)
+         Details: sim=0.997543 <= 0.5, violation=0.497543
+  --- Config 95/130 done in 17.46s ---
+  [FAIL] C3 Einselection (C3_g2.0_ne1)  (rel_err=0.998151)
+         Details: sim=0.999075 <= 0.5, violation=0.499075
+  --- Config 96/130 done in 6.50s ---
+  [FAIL] C3 Einselection (C3_g2.0_ne2)  (rel_err=0.998470)
+         Details: sim=0.999235 <= 0.5, violation=0.499235
+  --- Config 97/130 done in 7.88s ---
+  [FAIL] C3 Einselection (C3_g2.0_ne3)  (rel_err=0.995759)
+         Details: sim=0.99788 <= 0.5, violation=0.49788
+  --- Config 98/130 done in 11.29s ---
+  [FAIL] C3 Einselection (C3_g2.0_ne4)  (rel_err=0.990652)
+         Details: sim=0.995326 <= 0.5, violation=0.495326
+  --- Config 99/130 done in 26.42s ---
+  [FAIL] C3 Einselection (C3_g2.0_ne4)  (rel_err=0.990652)
+         Details: sim=0.995326 <= 0.5, violation=0.495326
+  --- Config 100/130 done in 26.45s ---
+  [PASS] C4 Pointer purity (C4_|0>_g0.05)  (rel_err=0.000000)
+  --- Config 101/130 done in 6.83s ---
+  [PASS] C4 Pointer purity (C4_|0>_g0.1)  (rel_err=0.000000)
+  --- Config 102/130 done in 6.82s ---
+  [PASS] C4 Pointer purity (C4_|0>_g0.5)  (rel_err=0.000000)
+  --- Config 103/130 done in 6.84s ---
+  [PASS] C4 Pointer purity (C4_|0>_g1.0)  (rel_err=0.000000)
+  --- Config 104/130 done in 6.82s ---
+  [PASS] C4 Pointer purity (C4_|0>_g2.0)  (rel_err=0.000000)
+  --- Config 105/130 done in 6.80s ---
+  [PASS] C4 Pointer purity (C4_|1>_g0.05)  (rel_err=0.000000)
+  --- Config 106/130 done in 6.80s ---
+  [PASS] C4 Pointer purity (C4_|1>_g0.1)  (rel_err=0.000000)
+  --- Config 107/130 done in 6.85s ---
+  [PASS] C4 Pointer purity (C4_|1>_g0.5)  (rel_err=0.000000)
+  --- Config 108/130 done in 6.78s ---
+  [PASS] C4 Pointer purity (C4_|1>_g1.0)  (rel_err=0.000000)
+  --- Config 109/130 done in 6.85s ---
+  [PASS] C4 Pointer purity (C4_|1>_g2.0)  (rel_err=0.000000)
+  --- Config 110/130 done in 6.81s ---
+  [PASS] C4 Decoherence (C4_|+>_g0.05)  (rel_err=0.000000)
+  --- Config 111/130 done in 7.13s ---
+  [PASS] C4 Decoherence (C4_|+>_g0.1)  (rel_err=0.000000)
+  --- Config 112/130 done in 7.09s ---
+  [PASS] C4 Decoherence (C4_|+>_g0.5)  (rel_err=0.000000)
+  --- Config 113/130 done in 7.39s ---
+  [PASS] C4 Decoherence (C4_|+>_g1.0)  (rel_err=0.000000)
+  --- Config 114/130 done in 7.78s ---
+  [PASS] C4 Decoherence (C4_|+>_g2.0)  (rel_err=0.000000)
+  --- Config 115/130 done in 8.47s ---
+  [PASS] C4 Decoherence (C4_|->_g0.05)  (rel_err=0.000000)
+  --- Config 116/130 done in 7.07s ---
+  [PASS] C4 Decoherence (C4_|->_g0.1)  (rel_err=0.000000)
+  --- Config 117/130 done in 7.14s ---
+  [PASS] C4 Decoherence (C4_|->_g0.5)  (rel_err=0.000000)
+  --- Config 118/130 done in 7.41s ---
+  [PASS] C4 Decoherence (C4_|->_g1.0)  (rel_err=0.000000)
+  --- Config 119/130 done in 7.70s ---
+  [PASS] C4 Decoherence (C4_|->_g2.0)  (rel_err=0.000000)
+  --- Config 120/130 done in 8.35s ---
+  [PASS] C4 Decoherence (C4_|+i>_g0.05)  (rel_err=0.000000)
+  --- Config 121/130 done in 7.04s ---
+  [PASS] C4 Decoherence (C4_|+i>_g0.1)  (rel_err=0.000000)
+  --- Config 122/130 done in 7.13s ---
+  [PASS] C4 Decoherence (C4_|+i>_g0.5)  (rel_err=0.000000)
+  --- Config 123/130 done in 7.36s ---
+  [PASS] C4 Decoherence (C4_|+i>_g1.0)  (rel_err=0.000000)
+  --- Config 124/130 done in 7.70s ---
+  [PASS] C4 Decoherence (C4_|+i>_g2.0)  (rel_err=0.000000)
+  --- Config 125/130 done in 8.47s ---
+  [PASS] C4 Decoherence (C4_|mixed>_g0.05)  (rel_err=0.000000)
+  --- Config 126/130 done in 7.18s ---
+  [PASS] C4 Decoherence (C4_|mixed>_g0.1)  (rel_err=0.000000)
+  --- Config 127/130 done in 7.17s ---
+  [PASS] C4 Decoherence (C4_|mixed>_g0.5)  (rel_err=0.000000)
+  --- Config 128/130 done in 7.44s ---
+  [PASS] C4 Decoherence (C4_|mixed>_g1.0)  (rel_err=0.000000)
+  --- Config 129/130 done in 7.80s ---
+  [PASS] C4 Decoherence (C4_|mixed>_g2.0)  (rel_err=0.000000)
+  --- Config 130/130 done in 8.43s ---
+
+  --------------------------------------------------
+  CATEGORY SUMMARY: Decoherence Theory
+  Total checks: 130 | PASS: 88 | FAIL: 42
+  Pass rate: 67.7%
+  Time: 1280.76s
+  --------------------------------------------------
+
+
+======================================================================
+  CATEGORY: Statistical Mechanics
+  Fluctuation-Dissipation Theorem, Kubo Formula, Onsager Reciprocal Relations, and Jarzynski Equality across 120 configurations.
+  Configs: 120 | Runs per config: 1000
+======================================================================
+  [PASS] D1 FDT (D1_T0.1_E0.5)  (rel_err=0.000000)
+  --- Config 1/120 done in 0.07s ---
+  [PASS] D1 FDT (D1_T0.1_E1.0)  (rel_err=0.000000)
+  --- Config 2/120 done in 0.07s ---
+  [PASS] D1 FDT (D1_T0.1_E2.0)  (rel_err=0.000000)
+  --- Config 3/120 done in 0.07s ---
+  [PASS] D1 FDT (D1_T0.1_E5.0)  (rel_err=0.000000)
+  --- Config 4/120 done in 0.07s ---
+  [PASS] D1 FDT (D1_T0.1_E10.0)  (rel_err=0.000000)
+  --- Config 5/120 done in 0.07s ---
+  [PASS] D1 FDT (D1_T0.5_E0.5)  (rel_err=0.000000)
+  --- Config 6/120 done in 0.07s ---
+  [PASS] D1 FDT (D1_T0.5_E1.0)  (rel_err=0.000000)
+  --- Config 7/120 done in 0.07s ---
+  [PASS] D1 FDT (D1_T0.5_E2.0)  (rel_err=0.000000)
+  --- Config 8/120 done in 0.07s ---
+  [PASS] D1 FDT (D1_T0.5_E5.0)  (rel_err=0.000000)
+  --- Config 9/120 done in 0.07s ---
+  [PASS] D1 FDT (D1_T0.5_E10.0)  (rel_err=0.000000)
+  --- Config 10/120 done in 0.07s ---
+  [PASS] D1 FDT (D1_T1.0_E0.5)  (rel_err=0.000000)
+  --- Config 11/120 done in 0.07s ---
+  [PASS] D1 FDT (D1_T1.0_E1.0)  (rel_err=0.000000)
+  --- Config 12/120 done in 0.07s ---
+  [PASS] D1 FDT (D1_T1.0_E2.0)  (rel_err=0.000000)
+  --- Config 13/120 done in 0.07s ---
+  [PASS] D1 FDT (D1_T1.0_E5.0)  (rel_err=0.000000)
+  --- Config 14/120 done in 0.07s ---
+  [PASS] D1 FDT (D1_T1.0_E10.0)  (rel_err=0.000000)
+  --- Config 15/120 done in 0.06s ---
+  [PASS] D1 FDT (D1_T2.0_E0.5)  (rel_err=0.000000)
+  --- Config 16/120 done in 0.06s ---
+  [PASS] D1 FDT (D1_T2.0_E1.0)  (rel_err=0.000000)
+  --- Config 17/120 done in 0.06s ---
+  [PASS] D1 FDT (D1_T2.0_E2.0)  (rel_err=0.000000)
+  --- Config 18/120 done in 0.07s ---
+  [PASS] D1 FDT (D1_T2.0_E5.0)  (rel_err=0.000000)
+  --- Config 19/120 done in 0.07s ---
+  [PASS] D1 FDT (D1_T2.0_E10.0)  (rel_err=0.000000)
+  --- Config 20/120 done in 0.07s ---
+  [PASS] D1 FDT (D1_T5.0_E0.5)  (rel_err=0.000000)
+  --- Config 21/120 done in 0.07s ---
+  [PASS] D1 FDT (D1_T5.0_E1.0)  (rel_err=0.000000)
+  --- Config 22/120 done in 0.07s ---
+  [PASS] D1 FDT (D1_T5.0_E2.0)  (rel_err=0.000000)
+  --- Config 23/120 done in 0.07s ---
+  [PASS] D1 FDT (D1_T5.0_E5.0)  (rel_err=0.000000)
+  --- Config 24/120 done in 0.06s ---
+  [PASS] D1 FDT (D1_T5.0_E10.0)  (rel_err=0.000000)
+  --- Config 25/120 done in 0.07s ---
+  [PASS] D1 FDT (D1_T10.0_E0.5)  (rel_err=0.000000)
+  --- Config 26/120 done in 0.07s ---
+  [PASS] D1 FDT (D1_T10.0_E1.0)  (rel_err=0.000000)
+  --- Config 27/120 done in 0.07s ---
+  [PASS] D1 FDT (D1_T10.0_E2.0)  (rel_err=0.000000)
+  --- Config 28/120 done in 0.07s ---
+  [PASS] D1 FDT (D1_T10.0_E5.0)  (rel_err=0.000000)
+  --- Config 29/120 done in 0.07s ---
+  [PASS] D1 FDT (D1_T10.0_E10.0)  (rel_err=0.000000)
+  --- Config 30/120 done in 0.06s ---
+  [PASS] D1 FDT (D1_T20.0_E0.5)  (rel_err=0.000000)
+  --- Config 31/120 done in 0.06s ---
+  [PASS] D1 FDT (D1_T20.0_E1.0)  (rel_err=0.000000)
+  --- Config 32/120 done in 0.07s ---
+  [PASS] D1 FDT (D1_T20.0_E2.0)  (rel_err=0.000000)
+  --- Config 33/120 done in 0.07s ---
+  [PASS] D1 FDT (D1_T20.0_E5.0)  (rel_err=0.000000)
+  --- Config 34/120 done in 0.07s ---
+  [PASS] D1 FDT (D1_T20.0_E10.0)  (rel_err=0.000000)
+  --- Config 35/120 done in 0.07s ---
+  [PASS] D1 FDT (D1_T50.0_E0.5)  (rel_err=0.000000)
+  --- Config 36/120 done in 0.06s ---
+  [PASS] D1 FDT (D1_T50.0_E1.0)  (rel_err=0.000000)
+  --- Config 37/120 done in 0.07s ---
+  [PASS] D1 FDT (D1_T50.0_E2.0)  (rel_err=0.000000)
+  --- Config 38/120 done in 0.06s ---
+  [PASS] D1 FDT (D1_T50.0_E5.0)  (rel_err=0.000000)
+  --- Config 39/120 done in 0.06s ---
+  [PASS] D1 FDT (D1_T50.0_E10.0)  (rel_err=0.000000)
+  --- Config 40/120 done in 0.06s ---
+  [PASS] D2 Kubo (D2_sxsx_T0.5)  (rel_err=0.015380)
+  --- Config 41/120 done in 8.03s ---
+  [PASS] D2 Kubo (D2_sxsx_T1.0)  (rel_err=0.015375)
+  --- Config 42/120 done in 8.03s ---
+  [PASS] D2 Kubo (D2_sxsx_T2.0)  (rel_err=0.015361)
+  --- Config 43/120 done in 8.08s ---
+  [PASS] D2 Kubo (D2_sxsx_T5.0)  (rel_err=0.015345)
+  --- Config 44/120 done in 8.03s ---
+  [PASS] D2 Kubo (D2_sxsx_T10.0)  (rel_err=0.015253)
+  --- Config 45/120 done in 8.02s ---
+  [PASS] D2 Kubo (D2_sysy_T0.5)  (rel_err=0.015380)
+  --- Config 46/120 done in 8.04s ---
+  [PASS] D2 Kubo (D2_sysy_T1.0)  (rel_err=0.015375)
+  --- Config 47/120 done in 8.04s ---
+  [PASS] D2 Kubo (D2_sysy_T2.0)  (rel_err=0.015361)
+  --- Config 48/120 done in 8.05s ---
+  [PASS] D2 Kubo (D2_sysy_T5.0)  (rel_err=0.015345)
+  --- Config 49/120 done in 8.01s ---
+  [PASS] D2 Kubo (D2_sysy_T10.0)  (rel_err=0.015253)
+  --- Config 50/120 done in 8.02s ---
+  [PASS] D2 Kubo (D2_szsz_T0.5)  (rel_err=0.000000)
+  --- Config 51/120 done in 7.94s ---
+  [PASS] D2 Kubo (D2_szsz_T1.0)  (rel_err=0.000000)
+  --- Config 52/120 done in 7.93s ---
+  [PASS] D2 Kubo (D2_szsz_T2.0)  (rel_err=0.000000)
+  --- Config 53/120 done in 7.94s ---
+  [PASS] D2 Kubo (D2_szsz_T5.0)  (rel_err=0.000000)
+  --- Config 54/120 done in 7.98s ---
+  [PASS] D2 Kubo (D2_szsz_T10.0)  (rel_err=0.000000)
+  --- Config 55/120 done in 7.94s ---
+  [PASS] D2 Kubo (D2_sxsy_T0.5)  (rel_err=0.009748)
+  --- Config 56/120 done in 8.02s ---
+  [PASS] D2 Kubo (D2_sxsy_T1.0)  (rel_err=0.009770)
+  --- Config 57/120 done in 7.98s ---
+  [PASS] D2 Kubo (D2_sxsy_T2.0)  (rel_err=0.009742)
+  --- Config 58/120 done in 8.04s ---
+  [PASS] D2 Kubo (D2_sxsy_T5.0)  (rel_err=0.009805)
+  --- Config 59/120 done in 8.00s ---
+  [PASS] D2 Kubo (D2_sxsy_T10.0)  (rel_err=0.009734)
+  --- Config 60/120 done in 7.99s ---
+  [PASS] D2 Kubo (D2_sxsz_T0.5)  (rel_err=0.000000)
+  --- Config 61/120 done in 7.97s ---
+  [PASS] D2 Kubo (D2_sxsz_T1.0)  (rel_err=0.000000)
+  --- Config 62/120 done in 7.96s ---
+  [PASS] D2 Kubo (D2_sxsz_T2.0)  (rel_err=0.000000)
+  --- Config 63/120 done in 7.96s ---
+  [PASS] D2 Kubo (D2_sxsz_T5.0)  (rel_err=0.000000)
+  --- Config 64/120 done in 7.97s ---
+  [PASS] D2 Kubo (D2_sxsz_T10.0)  (rel_err=0.000000)
+  --- Config 65/120 done in 7.86s ---
+  [PASS] D2 Kubo (D2_sysz_T0.5)  (rel_err=0.000000)
+  --- Config 66/120 done in 7.95s ---
+  [PASS] D2 Kubo (D2_sysz_T1.0)  (rel_err=0.000000)
+  --- Config 67/120 done in 7.98s ---
+  [PASS] D2 Kubo (D2_sysz_T2.0)  (rel_err=0.000000)
+  --- Config 68/120 done in 7.94s ---
+  [PASS] D2 Kubo (D2_sysz_T5.0)  (rel_err=0.000000)
+  --- Config 69/120 done in 7.92s ---
+  [PASS] D2 Kubo (D2_sysz_T10.0)  (rel_err=0.000000)
+  --- Config 70/120 done in 7.88s ---
+  [FAIL] D3 Onsager L12=L21 (D3_g0.05_dT0.1)  (rel_err=1.007980)
+         Details: sim=-2.61676e-06, theory=0.000327904, rel_err=1.00798, threshold=0.2
+  --- Config 71/120 done in 2.99s ---
+  [FAIL] D3 Onsager L12=L21 (D3_g0.05_dT0.5)  (rel_err=1.006033)
+         Details: sim=-5.96707e-07, theory=9.89147e-05, rel_err=1.00603, threshold=0.2
+  --- Config 72/120 done in 2.98s ---
+  [FAIL] D3 Onsager L12=L21 (D3_g0.05_dT1.0)  (rel_err=1.005141)
+         Details: sim=-4.26378e-07, theory=8.29424e-05, rel_err=1.00514, threshold=0.2
+  --- Config 73/120 done in 3.00s ---
+  [FAIL] D3 Onsager L12=L21 (D3_g0.05_dT2.0)  (rel_err=1.004320)
+         Details: sim=-5.08453e-07, theory=0.0001177, rel_err=1.00432, threshold=0.2
+  --- Config 74/120 done in 3.10s ---
+  [FAIL] D3 Onsager L12=L21 (D3_g0.1_dT0.1)  (rel_err=1.023886)
+         Details: sim=-6.68161e-06, theory=0.000279735, rel_err=1.02389, threshold=0.2
+  --- Config 75/120 done in 2.95s ---
+  [FAIL] D3 Onsager L12=L21 (D3_g0.1_dT0.5)  (rel_err=1.021504)
+         Details: sim=-1.78329e-06, theory=8.29292e-05, rel_err=1.0215, threshold=0.2
+  --- Config 76/120 done in 2.95s ---
+  [FAIL] D3 Onsager L12=L21 (D3_g0.1_dT1.0)  (rel_err=1.019532)
+         Details: sim=-1.33158e-06, theory=6.81741e-05, rel_err=1.01953, threshold=0.2
+  --- Config 77/120 done in 3.02s ---
+  [FAIL] D3 Onsager L12=L21 (D3_g0.1_dT2.0)  (rel_err=1.017037)
+         Details: sim=-1.60246e-06, theory=9.40555e-05, rel_err=1.01704, threshold=0.2
+  --- Config 78/120 done in 2.99s ---
+  [FAIL] D3 Onsager L12=L21 (D3_g0.5_dT0.1)  (rel_err=1.327125)
+         Details: sim=-1.37511e-05, theory=4.20363e-05, rel_err=1.32712, threshold=0.2
+  --- Config 79/120 done in 3.18s ---
+  [FAIL] D3 Onsager L12=L21 (D3_g0.5_dT0.5)  (rel_err=1.315059)
+         Details: sim=-3.08203e-06, theory=9.7824e-06, rel_err=1.31506, threshold=0.2
+  --- Config 80/120 done in 3.08s ---
+  [FAIL] D3 Onsager L12=L21 (D3_g0.5_dT1.0)  (rel_err=1.283409)
+         Details: sim=-1.59354e-06, theory=5.62278e-06, rel_err=1.28341, threshold=0.2
+  --- Config 81/120 done in 3.27s ---
+  [FAIL] D3 Onsager L12=L21 (D3_g0.5_dT2.0)  (rel_err=1.251100)
+         Details: sim=-1.01042e-06, theory=4.02397e-06, rel_err=1.2511, threshold=0.2
+  --- Config 82/120 done in 3.07s ---
+  [FAIL] D3 Onsager L12=L21 (D3_g1.0_dT0.1)  (rel_err=1.344509)
+         Details: sim=-5.14677e-06, theory=1.49394e-05, rel_err=1.34451, threshold=0.2
+  --- Config 83/120 done in 3.14s ---
+  [FAIL] D3 Onsager L12=L21 (D3_g1.0_dT0.5)  (rel_err=1.197327)
+         Details: sim=-4.05899e-07, theory=2.05698e-06, rel_err=1.19733, threshold=0.2
+  --- Config 84/120 done in 2.98s ---
+  [FAIL] D3 Onsager L12=L21 (D3_g1.0_dT1.0)  (rel_err=1.283457)
+         Details: sim=-2.85142e-07, theory=1.00594e-06, rel_err=1.28346, threshold=0.2
+  --- Config 85/120 done in 3.03s ---
+  [FAIL] D3 Onsager L12=L21 (D3_g1.0_dT2.0)  (rel_err=1.305276)
+         Details: sim=-1.82381e-07, theory=5.9743e-07, rel_err=1.30528, threshold=0.2
+  --- Config 86/120 done in 3.06s ---
+  [FAIL] D3 Onsager L12=L21 (D3_g2.0_dT0.1)  (rel_err=0.424641)
+         Details: sim=1.77817e-07, theory=3.09054e-07, rel_err=0.424641, threshold=0.2
+  --- Config 87/120 done in 3.25s ---
+  [FAIL] D3 Onsager L12=L21 (D3_g2.0_dT0.5)  (rel_err=1.357557)
+         Details: sim=-1.06521e-06, theory=2.97913e-06, rel_err=1.35756, threshold=0.2
+  --- Config 88/120 done in 3.14s ---
+  [FAIL] D3 Onsager L12=L21 (D3_g2.0_dT1.0)  (rel_err=1.377226)
+         Details: sim=-3.24709e-07, theory=8.60782e-07, rel_err=1.37723, threshold=0.2
+  --- Config 89/120 done in 3.30s ---
+  [FAIL] D3 Onsager L12=L21 (D3_g2.0_dT2.0)  (rel_err=1.414000)
+         Details: sim=-2.65442e-07, theory=6.41164e-07, rel_err=1.414, threshold=0.2
+  --- Config 90/120 done in 3.18s ---
+  [PASS] D4 Jarzynski (D4_v0.01_T0.5)  (rel_err=0.007557)
+  --- Config 91/120 done in 1793.46s ---
+  [PASS] D4 Jarzynski (D4_v0.01_T1.0)  (rel_err=0.014581)
+  --- Config 92/120 done in 1787.32s ---
+  [PASS] D4 Jarzynski (D4_v0.01_T2.0)  (rel_err=0.004600)
+  --- Config 93/120 done in 1803.24s ---

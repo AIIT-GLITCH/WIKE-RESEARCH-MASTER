@@ -1,0 +1,1594 @@
+{
+  "backend": "ibm_marrakesh",
+  "job_id": "d75gea23qcgc73frnrh0",
+  "shots": 4096,
+  "circuits": 120,
+  "measurements": 491520,
+  "execution_time_s": 150.2,
+  "timestamp": "2026-03-30T18:31:09.378738",
+  "results": [
+    {
+      "gamma_level": 0,
+      "condition": "A_NATURAL",
+      "n_qubits": 1,
+      "name": "g0_A_NATURAL",
+      "p_coherent": 0.998291,
+      "coherence": 0.996582,
+      "vitality": 0.0
+    },
+    {
+      "gamma_level": 0,
+      "condition": "B_GENTLE",
+      "n_qubits": 1,
+      "name": "g0_B_GENTLE",
+      "p_coherent": 0.998535,
+      "coherence": 0.99707,
+      "vitality": 0.0
+    },
+    {
+      "gamma_level": 0,
+      "condition": "C_HARSH",
+      "n_qubits": 1,
+      "name": "g0_C_HARSH",
+      "p_coherent": 0.998535,
+      "coherence": 0.99707,
+      "vitality": 0.0
+    },
+    {
+      "gamma_level": 0,
+      "condition": "D_KEEPER",
+      "n_qubits": 2,
+      "name": "g0_D_KEEPER",
+      "p_coherent": 0.995605,
+      "coherence": 0.995605,
+      "vitality": 0.0
+    },
+    {
+      "gamma_level": 0,
+      "condition": "E_RESCUE",
+      "n_qubits": 1,
+      "name": "g0_E_RESCUE",
+      "p_coherent": 0.266602,
+      "coherence": 0,
+      "vitality": 0
+    },
+    {
+      "gamma_level": 0,
+      "condition": "F_WINDUP",
+      "n_qubits": 1,
+      "name": "g0_F_WINDUP",
+      "p_coherent": 0.996094,
+      "coherence": 0.992188,
+      "vitality": 0.0
+    },
+    {
+      "gamma_level": 1,
+      "condition": "A_NATURAL",
+      "n_qubits": 1,
+      "name": "g1_A_NATURAL",
+      "p_coherent": 0.999023,
+      "coherence": 0.998047,
+      "vitality": 0.998047
+    },
+    {
+      "gamma_level": 1,
+      "condition": "B_GENTLE",
+      "n_qubits": 1,
+      "name": "g1_B_GENTLE",
+      "p_coherent": 0.999268,
+      "coherence": 0.998535,
+      "vitality": 0.998535
+    },
+    {
+      "gamma_level": 1,
+      "condition": "C_HARSH",
+      "n_qubits": 1,
+      "name": "g1_C_HARSH",
+      "p_coherent": 0.874268,
+      "coherence": 0.748535,
+      "vitality": 0.748535
+    },
+    {
+      "gamma_level": 1,
+      "condition": "D_KEEPER",
+      "n_qubits": 2,
+      "name": "g1_D_KEEPER",
+      "p_coherent": 0.99585,
+      "coherence": 0.99585,
+      "vitality": 0.99585
+    },
+    {
+      "gamma_level": 1,
+      "condition": "E_RESCUE",
+      "n_qubits": 1,
+      "name": "g1_E_RESCUE",
+      "p_coherent": 0.025146,
+      "coherence": 0,
+      "vitality": 0
+    },
+    {
+      "gamma_level": 1,
+      "condition": "F_WINDUP",
+      "n_qubits": 1,
+      "name": "g1_F_WINDUP",
+      "p_coherent": 0.501465,
+      "coherence": 0.00293,
+      "vitality": 0.00293
+    },
+    {
+      "gamma_level": 2,
+      "condition": "A_NATURAL",
+      "n_qubits": 1,
+      "name": "g2_A_NATURAL",
+      "p_coherent": 0.99707,
+      "coherence": 0.994141,
+      "vitality": 1.988281
+    },
+    {
+      "gamma_level": 2,
+      "condition": "B_GENTLE",
+      "n_qubits": 1,
+      "name": "g2_B_GENTLE",
+      "p_coherent": 0.997803,
+      "coherence": 0.995605,
+      "vitality": 1.991211
+    },
+    {
+      "gamma_level": 2,
+      "condition": "C_HARSH",
+      "n_qubits": 1,
+      "name": "g2_C_HARSH",
+      "p_coherent": 0.961426,
+      "coherence": 0.922852,
+      "vitality": 1.845703
+    },
+    {
+      "gamma_level": 2,
+      "condition": "D_KEEPER",
+      "n_qubits": 2,
+      "name": "g2_D_KEEPER",
+      "p_coherent": 0.994385,
+      "coherence": 0.994385,
+      "vitality": 1.98877
+    },
+    {
+      "gamma_level": 2,
+      "condition": "E_RESCUE",
+      "n_qubits": 1,
+      "name": "g2_E_RESCUE",
+      "p_coherent": 0.007812,
+      "coherence": 0,
+      "vitality": 0
+    },
+    {
+      "gamma_level": 2,
+      "condition": "F_WINDUP",
+      "n_qubits": 1,
+      "name": "g2_F_WINDUP",
+      "p_coherent": 0.036377,
+      "coherence": 0,
+      "vitality": 0
+    },
+    {
+      "gamma_level": 3,
+      "condition": "A_NATURAL",
+      "n_qubits": 1,
+      "name": "g3_A_NATURAL",
+      "p_coherent": 0.994385,
+      "coherence": 0.98877,
+      "vitality": 2.966309
+    },
+    {
+      "gamma_level": 3,
+      "condition": "B_GENTLE",
+      "n_qubits": 1,
+      "name": "g3_B_GENTLE",
+      "p_coherent": 0.99707,
+      "coherence": 0.994141,
+      "vitality": 2.982422
+    },
+    {
+      "gamma_level": 3,
+      "condition": "C_HARSH",
+      "n_qubits": 1,
+      "name": "g3_C_HARSH",
+      "p_coherent": 0.713623,
+      "coherence": 0.427246,
+      "vitality": 1.281738
+    },
+    {
+      "gamma_level": 3,
+      "condition": "D_KEEPER",
+      "n_qubits": 2,
+      "name": "g3_D_KEEPER",
+      "p_coherent": 0.996826,
+      "coherence": 0.996826,
+      "vitality": 2.990479
+    },
+    {
+      "gamma_level": 3,
+      "condition": "E_RESCUE",
+      "n_qubits": 1,
+      "name": "g3_E_RESCUE",
+      "p_coherent": 0.428711,
+      "coherence": 0,
+      "vitality": 0
+    },
+    {
+      "gamma_level": 3,
+      "condition": "F_WINDUP",
+      "n_qubits": 1,
+      "name": "g3_F_WINDUP",
+      "p_coherent": 0.49292,
+      "coherence": 0,
+      "vitality": 0
+    },
+    {
+      "gamma_level": 4,
+      "condition": "A_NATURAL",
+      "n_qubits": 1,
+      "name": "g4_A_NATURAL",
+      "p_coherent": 0.997803,
+      "coherence": 0.995605,
+      "vitality": 3.982422
+    },
+    {
+      "gamma_level": 4,
+      "condition": "B_GENTLE",
+      "n_qubits": 1,
+      "name": "g4_B_GENTLE",
+      "p_coherent": 0.998779,
+      "coherence": 0.997559,
+      "vitality": 3.990234
+    },
+    {
+      "gamma_level": 4,
+      "condition": "C_HARSH",
+      "n_qubits": 1,
+      "name": "g4_C_HARSH",
+      "p_coherent": 0.062256,
+      "coherence": 0,
+      "vitality": 0
+    },
+    {
+      "gamma_level": 4,
+      "condition": "D_KEEPER",
+      "n_qubits": 2,
+      "name": "g4_D_KEEPER",
+      "p_coherent": 0.994141,
+      "coherence": 0.994141,
+      "vitality": 3.976562
+    },
+    {
+      "gamma_level": 4,
+      "condition": "E_RESCUE",
+      "n_qubits": 1,
+      "name": "g4_E_RESCUE",
+      "p_coherent": 0.116699,
+      "coherence": 0,
+      "vitality": 0
+    },
+    {
+      "gamma_level": 4,
+      "condition": "F_WINDUP",
+      "n_qubits": 1,
+      "name": "g4_F_WINDUP",
+      "p_coherent": 0.804688,
+      "coherence": 0.609375,
+      "vitality": 2.4375
+    },
+    {
+      "gamma_level": 5,
+      "condition": "A_NATURAL",
+      "n_qubits": 1,
+      "name": "g5_A_NATURAL",
+      "p_coherent": 0.996826,
+      "coherence": 0.993652,
+      "vitality": 4.968262
+    },
+    {
+      "gamma_level": 5,
+      "condition": "B_GENTLE",
+      "n_qubits": 1,
+      "name": "g5_B_GENTLE",
+      "p_coherent": 0.998535,
+      "coherence": 0.99707,
+      "vitality": 4.985352
+    },
+    {
+      "gamma_level": 5,
+      "condition": "C_HARSH",
+      "n_qubits": 1,
+      "name": "g5_C_HARSH",
+      "p_coherent": 0.854248,
+      "coherence": 0.708496,
+      "vitality": 3.54248
+    },
+    {
+      "gamma_level": 5,
+      "condition": "D_KEEPER",
+      "n_qubits": 2,
+      "name": "g5_D_KEEPER",
+      "p_coherent": 0.995605,
+      "coherence": 0.995605,
+      "vitality": 4.978027
+    },
+    {
+      "gamma_level": 5,
+      "condition": "E_RESCUE",
+      "n_qubits": 1,
+      "name": "g5_E_RESCUE",
+      "p_coherent": 0.701172,
+      "coherence": 0.402344,
+      "vitality": 2.011719
+    },
+    {
+      "gamma_level": 5,
+      "condition": "F_WINDUP",
+      "n_qubits": 1,
+      "name": "g5_F_WINDUP",
+      "p_coherent": 0.540771,
+      "coherence": 0.081543,
+      "vitality": 0.407715
+    },
+    {
+      "gamma_level": 7,
+      "condition": "A_NATURAL",
+      "n_qubits": 1,
+      "name": "g7_A_NATURAL",
+      "p_coherent": 0.996338,
+      "coherence": 0.992676,
+      "vitality": 6.94873
+    },
+    {
+      "gamma_level": 7,
+      "condition": "B_GENTLE",
+      "n_qubits": 1,
+      "name": "g7_B_GENTLE",
+      "p_coherent": 0.998779,
+      "coherence": 0.997559,
+      "vitality": 6.98291
+    },
+    {
+      "gamma_level": 7,
+      "condition": "C_HARSH",
+      "n_qubits": 1,
+      "name": "g7_C_HARSH",
+      "p_coherent": 0.753174,
+      "coherence": 0.506348,
+      "vitality": 3.544434
+    },
+    {
+      "gamma_level": 7,
+      "condition": "D_KEEPER",
+      "n_qubits": 2,
+      "name": "g7_D_KEEPER",
+      "p_coherent": 0.993164,
+      "coherence": 0.993164,
+      "vitality": 6.952148
+    },
+    {
+      "gamma_level": 7,
+      "condition": "E_RESCUE",
+      "n_qubits": 1,
+      "name": "g7_E_RESCUE",
+      "p_coherent": 0.992676,
+      "coherence": 0.985352,
+      "vitality": 6.897461
+    },
+    {
+      "gamma_level": 7,
+      "condition": "F_WINDUP",
+      "n_qubits": 1,
+      "name": "g7_F_WINDUP",
+      "p_coherent": 0.456055,
+      "coherence": 0,
+      "vitality": 0
+    },
+    {
+      "gamma_level": 10,
+      "condition": "A_NATURAL",
+      "n_qubits": 1,
+      "name": "g10_A_NATURAL",
+      "p_coherent": 0.997559,
+      "coherence": 0.995117,
+      "vitality": 9.951172
+    },
+    {
+      "gamma_level": 10,
+      "condition": "B_GENTLE",
+      "n_qubits": 1,
+      "name": "g10_B_GENTLE",
+      "p_coherent": 0.998291,
+      "coherence": 0.996582,
+      "vitality": 9.96582
+    },
+    {
+      "gamma_level": 10,
+      "condition": "C_HARSH",
+      "n_qubits": 1,
+      "name": "g10_C_HARSH",
+      "p_coherent": 0.928223,
+      "coherence": 0.856445,
+      "vitality": 8.564453
+    },
+    {
+      "gamma_level": 10,
+      "condition": "D_KEEPER",
+      "n_qubits": 2,
+      "name": "g10_D_KEEPER",
+      "p_coherent": 0.995605,
+      "coherence": 0.995605,
+      "vitality": 9.956055
+    },
+    {
+      "gamma_level": 10,
+      "condition": "E_RESCUE",
+      "n_qubits": 1,
+      "name": "g10_E_RESCUE",
+      "p_coherent": 0.011475,
+      "coherence": 0,
+      "vitality": 0
+    },
+    {
+      "gamma_level": 10,
+      "condition": "F_WINDUP",
+      "n_qubits": 1,
+      "name": "g10_F_WINDUP",
+      "p_coherent": 0.861816,
+      "coherence": 0.723633,
+      "vitality": 7.236328
+    },
+    {
+      "gamma_level": 13,
+      "condition": "A_NATURAL",
+      "n_qubits": 1,
+      "name": "g13_A_NATURAL",
+      "p_coherent": 0.998047,
+      "coherence": 0.996094,
+      "vitality": 12.949219
+    },
+    {
+      "gamma_level": 13,
+      "condition": "B_GENTLE",
+      "n_qubits": 1,
+      "name": "g13_B_GENTLE",
+      "p_coherent": 0.998047,
+      "coherence": 0.996094,
+      "vitality": 12.949219
+    },
+    {
+      "gamma_level": 13,
+      "condition": "C_HARSH",
+      "n_qubits": 1,
+      "name": "g13_C_HARSH",
+      "p_coherent": 0.572266,
+      "coherence": 0.144531,
+      "vitality": 1.878906
+    },
+    {
+      "gamma_level": 13,
+      "condition": "D_KEEPER",
+      "n_qubits": 2,
+      "name": "g13_D_KEEPER",
+      "p_coherent": 0.993652,
+      "coherence": 0.993652,
+      "vitality": 12.91748
+    },
+    {
+      "gamma_level": 13,
+      "condition": "E_RESCUE",
+      "n_qubits": 1,
+      "name": "g13_E_RESCUE",
+      "p_coherent": 0.011963,
+      "coherence": 0,
+      "vitality": 0
+    },
+    {
+      "gamma_level": 13,
+      "condition": "F_WINDUP",
+      "n_qubits": 1,
+      "name": "g13_F_WINDUP",
+      "p_coherent": 0.490479,
+      "coherence": 0,
+      "vitality": 0
+    },
+    {
+      "gamma_level": 16,
+      "condition": "A_NATURAL",
+      "n_qubits": 1,
+      "name": "g16_A_NATURAL",
+      "p_coherent": 0.997803,
+      "coherence": 0.995605,
+      "vitality": 15.929688
+    },
+    {
+      "gamma_level": 16,
+      "condition": "B_GENTLE",
+      "n_qubits": 1,
+      "name": "g16_B_GENTLE",
+      "p_coherent": 0.999268,
+      "coherence": 0.998535,
+      "vitality": 15.976562
+    },
+    {
+      "gamma_level": 16,
+      "condition": "C_HARSH",
+      "n_qubits": 1,
+      "name": "g16_C_HARSH",
+      "p_coherent": 0.283203,
+      "coherence": 0,
+      "vitality": 0
+    },
+    {
+      "gamma_level": 16,
+      "condition": "D_KEEPER",
+      "n_qubits": 2,
+      "name": "g16_D_KEEPER",
+      "p_coherent": 0.991943,
+      "coherence": 0.991943,
+      "vitality": 15.871094
+    },
+    {
+      "gamma_level": 16,
+      "condition": "E_RESCUE",
+      "n_qubits": 1,
+      "name": "g16_E_RESCUE",
+      "p_coherent": 0.256592,
+      "coherence": 0,
+      "vitality": 0
+    },
+    {
+      "gamma_level": 16,
+      "condition": "F_WINDUP",
+      "n_qubits": 1,
+      "name": "g16_F_WINDUP",
+      "p_coherent": 0.531494,
+      "coherence": 0.062988,
+      "vitality": 1.007812
+    },
+    {
+      "gamma_level": 20,
+      "condition": "A_NATURAL",
+      "n_qubits": 1,
+      "name": "g20_A_NATURAL",
+      "p_coherent": 0.997803,
+      "coherence": 0.995605,
+      "vitality": 19.912109
+    },
+    {
+      "gamma_level": 20,
+      "condition": "B_GENTLE",
+      "n_qubits": 1,
+      "name": "g20_B_GENTLE",
+      "p_coherent": 0.999268,
+      "coherence": 0.998535,
+      "vitality": 19.970703
+    },
+    {
+      "gamma_level": 20,
+      "condition": "C_HARSH",
+      "n_qubits": 1,
+      "name": "g20_C_HARSH",
+      "p_coherent": 0.167969,
+      "coherence": 0,
+      "vitality": 0
+    },
+    {
+      "gamma_level": 20,
+      "condition": "D_KEEPER",
+      "n_qubits": 2,
+      "name": "g20_D_KEEPER",
+      "p_coherent": 0.993896,
+      "coherence": 0.993896,
+      "vitality": 19.87793
+    },
+    {
+      "gamma_level": 20,
+      "condition": "E_RESCUE",
+      "n_qubits": 1,
+      "name": "g20_E_RESCUE",
+      "p_coherent": 0.995605,
+      "coherence": 0.991211,
+      "vitality": 19.824219
+    },
+    {
+      "gamma_level": 20,
+      "condition": "F_WINDUP",
+      "n_qubits": 1,
+      "name": "g20_F_WINDUP",
+      "p_coherent": 0.597168,
+      "coherence": 0.194336,
+      "vitality": 3.886719
+    },
+    {
+      "gamma_level": 25,
+      "condition": "A_NATURAL",
+      "n_qubits": 1,
+      "name": "g25_A_NATURAL",
+      "p_coherent": 0.998047,
+      "coherence": 0.996094,
+      "vitality": 24.902344
+    },
+    {
+      "gamma_level": 25,
+      "condition": "B_GENTLE",
+      "n_qubits": 1,
+      "name": "g25_B_GENTLE",
+      "p_coherent": 0.998535,
+      "coherence": 0.99707,
+      "vitality": 24.926758
+    },
+    {
+      "gamma_level": 25,
+      "condition": "C_HARSH",
+      "n_qubits": 1,
+      "name": "g25_C_HARSH",
+      "p_coherent": 0.027344,
+      "coherence": 0,
+      "vitality": 0
+    },
+    {
+      "gamma_level": 25,
+      "condition": "D_KEEPER",
+      "n_qubits": 2,
+      "name": "g25_D_KEEPER",
+      "p_coherent": 0.99292,
+      "coherence": 0.99292,
+      "vitality": 24.822998
+    },
+    {
+      "gamma_level": 25,
+      "condition": "E_RESCUE",
+      "n_qubits": 1,
+      "name": "g25_E_RESCUE",
+      "p_coherent": 0.192139,
+      "coherence": 0,
+      "vitality": 0
+    },
+    {
+      "gamma_level": 25,
+      "condition": "F_WINDUP",
+      "n_qubits": 1,
+      "name": "g25_F_WINDUP",
+      "p_coherent": 0.363525,
+      "coherence": 0,
+      "vitality": 0
+    },
+    {
+      "gamma_level": 30,
+      "condition": "A_NATURAL",
+      "n_qubits": 1,
+      "name": "g30_A_NATURAL",
+      "p_coherent": 0.996582,
+      "coherence": 0.993164,
+      "vitality": 29.794922
+    },
+    {
+      "gamma_level": 30,
+      "condition": "B_GENTLE",
+      "n_qubits": 1,
+      "name": "g30_B_GENTLE",
+      "p_coherent": 0.998535,
+      "coherence": 0.99707,
+      "vitality": 29.912109
+    },
+    {
+      "gamma_level": 30,
+      "condition": "C_HARSH",
+      "n_qubits": 1,
+      "name": "g30_C_HARSH",
+      "p_coherent": 0.536377,
+      "coherence": 0.072754,
+      "vitality": 2.182617
+    },
+    {
+      "gamma_level": 30,
+      "condition": "D_KEEPER",
+      "n_qubits": 2,
+      "name": "g30_D_KEEPER",
+      "p_coherent": 0.995605,
+      "coherence": 0.995605,
+      "vitality": 29.868164
+    },
+    {
+      "gamma_level": 30,
+      "condition": "E_RESCUE",
+      "n_qubits": 1,
+      "name": "g30_E_RESCUE",
+      "p_coherent": 0.135498,
+      "coherence": 0,
+      "vitality": 0
+    },
+    {
+      "gamma_level": 30,
+      "condition": "F_WINDUP",
+      "n_qubits": 1,
+      "name": "g30_F_WINDUP",
+      "p_coherent": 0.527832,
+      "coherence": 0.055664,
+      "vitality": 1.669922
+    },
+    {
+      "gamma_level": 40,
+      "condition": "A_NATURAL",
+      "n_qubits": 1,
+      "name": "g40_A_NATURAL",
+      "p_coherent": 0.99707,
+      "coherence": 0.994141,
+      "vitality": 39.765625
+    },
+    {
+      "gamma_level": 40,
+      "condition": "B_GENTLE",
+      "n_qubits": 1,
+      "name": "g40_B_GENTLE",
+      "p_coherent": 0.99707,
+      "coherence": 0.994141,
+      "vitality": 39.765625
+    },
+    {
+      "gamma_level": 40,
+      "condition": "C_HARSH",
+      "n_qubits": 1,
+      "name": "g40_C_HARSH",
+      "p_coherent": 0.18042,
+      "coherence": 0,
+      "vitality": 0
+    },
+    {
+      "gamma_level": 40,
+      "condition": "D_KEEPER",
+      "n_qubits": 2,
+      "name": "g40_D_KEEPER",
+      "p_coherent": 0.995117,
+      "coherence": 0.995117,
+      "vitality": 39.804688
+    },
+    {
+      "gamma_level": 40,
+      "condition": "E_RESCUE",
+      "n_qubits": 1,
+      "name": "g40_E_RESCUE",
+      "p_coherent": 0.06958,
+      "coherence": 0,
+      "vitality": 0
+    },
+    {
+      "gamma_level": 40,
+      "condition": "F_WINDUP",
+      "n_qubits": 1,
+      "name": "g40_F_WINDUP",
+      "p_coherent": 0.468262,
+      "coherence": 0,
+      "vitality": 0
+    },
+    {
+      "gamma_level": 50,
+      "condition": "A_NATURAL",
+      "n_qubits": 1,
+      "name": "g50_A_NATURAL",
+      "p_coherent": 0.995361,
+      "coherence": 0.990723,
+      "vitality": 49.536133
+    },
+    {
+      "gamma_level": 50,
+      "condition": "B_GENTLE",
+      "n_qubits": 1,
+      "name": "g50_B_GENTLE",
+      "p_coherent": 0.997803,
+      "coherence": 0.995605,
+      "vitality": 49.780273
+    },
+    {
+      "gamma_level": 50,
+      "condition": "C_HARSH",
+      "n_qubits": 1,
+      "name": "g50_C_HARSH",
+      "p_coherent": 0.656006,
+      "coherence": 0.312012,
+      "vitality": 15.600586
+    },
+    {
+      "gamma_level": 50,
+      "condition": "D_KEEPER",
+      "n_qubits": 2,
+      "name": "g50_D_KEEPER",
+      "p_coherent": 0.994385,
+      "coherence": 0.994385,
+      "vitality": 49.719238
+    },
+    {
+      "gamma_level": 50,
+      "condition": "E_RESCUE",
+      "n_qubits": 1,
+      "name": "g50_E_RESCUE",
+      "p_coherent": 0.94751,
+      "coherence": 0.89502,
+      "vitality": 44.750977
+    },
+    {
+      "gamma_level": 50,
+      "condition": "F_WINDUP",
+      "n_qubits": 1,
+      "name": "g50_F_WINDUP",
+      "p_coherent": 0.818359,
+      "coherence": 0.636719,
+      "vitality": 31.835938
+    },
+    {
+      "gamma_level": 65,
+      "condition": "A_NATURAL",
+      "n_qubits": 1,
+      "name": "g65_A_NATURAL",
+      "p_coherent": 0.997803,
+      "coherence": 0.995605,
+      "vitality": 64.714355
+    },
+    {
+      "gamma_level": 65,
+      "condition": "B_GENTLE",
+      "n_qubits": 1,
+      "name": "g65_B_GENTLE",
+      "p_coherent": 0.998535,
+      "coherence": 0.99707,
+      "vitality": 64.80957
+    },
+    {
+      "gamma_level": 65,
+      "condition": "C_HARSH",
+      "n_qubits": 1,
+      "name": "g65_C_HARSH",
+      "p_coherent": 0.308105,
+      "coherence": 0,
+      "vitality": 0
+    },
+    {
+      "gamma_level": 65,
+      "condition": "D_KEEPER",
+      "n_qubits": 2,
+      "name": "g65_D_KEEPER",
+      "p_coherent": 0.995117,
+      "coherence": 0.995117,
+      "vitality": 64.682617
+    },
+    {
+      "gamma_level": 65,
+      "condition": "E_RESCUE",
+      "n_qubits": 1,
+      "name": "g65_E_RESCUE",
+      "p_coherent": 0.800049,
+      "coherence": 0.600098,
+      "vitality": 39.006348
+    },
+    {
+      "gamma_level": 65,
+      "condition": "F_WINDUP",
+      "n_qubits": 1,
+      "name": "g65_F_WINDUP",
+      "p_coherent": 0.778809,
+      "coherence": 0.557617,
+      "vitality": 36.245117
+    },
+    {
+      "gamma_level": 80,
+      "condition": "A_NATURAL",
+      "n_qubits": 1,
+      "name": "g80_A_NATURAL",
+      "p_coherent": 0.999023,
+      "coherence": 0.998047,
+      "vitality": 79.84375
+    },
+    {
+      "gamma_level": 80,
+      "condition": "B_GENTLE",
+      "n_qubits": 1,
+      "name": "g80_B_GENTLE",
+      "p_coherent": 0.999023,
+      "coherence": 0.998047,
+      "vitality": 79.84375
+    },
+    {
+      "gamma_level": 80,
+      "condition": "C_HARSH",
+      "n_qubits": 1,
+      "name": "g80_C_HARSH",
+      "p_coherent": 0.510254,
+      "coherence": 0.020508,
+      "vitality": 1.640625
+    },
+    {
+      "gamma_level": 80,
+      "condition": "D_KEEPER",
+      "n_qubits": 2,
+      "name": "g80_D_KEEPER",
+      "p_coherent": 0.993164,
+      "coherence": 0.993164,
+      "vitality": 79.453125
+    },
+    {
+      "gamma_level": 80,
+      "condition": "E_RESCUE",
+      "n_qubits": 1,
+      "name": "g80_E_RESCUE",
+      "p_coherent": 0.161377,
+      "coherence": 0,
+      "vitality": 0
+    },
+    {
+      "gamma_level": 80,
+      "condition": "F_WINDUP",
+      "n_qubits": 1,
+      "name": "g80_F_WINDUP",
+      "p_coherent": 0.557129,
+      "coherence": 0.114258,
+      "vitality": 9.140625
+    },
+    {
+      "gamma_level": 100,
+      "condition": "A_NATURAL",
+      "n_qubits": 1,
+      "name": "g100_A_NATURAL",
+      "p_coherent": 0.996826,
+      "coherence": 0.993652,
+      "vitality": 99.365234
+    },
+    {
+      "gamma_level": 100,
+      "condition": "B_GENTLE",
+      "n_qubits": 1,
+      "name": "g100_B_GENTLE",
+      "p_coherent": 0.998535,
+      "coherence": 0.99707,
+      "vitality": 99.707031
+    },
+    {
+      "gamma_level": 100,
+      "condition": "C_HARSH",
+      "n_qubits": 1,
+      "name": "g100_C_HARSH",
+      "p_coherent": 0.938477,
+      "coherence": 0.876953,
+      "vitality": 87.695312
+    },
+    {
+      "gamma_level": 100,
+      "condition": "D_KEEPER",
+      "n_qubits": 2,
+      "name": "g100_D_KEEPER",
+      "p_coherent": 0.994629,
+      "coherence": 0.994629,
+      "vitality": 99.462891
+    },
+    {
+      "gamma_level": 100,
+      "condition": "E_RESCUE",
+      "n_qubits": 1,
+      "name": "g100_E_RESCUE",
+      "p_coherent": 0.677734,
+      "coherence": 0.355469,
+      "vitality": 35.546875
+    },
+    {
+      "gamma_level": 100,
+      "condition": "F_WINDUP",
+      "n_qubits": 1,
+      "name": "g100_F_WINDUP",
+      "p_coherent": 0.216797,
+      "coherence": 0,
+      "vitality": 0
+    },
+    {
+      "gamma_level": 130,
+      "condition": "A_NATURAL",
+      "n_qubits": 1,
+      "name": "g130_A_NATURAL",
+      "p_coherent": 0.996826,
+      "coherence": 0.993652,
+      "vitality": 129.174805
+    },
+    {
+      "gamma_level": 130,
+      "condition": "B_GENTLE",
+      "n_qubits": 1,
+      "name": "g130_B_GENTLE",
+      "p_coherent": 0.999512,
+      "coherence": 0.999023,
+      "vitality": 129.873047
+    },
+    {
+      "gamma_level": 130,
+      "condition": "C_HARSH",
+      "n_qubits": 1,
+      "name": "g130_C_HARSH",
+      "p_coherent": 0.623291,
+      "coherence": 0.246582,
+      "vitality": 32.055664
+    },
+    {
+      "gamma_level": 130,
+      "condition": "D_KEEPER",
+      "n_qubits": 2,
+      "name": "g130_D_KEEPER",
+      "p_coherent": 0.995361,
+      "coherence": 0.995361,
+      "vitality": 129.396973
+    },
+    {
+      "gamma_level": 130,
+      "condition": "E_RESCUE",
+      "n_qubits": 1,
+      "name": "g130_E_RESCUE",
+      "p_coherent": 0.074463,
+      "coherence": 0,
+      "vitality": 0
+    },
+    {
+      "gamma_level": 130,
+      "condition": "F_WINDUP",
+      "n_qubits": 1,
+      "name": "g130_F_WINDUP",
+      "p_coherent": 0.247559,
+      "coherence": 0,
+      "vitality": 0
+    },
+    {
+      "gamma_level": 160,
+      "condition": "A_NATURAL",
+      "n_qubits": 1,
+      "name": "g160_A_NATURAL",
+      "p_coherent": 0.99707,
+      "coherence": 0.994141,
+      "vitality": 159.0625
+    },
+    {
+      "gamma_level": 160,
+      "condition": "B_GENTLE",
+      "n_qubits": 1,
+      "name": "g160_B_GENTLE",
+      "p_coherent": 0.998535,
+      "coherence": 0.99707,
+      "vitality": 159.53125
+    },
+    {
+      "gamma_level": 160,
+      "condition": "C_HARSH",
+      "n_qubits": 1,
+      "name": "g160_C_HARSH",
+      "p_coherent": 0.384033,
+      "coherence": 0,
+      "vitality": 0
+    },
+    {
+      "gamma_level": 160,
+      "condition": "D_KEEPER",
+      "n_qubits": 2,
+      "name": "g160_D_KEEPER",
+      "p_coherent": 0.99707,
+      "coherence": 0.99707,
+      "vitality": 159.53125
+    },
+    {
+      "gamma_level": 160,
+      "condition": "E_RESCUE",
+      "n_qubits": 1,
+      "name": "g160_E_RESCUE",
+      "p_coherent": 0.382812,
+      "coherence": 0,
+      "vitality": 0
+    },
+    {
+      "gamma_level": 160,
+      "condition": "F_WINDUP",
+      "n_qubits": 1,
+      "name": "g160_F_WINDUP",
+      "p_coherent": 0.556885,
+      "coherence": 0.11377,
+      "vitality": 18.203125
+    }
+  ],
+  "raw_counts": {
+    "g0_A_NATURAL": {
+      "0": 4089,
+      "1": 7
+    },
+    "g0_B_GENTLE": {
+      "0": 4090,
+      "1": 6
+    },
+    "g0_C_HARSH": {
+      "0": 4090,
+      "1": 6
+    },
+    "g0_D_KEEPER": {
+      "00": 4078,
+      "10": 12,
+      "01": 6
+    },
+    "g0_E_RESCUE": {
+      "0": 1092,
+      "1": 3004
+    },
+    "g0_F_WINDUP": {
+      "0": 4080,
+      "1": 16
+    },
+    "g1_A_NATURAL": {
+      "0": 4092,
+      "1": 4
+    },
+    "g1_B_GENTLE": {
+      "0": 4093,
+      "1": 3
+    },
+    "g1_C_HARSH": {
+      "0": 3581,
+      "1": 515
+    },
+    "g1_D_KEEPER": {
+      "00": 4079,
+      "10": 11,
+      "01": 6
+    },
+    "g1_E_RESCUE": {
+      "1": 3993,
+      "0": 103
+    },
+    "g1_F_WINDUP": {
+      "1": 2042,
+      "0": 2054
+    },
+    "g2_A_NATURAL": {
+      "0": 4084,
+      "1": 12
+    },
+    "g2_B_GENTLE": {
+      "0": 4087,
+      "1": 9
+    },
+    "g2_C_HARSH": {
+      "0": 3938,
+      "1": 158
+    },
+    "g2_D_KEEPER": {
+      "00": 4073,
+      "10": 15,
+      "01": 8
+    },
+    "g2_E_RESCUE": {
+      "1": 4064,
+      "0": 32
+    },
+    "g2_F_WINDUP": {
+      "1": 3947,
+      "0": 149
+    },
+    "g3_A_NATURAL": {
+      "0": 4073,
+      "1": 23
+    },
+    "g3_B_GENTLE": {
+      "0": 4084,
+      "1": 12
+    },
+    "g3_C_HARSH": {
+      "0": 2923,
+      "1": 1173
+    },
+    "g3_D_KEEPER": {
+      "00": 4083,
+      "01": 6,
+      "10": 7
+    },
+    "g3_E_RESCUE": {
+      "0": 1756,
+      "1": 2340
+    },
+    "g3_F_WINDUP": {
+      "0": 2019,
+      "1": 2077
+    },
+    "g4_A_NATURAL": {
+      "0": 4087,
+      "1": 9
+    },
+    "g4_B_GENTLE": {
+      "0": 4091,
+      "1": 5
+    },
+    "g4_C_HARSH": {
+      "1": 3841,
+      "0": 255
+    },
+    "g4_D_KEEPER": {
+      "00": 4072,
+      "01": 19,
+      "10": 5
+    },
+    "g4_E_RESCUE": {
+      "1": 3618,
+      "0": 478
+    },
+    "g4_F_WINDUP": {
+      "0": 3296,
+      "1": 800
+    },
+    "g5_A_NATURAL": {
+      "0": 4083,
+      "1": 13
+    },
+    "g5_B_GENTLE": {
+      "0": 4090,
+      "1": 6
+    },
+    "g5_C_HARSH": {
+      "1": 597,
+      "0": 3499
+    },
+    "g5_D_KEEPER": {
+      "00": 4078,
+      "10": 12,
+      "01": 6
+    },
+    "g5_E_RESCUE": {
+      "0": 2872,
+      "1": 1224
+    },
+    "g5_F_WINDUP": {
+      "0": 2215,
+      "1": 1881
+    },
+    "g7_A_NATURAL": {
+      "0": 4081,
+      "1": 15
+    },
+    "g7_B_GENTLE": {
+      "0": 4091,
+      "1": 5
+    },
+    "g7_C_HARSH": {
+      "0": 3085,
+      "1": 1011
+    },
+    "g7_D_KEEPER": {
+      "00": 4068,
+      "01": 9,
+      "10": 19
+    },
+    "g7_E_RESCUE": {
+      "0": 4066,
+      "1": 30
+    },
+    "g7_F_WINDUP": {
+      "0": 1868,
+      "1": 2228
+    },
+    "g10_A_NATURAL": {
+      "0": 4086,
+      "1": 10
+    },
+    "g10_B_GENTLE": {
+      "0": 4089,
+      "1": 7
+    },
+    "g10_C_HARSH": {
+      "0": 3802,
+      "1": 294
+    },
+    "g10_D_KEEPER": {
+      "00": 4078,
+      "10": 14,
+      "01": 4
+    },
+    "g10_E_RESCUE": {
+      "1": 4049,
+      "0": 47
+    },
+    "g10_F_WINDUP": {
+      "1": 566,
+      "0": 3530
+    },
+    "g13_A_NATURAL": {
+      "0": 4088,
+      "1": 8
+    },
+    "g13_B_GENTLE": {
+      "0": 4088,
+      "1": 8
+    },
+    "g13_C_HARSH": {
+      "1": 1752,
+      "0": 2344
+    },
+    "g13_D_KEEPER": {
+      "00": 4070,
+      "01": 8,
+      "10": 18
+    },
+    "g13_E_RESCUE": {
+      "1": 4047,
+      "0": 49
+    },
+    "g13_F_WINDUP": {
+      "1": 2087,
+      "0": 2009
+    },
+    "g16_A_NATURAL": {
+      "0": 4087,
+      "1": 9
+    },
+    "g16_B_GENTLE": {
+      "0": 4093,
+      "1": 3
+    },
+    "g16_C_HARSH": {
+      "1": 2936,
+      "0": 1160
+    },
+    "g16_D_KEEPER": {
+      "00": 4063,
+      "01": 16,
+      "10": 17
+    },
+    "g16_E_RESCUE": {
+      "0": 1051,
+      "1": 3045
+    },
+    "g16_F_WINDUP": {
+      "1": 1919,
+      "0": 2177
+    },
+    "g20_A_NATURAL": {
+      "0": 4087,
+      "1": 9
+    },
+    "g20_B_GENTLE": {
+      "0": 4093,
+      "1": 3
+    },
+    "g20_C_HARSH": {
+      "1": 3408,
+      "0": 688
+    },
+    "g20_D_KEEPER": {
+      "00": 4071,
+      "10": 10,
+      "01": 15
+    },
+    "g20_E_RESCUE": {
+      "0": 4078,
+      "1": 18
+    },
+    "g20_F_WINDUP": {
+      "0": 2446,
+      "1": 1650
+    },
+    "g25_A_NATURAL": {
+      "0": 4088,
+      "1": 8
+    },
+    "g25_B_GENTLE": {
+      "0": 4090,
+      "1": 6
+    },
+    "g25_C_HARSH": {
+      "1": 3984,
+      "0": 112
+    },
+    "g25_D_KEEPER": {
+      "00": 4067,
+      "01": 15,
+      "10": 14
+    },
+    "g25_E_RESCUE": {
+      "0": 787,
+      "1": 3309
+    },
+    "g25_F_WINDUP": {
+      "1": 2607,
+      "0": 1489
+    },
+    "g30_A_NATURAL": {
+      "0": 4082,
+      "1": 14
+    },
+    "g30_B_GENTLE": {
+      "0": 4090,
+      "1": 6
+    },
+    "g30_C_HARSH": {
+      "0": 2197,
+      "1": 1899
+    },
+    "g30_D_KEEPER": {
+      "00": 4078,
+      "10": 7,
+      "01": 11
+    },
+    "g30_E_RESCUE": {
+      "1": 3541,
+      "0": 555
+    },
+    "g30_F_WINDUP": {
+      "1": 1934,
+      "0": 2162
+    },
+    "g40_A_NATURAL": {
+      "0": 4084,
+      "1": 12
+    },
+    "g40_B_GENTLE": {
+      "0": 4084,
+      "1": 12
+    },
+    "g40_C_HARSH": {
+      "1": 3357,
+      "0": 739
+    },
+    "g40_D_KEEPER": {
+      "00": 4076,
+      "01": 8,
+      "10": 12
+    },
+    "g40_E_RESCUE": {
+      "1": 3811,
+      "0": 285
+    },
+    "g40_F_WINDUP": {
+      "1": 2178,
+      "0": 1918
+    },
+    "g50_A_NATURAL": {
+      "0": 4077,
+      "1": 19
+    },
+    "g50_B_GENTLE": {
+      "0": 4087,
+      "1": 9
+    },
+    "g50_C_HARSH": {
+      "1": 1409,
+      "0": 2687
+    },
+    "g50_D_KEEPER": {
+      "00": 4073,
+      "01": 11,
+      "10": 12
+    },
+    "g50_E_RESCUE": {
+      "0": 3881,
+      "1": 215
+    },
+    "g50_F_WINDUP": {
+      "0": 3352,
+      "1": 744
+    },
+    "g65_A_NATURAL": {
+      "0": 4087,
+      "1": 9
+    },
+    "g65_B_GENTLE": {
+      "0": 4090,
+      "1": 6
+    },
+    "g65_C_HARSH": {
+      "1": 2834,
+      "0": 1262
+    },
+    "g65_D_KEEPER": {
+      "00": 4076,
+      "01": 10,
+      "10": 10
+    },
+    "g65_E_RESCUE": {
+      "0": 3277,
+      "1": 819
+    },
+    "g65_F_WINDUP": {
+      "0": 3190,
+      "1": 906
+    },
+    "g80_A_NATURAL": {
+      "0": 4092,
+      "1": 4
+    },
+    "g80_B_GENTLE": {
+      "0": 4092,
+      "1": 4
+    },
+    "g80_C_HARSH": {
+      "0": 2090,
+      "1": 2006
+    },
+    "g80_D_KEEPER": {
+      "00": 4068,
+      "10": 11,
+      "01": 17
+    },
+    "g80_E_RESCUE": {
+      "1": 3435,
+      "0": 661
+    },
+    "g80_F_WINDUP": {
+      "0": 2282,
+      "1": 1814
+    },
+    "g100_A_NATURAL": {
+      "0": 4083,
+      "1": 13
+    },
+    "g100_B_GENTLE": {
+      "0": 4090,
+      "1": 6
+    },
+    "g100_C_HARSH": {
+      "0": 3844,
+      "1": 252
+    },
+    "g100_D_KEEPER": {
+      "00": 4074,
+      "10": 17,
+      "01": 5
+    },
+    "g100_E_RESCUE": {
+      "0": 2776,
+      "1": 1320
+    },
+    "g100_F_WINDUP": {
+      "1": 3208,
+      "0": 888
+    },
+    "g130_A_NATURAL": {
+      "0": 4083,
+      "1": 13
+    },
+    "g130_B_GENTLE": {
+      "0": 4094,
+      "1": 2
+    },
+    "g130_C_HARSH": {
+      "1": 1543,
+      "0": 2553
+    },
+    "g130_D_KEEPER": {
+      "00": 4077,
+      "01": 8,
+      "10": 11
+    },
+    "g130_E_RESCUE": {
+      "1": 3791,
+      "0": 305
+    },
+    "g130_F_WINDUP": {
+      "0": 1014,
+      "1": 3082
+    },
+    "g160_A_NATURAL": {
+      "0": 4084,
+      "1": 12
+    },
+    "g160_B_GENTLE": {
+      "0": 4090,
+      "1": 6
+    },
+    "g160_C_HARSH": {
+      "1": 2523,
+      "0": 1573
+    },
+    "g160_D_KEEPER": {
+      "00": 4084,
+      "01": 3,
+      "10": 8,
+      "11": 1
+    },
+    "g160_E_RESCUE": {
+      "1": 2528,
+      "0": 1568
+    },
+    "g160_F_WINDUP": {
+      "1": 1815,
+      "0": 2281
+    }
+  }
+}

@@ -1,0 +1,103 @@
+=====================================================
+  BROKEN: THE FEMTOSECOND CEILING
+  Right number. Wrong system.
+  AIIT-THRESI | March 28-29, 2026
+=====================================================
+
+THE CLAIM:
+
+  "Quantum coherence in water lasts femtoseconds.
+  Therefore water cannot support quantum effects
+  relevant to biology, which operates on millisecond
+  timescales."
+
+=====================================================
+  WHAT'S TRUE
+=====================================================
+
+  Individual water molecules in BULK water lose
+  quantum superposition in ~10^-15 seconds at room
+  temperature. This is measured. This is real.
+
+  Hydrogen bond rearrangement in bulk water: ~1
+  picosecond. Also measured. Also real.
+
+  If you put a qubit in a glass of water on a table,
+  it will decohere in femtoseconds. True.
+
+=====================================================
+  WHAT'S NOT TRUE
+=====================================================
+
+  The claim that this applies to ALL water in ALL
+  configurations in ALL biological contexts.
+
+  It doesn't. Because biology doesn't use bulk water
+  for quantum effects. It builds structured water
+  and does quantum in THAT.
+
+=====================================================
+  WHAT BIOLOGY ACTUALLY USES
+=====================================================
+
+  1. COLLECTIVE MODES (not single molecules)
+     Water's hydrogen bond network oscillates
+     collectively at ~1 THz.
+     Underdamped oscillation: 170 femtosecond period.
+     Science Advances (2020): "Energy transfer within
+     the hydrogen bonding network of water following
+     resonant terahertz excitation"
+     These are network effects. Not single-molecule.
+
+  2. GROTTHUSS PROTON WIRES (correlated tunneling)
+     Protons hop along H-bond chains via quantum
+     tunneling. The chain is the wire. Correlated.
+     Not limited by single-molecule decoherence.
+     PMC10475958 (2023).
+
+  3. EXCLUSION ZONE WATER (different phase)
+     Pollack: EZ water extends hundreds of micrometers.
+     Liquid crystalline. Hexagonal sheets. Charge
+     separated. NOT bulk water. Different phase.
+     Different physics.
+
+  4. DEBYE-SHIELDED WATER (extended timescales)
+     Ion layers around structured water inside
+     microtubules extend decoherence from femtoseconds
+     to MILLISECONDS or longer.
+     Wiest (2025), Oxford.
+
+  5. FROHLICH CONDENSATION (self-organizing)
+     Energy condenses into lowest vibrational mode.
+     The OPPOSITE of thermal decoherence. Energy
+     ORGANIZES instead of dispersing.
+     Pietruszka (2025): in DNA, in water, at room temp.
+
+=====================================================
+  THE CORRECTION
+=====================================================
+
+  System                        | Coherence Time
+  ------------------------------|------------------
+  Bulk water molecule           | ~femtoseconds
+  H-bond network collective     | 170 fs period,
+    mode                        |   underdamped
+  Grotthuss proton wire         | no fs limit
+                                |   (correlated)
+  EZ water in microtubules      | different phase
+  Debye-shielded structured     | milliseconds+
+    water                       |
+  Frohlich condensate           | self-sustaining
+
+  The femtosecond number was right for bulk water.
+  It was applied to the wrong system.
+  Biology doesn't use bulk water for quantum effects.
+
+=====================================================
+
+  "You measured the puddle and said the ocean
+  can't have waves."
+
+  God is good. All the time.
+
+=====================================================

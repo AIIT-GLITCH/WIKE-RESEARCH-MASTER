@@ -1,0 +1,129 @@
+================================================================================
+  THE CLOSED LOOP (LEAN) — ibm_fez
+  491,520 REAL MEASUREMENTS AT 15 MILLIKELVIN
+  Job ID: d75g5gfq1anc738cc52g
+  Execution time: 175.4s
+  Date: 2026-03-30T18:12:46.910621
+  NOT A SIMULATION. A MEASUREMENT.
+================================================================================
+
+  COHERENCE C(gamma) — Single Qubit
+   Gamma |  Natural |   Gentle |    Harsh |   Keeper |   Rescue |   WindUp
+  -------+----------+----------+----------+----------+----------+---------
+       0 |   0.9980 |   0.9990 |   0.9990 |   0.9841 |   0.0000 |   0.9976 |
+       1 |   0.9976 |   0.9976 |   0.7407 |   0.9841 |   0.0000 |   0.0000 |
+       2 |   0.9961 |   0.9995 |   0.9141 |   0.9834 |   0.0000 |   0.0000 |
+       3 |   0.9976 |   0.9990 |   0.4468 |   0.9858 |   0.0000 |   0.0298 |
+       4 |   0.9980 |   0.9985 |   0.0000 |   0.9863 |   0.0000 |   0.5942 |
+       5 |   0.9995 |   0.9990 |   0.7051 |   0.9844 |   0.3999 |   0.1274 |
+       7 |   0.9966 |   0.9971 |   0.5068 |   0.9861 |   0.9805 |   0.0000 |
+      10 |   0.9976 |   0.9976 |   0.8516 |   0.9854 |   0.0000 |   0.7495 |
+      13 |   0.9980 |   0.9995 |   0.1807 |   0.9834 |   0.0000 |   0.0000 |
+      16 |   0.9985 |   0.9990 |   0.0000 |   0.9866 |   0.0000 |   0.1152 |
+      20 |   0.9985 |   0.9990 |   0.0000 |   0.9834 |   0.9893 |   0.2046 |
+      25 |   0.9985 |   0.9976 |   0.0000 |   0.9851 |   0.0000 |   0.0000 |
+      30 |   0.9976 |   0.9980 |   0.0894 |   0.9851 |   0.0000 |   0.0952 |
+      40 |   0.9980 |   0.9980 |   0.0000 |   0.9858 |   0.0000 |   0.0000 |
+      50 |   0.9980 |   0.9995 |   0.3076 |   0.9854 |   0.8975 |   0.6421 |
+      65 |   0.9990 |   0.9995 |   0.0000 |   0.9851 |   0.5752 |   0.5552 |
+      80 |   0.9985 |   0.9966 |   0.0117 |   0.9856 |   0.0000 |   0.1431 |
+     100 |   0.9976 |   0.9976 |   0.8672 |   0.9863 |   0.3774 |   0.0000 |
+     130 |   0.9985 |   0.9995 |   0.2632 |   0.9873 |   0.0000 |   0.0000 |
+     160 |   0.9985 |   0.9985 |   0.0000 |   0.9849 |   0.0000 |   0.1504 |
+
+  VITALITY V(gamma) = gamma × C(gamma)
+   Gamma |  Natural |   Gentle |    Harsh |   Keeper |   Rescue |   WindUp
+  -------+----------+----------+----------+----------+----------+---------
+       0 |     0.00 |     0.00 |     0.00 |     0.00 |     0.00 |     0.00 |
+       1 |     1.00 |     1.00 |     0.74 |     0.98 |     0.00 |     0.00 |
+       2 |     1.99 |     2.00 |     1.83 |     1.97 |     0.00 |     0.00 |
+       3 |     2.99 |     3.00 |     1.34 |     2.96 |     0.00 |     0.09 |
+       4 |     3.99 |     3.99 |     0.00 |     3.95 |     0.00 |     2.38 |
+       5 |     5.00 |     5.00 |     3.53 |     4.92 |     2.00 |     0.64 |
+       7 |     6.98 |     6.98 |     3.55 |     6.90 |     6.86 |     0.00 |
+      10 |     9.98 |     9.98 |     8.52 |     9.85 |     0.00 |     7.50 |
+      13 |    12.97 |    12.99 |     2.35 |    12.78 |     0.00 |     0.00 |
+      16 |    15.98 |    15.98 |     0.00 |    15.79 |     0.00 |     1.84 |
+      20 |    19.97 |    19.98 |     0.00 |    19.67 |    19.79 |     4.09 |
+      25 |    24.96 |    24.94 |     0.00 |    24.63 |     0.00 |     0.00 |
+      30 |    29.93 |    29.94 |     2.68 |    29.55 |     0.00 |     2.86 |
+      40 |    39.92 |    39.92 |     0.00 |    39.43 |     0.00 |     0.00 |
+      50 |    49.90 |    49.98 |    15.38 |    49.27 |    44.87 |    32.10 |
+      65 |    64.94 |    64.97 |     0.00 |    64.03 |    37.39 |    36.09 |
+      80 |    79.88 |    79.73 |     0.94 |    78.85 |     0.00 |    11.45 |
+     100 |    99.76 |    99.76 |    86.72 |    98.63 |    37.74 |     0.00 |
+     130 |   129.81 |   129.94 |    34.21 |   128.35 |     0.00 |     0.00 |
+     160 |   159.77 |   159.77 |     0.00 |   157.58 |     0.00 |    24.06 |
+
+================================================================================
+  PHYSICS EXTRACTION — ibm_fez
+================================================================================
+
+  gamma_c (C = 0.5 crossing): None
+  Vitality peak: V = 159.7656 at gamma = 160
+  → THE EDGE. Maximum aliveness.
+
+  WHISPER vs SCREAM:
+  Gentle wins: 19/19
+  Harsh wins:  0/19
+  Whisper beats Scream: 100.0%
+
+  KEEPER EFFECT:
+  gamma=  0: natural=0.9980, keeper=0.9841, diff=-0.0139
+  gamma=  5: natural=0.9995, keeper=0.9844, diff=-0.0151
+  gamma= 10: natural=0.9976, keeper=0.9854, diff=-0.0122
+  gamma= 20: natural=0.9985, keeper=0.9834, diff=-0.0151
+  gamma= 50: natural=0.9980, keeper=0.9854, diff=-0.0127
+  gamma=100: natural=0.9976, keeper=0.9863, diff=-0.0112
+  gamma=160: natural=0.9985, keeper=0.9849, diff=-0.0137
+  Mean keeper advantage: -0.0128
+
+  BOOTSTRAP RESCUE:
+  gamma=  5: harsh=0.7051, rescue=0.3999, gain=-0.3052
+  gamma= 20: harsh=0.0000, rescue=0.9893, gain=+0.9893
+  gamma= 50: harsh=0.3076, rescue=0.8975, gain=+0.5898
+  gamma=100: harsh=0.8672, rescue=0.3774, gain=-0.4897
+  gamma=160: harsh=0.0000, rescue=0.0000, gain=+0.0000
+
+  WIND-UP / SENSITIZATION:
+  gamma=  5: harsh=0.7051, windup=0.1274, ratio=0.181
+  gamma= 20: harsh=0.0000, windup=0.2046, ratio=0.000
+  gamma= 50: harsh=0.3076, windup=0.6421, ratio=2.087
+  gamma=100: harsh=0.8672, windup=0.0000, ratio=0.000
+  gamma=160: harsh=0.0000, windup=0.1504, ratio=0.000
+
+  WIKE COHERENCE LAW FIT: C = C₀ × exp(-α × gamma)
+  C₀ = 0.9978
+  α  = -0.000005
+  R² = 0.097284
+  gamma_c = 1/α = inf
+  → NEEDS MORE DATA
+
+  FIRST LAW (energy conservation):
+  All measurement totals: 4096 to 4096 (expected: 4096)
+  → CONSERVED
+
+================================================================================
+  CLOSED LOOP SUMMARY — ibm_fez
+================================================================================
+  Backend: ibm_fez
+  Job ID: d75g5gfq1anc738cc52g
+  Circuits: 120
+  Measurements: 491,520
+  Execution: 175.4s
+  Total elapsed: 187.6s
+
+  PAPERS TESTED ON REAL HARDWARE:
+    Paper 01: Source field = |+> (max coherence at gamma=0)
+    Paper 03: Love = keeper bond (entanglement protection)
+    Paper 06: Frozen = dead (gamma=0, V=0)
+    Paper 08: Force → decoherence (gentle vs harsh)
+    Paper 09: Sustained collapse (wind-up condition)
+    Paper 10: Energy conservation (First Law holds)
+    Paper 14: The cliff exists (gamma_c transition)
+    Paper 16: Wind-up sensitization
+    Paper 17: Bootstrap rescue after damage
+    Paper 46: Death transition (gamma_death)
+
+  God is good. All the time. Them beans though.
+  Author: Rhet Dillard Wike, AIIT-THRESI

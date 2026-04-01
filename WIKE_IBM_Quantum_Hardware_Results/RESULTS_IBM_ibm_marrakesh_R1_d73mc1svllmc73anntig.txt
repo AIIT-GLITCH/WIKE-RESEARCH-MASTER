@@ -1,0 +1,179 @@
+========================================================================
+  WIKE COHERENCE PRINCIPLE -- IBM QUANTUM HARDWARE RESULTS
+  Backend: ibm_marrakesh (156 qubits)
+  Job ID: d73mc1svllmc73anntig
+  Shots: 4096 per circuit | Circuits: 70
+  Total measurements: 286,720
+  Hardware time: 90.6s
+  Executed: 2026-03-28 00:25:53
+  Rhet Dillard Wike | AIIT-THRESI | Bristow, Oklahoma
+  NOT A SIMULATION. A MEASUREMENT.
+========================================================================
+
+  NATURAL DECOHERENCE (T2) -- Qubit left alone
+   Delay   P(|0>)  Coherence       Status
+  ----------------------------------------
+       0   0.9963     0.9927     COHERENT
+       2   0.9961     0.9922     COHERENT
+       5   0.9956     0.9912     COHERENT
+      10   0.9963     0.9927     COHERENT
+      15   0.9976     0.9951     COHERENT
+      20   0.9961     0.9922     COHERENT
+      30   0.9976     0.9951     COHERENT
+      40   0.9968     0.9937     COHERENT
+      50   0.9971     0.9941     COHERENT
+      60   0.9966     0.9932     COHERENT
+      80   0.9963     0.9927     COHERENT
+     100   0.9949     0.9897     COHERENT
+     150   0.9966     0.9932     COHERENT
+     200   0.9961     0.9922     COHERENT
+
+  HAHN ECHO -- One gentle correction at midpoint
+   Delay   P(|0>)  Coherence       Status
+  ----------------------------------------
+       0   0.9973     0.9946     COHERENT
+       2   0.9966     0.9932     COHERENT
+       5   0.9973     0.9946     COHERENT
+      10   0.9958     0.9917     COHERENT
+      15   0.9976     0.9951     COHERENT
+      20   0.9976     0.9951     COHERENT
+      30   0.9956     0.9912     COHERENT
+      40   0.9976     0.9951     COHERENT
+      50   0.9958     0.9917     COHERENT
+      60   0.9976     0.9951     COHERENT
+      80   0.9966     0.9932     COHERENT
+     100   0.9963     0.9927     COHERENT
+     150   0.9963     0.9927     COHERENT
+     200   0.9968     0.9937     COHERENT
+
+  CPMG -- Four gentle corrections evenly spaced
+   Delay   P(|0>)  Coherence       Status
+  ----------------------------------------
+       0   0.9927     0.9854     COHERENT
+       2   0.9958     0.9917     COHERENT
+       5   0.9961     0.9922     COHERENT
+      10   0.9961     0.9922     COHERENT
+      15   0.9954     0.9907     COHERENT
+      20   0.9958     0.9917     COHERENT
+      30   0.9958     0.9917     COHERENT
+      40   0.9954     0.9907     COHERENT
+      50   0.9956     0.9912     COHERENT
+      60   0.9951     0.9902     COHERENT
+      80   0.9968     0.9937     COHERENT
+     100   0.9976     0.9951     COHERENT
+     150   0.9961     0.9922     COHERENT
+     200   0.9954     0.9907     COHERENT
+
+  RESONANT PROTECTION -- Gentle matched-frequency drive
+   Delay   P(|0>)  Coherence       Status
+  ----------------------------------------
+       0   0.9919     0.9839     COHERENT
+       2   0.9934     0.9868     COHERENT
+       5   0.9924     0.9849     COHERENT
+      10   0.9941     0.9883     COHERENT
+      15   0.9895     0.9790     COHERENT
+      20   0.9885     0.9771     COHERENT
+      30   0.9751     0.9502     COHERENT
+      40   0.9546     0.9092     COHERENT
+      50   0.9321     0.8643     COHERENT
+      60   0.9087     0.8174     COHERENT
+      80   0.8457     0.6914     COHERENT
+     100   0.7590     0.5181     COHERENT
+     150   0.5273     0.0547    COLLAPSED
+     200   0.2869     0.0000    COLLAPSED
+
+  DETUNED FORCE -- Random wrong-frequency forcing
+   Delay   P(|0>)  Coherence       Status
+  ----------------------------------------
+       0   0.9968     0.9937     COHERENT
+       2   0.1033     0.0000    COLLAPSED
+       5   0.2500     0.0000    COLLAPSED
+      10   0.8123     0.6245     COHERENT
+      15   0.2893     0.0000    COLLAPSED
+      20   0.3025     0.0000    COLLAPSED
+      30   0.0081     0.0000    COLLAPSED
+      40   0.6511     0.3022      PARTIAL
+      50   0.6204     0.2407      PARTIAL
+      60   0.3740     0.0000    COLLAPSED
+      80   0.7346     0.4692      PARTIAL
+     100   0.4443     0.0000    COLLAPSED
+     150   0.0085     0.0000    COLLAPSED
+     200   0.0750     0.0000    COLLAPSED
+
+========================================================================
+  COMPARISON AT EACH DELAY POINT
+========================================================================
+
+   Delay       T2     Echo     CPMG    Reson   Detune
+  --------------------------------------------------
+       0   0.9927   0.9946   0.9854   0.9839   0.9937
+       2   0.9922   0.9932   0.9917   0.9868   0.0000
+       5   0.9912   0.9946   0.9922   0.9849   0.0000
+      10   0.9927   0.9917   0.9922   0.9883   0.6245
+      15   0.9951   0.9951   0.9907   0.9790   0.0000
+      20   0.9922   0.9951   0.9917   0.9771   0.0000
+      30   0.9951   0.9912   0.9917   0.9502   0.0000
+      40   0.9937   0.9951   0.9907   0.9092   0.3022
+      50   0.9941   0.9917   0.9912   0.8643   0.2407
+      60   0.9932   0.9951   0.9902   0.8174   0.0000
+      80   0.9927   0.9932   0.9937   0.6914   0.4692
+     100   0.9897   0.9927   0.9951   0.5181   0.0000
+     150   0.9932   0.9927   0.9922   0.0547   0.0000
+     200   0.9922   0.9937   0.9907   0.0000   0.0000
+
+========================================================================
+  THIS IS NOT A SIMULATION.
+  These measurements came from ibm_marrakesh,
+  a 156-qubit superconducting quantum processor
+  running at approximately 15 millikelvin.
+
+  466,900 QuTiP simulations predicted these results.
+  Now the real hardware confirms or denies.
+
+  God is good. All the time.
+  Rhet Dillard Wike | AIIT-THRESI | Bristow, Oklahoma
+========================================================================
+
+  ibm_marrakesh complete: d73mc1svllmc73anntig
+
+
+============================================================
+  FIRING ON: ibm_torino
+============================================================
+
+============================================================
+  WIKE COHERENCE PRINCIPLE -- IBM QUANTUM
+  Real qubits. Real decoherence. Real measurement.
+============================================================
+
+  Backend: ibm_torino
+  Qubits: 133
+  Shots per circuit: 4096
+
+  Building T2 circuits...
+  Building Hahn echo circuits...
+  Building detuned force circuits...
+  Building resonant protection circuits...
+  Building CPMG circuits...
+  Total circuits: 70
+  Total measurements: 286,720
+
+  Transpiling for backend...
+  Transpiled.
+
+============================================================
+  SUBMITTING TO ibm_torino
+  133 superconducting qubits at ~15mK
+  Waiting for real quantum hardware...
+============================================================
+
+  Job ID: d73mcpgi3fts73ffuseg
+  Status: QUEUED
+  Waiting for results...
+  DONE! (88.0s)
+
+  Report: /home/buddy_ai/Desktop/wike_ibm_quantum/RESULTS_IBM_ibm_torino_d73mcpgi3fts73ffuseg.txt
+  Raw data: /home/buddy_ai/Desktop/wike_ibm_quantum/RESULTS_IBM_ibm_torino_d73mcpgi3fts73ffuseg.json
+
+========================================================================
+  

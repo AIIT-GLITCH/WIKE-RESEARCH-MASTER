@@ -1,5 +1,6 @@
-# Pi: The Invariant That Survives Everything
+# PAPER 12: PI — THE INVARIANT THAT SURVIVES EVERYTHING
 ## Relationship to Quantum Mechanics, Singularities, and Global Measurement
+### Rhet Dillard Wike | AIIT-THRESI Research Initiative
 
 ---
 

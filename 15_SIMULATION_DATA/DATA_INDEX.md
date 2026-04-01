@@ -1,5 +1,6 @@
-# WIKE Simulation Data Archive Index
+# PAPER 15: WIKE SIMULATION DATA ARCHIVE INDEX
 ## Total: ~11.4 Million Simulations
+### Rhet Dillard Wike | AIIT-THRESI Research Initiative
 
 ---
 

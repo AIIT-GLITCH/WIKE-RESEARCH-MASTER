@@ -1,0 +1,41 @@
+{
+  "enso": {
+    "name": "ENSO",
+    "kanji": "\u5186\u76f8",
+    "meaning": "The Zen circle \u2014 one brushstroke, completeness and void",
+    "pi_beats_nonpi": 0,
+    "pi_beats_pure": 0,
+    "total": 200
+  },
+  "en": {
+    "name": "EN",
+    "kanji": "\u5186",
+    "meaning": "Circle, connection, currency \u2014 all the same word",
+    "K_c_predicted": 0.6366197723675814,
+    "K_c_measured": null,
+    "ratio": null
+  },
+  "wa": {
+    "name": "WA",
+    "kanji": "\u548c",
+    "meaning": "Harmony \u2014 the old name for Japan itself",
+    "pi_average_coherence": 0.3351600902231136,
+    "nonpi_average_coherence": 0.3351600902231136,
+    "pi_wins": "False"
+  },
+  "ma": {
+    "name": "MA",
+    "kanji": "\u9593",
+    "meaning": "The space between \u2014 not emptiness, but presence of relationship",
+    "pi_over_2": 1.5707963267948966
+  },
+  "nami": {
+    "name": "NAMI",
+    "kanji": "\u6ce2",
+    "meaning": "Wave \u2014 every oscillation IS 2*pi",
+    "average_ratio_to_predicted": 0.5000147586151537,
+    "max_deviation_from_pi": 0.5001940242586844
+  },
+  "total_sims": 46200,
+  "runtime": 45.08355164527893
+}

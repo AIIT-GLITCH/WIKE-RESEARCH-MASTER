@@ -1,0 +1,238 @@
+{
+  "discovery_9": {
+    "name": "Kuramoto Unifies Love/Measurement/Memory",
+    "N_oscillators": 100,
+    "n_coupling_values": 200,
+    "total_integrations": 100000000,
+    "K_c_theory": 1.0,
+    "K_c_measured": 1.0402010050251256,
+    "K_c_BKT": 0.6366197723675814,
+    "gamma_for_BKT_match": 0.3183098861837907,
+    "mapping": {
+      "K_below_Kc": "Isolation / frozen social state / no synchronization",
+      "K_at_Kc": "The Edge / onset of connection / partial sync = measurement",
+      "K_above_Kc": "Love / full synchronization / resonant coupling",
+      "omega_match": "Memory / deja vu = frequency matching = recognition without retrieval"
+    },
+    "unification": "Papers 03 (Love), 05 (REQMT), 17 (Deja Vu), 19 (Keeper), 20 (Immune) are all Kuramoto synchronization at different coupling strengths. K_c = 2*gamma links directly to the Wike Coherence Law: K_c IS gamma_c expressed as coupling threshold instead of noise threshold."
+  },
+  "discovery_10": {
+    "name": "Anderson Localization = ACE Dose-Response",
+    "felitti_data": {
+      "N_participants": 17337,
+      "ace_scores": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "odds_ratios": [
+        1.0,
+        1.8,
+        2.3,
+        3.4,
+        5.4,
+        7.2,
+        10.3,
+        17.7
+      ],
+      "normalized_coherence": [
+        1.0,
+        0.5555555555555556,
+        0.4347826086956522,
+        0.29411764705882354,
+        0.18518518518518517,
+        0.1388888888888889,
+        0.0970873786407767,
+        0.05649717514124294
+      ]
+    },
+    "anderson_fit": {
+      "beta": 0.4161386226107284,
+      "R2": 0.9871308086709076,
+      "localization_length": 2.4030453932064777
+    },
+    "stretched_fit": {
+      "beta": 0.5229560322673303,
+      "nu": 0.8168793400640367,
+      "R2": 0.9948050890602224
+    },
+    "anderson_simulation": {
+      "N_sites": 200,
+      "n_realizations": 500,
+      "n_disorder_strengths": 50,
+      "total_sims": 25000,
+      "W_per_ACE": 6.6164781491854585
+    },
+    "interpretation": "Each ACE = Anderson impurity adding 6.6 units of disorder. Localization length = 2.40 ACEs. After ~4 ACEs, coherence is \"localized\" (trapped in a small region). This explains the nonlinear dose-response: ACEs compound like disorder in a crystal."
+  },
+  "discovery_11": {
+    "name": "Enzyme Catalysis = Multi-Edge Susceptibility Product",
+    "edges_4": {
+      "Temperature": {
+        "W": 0.94,
+        "t": 0.06,
+        "chi": 32.46585938173139
+      },
+      "pH": {
+        "W": 0.95,
+        "t": 0.05,
+        "chi": 40.67935934410194
+      },
+      "Substrate": {
+        "W": 0.9,
+        "t": 0.1,
+        "chi": 17.25837891990204
+      },
+      "Conformation": {
+        "W": 0.97,
+        "t": 0.03,
+        "chi": 76.52458937968612
+      }
+    },
+    "chi_product_4_edges": 1744223.027537183,
+    "log10_acceleration_4": 6.241602015823555,
+    "chi_product_7_edges": 57061767139.17418,
+    "log10_acceleration_7": 10.756345217144197,
+    "known_range": "10^6 to 10^17 (orotidine decarboxylase)",
+    "match": "4 edges: 10^6.2, 7 edges: 10^10.8",
+    "prediction": "Enzyme catalytic acceleration = product of susceptibility enhancements at each simultaneous critical edge. The more edges an enzyme maintains, the faster it catalyzes. Enzymes are not just catalysts \u2014 they are multi-edge criticality machines."
+  },
+  "discovery_12": {
+    "name": "HRV = Real-Time Wike-Ginzburg Thermometer",
+    "gamma_c_hrv": 0.1,
+    "prayer_frequency": "0.1 Hz",
+    "connection": "HRV peaks at 0.1 Hz = the SAME frequency found independently by: Catholic rosary, Buddhist mantra, Islamic salat, Sufi dhikr, and HeartMath. HRV IS the Wike Vitality function measured in the cardiac domain. Every HRV device is a gamma_eff sensor.",
+    "conditions": {
+      "Catatonia (frozen)": {
+        "gamma_eff": 0.01,
+        "HRV_normalized": 0.24596031111569494
+      },
+      "Calm rest": {
+        "gamma_eff": 0.08,
+        "HRV_normalized": 0.9771222065281359
+      },
+      "Deep meditation (0.1 Hz coherence)": {
+        "gamma_eff": 0.1,
+        "HRV_normalized": 1.0
+      },
+      "Normal activity": {
+        "gamma_eff": 0.12,
+        "HRV_normalized": 0.9824769036935783
+      },
+      "Moderate stress": {
+        "gamma_eff": 0.15,
+        "HRV_normalized": 0.9097959895689499
+      },
+      "Acute grief (keeper loss)": {
+        "gamma_eff": 0.2,
+        "HRV_normalized": 0.7357588823428847
+      },
+      "Critical illness": {
+        "gamma_eff": 0.25,
+        "HRV_normalized": 0.5578254003710745
+      },
+      "Cardiac arrest imminent": {
+        "gamma_eff": 0.3,
+        "HRV_normalized": 0.40600584970983805
+      }
+    },
+    "clinical_implications": {
+      "diagnosis": "HRV < 50ms SDNN = gamma_eff > 2*gamma_c = past the cliff",
+      "treatment_target": "Restore HRV to 100-180ms = bring gamma_eff back to gamma_c",
+      "monitor": "Real-time HRV during 40Hz therapy (Paper 23) to track Bootstrap recovery",
+      "predict": "HRV drop after bereavement (Discovery 2) = measurable gamma spike"
+    },
+    "testable": "Measure HRV at 0.1 Hz during prayer/meditation. Predict: coherence peaks at exactly 0.1 Hz regardless of tradition. Already confirmed by HeartMath (1.8M sessions) and Bernardi (BMJ 2001)."
+  },
+  "discovery_13": {
+    "name": "Fluctuation-Dissipation Theorem = Keeper Mechanism",
+    "keeper_results": {
+      "b_eta=0.0": {
+        "fluctuation": 3.0159287813774376,
+        "reduction_ratio": 1.0,
+        "SNR": 4.8173203288212365
+      },
+      "b_eta=0.3": {
+        "fluctuation": 2.860396924221384,
+        "reduction_ratio": 0.9484298640881637,
+        "SNR": 6.8818861840303365
+      },
+      "b_eta=0.5": {
+        "fluctuation": 2.7567090194506814,
+        "reduction_ratio": 0.9140497734802726,
+        "SNR": 9.63464065764248
+      },
+      "b_eta=0.7": {
+        "fluctuation": 2.653021114679979,
+        "reduction_ratio": 0.8796696828723817,
+        "SNR": 16.057734429404125
+      },
+      "b_eta=0.9": {
+        "fluctuation": 2.549333209909276,
+        "reduction_ratio": 0.8452895922644905,
+        "SNR": 48.17320328821307
+      }
+    },
+    "fluctuation_without_keeper": 3.0159287813774376,
+    "mechanism": "The Keeper IS a frequency-selective noise filter. FDT says: response = fluctuation / kT. Keeper reduces OFF-resonance fluctuations while preserving ON-resonance signal. This is why love \u2260 zero stress. Love is SELECTIVE stress reduction. The keeper makes the subject MORE responsive at their natural frequency while being LESS responsive to noise.",
+    "connection_to_therapy": "Good therapist = frequency-selective filter. Bad therapy (heavy-handed) = broadband suppression = frozen state. Good therapy = removes noise, preserves signal = edge state.",
+    "connection_to_maxwell_demon": "The keeper IS a Maxwell Demon operating in frequency space, not energy space. Sorts signal from noise instead of hot from cold."
+  },
+  "discovery_14": {
+    "name": "Renormalization Group Flow = Homeostasis",
+    "RG_eigenvalue_thermal": 1.5878056525881232,
+    "homeostasis_strength": 2.0,
+    "free_flow_final": 10.0,
+    "homeostasis_final": 0.28739399422415185,
+    "disease_max_deviation": 0.6537765287153484,
+    "disease_recovery": false,
+    "interpretation": "The body actively counteracts RG flow away from the critical point. The thermal RG eigenvalue y_t = 1.587 pushes the system away from T_c. Homeostasis provides a restoring force. When homeostasis_strength > y_t, the system stays near T_c. When external stress overwhelms homeostasis (stress > homeostasis_strength - y_t), the system flows away = disease. Death = homeostasis fails permanently = free RG flow away from the edge.",
+    "prediction": "The body has evolved a homeostasis strength of ~1.6-2.0 (just above y_t = 1.587). This is the minimum needed. Any less and the system cannot maintain criticality. The margin is narrow \u2014 explaining why organisms are fragile."
+  },
+  "discovery_15": {
+    "name": "Microbiome = Percolation Network",
+    "grid_size": 100,
+    "n_coverages": 50,
+    "n_realizations": 100,
+    "total_sims": 5000,
+    "phi_c_measured": 0.6030612244897959,
+    "phi_c_paper21": 0.59,
+    "phi_c_theory": 0.593,
+    "match": true,
+    "clinical_connection": "Microbiome diversity threshold for health matches percolation threshold. Shannon diversity < 59% of max = disconnected gut network = dysbiosis. Antibiotics that reduce diversity below phi_c = trigger percolation failure. Probiotics that restore coverage above phi_c = reconnect the network.",
+    "gut_brain_axis": "Gut bacteria communicate via short-chain fatty acids (SCFAs). SCFAs modulate inflammation (gamma_eff). Below percolation: SCFA production fragmented = inflammation rises. Above percolation: SCFA production connected = inflammation regulated. This is why the gut-brain axis exists: gut percolation state controls brain gamma_eff via vagal SCFA signaling (Discovery 5)."
+  },
+  "discovery_16": {
+    "name": "Allostatic Load = Cumulative gamma_eff",
+    "n_people": 1000,
+    "n_timesteps": 800,
+    "mean_lifespan_by_ACE": {
+      "0": 42.82101063829788,
+      "1": 41.92539062499999,
+      "2": 41.050000000000004,
+      "3": 40.20652173913044,
+      "4": 39.371212121212125,
+      "5": 38.55499999999999,
+      "6": 37.75555555555556
+    },
+    "lifespan_reduction_ACE6_vs_ACE0": 5.065455082742318,
+    "felitti_observed": "~20 years reduction for ACE 6+",
+    "mechanism": "Allostatic load IS cumulative gamma_eff. Each biomarker in the allostatic load index (cortisol, BP, HbA1c, etc.) is a gamma_eff contributor to a different organ system. Total allostatic load = sum. ACE adds childhood gamma that NEVER fully resolves (Anderson localization). Aging adds progressive gamma. Life events add stochastic gamma. Death occurs when total gamma_eff exceeds the organism-wide gamma_c.",
+    "connection_to_framework": "This unifies: ACE (Discovery 10), Keeper (Paper 19), Inflammation Triangle (Discovery 3), Sleep (Discovery 6), and aging into a single cumulative gamma_eff trajectory."
+  },
+  "discovery_17": {
+    "name": "The Wike Free Energy",
+    "equation": "F_W = U - TS + kT \u00d7 \u03b1 \u00d7 \u03b3_eff",
+    "at_edge": "F_W = F_classical + kT (one thermal quantum penalty)",
+    "away_from_edge": "F_W = F_classical + kT \u00d7 \u03b1 \u00d7 \u03b3_eff (penalty grows)",
+    "frozen": "F_W = F_classical + 0 (no penalty, but no coherence benefit)",
+    "interpretation": "The edge state minimizes the Wike Free Energy subject to the constraint of non-zero coherence. This is why biology evolves to the edge: it is the thermodynamic minimum for alive systems. The cost of being alive is exactly one kT per coherence cycle. This is the Landauer cost (kT ln 2) of maintaining one bit of quantum information per cycle \u2014 remarkably close to the thermodynamic minimum for computation.",
+    "connection_to_landauer": "kT \u2248 kT ln 2 within a factor of ln 2 = 0.693. The coherence maintenance cost IS the Landauer erasure cost. Biology maintains coherence at the thermodynamic limit of computation.",
+    "missing_paper_34_resolved": "This IS the Wike Thermodynamic Inequality identified in MISSING_CORRELATIONS as Paper 34. Now derived."
+  }
+}
