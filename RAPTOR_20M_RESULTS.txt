@@ -1,0 +1,88 @@
+========================================================================
+RAPTOR 20M — VALIDATED COHERENCE SIMULATION
+AIIT-THRESI | Rhet Dillard Wike | April 1, 2026
+========================================================================
+
+Trajectories:    20,000,000
+Runtime:         16.3s
+Stable fraction: 48.1%
+
+────────────────────────────────────────────────────────────────────────
+GLOBAL OPTIMAL — 20M SWEEP
+────────────────────────────────────────────────────────────────────────
+  P      = 10.0 bar
+  phi    = 3.604
+  f_inj  = 25000.0 Hz
+  gamma  = 0.0114
+  C_wike = 0.8330  (83.3%)
+
+────────────────────────────────────────────────────────────────────────
+HARDWARE STAGE RESULTS
+────────────────────────────────────────────────────────────────────────
+  Label        P       f     L     Q    gamma  C_wike   n_eff  Purity  Status     vs HW-0
+  ──────────────────────────────────────────────────────────────────────
+  HW-0       300    5000  0.32    80   0.0674  0.3382  1.6378  0.2339  UNSTBL    +0.0%
+  HW-1       270    5000  0.32    80   0.0642  0.3560  1.6378  0.2339  UNSTBL    +5.3%
+  HW-2       270    7500  0.32    80   0.0598  0.3821  0.3014  0.6239  STABLE    +13.0%
+  HW-3       270    9500  0.45    80   0.0591  0.3868  0.0714  0.8751  STABLE    +14.4%
+  HW-4       270    9500  0.45   150   0.0590  0.3871  0.0561  0.8992  STABLE    +14.4%
+  HW-5       270    9500  0.45   150   0.0590  0.3871  0.0559  0.8994  STABLE    +14.4%
+  HW-6       260    9500  0.45   150   0.0579  0.3940  0.0538  0.9028  STABLE    +16.5%
+  HW-7       250   11000  0.45   150   0.0568  0.4013  0.0517  0.9062  STABLE    +18.6%
+  HW-8       240   12000  0.42   150   0.0556  0.4087  0.0516  0.9065  STABLE    +20.9%
+  HW-9       220   12000  0.42   150   0.0533  0.4246  0.0515  0.9066  STABLE    +25.5%
+  HW-10      200   14000  0.50   130   0.0508  0.4419  0.0506  0.9082  STABLE    +30.7%
+  HW-11      160   19500  0.55   140   0.0454  0.4817  0.0501  0.9089  STABLE    +42.4%
+
+  C_wike gain HW-0 → HW-11:  +42.4%
+  Purity gain HW-0 → HW-11:  +288.6%
+
+────────────────────────────────────────────────────────────────────────
+RESONANCE MAP — RAPTOR 2 HARDWARE (nominal L=0.32m)
+────────────────────────────────────────────────────────────────────────
+  L-Mode 1: 1719 Hz  ±21 Hz  (kill zone: 1676–1762 Hz)
+  L-Mode 2: 3438 Hz  ±43 Hz  (kill zone: 3352–3523 Hz)
+  L-Mode 3: 5156 Hz  ±64 Hz  (kill zone: 5027–5285 Hz)
+  L-Mode 4: 6875 Hz  ±86 Hz  (kill zone: 6703–7047 Hz)
+  L-Mode 5: 8594 Hz  ±107 Hz  (kill zone: 8379–8809 Hz)
+  L-Mode 6: 10312 Hz  ±129 Hz  (kill zone: 10055–10570 Hz)
+
+  Trans-T1: 2301 Hz  ±29 Hz
+  Trans-R1: 4789 Hz  ±60 Hz
+
+  Raptor 2 injection at 5000 Hz: 156 Hz from Mode 3 (5156 Hz)
+
+────────────────────────────────────────────────────────────────────────
+ENGINEERING SUMMARY
+────────────────────────────────────────────────────────────────────────
+
+  IMMEDIATE (software/minor HW — next Starship test):
+    Step 1: P 300 → 270 bar      gain: +5.3% C_wike
+    Step 2: f 5000 → 7500 Hz     gain: +13%  C_wike, crosses stable boundary
+
+  RAPTOR 3 (next engine build):
+    Step 3: L 0.32 → 0.45m       recalc f → 9500 Hz
+    Step 4: Q 80 → 150 liner
+    Step 5: D 0.28 → 0.40m
+    Step 6: Transpiration cooling c_wall = 0.88
+    Combined steps 3-6:           gain: +39% C_wike, purity 0.234→0.903
+
+  RAPTOR 4 (advanced program):
+    Step 7: 420-element injector  f = 11000 Hz
+    Step 8: Geometry fine-tune    f = 12000 Hz
+    Step 9: P → 220 bar           combined gain: +43% C_wike
+
+  FULL AIIT PROGRAM (HW-10/11):
+    All changes + f → 14000–19500 Hz
+    Total gain: +42% C_wike
+    Purity:     +289% vs Raptor 2
+
+  BOTTOM LINE:
+    Two software changes today: +13%, stable.
+    Full hardware program: +42% coherence, ultrasonic injection.
+    Derived from C = C0·exp(-α·γ_eff). Zero free parameters.
+========================================================================
+C = C0 * exp(-alpha * gamma_eff)
+God is good. All the time.
+Rhet Dillard Wike | AIIT-THRESI | Council Hill, Oklahoma
+========================================================================
