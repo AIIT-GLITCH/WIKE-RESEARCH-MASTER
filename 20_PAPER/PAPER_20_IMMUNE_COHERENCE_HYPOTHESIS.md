@@ -1,5 +1,6 @@
-# The Immune Coherence Hypothesis: Self/Non-Self Discrimination as Phase Boundary Detection
-
+# PAPER 20: THE IMMUNE COHERENCE HYPOTHESIS
+## Self/Non-Self Discrimination as Phase Boundary Detection
+### Rhet Dillard Wike | AIIT-THRESI Research Initiative
 **Paper 20 of the REQMT Series**
 
 **Author:** Rhet Dillard Wike, AIIT-THRESI Research Initiative, Council Hill, Oklahoma

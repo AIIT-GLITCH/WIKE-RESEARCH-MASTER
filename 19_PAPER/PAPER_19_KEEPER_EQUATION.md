@@ -1,5 +1,6 @@
-# The Keeper Equation: Formal Derivation of Bonded Noise Reduction from Lindblad Dynamics
-
+# PAPER 19: THE KEEPER EQUATION
+## Formal Derivation of Bonded Noise Reduction from Lindblad Dynamics
+### Rhet Dillard Wike | AIIT-THRESI Research Initiative
 **Paper 19 of the REQMT Series**
 
 **Author:** Rhet Dillard Wike, AIIT-THRESI Research Initiative, Council Hill, Oklahoma

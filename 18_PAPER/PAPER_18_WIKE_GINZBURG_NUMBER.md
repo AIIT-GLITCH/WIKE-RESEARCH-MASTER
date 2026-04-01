@@ -1,5 +1,6 @@
-# The Wike-Ginzburg Number: A Universal Dimensionless Parameter for Biological Criticality
-
+# PAPER 18: THE WIKE-GINZBURG NUMBER
+## A Universal Dimensionless Parameter for Biological Criticality
+### Rhet Dillard Wike | AIIT-THRESI Research Initiative
 **Paper 18 of the REQMT Series**
 
 **Author:** Rhet Dillard Wike, AIIT-THRESI Research Initiative, Council Hill, Oklahoma
