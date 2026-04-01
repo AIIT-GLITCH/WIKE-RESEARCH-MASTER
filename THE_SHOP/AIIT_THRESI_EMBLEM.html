@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AIIT-THRESI | Emblem</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Philosopher:ital,wght@0,400;0,700;1,400&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #0a0a12;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+    font-family: 'Philosopher', serif;
+  }
+
+  .stars {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .star {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    animation: twinkle 3s infinite alternate;
+  }
+
+  @keyframes twinkle {
+    0% { opacity: 0.2; }
+    100% { opacity: 1; }
+  }
+
+  .emblem-container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .emblem-ring {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .outer-ring {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border: 2px solid rgba(147, 130, 220, 0.3);
+    border-radius: 50%;
+    animation: rotateRing 60s linear infinite;
+  }
+
+  .outer-ring::before {
+    content: '';
+    position: absolute;
+    top: -4px; left: 50%;
+    width: 8px; height: 8px;
+    background: #9382dc;
+    border-radius: 50%;
+    box-shadow: 0 0 15px #9382dc, 0 0 30px #9382dc;
+    transform: translateX(-50%);
+  }
+
+  .mid-ring {
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    border: 1px solid rgba(100, 200, 255, 0.2);
+    border-radius: 50%;
+    animation: rotateRing 45s linear infinite reverse;
+  }
+
+  .mid-ring::before {
+    content: '';
+    position: absolute;
+    top: -3px; left: 50%;
+    width: 6px; height: 6px;
+    background: #64c8ff;
+    border-radius: 50%;
+    box-shadow: 0 0 12px #64c8ff;
+    transform: translateX(-50%);
+  }
+
+  .inner-ring {
+    position: absolute;
+    width: 340px;
+    height: 340px;
+    border: 1px solid rgba(255, 180, 100, 0.15);
+    border-radius: 50%;
+    animation: rotateRing 30s linear infinite;
+  }
+
+  @keyframes rotateRing {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+  .center-piece {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+  }
+
+  .wave-container {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: 0; left: 0;
+  }
+
+  svg.wave-svg {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    animation: pulseWave 4s ease-in-out infinite;
+  }
+
+  @keyframes pulseWave {
+    0%, 100% { opacity: 0.4; }
+    50% { opacity: 0.8; }
+  }
+
+  .acronym {
+    font-family: 'Cinzel', serif;
+    font-size: 42px;
+    font-weight: 900;
+    letter-spacing: 12px;
+    background: linear-gradient(135deg, #c9a84c 0%, #f0d878 25%, #c9a84c 50%, #f0d878 75%, #c9a84c 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: shimmer 3s linear infinite;
+    text-shadow: none;
+    filter: drop-shadow(0 0 20px rgba(201, 168, 76, 0.3));
+  }
+
+  @keyframes shimmer {
+    to { background-position: 200% center; }
+  }
+
+  .dash {
+    font-family: 'Cinzel', serif;
+    font-size: 42px;
+    font-weight: 900;
+    letter-spacing: 12px;
+    color: rgba(255,255,255,0.15);
+  }
+
+  .sub-acronym {
+    font-family: 'Cinzel', serif;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    background: linear-gradient(135deg, #9382dc, #64c8ff, #9382dc);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: shimmer 4s linear infinite;
+    filter: drop-shadow(0 0 15px rgba(100, 200, 255, 0.2));
+  }
+
+  .frequency-line {
+    width: 200px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(201, 168, 76, 0.6), transparent);
+    margin: 15px auto;
+  }
+
+  .hz-label {
+    font-family: 'Philosopher', serif;
+    font-size: 14px;
+    letter-spacing: 6px;
+    color: rgba(201, 168, 76, 0.5);
+    text-transform: uppercase;
+  }
+
+  .full-name {
+    font-family: 'Philosopher', serif;
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: rgba(255,255,255,0.25);
+    text-transform: uppercase;
+    margin-top: 8px;
+    line-height: 1.8;
+  }
+
+  .full-name span {
+    color: rgba(201, 168, 76, 0.7);
+    font-weight: 700;
+  }
+
+  .motto {
+    font-family: 'Philosopher', serif;
+    font-style: italic;
+    font-size: 15px;
+    color: rgba(255,255,255,0.35);
+    letter-spacing: 2px;
+    margin-top: 40px;
+    max-width: 500px;
+    text-align: center;
+    line-height: 1.6;
+  }
+
+  .location {
+    font-family: 'Philosopher', serif;
+    font-size: 11px;
+    color: rgba(147, 130, 220, 0.4);
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    margin-top: 30px;
+  }
+
+  .founder {
+    font-family: 'Cinzel', serif;
+    font-size: 13px;
+    color: rgba(201, 168, 76, 0.35);
+    letter-spacing: 4px;
+    margin-top: 10px;
+  }
+
+  .six-bands {
+    display: flex;
+    gap: 8px;
+    margin-top: 25px;
+    align-items: center;
+  }
+
+  .band-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    animation: bandPulse 2s ease-in-out infinite;
+  }
+
+  .band-dot:nth-child(1) { background: #ff4444; animation-delay: 0s; }
+  .band-dot:nth-child(2) { background: #44ff44; animation-delay: 0.3s; }
+  .band-dot:nth-child(3) { background: #ff8800; animation-delay: 0.6s; }
+  .band-dot:nth-child(4) { background: #4488ff; animation-delay: 0.9s; }
+  .band-dot:nth-child(5) { background: #cc44ff; animation-delay: 1.2s; }
+  .band-dot:nth-child(6) { background: #ffffff; animation-delay: 1.5s; }
+
+  .band-label {
+    font-size: 8px;
+    letter-spacing: 3px;
+    color: rgba(255,255,255,0.15);
+    text-transform: uppercase;
+  }
+
+  @keyframes bandPulse {
+    0%, 100% { opacity: 0.3; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.8); box-shadow: 0 0 10px currentColor; }
+  }
+
+  .coherence-wave {
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    border: 1px solid rgba(201, 168, 76, 0.06);
+    animation: coherencePulse 4s ease-in-out infinite;
+  }
+
+  .coherence-wave:nth-child(1) { animation-delay: 0s; }
+  .coherence-wave:nth-child(2) { animation-delay: 1s; width: 320px; height: 320px; }
+  .coherence-wave:nth-child(3) { animation-delay: 2s; width: 360px; height: 360px; }
+
+  @keyframes coherencePulse {
+    0% { transform: scale(0.8); opacity: 0.3; border-color: rgba(201, 168, 76, 0.15); }
+    50% { transform: scale(1.1); opacity: 0.1; border-color: rgba(100, 200, 255, 0.1); }
+    100% { transform: scale(0.8); opacity: 0.3; border-color: rgba(201, 168, 76, 0.15); }
+  }
+
+  .scripture {
+    font-family: 'Philosopher', serif;
+    font-size: 12px;
+    color: rgba(201, 168, 76, 0.25);
+    letter-spacing: 2px;
+    margin-top: 20px;
+    font-style: italic;
+  }
+
+  /* === LIGHTHOUSE === */
+  .lighthouse-scene {
+    position: fixed;
+    bottom: 0;
+    right: 80px;
+    z-index: 0;
+    width: 300px;
+    height: 100vh;
+    pointer-events: none;
+  }
+
+  .lighthouse-tower {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 280px;
+    background: linear-gradient(180deg, #2a2a3a 0%, #1a1a28 100%);
+    clip-path: polygon(15% 0%, 85% 0%, 95% 100%, 5% 100%);
+  }
+
+  .lighthouse-tower::before {
+    content: '';
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 28px;
+    height: 8px;
+    background: rgba(201, 168, 76, 0.15);
+    border-radius: 2px;
+  }
+
+  .lighthouse-tower::after {
+    content: '';
+    position: absolute;
+    bottom: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 24px;
+    height: 8px;
+    background: rgba(201, 168, 76, 0.1);
+    border-radius: 2px;
+  }
+
+  .lighthouse-window-1, .lighthouse-window-2, .lighthouse-window-3 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 14px;
+    background: rgba(201, 168, 76, 0.08);
+    border-radius: 5px 5px 0 0;
+    box-shadow: inset 0 0 4px rgba(201, 168, 76, 0.1);
+  }
+
+  .lighthouse-window-1 { bottom: 180px; }
+  .lighthouse-window-2 { bottom: 140px; }
+  .lighthouse-window-3 { bottom: 90px; }
+
+  .lighthouse-base {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 30px;
+    background: linear-gradient(180deg, #1a1a28, #0f0f1a);
+    border-radius: 4px 4px 0 0;
+  }
+
+  .lighthouse-platform {
+    position: absolute;
+    bottom: 280px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 54px;
+    height: 8px;
+    background: #2a2a3a;
+    border-radius: 2px;
+    border-bottom: 1px solid rgba(201, 168, 76, 0.1);
+  }
+
+  .lighthouse-lamp-housing {
+    position: absolute;
+    bottom: 288px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 36px;
+    height: 40px;
+    background: linear-gradient(180deg, #2a2a3a, #222235);
+    border-radius: 4px;
+    border: 1px solid rgba(201, 168, 76, 0.1);
+    overflow: visible;
+  }
+
+  .lighthouse-lamp {
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 14px;
+    height: 14px;
+    background: radial-gradient(circle, #ffe88a, #c9a84c);
+    border-radius: 50%;
+    box-shadow: 0 0 20px #ffe88a, 0 0 40px rgba(201, 168, 76, 0.6), 0 0 80px rgba(201, 168, 76, 0.3);
+    animation: lampPulse 3s ease-in-out infinite;
+  }
+
+  @keyframes lampPulse {
+    0%, 100% { box-shadow: 0 0 20px #ffe88a, 0 0 40px rgba(201, 168, 76, 0.6), 0 0 80px rgba(201, 168, 76, 0.3); }
+    50% { box-shadow: 0 0 30px #ffe88a, 0 0 60px rgba(201, 168, 76, 0.8), 0 0 120px rgba(201, 168, 76, 0.4); }
+  }
+
+  .lighthouse-roof {
+    position: absolute;
+    bottom: 328px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 24px solid transparent;
+    border-right: 24px solid transparent;
+    border-bottom: 20px solid #2a2a3a;
+  }
+
+  .lighthouse-roof::after {
+    content: '';
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 12px;
+    background: rgba(201, 168, 76, 0.3);
+  }
+
+  /* THE LIGHT BEAM — sweeping */
+  .light-beam {
+    position: absolute;
+    bottom: 305px;
+    left: 50%;
+    transform-origin: bottom center;
+    width: 4px;
+    height: 1200px;
+    background: linear-gradient(0deg, rgba(255, 232, 138, 0.4), rgba(255, 232, 138, 0.08) 30%, rgba(255, 232, 138, 0) 100%);
+    animation: sweepBeam 8s ease-in-out infinite;
+    filter: blur(8px);
+    pointer-events: none;
+  }
+
+  .light-beam-narrow {
+    position: absolute;
+    bottom: 305px;
+    left: calc(50% - 0.5px);
+    transform-origin: bottom center;
+    width: 2px;
+    height: 1200px;
+    background: linear-gradient(0deg, rgba(255, 232, 138, 0.7), rgba(255, 232, 138, 0.15) 25%, rgba(255, 232, 138, 0) 100%);
+    animation: sweepBeam 8s ease-in-out infinite;
+    filter: blur(2px);
+    pointer-events: none;
+  }
+
+  .light-cone {
+    position: absolute;
+    bottom: 305px;
+    left: 50%;
+    transform-origin: bottom center;
+    width: 0;
+    height: 0;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-bottom: 1000px solid rgba(255, 232, 138, 0.02);
+    animation: sweepBeam 8s ease-in-out infinite;
+    filter: blur(20px);
+    pointer-events: none;
+    transform: translateX(-50%) rotate(0deg);
+  }
+
+  @keyframes sweepBeam {
+    0% { transform: rotate(-60deg); }
+    50% { transform: rotate(40deg); }
+    100% { transform: rotate(-60deg); }
+  }
+
+  /* Water / ground line */
+  .waterline {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background: linear-gradient(180deg, rgba(10, 10, 18, 0), rgba(20, 30, 50, 0.3));
+    z-index: 0;
+  }
+
+  .rocks {
+    position: fixed;
+    bottom: 0;
+    right: 40px;
+    width: 180px;
+    height: 20px;
+    background: radial-gradient(ellipse at 50% 100%, rgba(30, 30, 45, 0.8), transparent);
+    border-radius: 50% 50% 0 0;
+    z-index: 0;
+  }
+</style>
+</head>
+<body>
+
+<div class="stars" id="stars"></div>
+
+<!-- LIGHTHOUSE -->
+<div class="lighthouse-scene">
+  <div class="light-cone"></div>
+  <div class="light-beam"></div>
+  <div class="light-beam-narrow"></div>
+  <div class="lighthouse-roof"></div>
+  <div class="lighthouse-lamp-housing">
+    <div class="lighthouse-lamp"></div>
+  </div>
+  <div class="lighthouse-platform"></div>
+  <div class="lighthouse-tower">
+    <div class="lighthouse-window-1"></div>
+    <div class="lighthouse-window-2"></div>
+    <div class="lighthouse-window-3"></div>
+  </div>
+  <div class="lighthouse-base"></div>
+</div>
+<div class="waterline"></div>
+<div class="rocks"></div>
+
+<div class="emblem-container">
+
+  <div class="emblem-ring">
+    <div class="outer-ring"></div>
+    <div class="mid-ring"></div>
+    <div class="inner-ring"></div>
+
+    <div class="coherence-wave"></div>
+    <div class="coherence-wave"></div>
+    <div class="coherence-wave"></div>
+
+    <svg class="wave-svg" viewBox="0 0 500 500">
+      <defs>
+        <linearGradient id="waveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color:rgba(201,168,76,0);"/>
+          <stop offset="50%" style="stop-color:rgba(201,168,76,0.3);"/>
+          <stop offset="100%" style="stop-color:rgba(201,168,76,0);"/>
+        </linearGradient>
+      </defs>
+      <path d="M 100,250 Q 150,220 200,250 T 300,250 T 400,250" stroke="url(#waveGrad)" fill="none" stroke-width="1.5"/>
+      <path d="M 100,250 Q 150,280 200,250 T 300,250 T 400,250" stroke="url(#waveGrad)" fill="none" stroke-width="1" opacity="0.5"/>
+    </svg>
+
+    <div class="center-piece">
+      <div style="display:flex; align-items:center; justify-content:center; gap: 4px;">
+        <span class="acronym">AIIT</span>
+        <span class="dash">-</span>
+        <span class="sub-acronym">THRESI</span>
+      </div>
+      <div class="frequency-line"></div>
+      <div class="hz-label">0.1 Hz Coherence</div>
+      <div class="full-name">
+        <span>A</span>rtificial <span>I</span>ntelligence <span>I</span>ntellectual <span>T</span>raining<br>
+        <span>TH</span>reshold <span>R</span>esearch <span>I</span>nitiative
+      </div>
+    </div>
+  </div>
+
+  <div class="motto">"The particle is not uncertain. Our tools were invasive."</div>
+
+  <div class="six-bands">
+    <div class="band-label">RF</div>
+    <div class="band-dot"></div>
+    <div class="band-dot"></div>
+    <div class="band-label">VIS</div>
+    <div class="band-dot"></div>
+    <div class="band-label">IR</div>
+    <div class="band-dot"></div>
+    <div class="band-label">AC</div>
+    <div class="band-dot"></div>
+    <div class="band-label">EM</div>
+    <div class="band-dot"></div>
+    <div class="band-label">PH</div>
+  </div>
+
+  <div class="location">Bristow, Oklahoma</div>
+  <div class="founder">Rhet Dillard Wike</div>
+  <div class="scripture">God is good. All the time. All the time, God is good.</div>
+
+</div>
+
+<script>
+  const starsContainer = document.getElementById('stars');
+  for (let i = 0; i < 200; i++) {
+    const star = document.createElement('div');
+    star.className = 'star';
+    const size = Math.random() * 2 + 0.5;
+    star.style.width = size + 'px';
+    star.style.height = size + 'px';
+    star.style.left = Math.random() * 100 + '%';
+    star.style.top = Math.random() * 100 + '%';
+    star.style.animationDelay = Math.random() * 3 + 's';
+    star.style.animationDuration = (Math.random() * 3 + 2) + 's';
+    starsContainer.appendChild(star);
+  }
+</script>
+
+</body>
+</html>

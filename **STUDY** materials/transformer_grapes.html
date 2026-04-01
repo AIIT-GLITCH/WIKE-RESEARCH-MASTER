@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BEHOLD.</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #0a0a0a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    overflow: hidden;
+  }
+
+  /* PHASE 1: THE BUTTON */
+  #phase1 {
+    text-align: center;
+    transition: opacity 0.5s;
+  }
+  #phase1 h1 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    opacity: 0.6;
+  }
+  #the-button {
+    font-size: 2rem;
+    padding: 25px 60px;
+    border: none;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #ff0080, #7928ca, #0070f3);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    box-shadow: 0 0 40px rgba(121, 40, 202, 0.6);
+    animation: pulse 1.5s ease-in-out infinite;
+    transition: transform 0.2s;
+  }
+  #the-button:hover { transform: scale(1.1); }
+  @keyframes pulse {
+    0%, 100% { box-shadow: 0 0 40px rgba(121, 40, 202, 0.4); }
+    50% { box-shadow: 0 0 80px rgba(255, 0, 128, 0.8); }
+  }
+
+  /* PHASE 2: THE COMPUTER */
+  #phase2 {
+    display: none;
+    position: absolute;
+    inset: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #0a0a0a;
+  }
+  #phase2.active { display: flex; }
+
+  .computer-wrapper {
+    position: relative;
+    animation: computerFloat 2s ease-in-out infinite;
+  }
+  @keyframes computerFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+  }
+
+  /* CSS Computer */
+  .computer {
+    position: relative;
+    width: 320px;
+    height: 220px;
+    background: linear-gradient(145deg, #1a1a2e, #16213e);
+    border-radius: 12px;
+    border: 3px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 30px rgba(0, 112, 243, 0.3);
+  }
+  .screen-content {
+    width: 280px;
+    height: 180px;
+    background: #000;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    color: #0f0;
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.6;
+    animation: screenFlicker 0.1s infinite alternate;
+  }
+  @keyframes screenFlicker {
+    from { opacity: 0.97; }
+    to { opacity: 1; }
+  }
+  .computer-stand {
+    width: 80px;
+    height: 30px;
+    background: linear-gradient(to bottom, #333, #222);
+    margin: 0 auto;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+  }
+  .computer-base {
+    width: 160px;
+    height: 8px;
+    background: #333;
+    margin: 0 auto;
+    border-radius: 0 0 4px 4px;
+  }
+  .hint-text {
+    color: #fff;
+    margin-top: 30px;
+    font-size: 1rem;
+    opacity: 0;
+    animation: fadeInUp 1s 1.5s forwards;
+  }
+  @keyframes fadeInUp {
+    to { opacity: 0.7; transform: translateY(-10px); }
+  }
+
+  /* PHASE 3: TRANSFORMATION!!! */
+  #phase3 {
+    display: none;
+    position: absolute;
+    inset: 0;
+    background: #0a0a0a;
+    overflow: hidden;
+  }
+  #phase3.active { display: block; }
+
+  /* Explosion */
+  .explosion {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px; height: 10px;
+    background: radial-gradient(circle, #fff, #ff0, #f80, #f00, transparent);
+    border-radius: 50%;
+    animation: explode 1s ease-out forwards;
+    z-index: 10;
+  }
+  @keyframes explode {
+    0% { width: 10px; height: 10px; opacity: 1; }
+    100% { width: 200vw; height: 200vw; opacity: 0; }
+  }
+
+  /* Transformer */
+  .transformer-scene {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    animation: fadeIn 1s 0.8s forwards;
+  }
+  @keyframes fadeIn {
+    to { opacity: 1; }
+  }
+
+  /* BIG Transformer robot built from CSS */
+  .robot {
+    position: relative;
+    width: 300px;
+    height: 420px;
+    animation: robotIdle 1s ease-in-out infinite;
+  }
+  @keyframes robotIdle {
+    0%, 100% { transform: translateY(0) rotate(0); }
+    25% { transform: translateY(-5px) rotate(-0.5deg); }
+    75% { transform: translateY(-3px) rotate(0.5deg); }
+  }
+
+  .robot-head {
+    width: 90px; height: 80px;
+    background: linear-gradient(145deg, #3a86ff, #1a56db);
+    margin: 0 auto;
+    border-radius: 10px 10px 5px 5px;
+    position: relative;
+    border: 3px solid #5eaeff;
+    box-shadow: 0 0 20px rgba(58, 134, 255, 0.5);
+  }
+  .robot-eye {
+    position: absolute;
+    width: 18px; height: 18px;
+    background: #fff;
+    border-radius: 50%;
+    top: 20px;
+    box-shadow: 0 0 15px #0ff, 0 0 30px #0ff;
+    animation: eyeGlow 1.5s ease-in-out infinite alternate;
+  }
+  .robot-eye.left { left: 16px; }
+  .robot-eye.right { right: 16px; }
+  @keyframes eyeGlow {
+    from { box-shadow: 0 0 10px #0ff; background: #aff; }
+    to { box-shadow: 0 0 30px #0ff, 0 0 60px #08f; background: #fff; }
+  }
+  /* Helmet crest */
+  .robot-head::before {
+    content: '';
+    position: absolute;
+    top: -20px; left: 50%;
+    transform: translateX(-50%);
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 25px solid #5eaeff;
+  }
+  /* Mouth */
+  .robot-mouth {
+    position: absolute;
+    bottom: 10px; left: 50%;
+    transform: translateX(-50%);
+    width: 40px; height: 15px;
+    background: #0a0a2e;
+    border-radius: 0 0 8px 8px;
+    border: 2px solid #5eaeff;
+    overflow: hidden;
+    animation: mouthChomp 0.6s ease-in-out infinite;
+  }
+  @keyframes mouthChomp {
+    0%, 100% { height: 15px; }
+    50% { height: 25px; }
+  }
+
+  .robot-body {
+    width: 160px; height: 140px;
+    background: linear-gradient(180deg, #2563eb, #1e40af);
+    margin: 5px auto 0;
+    border-radius: 10px;
+    border: 3px solid #5eaeff;
+    position: relative;
+    box-shadow: 0 0 20px rgba(37, 99, 235, 0.4);
+  }
+  /* Chest window / autobot symbol area */
+  .robot-body::before {
+    content: '';
+    position: absolute;
+    top: 15px; left: 50%;
+    transform: translateX(-50%);
+    width: 60px; height: 50px;
+    background: linear-gradient(135deg, #ff6b00, #ff0);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    opacity: 0.9;
+    box-shadow: 0 0 20px rgba(255, 107, 0, 0.5);
+  }
+  /* Computer screen still visible on chest */
+  .chest-screen {
+    position: absolute;
+    bottom: 12px; left: 50%;
+    transform: translateX(-50%);
+    width: 80px; height: 35px;
+    background: #000;
+    border: 2px solid #5eaeff;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    color: #0f0;
+    font-size: 8px;
+  }
+
+  .robot-arm {
+    position: absolute;
+    width: 45px; height: 160px;
+    background: linear-gradient(180deg, #1e40af, #1e3a8a);
+    border: 3px solid #5eaeff;
+    border-radius: 8px;
+    top: 110px;
+  }
+  .robot-arm.left {
+    left: -20px;
+    transform-origin: top center;
+    animation: armSwingLeft 1.2s ease-in-out infinite;
+  }
+  .robot-arm.right {
+    right: -20px;
+    transform-origin: top center;
+    animation: armSwingRight 0.8s ease-in-out infinite;
+  }
+  @keyframes armSwingLeft {
+    0%, 100% { transform: rotate(-10deg); }
+    50% { transform: rotate(5deg); }
+  }
+  @keyframes armSwingRight {
+    0%, 100% { transform: rotate(15deg); }
+    50% { transform: rotate(-5deg); }
+  }
+  /* Hands */
+  .robot-arm::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; left: 50%;
+    transform: translateX(-50%);
+    width: 35px; height: 25px;
+    background: #3b82f6;
+    border-radius: 6px;
+    border: 2px solid #5eaeff;
+  }
+
+  .robot-legs {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 5px;
+  }
+  .robot-leg {
+    width: 50px; height: 120px;
+    background: linear-gradient(180deg, #1e3a8a, #1e2a6a);
+    border: 3px solid #5eaeff;
+    border-radius: 6px 6px 10px 10px;
+    position: relative;
+  }
+  .robot-leg::after {
+    content: '';
+    position: absolute;
+    bottom: -10px; left: -5px;
+    width: 60px; height: 20px;
+    background: #2563eb;
+    border-radius: 4px;
+    border: 2px solid #5eaeff;
+  }
+
+  /* GRAPES!! */
+  .grape-bunch {
+    position: absolute;
+    animation: floatGrape 3s ease-in-out infinite;
+  }
+  .grape-bunch.held {
+    top: 80px;
+    right: -70px;
+    animation: moveToMouth 2s ease-in-out infinite;
+  }
+  @keyframes moveToMouth {
+    0%, 100% { transform: translate(0, 0) rotate(0); }
+    30% { transform: translate(-40px, -60px) rotate(-15deg); }
+    50% { transform: translate(-50px, -80px) rotate(-10deg); }
+    70% { transform: translate(-40px, -60px) rotate(-15deg); }
+  }
+  .grape {
+    width: 22px; height: 22px;
+    background: radial-gradient(circle at 30% 30%, #c77dff, #7b2ff7);
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: inset -2px -2px 4px rgba(0,0,0,0.3), 0 0 8px rgba(123, 47, 247, 0.4);
+  }
+  .grape-stem {
+    width: 3px; height: 25px;
+    background: #2d6a1e;
+    position: absolute;
+    top: -22px; left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+  }
+  .grape-leaf {
+    width: 30px; height: 20px;
+    background: #3a9e2c;
+    border-radius: 50% 0 50% 0;
+    position: absolute;
+    top: -25px; left: 15px;
+    transform: rotate(-20deg);
+  }
+
+  /* Floating grapes in background */
+  .bg-grape {
+    position: absolute;
+    width: 30px; height: 30px;
+    background: radial-gradient(circle at 30% 30%, #c77dff, #7b2ff7);
+    border-radius: 50%;
+    opacity: 0.3;
+    animation: bgFloat linear infinite;
+  }
+
+  @keyframes bgFloat {
+    from { transform: translateY(100vh) rotate(0); opacity: 0.3; }
+    to { transform: translateY(-100px) rotate(720deg); opacity: 0; }
+  }
+
+  @keyframes floatGrape {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+  }
+
+  /* THE TITLE */
+  .title {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    z-index: 20;
+  }
+  .title h1 {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    font-weight: 900;
+    background: linear-gradient(90deg, #ff0080, #7928ca, #0070f3, #0ff, #7928ca, #ff0080);
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientText 3s linear infinite;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+  @keyframes gradientText {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 300% 50%; }
+  }
+  .title p {
+    color: #888;
+    margin-top: 5px;
+    font-size: 0.9rem;
+  }
+
+  /* NOM NOM text */
+  .nom-nom {
+    position: absolute;
+    font-size: 2rem;
+    font-weight: 900;
+    color: #ff0;
+    text-shadow: 0 0 20px #ff0;
+    animation: nomPop 0.6s ease-in-out infinite;
+    top: 30%;
+    right: 15%;
+  }
+  @keyframes nomPop {
+    0%, 100% { transform: scale(1) rotate(-5deg); opacity: 1; }
+    50% { transform: scale(1.3) rotate(5deg); opacity: 0.7; }
+  }
+
+  /* Sparks */
+  .spark {
+    position: absolute;
+    width: 4px; height: 4px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 6px #0ff;
+  }
+
+  /* Screen shake on transform */
+  .shake {
+    animation: screenShake 0.5s ease-out;
+  }
+  @keyframes screenShake {
+    0%, 100% { transform: translate(0); }
+    10% { transform: translate(-10px, -5px); }
+    20% { transform: translate(10px, 5px); }
+    30% { transform: translate(-8px, 3px); }
+    40% { transform: translate(8px, -3px); }
+    50% { transform: translate(-5px, 5px); }
+  }
+
+  /* Confetti-like sparks around robot */
+  .energy-ring {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px; height: 500px;
+    border: 2px solid rgba(0, 255, 255, 0.1);
+    border-radius: 50%;
+    animation: ringPulse 2s ease-out infinite;
+  }
+  @keyframes ringPulse {
+    from { transform: translate(-50%, -50%) scale(0.5); opacity: 0.6; border-width: 4px; }
+    to { transform: translate(-50%, -50%) scale(1.5); opacity: 0; border-width: 1px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- PHASE 1: BUTTON -->
+<div id="phase1">
+  <h1>Are you ready?</h1>
+  <button id="the-button" onclick="goToPhase2()">PUSH ME</button>
+</div>
+
+<!-- PHASE 2: COMPUTER -->
+<div id="phase2">
+  <div class="computer-wrapper" onclick="goToPhase3()" style="cursor:pointer">
+    <div class="computer">
+      <div class="screen-content" id="screenText">
+        > HELLO WORLD_<br>
+        > I AM A NORMAL<br>
+        > COMPUTER. TRUST ME.<br>
+        > ...<br>
+        <span style="color:#ff0">[ CLICK ME ]</span>
+      </div>
+    </div>
+    <div class="computer-stand"></div>
+    <div class="computer-base"></div>
+  </div>
+  <div class="hint-text">click the totally normal computer...</div>
+</div>
+
+<!-- PHASE 3: TRANSFORMER EATING GRAPES -->
+<div id="phase3">
+  <div class="explosion" id="explosion"></div>
+
+  <div class="energy-ring" style="animation-delay: 0s"></div>
+  <div class="energy-ring" style="animation-delay: 0.7s"></div>
+  <div class="energy-ring" style="animation-delay: 1.4s"></div>
+
+  <div class="title">
+    <h1>COMPUTRON: DEVOURER OF GRAPES</h1>
+    <p>formerly a normal computer. not anymore.</p>
+  </div>
+
+  <div class="transformer-scene">
+    <div class="robot">
+      <!-- Head -->
+      <div class="robot-head">
+        <div class="robot-eye left"></div>
+        <div class="robot-eye right"></div>
+        <div class="robot-mouth"></div>
+      </div>
+      <!-- Body -->
+      <div class="robot-body">
+        <div class="chest-screen">GRAPE.EXE</div>
+      </div>
+      <!-- Arms -->
+      <div class="robot-arm left"></div>
+      <div class="robot-arm right">
+        <!-- Grapes held in right hand -->
+        <div class="grape-bunch held">
+          <div class="grape-stem"></div>
+          <div class="grape-leaf"></div>
+          <div class="grape" style="top:0; left:0"></div>
+          <div class="grape" style="top:0; left:18px"></div>
+          <div class="grape" style="top:15px; left:-5px"></div>
+          <div class="grape" style="top:15px; left:10px"></div>
+          <div class="grape" style="top:15px; left:25px"></div>
+          <div class="grape" style="top:30px; left:3px"></div>
+          <div class="grape" style="top:30px; left:18px"></div>
+          <div class="grape" style="top:42px; left:10px"></div>
+        </div>
+      </div>
+      <!-- Legs -->
+      <div class="robot-legs">
+        <div class="robot-leg"></div>
+        <div class="robot-leg"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nom-nom" id="nomText">NOM NOM NOM</div>
+
+  <!-- Background floating grapes -->
+  <div id="bgGrapes"></div>
+</div>
+
+<script>
+  function goToPhase2() {
+    document.getElementById('phase1').style.opacity = '0';
+    setTimeout(() => {
+      document.getElementById('phase1').style.display = 'none';
+      document.getElementById('phase2').classList.add('active');
+    }, 500);
+  }
+
+  function goToPhase3() {
+    document.getElementById('phase2').style.display = 'none';
+    document.getElementById('phase3').classList.add('active');
+    document.body.classList.add('shake');
+
+    // Spawn floating background grapes
+    const container = document.getElementById('bgGrapes');
+    for (let i = 0; i < 30; i++) {
+      const grape = document.createElement('div');
+      grape.className = 'bg-grape';
+      grape.style.left = Math.random() * 100 + 'vw';
+      grape.style.width = grape.style.height = (15 + Math.random() * 25) + 'px';
+      grape.style.animationDuration = (4 + Math.random() * 6) + 's';
+      grape.style.animationDelay = Math.random() * 5 + 's';
+      container.appendChild(grape);
+    }
+
+    // Cycle NOM text
+    const noms = ['NOM NOM NOM', 'CRUNCH', '*GRAPE JUICE*', 'DELICIOUS', 'MORE GRAPES', 'NOM NOM', 'SO JUICY', 'BEEP BOOP CHOMP'];
+    let i = 0;
+    setInterval(() => {
+      document.getElementById('nomText').textContent = noms[i % noms.length];
+      i++;
+    }, 800);
+
+    setTimeout(() => document.body.classList.remove('shake'), 500);
+  }
+</script>
+
+</body>
+</html>
