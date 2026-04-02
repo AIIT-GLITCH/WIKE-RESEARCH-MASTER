@@ -1,0 +1,1550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Timeshare Exit — Free Exit Engine</title>
+<style>
+  :root {
+    --bg: #0d1117;
+    --surface: #161b22;
+    --card: #1c2128;
+    --border: #30363d;
+    --text: #e6edf3;
+    --muted: #8b949e;
+    --green: #3fb950;
+    --green-dim: #1a3a22;
+    --red: #f85149;
+    --red-dim: #3a1a1a;
+    --yellow: #d29922;
+    --yellow-dim: #3a2e00;
+    --blue: #58a6ff;
+    --blue-dim: #0d2040;
+    --accent: #238636;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    line-height: 1.6;
+  }
+
+  /* ── Header ── */
+  .header {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .logo-icon {
+    width: 40px;
+    height: 40px;
+    background: var(--green);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+  }
+
+  .logo-text h1 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: -0.3px;
+  }
+
+  .logo-text p {
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  .free-badge {
+    background: var(--green-dim);
+    color: var(--green);
+    border: 1px solid var(--green);
+    border-radius: 20px;
+    padding: 4px 14px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+
+  /* ── Main layout ── */
+  .main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 24px 16px 80px;
+  }
+
+  /* ── Alert banner ── */
+  .alert {
+    background: var(--red-dim);
+    border: 1px solid var(--red);
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin-bottom: 24px;
+    font-size: 14px;
+    color: var(--text);
+  }
+
+  .alert strong { color: var(--red); }
+
+  /* ── Section tabs ── */
+  .tabs {
+    display: flex;
+    gap: 4px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 4px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+  }
+
+  .tab {
+    flex: 1;
+    min-width: 120px;
+    padding: 10px 16px;
+    background: transparent;
+    border: none;
+    border-radius: 8px;
+    color: var(--muted);
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.15s;
+    text-align: center;
+  }
+
+  .tab:hover { color: var(--text); background: var(--card); }
+
+  .tab.active {
+    background: var(--card);
+    color: var(--green);
+    border: 1px solid var(--border);
+  }
+
+  /* ── Panels ── */
+  .panel { display: none; }
+  .panel.active { display: block; }
+
+  /* ── Cards ── */
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 16px;
+  }
+
+  .card-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .card-title .icon { font-size: 18px; }
+
+  /* ── Triage ── */
+  .triage-question {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    line-height: 1.4;
+  }
+
+  .triage-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .triage-btn {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px 18px;
+    color: var(--text);
+    cursor: pointer;
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.4;
+    transition: all 0.15s;
+  }
+
+  .triage-btn:hover {
+    border-color: var(--green);
+    background: var(--green-dim);
+  }
+
+  .triage-btn .btn-label {
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+
+  .triage-btn .btn-sub {
+    color: var(--muted);
+    font-size: 12px;
+  }
+
+  /* ── Result cards ── */
+  .result-card {
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 16px;
+  }
+
+  .result-card.green {
+    background: var(--green-dim);
+    border: 1px solid var(--green);
+  }
+
+  .result-card.yellow {
+    background: var(--yellow-dim);
+    border: 1px solid var(--yellow);
+  }
+
+  .result-card.red {
+    background: var(--red-dim);
+    border: 1px solid var(--red);
+  }
+
+  .result-card.blue {
+    background: var(--blue-dim);
+    border: 1px solid var(--blue);
+  }
+
+  .result-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+
+  .result-card.green .result-title { color: var(--green); }
+  .result-card.yellow .result-title { color: var(--yellow); }
+  .result-card.red .result-title { color: var(--red); }
+  .result-card.blue .result-title { color: var(--blue); }
+
+  .steps {
+    list-style: none;
+    margin-top: 14px;
+  }
+
+  .steps li {
+    padding: 8px 0;
+    padding-left: 28px;
+    position: relative;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .steps li:last-child { border-bottom: none; }
+
+  .steps li::before {
+    content: attr(data-n);
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--green);
+    color: #000;
+    font-size: 10px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+  }
+
+  /* ── Forms ── */
+  .form-group {
+    margin-bottom: 14px;
+  }
+
+  label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--muted);
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  input, select, textarea {
+    width: 100%;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 14px;
+    color: var(--text);
+    font-size: 14px;
+    font-family: inherit;
+    transition: border-color 0.15s;
+  }
+
+  input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: var(--green);
+  }
+
+  textarea { resize: vertical; min-height: 80px; }
+
+  select option { background: var(--surface); }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  @media (max-width: 600px) { .form-row { grid-template-columns: 1fr; } }
+
+  /* ── Buttons ── */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.15s;
+  }
+
+  .btn-primary {
+    background: var(--green);
+    color: #000;
+  }
+
+  .btn-primary:hover { background: #4ec862; }
+  .btn-primary:disabled { opacity: 0.5; cursor: not-allowed; }
+
+  .btn-secondary {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text);
+  }
+
+  .btn-secondary:hover { border-color: var(--green); color: var(--green); }
+
+  .btn-danger {
+    background: var(--red-dim);
+    border: 1px solid var(--red);
+    color: var(--red);
+  }
+
+  /* ── Letter output ── */
+  .letter-output {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px;
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    line-height: 1.7;
+    white-space: pre-wrap;
+    min-height: 200px;
+    max-height: 600px;
+    overflow-y: auto;
+    color: var(--text);
+    margin-top: 16px;
+  }
+
+  .letter-output.generating {
+    color: var(--muted);
+    font-family: inherit;
+    font-size: 14px;
+  }
+
+  .letter-output.has-content {
+    font-family: 'Courier New', monospace;
+  }
+
+  .copy-row {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-top: 10px;
+  }
+
+  /* ── State info ── */
+  .state-result {
+    margin-top: 16px;
+  }
+
+  .days-big {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+
+  .days-big.safe { color: var(--green); }
+  .days-big.warning { color: var(--yellow); }
+  .days-big.danger { color: var(--red); }
+
+  .deadline-calc {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px;
+    margin-top: 16px;
+  }
+
+  .deadline-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 14px;
+  }
+
+  .deadline-row:last-child { border-bottom: none; }
+  .deadline-row .val { font-weight: 700; color: var(--green); }
+  .deadline-row .val.expired { color: var(--red); }
+
+  /* ── Scam checker ── */
+  .scam-output {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 14px;
+    line-height: 1.7;
+    white-space: pre-wrap;
+    min-height: 120px;
+    margin-top: 16px;
+  }
+
+  /* ── Resources ── */
+  .resource-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 4px;
+  }
+
+  @media (max-width: 600px) { .resource-grid { grid-template-columns: 1fr; } }
+
+  .resource-item {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px;
+  }
+
+  .resource-item .res-name {
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+
+  .resource-item .res-desc {
+    font-size: 12px;
+    color: var(--muted);
+    margin-bottom: 8px;
+    line-height: 1.5;
+  }
+
+  .resource-item a {
+    color: var(--blue);
+    text-decoration: none;
+    font-size: 13px;
+  }
+
+  .resource-item a:hover { text-decoration: underline; }
+
+  /* ── Progress bar ── */
+  .progress-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+
+  .progress-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--border);
+    flex-shrink: 0;
+  }
+
+  .progress-dot.done { background: var(--green); }
+  .progress-dot.current { background: var(--yellow); }
+
+  .progress-line {
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  /* ── Scam red flags list ── */
+  .flag-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 10px;
+  }
+
+  .flag-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 12px;
+    background: var(--surface);
+    border-radius: 8px;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .flag-item .flag-icon {
+    flex-shrink: 0;
+    font-size: 16px;
+  }
+
+  /* ── Deed-back company selector ── */
+  .company-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  .company-btn {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px;
+    color: var(--text);
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.15s;
+  }
+
+  .company-btn:hover, .company-btn.selected {
+    border-color: var(--green);
+    background: var(--green-dim);
+    color: var(--green);
+  }
+
+  .company-info-box {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 16px;
+    display: none;
+  }
+
+  .company-info-box.visible { display: block; }
+
+  .company-info-box .ci-program { color: var(--green); font-weight: 700; font-size: 15px; margin-bottom: 8px; }
+  .company-info-box .ci-phone { color: var(--blue); font-size: 14px; margin-bottom: 6px; }
+  .company-info-box .ci-notes { font-size: 13px; color: var(--muted); line-height: 1.6; margin-bottom: 10px; }
+  .company-info-box .ci-reqs { font-size: 12px; }
+  .company-info-box .ci-reqs span {
+    display: inline-block;
+    background: var(--green-dim);
+    color: var(--green);
+    border-radius: 4px;
+    padding: 2px 8px;
+    margin: 2px 2px 2px 0;
+    font-size: 11px;
+  }
+
+  /* ── Footer ── */
+  .footer {
+    text-align: center;
+    padding: 32px 16px;
+    color: var(--muted);
+    font-size: 12px;
+    border-top: 1px solid var(--border);
+    margin-top: 40px;
+  }
+
+  .footer .footer-law {
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    color: var(--green);
+    margin-bottom: 8px;
+  }
+
+  /* ── Spinner ── */
+  .spinner {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border: 2px solid var(--border);
+    border-top-color: var(--green);
+    border-radius: 50%;
+    animation: spin 0.7s linear infinite;
+  }
+
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* ── Scam red flags count ── */
+  .verdict-banner {
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 12px;
+    display: none;
+  }
+
+  .verdict-scam { background: var(--red-dim); border: 1px solid var(--red); color: var(--red); display: block; }
+  .verdict-warning { background: var(--yellow-dim); border: 1px solid var(--yellow); color: var(--yellow); display: block; }
+  .verdict-ok { background: var(--green-dim); border: 1px solid var(--green); color: var(--green); display: block; }
+</style>
+</head>
+<body>
+
+<!-- ── Header ─────────────────────────────────────────── -->
+<header class="header">
+  <div class="logo">
+    <div class="logo-icon">🚪</div>
+    <div class="logo-text">
+      <h1>Timeshare Exit</h1>
+      <p>Free exit information — no fees, no upsells, no lead generation</p>
+    </div>
+  </div>
+  <span class="free-badge">100% FREE</span>
+</header>
+
+<!-- ── Main ───────────────────────────────────────────── -->
+<main class="main">
+
+  <div class="alert">
+    <strong>Exit companies charge $4,000–$15,000</strong> to provide information that is public law and free to access. This app gives you everything they know — the same letters, the same contacts, the same process — at no cost.
+  </div>
+
+  <!-- ── Tabs ── -->
+  <div class="tabs">
+    <button class="tab active" onclick="showTab('triage')">🧭 Find Your Path</button>
+    <button class="tab" onclick="showTab('rescission')">✉️ Cancel (Rescission)</button>
+    <button class="tab" onclick="showTab('deedback')">🤝 Deed-Back</button>
+    <button class="tab" onclick="showTab('scam')">🚨 Scam Checker</button>
+    <button class="tab" onclick="showTab('states')">🗺️ State Laws</button>
+    <button class="tab" onclick="showTab('resources')">📋 Free Resources</button>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════ -->
+  <!-- TRIAGE PANEL -->
+  <!-- ══════════════════════════════════════════════════ -->
+  <div id="panel-triage" class="panel active">
+
+    <div id="triage-q1" class="card">
+      <div class="card-title"><span class="icon">🧭</span> Find your exit path</div>
+      <p class="triage-question">When did you sign the timeshare contract?</p>
+      <div class="triage-options">
+        <button class="triage-btn" onclick="triageNext('rescission-path')">
+          <div class="btn-label">Within the last 15 days</div>
+          <div class="btn-sub">You may still be in your legal rescission window — the fastest, cleanest exit</div>
+        </button>
+        <button class="triage-btn" onclick="triageNext('q2')">
+          <div class="btn-label">More than 15 days ago</div>
+          <div class="btn-sub">Rescission window has likely passed — let's find your next option</div>
+        </button>
+        <button class="triage-btn" onclick="triageNext('q2')">
+          <div class="btn-label">I'm not sure / it was years ago</div>
+          <div class="btn-sub">Let's walk through your options</div>
+        </button>
+      </div>
+    </div>
+
+    <div id="triage-q2" class="card" style="display:none">
+      <div class="card-title"><span class="icon">💳</span> Loan status</div>
+      <p class="triage-question">Is the timeshare loan fully paid off?</p>
+      <div class="triage-options">
+        <button class="triage-btn" onclick="triageNext('q3-paid')">
+          <div class="btn-label">Yes — paid in full</div>
+          <div class="btn-sub">You're likely eligible for the resort's deed-back program</div>
+        </button>
+        <button class="triage-btn" onclick="triageNext('q3-loan')">
+          <div class="btn-label">No — I still have a loan balance</div>
+          <div class="btn-sub">Your options are more limited but not zero</div>
+        </button>
+        <button class="triage-btn" onclick="triageNext('q3-paid')">
+          <div class="btn-label">I'm not sure</div>
+          <div class="btn-sub">Check your original contract or call the resort's owner services</div>
+        </button>
+      </div>
+    </div>
+
+    <div id="triage-q3-paid" class="card" style="display:none">
+      <div class="card-title"><span class="icon">📋</span> Maintenance fees</div>
+      <p class="triage-question">Are your annual maintenance fees current (up to date)?</p>
+      <div class="triage-options">
+        <button class="triage-btn" onclick="triageNext('deedback-path')">
+          <div class="btn-label">Yes — fees are paid up</div>
+          <div class="btn-sub">You meet the primary requirement for a deed-back program</div>
+        </button>
+        <button class="triage-btn" onclick="triageNext('q4-fraud')">
+          <div class="btn-label">No — I'm behind on fees</div>
+          <div class="btn-sub">Deed-back is harder but not impossible — let's look at other angles</div>
+        </button>
+      </div>
+    </div>
+
+    <div id="triage-q3-loan" class="card" style="display:none">
+      <div class="card-title"><span class="icon">⚠️</span> Outstanding loan</div>
+      <p class="triage-question">Were you misled during the sales presentation?</p>
+      <p style="font-size:13px; color:var(--muted); margin-bottom:16px;">Common examples: told the timeshare was an investment that would appreciate, told you could easily rent it out for profit, pressured after you said no, lied about fees, not given time to read the contract.</p>
+      <div class="triage-options">
+        <button class="triage-btn" onclick="triageNext('fraud-path')">
+          <div class="btn-label">Yes — I was misled or pressured</div>
+          <div class="btn-sub">You may have grounds for a complaint with the state AG or a legal claim</div>
+        </button>
+        <button class="triage-btn" onclick="triageNext('general-path')">
+          <div class="btn-label">No — I understood what I was signing</div>
+          <div class="btn-sub">You still have options — deed-back negotiation, resale, and more</div>
+        </button>
+      </div>
+    </div>
+
+    <div id="triage-q4-fraud" class="card" style="display:none">
+      <div class="card-title"><span class="icon">⚠️</span> Sales presentation</div>
+      <p class="triage-question">Were you misled during the sales presentation?</p>
+      <div class="triage-options">
+        <button class="triage-btn" onclick="triageNext('fraud-path')">
+          <div class="btn-label">Yes — I was misled or pressured</div>
+          <div class="btn-sub">AG complaint may be your strongest path</div>
+        </button>
+        <button class="triage-btn" onclick="triageNext('general-path')">
+          <div class="btn-label">No</div>
+          <div class="btn-sub">Let's look at what's available to you</div>
+        </button>
+      </div>
+    </div>
+
+    <!-- Result: Rescission -->
+    <div id="result-rescission-path" class="result-card green" style="display:none">
+      <div class="result-title">✅ You may still be in your rescission window</div>
+      <p style="font-size:14px; margin-bottom:10px;">This is the fastest, cleanest, and most complete exit. A rescission cancels the contract entirely and you get your money back. <strong>Act today — every day counts.</strong></p>
+      <ol class="steps">
+        <li data-n="1">Check your contract for the section titled "Cancellation," "Rescission," or "How to Cancel" — find the exact address to send your cancellation to (NOT the resort address, NOT the sales office).</li>
+        <li data-n="2">Look up your state's rescission period in the <strong>State Laws tab</strong> — verify you are still within the window and calculate your deadline.</li>
+        <li data-n="3">Generate your rescission letter in the <strong>Cancel (Rescission) tab</strong> — it takes 2 minutes.</li>
+        <li data-n="4">Send via <strong>USPS Certified Mail with Return Receipt</strong> today. The postmark date — not when it arrives — is what counts.</li>
+        <li data-n="5">Keep all proof of mailing. If the resort ignores your rescission, you have documented evidence for a state AG complaint or legal claim.</li>
+      </ol>
+      <br>
+      <button class="btn btn-primary" onclick="showTab('rescission')">✉️ Generate Rescission Letter →</button>
+    </div>
+
+    <!-- Result: Deed-back -->
+    <div id="result-deedback-path" class="result-card blue" style="display:none">
+      <div class="result-title">🤝 You are likely eligible for a deed-back program</div>
+      <p style="font-size:14px; margin-bottom:10px;">Most major timeshare companies have a voluntary deed-back or surrender program. They don't advertise it — but if your loan is paid and fees are current, you can often exit for free. It takes persistence.</p>
+      <ol class="steps">
+        <li data-n="1">Go to the <strong>Deed-Back tab</strong> and select your resort company to get their exact program name, phone number, and what to say when you call.</li>
+        <li data-n="2">Call the owner services number and ask specifically for the <strong>deed-back</strong> or <strong>voluntary surrender</strong> program. If the first representative says "we don't have that," ask for a supervisor.</li>
+        <li data-n="3">Follow up in writing. Generate a deed-back request letter in the <strong>Deed-Back tab</strong> and send it via certified mail to create a paper trail.</li>
+        <li data-n="4">Document every call: date, time, representative name, and what was said. This matters if you escalate.</li>
+        <li data-n="5">If the resort refuses, file a complaint with your state AG (see <strong>Free Resources tab</strong>) — sometimes pressure from an AG office moves things that phone calls don't.</li>
+      </ol>
+      <br>
+      <button class="btn btn-primary" onclick="showTab('deedback')">🤝 Start Deed-Back Process →</button>
+    </div>
+
+    <!-- Result: Fraud path -->
+    <div id="result-fraud-path" class="result-card yellow" style="display:none">
+      <div class="result-title">⚖️ You may have grounds for a legal complaint</div>
+      <p style="font-size:14px; margin-bottom:10px;">If the sales presentation contained false statements, pressure tactics, or withheld key information, that may constitute fraud or a violation of state consumer protection law.</p>
+      <ol class="steps">
+        <li data-n="1">Write down everything you remember about the sales presentation — every promise made, every misleading statement, who said it, what was signed and when. Do this now, while memory is fresh.</li>
+        <li data-n="2">File a complaint with your state Attorney General (free). Use the <strong>Free Resources tab</strong> to find your state's AG office. Use the <strong>AG Complaint</strong> option in the letter generator to format your complaint.</li>
+        <li data-n="3">File a complaint with the FTC at ftc.gov/complaint (free). This builds the federal enforcement record.</li>
+        <li data-n="4">Consider consulting a licensed timeshare attorney in your state — not an exit company. A real attorney charges $3,000–$7,000 but can sue for rescission and damages. An exit company charges the same and has no legal authority.</li>
+        <li data-n="5">While pursuing legal options, simultaneously attempt a deed-back directly with the resort — sometimes the threat of an AG complaint opens doors.</li>
+      </ol>
+      <br>
+      <button class="btn btn-primary" onclick="showTab('resources')">📋 File a Free Complaint →</button>
+    </div>
+
+    <!-- Result: General -->
+    <div id="result-general-path" class="result-card yellow" style="display:none">
+      <div class="result-title">🗺️ Your exit options — in order of cost</div>
+      <p style="font-size:14px; margin-bottom:10px;">The rescission window has passed and the situation is complex, but you still have options. Go in this order — cheapest and simplest first.</p>
+      <ol class="steps">
+        <li data-n="1"><strong>Negotiate directly with the resort.</strong> Call owner services, explain your situation, ask about deed-back or hardship programs. Even with an outstanding loan, some resorts will work with you rather than deal with collections.</li>
+        <li data-n="2"><strong>Try to resell.</strong> The secondary market is brutal (expect to lose 70–90% of purchase price) but it exists. Try RedWeek.com or Timeshare Users Group (TUG) — both are legitimate platforms with no upfront fees to list.</li>
+        <li data-n="3"><strong>Wait and pay down the loan.</strong> Once the loan is paid off and fees are current, you become eligible for deed-back programs at most major resorts.</li>
+        <li data-n="4"><strong>Consult a licensed timeshare attorney</strong> in your state — not an exit company. An attorney can review your contract for any clause violations, misrepresentations, or state law violations that weren't obvious at signing.</li>
+        <li data-n="5"><strong>Foreclosure (last resort).</strong> If you stop paying, the resort will eventually foreclose. This damages your credit significantly (7-year impact) but does end the obligation. Do not do this without understanding the full consequences.</li>
+      </ol>
+    </div>
+
+  </div>
+  <!-- /triage panel -->
+
+  <!-- ══════════════════════════════════════════════════ -->
+  <!-- RESCISSION PANEL -->
+  <!-- ══════════════════════════════════════════════════ -->
+  <div id="panel-rescission" class="panel">
+
+    <div class="card">
+      <div class="card-title"><span class="icon">✉️</span> Rescission Letter Generator</div>
+      <p style="font-size:13px; color:var(--muted); margin-bottom:16px;">
+        Fill in your information below. The letter will be formatted and ready to copy, print, and send via USPS Certified Mail.
+        You do not need a lawyer, and you do not need to pay anyone to do this.
+      </p>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>Your full name(s) — all purchasers who signed</label>
+          <input type="text" id="r-names" placeholder="John Smith and Jane Smith">
+        </div>
+        <div class="form-group">
+          <label>Purchase date</label>
+          <input type="date" id="r-purchase-date">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Your mailing address</label>
+        <input type="text" id="r-address" placeholder="123 Main St, City, State 12345">
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>Your phone</label>
+          <input type="text" id="r-phone" placeholder="(555) 555-5555">
+        </div>
+        <div class="form-group">
+          <label>Your email</label>
+          <input type="text" id="r-email" placeholder="you@email.com">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>Resort / Developer name</label>
+          <input type="text" id="r-resort" placeholder="Wyndham Grand Desert, etc.">
+        </div>
+        <div class="form-group">
+          <label>Contract / Membership number</label>
+          <input type="text" id="r-contract" placeholder="From your contract documents">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>Amount paid at signing</label>
+          <input type="text" id="r-amount" placeholder="$15,000">
+        </div>
+        <div class="form-group">
+          <label>State where timeshare is located</label>
+          <select id="r-state">
+            <option value="">Select state...</option>
+            {% for code, name in state_list %}
+            <option value="{{ code }}">{{ name }}</option>
+            {% endfor %}
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Rescission address (from your contract — look for "Cancellation" or "How to Cancel" section)</label>
+        <input type="text" id="r-rescission-addr" placeholder="Developer Legal Dept, 123 Corporate Dr, Orlando FL 32801">
+        <p style="font-size:11px; color:var(--muted); margin-top:4px;">⚠️ This is NOT the resort address. Find the exact cancellation address in your contract documents.</p>
+      </div>
+
+      <button class="btn btn-primary" id="r-generate-btn" onclick="generateRescission()">
+        ✉️ Generate Rescission Letter
+      </button>
+    </div>
+
+    <div id="r-letter-container" style="display:none">
+      <div class="card-title" style="margin-top:4px;"><span class="icon">📄</span> Your Rescission Letter</div>
+      <div class="letter-output" id="r-letter-output"></div>
+      <div class="copy-row">
+        <button class="btn btn-secondary" onclick="copyLetter('r-letter-output')">📋 Copy Letter</button>
+        <button class="btn btn-secondary" onclick="printLetter('r-letter-output')">🖨️ Print</button>
+      </div>
+      <div class="result-card red" style="margin-top:16px;">
+        <div class="result-title">🚨 Certified Mail — Critical</div>
+        <p style="font-size:13px;">Go to your nearest US Post Office and ask for <strong>Certified Mail with Return Receipt</strong>. The postmark date is what determines whether you are within the rescission window — NOT when the letter is delivered. Keep every receipt. Do not use email. Do not drop in a regular mailbox.</p>
+      </div>
+    </div>
+
+  </div>
+  <!-- /rescission panel -->
+
+  <!-- ══════════════════════════════════════════════════ -->
+  <!-- DEED-BACK PANEL -->
+  <!-- ══════════════════════════════════════════════════ -->
+  <div id="panel-deedback" class="panel">
+
+    <div class="card">
+      <div class="card-title"><span class="icon">🤝</span> Deed-Back / Voluntary Surrender</div>
+      <p style="font-size:13px; color:var(--muted); margin-bottom:16px;">
+        Most major timeshare companies have a deed-back program — they just don't advertise it.
+        Select your resort company to see their program name, phone number, and eligibility requirements.
+      </p>
+
+      <div class="company-grid">
+        <button class="company-btn" onclick="selectCompany('wyndham', this)">Wyndham</button>
+        <button class="company-btn" onclick="selectCompany('hilton', this)">Hilton Grand Vacations</button>
+        <button class="company-btn" onclick="selectCompany('marriott', this)">Marriott Vacations</button>
+        <button class="company-btn" onclick="selectCompany('disney', this)">Disney Vacation Club</button>
+        <button class="company-btn" onclick="selectCompany('bluegreen', this)">Bluegreen</button>
+        <button class="company-btn" onclick="selectCompany('westgate', this)">Westgate</button>
+        <button class="company-btn" onclick="selectCompany('diamond', this)">Diamond / Sunterra</button>
+        <button class="company-btn" onclick="selectCompany('other', this)">Other / Independent</button>
+      </div>
+
+      <div class="company-info-box" id="company-info">
+        <div class="ci-program" id="ci-program"></div>
+        <div class="ci-phone" id="ci-phone"></div>
+        <div class="ci-notes" id="ci-notes"></div>
+        <div class="ci-reqs" id="ci-reqs"></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title"><span class="icon">📄</span> Generate Deed-Back Request Letter</div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>Owner name(s)</label>
+          <input type="text" id="d-names" placeholder="John Smith and Jane Smith">
+        </div>
+        <div class="form-group">
+          <label>Year purchased</label>
+          <input type="text" id="d-year" placeholder="2018">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Your mailing address</label>
+        <input type="text" id="d-address" placeholder="123 Main St, City, State 12345">
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>Phone</label>
+          <input type="text" id="d-phone" placeholder="(555) 555-5555">
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="text" id="d-email" placeholder="you@email.com">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>Resort / Developer name</label>
+          <input type="text" id="d-resort" placeholder="Wyndham Grand Desert">
+        </div>
+        <div class="form-group">
+          <label>Contract / Membership number</label>
+          <input type="text" id="d-contract" placeholder="From your contract">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>Loan status</label>
+          <select id="d-loan">
+            <option value="paid in full">Paid in full</option>
+            <option value="outstanding balance remaining">Outstanding balance remaining</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Maintenance fees current?</label>
+          <select id="d-fees">
+            <option value="yes, all maintenance fees are current">Yes — paid up to date</option>
+            <option value="no, I have past due maintenance fees">No — I'm behind on fees</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Reason for requesting deed-back (brief — 1-2 sentences)</label>
+        <textarea id="d-reason" placeholder="Financial hardship / medical situation / inability to travel / no longer able to use the timeshare due to health / retirement income change..."></textarea>
+      </div>
+
+      <button class="btn btn-primary" onclick="generateDeedback()">
+        🤝 Generate Deed-Back Letter
+      </button>
+    </div>
+
+    <div id="d-letter-container" style="display:none">
+      <div class="card-title" style="margin-top:4px;"><span class="icon">📄</span> Your Deed-Back Request Letter</div>
+      <div class="letter-output" id="d-letter-output"></div>
+      <div class="copy-row">
+        <button class="btn btn-secondary" onclick="copyLetter('d-letter-output')">📋 Copy</button>
+        <button class="btn btn-secondary" onclick="printLetter('d-letter-output')">🖨️ Print</button>
+      </div>
+    </div>
+
+  </div>
+  <!-- /deedback panel -->
+
+  <!-- ══════════════════════════════════════════════════ -->
+  <!-- SCAM CHECKER PANEL -->
+  <!-- ══════════════════════════════════════════════════ -->
+  <div id="panel-scam" class="panel">
+
+    <div class="card">
+      <div class="card-title"><span class="icon">🚨</span> Known Scam Red Flags</div>
+      <p style="font-size:13px; color:var(--muted); margin-bottom:14px;">Exit companies charge what lawyers charge — but without legal authority to do anything. Before giving anyone money, run their offer through these red flags.</p>
+      <div class="flag-list">
+        <div class="flag-item"><span class="flag-icon">🔴</span><div><strong>Large upfront fee required</strong> — $3,000–$15,000 before any work is done. Legitimate attorneys collect fees after work is completed or in stages. This is the #1 indicator of a scam.</div></div>
+        <div class="flag-item"><span class="flag-icon">🔴</span><div><strong>Unsolicited contact</strong> — cold call, postcard, email you didn't request. Legitimate businesses don't cold-call timeshare owners promising exits. They bought a list of your name from somewhere.</div></div>
+        <div class="flag-item"><span class="flag-icon">🔴</span><div><strong>Guaranteed outcome in a specific timeframe</strong> — "Exit in 30-60 days, guaranteed." No exit company can guarantee a specific outcome. Contract law doesn't work on a schedule.</div></div>
+        <div class="flag-item"><span class="flag-icon">🔴</span><div><strong>They have a buyer ready</strong> — classic resale scam. They don't. They want you to pay a "closing fee" or "transfer tax" and then disappear.</div></div>
+        <div class="flag-item"><span class="flag-icon">🔴</span><div><strong>Wire transfer, prepaid cards, or cryptocurrency requested</strong> — no legitimate company requires untraceable payment. Credit cards give you chargeback rights. Wire transfers do not.</div></div>
+        <div class="flag-item"><span class="flag-icon">🔴</span><div><strong>They tell you to stop paying maintenance fees</strong> — this results in foreclosure and credit damage. They know this. They want your money before that happens to you.</div></div>
+        <div class="flag-item"><span class="flag-icon">🔴</span><div><strong>Vague about their actual process</strong> — if you ask "exactly how do you exit my timeshare?" and get a non-answer, walk away. The answer should be specific: attorney negotiation, deed-back, resale, legal claim.</div></div>
+        <div class="flag-item"><span class="flag-icon">🟡</span><div><strong>Not licensed attorneys</strong> — "exit consultants" have no legal authority. Only licensed attorneys can negotiate contracts or bring legal claims. Ask: "Are you a licensed attorney in my state?"</div></div>
+        <div class="flag-item"><span class="flag-icon">🟡</span><div><strong>Pressure to sign immediately</strong> — the same tactic the timeshare company used. A legitimate offer is not time-sensitive. Ask for 48 hours to review. If they say no, that's your answer.</div></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title"><span class="icon">🔍</span> Check a Specific Company or Offer</div>
+      <p style="font-size:13px; color:var(--muted); margin-bottom:14px;">Enter the company name and any details about what they offered. Get an analysis of red flags.</p>
+
+      <div class="form-group">
+        <label>Company or person's name</label>
+        <input type="text" id="sc-company" placeholder="e.g., ABC Timeshare Exit Group, John from Resort Exit Solutions...">
+      </div>
+      <div class="form-group">
+        <label>What they told you / what they're offering</label>
+        <textarea id="sc-details" placeholder="They called me saying they have a buyer... They want $8,000 upfront... They guaranteed exit in 60 days... etc."></textarea>
+      </div>
+      <button class="btn btn-primary" onclick="runScamCheck()">🔍 Analyze for Scam Signs</button>
+
+      <div class="scam-output" id="scam-output" style="display:none"></div>
+    </div>
+
+  </div>
+  <!-- /scam panel -->
+
+  <!-- ══════════════════════════════════════════════════ -->
+  <!-- STATE LAWS PANEL -->
+  <!-- ══════════════════════════════════════════════════ -->
+  <div id="panel-states" class="panel">
+
+    <div class="card">
+      <div class="card-title"><span class="icon">🗺️</span> Rescission Period by State</div>
+      <p style="font-size:13px; color:var(--muted); margin-bottom:16px;">
+        The rescission period is based on the state <strong>where the timeshare property is located</strong>, not where you live.
+        Select a state to see the window, calculate your deadline, and get your AG office contact.
+      </p>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>State where timeshare is located</label>
+          <select id="state-select" onchange="loadState()">
+            <option value="">Select state...</option>
+            {% for code, name in state_list %}
+            <option value="{{ code }}">{{ name }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Date you signed the contract</label>
+          <input type="date" id="sign-date" onchange="calculateDeadline()">
+        </div>
+      </div>
+
+      <div id="state-result" class="state-result" style="display:none">
+        <div class="result-card" id="state-result-card">
+          <div style="display:flex; align-items:flex-start; gap:20px; flex-wrap:wrap;">
+            <div>
+              <div class="days-big" id="state-days"></div>
+              <div style="font-size:13px; color:var(--muted);" id="state-day-type"></div>
+            </div>
+            <div style="flex:1; min-width:200px;">
+              <div style="font-weight:700; font-size:15px; margin-bottom:6px;" id="state-name"></div>
+              <div style="font-size:13px; line-height:1.6;" id="state-notes"></div>
+            </div>
+          </div>
+
+          <div class="deadline-calc" id="deadline-calc" style="display:none">
+            <div class="deadline-row"><span>Contract signed</span><span class="val" id="dc-signed"></span></div>
+            <div class="deadline-row"><span>Rescission period</span><span class="val" id="dc-period"></span></div>
+            <div class="deadline-row"><span>Deadline (mail by this date)</span><span class="val" id="dc-deadline"></span></div>
+            <div class="deadline-row"><span>Today</span><span class="val" id="dc-today"></span></div>
+            <div class="deadline-row"><span>Status</span><span class="val" id="dc-status"></span></div>
+          </div>
+
+          <div style="margin-top:14px;">
+            <a id="state-ag-link" href="#" target="_blank" rel="noopener" class="btn btn-secondary" style="font-size:13px;">
+              ⚖️ File Complaint with State AG →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title"><span class="icon">📜</span> How the Rescission Period Works</div>
+      <div style="font-size:13px; line-height:1.8; color:var(--muted);">
+        <p><strong style="color:var(--text);">The right to rescind is non-waivable.</strong> You cannot sign it away. Even if your contract says you waive rescission rights, that clause is void under state law.</p><br>
+        <p><strong style="color:var(--text);">The clock starts from the later of:</strong> (1) the date you signed, OR (2) the date you received all statutory disclosure documents. If you never received the disclosure documents, the clock may not have started.</p><br>
+        <p><strong style="color:var(--text);">Postmark date — not delivery date.</strong> If your deadline is tomorrow, you can still mail it tonight. The postmark is what counts. Use USPS Certified Mail with Return Receipt.</p><br>
+        <p><strong style="color:var(--text);">All purchasers must sign the cancellation.</strong> If your spouse or partner signed the original contract, they must sign the cancellation letter too.</p><br>
+        <p><strong style="color:var(--text);">Find the cancellation address in your contract.</strong> Look for a section titled "Cancellation," "Notice of Cancellation," "Rescission," or "How to Cancel." Send to that specific address — not the resort, not the sales office.</p>
+      </div>
+    </div>
+
+  </div>
+  <!-- /states panel -->
+
+  <!-- ══════════════════════════════════════════════════ -->
+  <!-- RESOURCES PANEL -->
+  <!-- ══════════════════════════════════════════════════ -->
+  <div id="panel-resources" class="panel">
+
+    <div class="card">
+      <div class="card-title"><span class="icon">🆓</span> Free Government Resources</div>
+      <div class="resource-grid">
+        <div class="resource-item">
+          <div class="res-name">FTC — Federal Trade Commission</div>
+          <div class="res-desc">File a complaint about timeshare fraud. Contributes to federal enforcement action. Free.</div>
+          <a href="https://reportfraud.ftc.gov" target="_blank" rel="noopener">→ reportfraud.ftc.gov</a>
+        </div>
+        <div class="resource-item">
+          <div class="res-name">CFPB — Consumer Financial Protection Bureau</div>
+          <div class="res-desc">Complaints about financing, fees, and debt collection practices. Free.</div>
+          <a href="https://www.consumerfinance.gov/complaint/" target="_blank" rel="noopener">→ consumerfinance.gov/complaint</a>
+        </div>
+        <div class="resource-item">
+          <div class="res-name">IC3 — FBI Internet Crime Complaint Center</div>
+          <div class="res-desc">If you were defrauded by an exit scam company, file here. Builds federal fraud cases.</div>
+          <a href="https://www.ic3.gov" target="_blank" rel="noopener">→ ic3.gov</a>
+        </div>
+        <div class="resource-item">
+          <div class="res-name">State Attorney General</div>
+          <div class="res-desc">Your state AG handles consumer fraud complaints and timeshare law violations. Free. Find yours in the State Laws tab.</div>
+          <a href="#" onclick="showTab('states')">→ State Laws tab</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title"><span class="icon">⚖️</span> Generate an AG Complaint Narrative</div>
+      <p style="font-size:13px; color:var(--muted); margin-bottom:14px;">If you were misled during the sales process, this generates a formatted complaint narrative you can use when filing with your state AG, FTC, and CFPB.</p>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>Your name</label>
+          <input type="text" id="ag-names" placeholder="Your full name">
+        </div>
+        <div class="form-group">
+          <label>Purchase date</label>
+          <input type="date" id="ag-purchase-date">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Your address</label>
+        <input type="text" id="ag-address" placeholder="123 Main St, City, State 12345">
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>Resort / Company name</label>
+          <input type="text" id="ag-resort" placeholder="Wyndham, Westgate, etc.">
+        </div>
+        <div class="form-group">
+          <label>State where timeshare is located</label>
+          <select id="ag-state">
+            <option value="">Select state...</option>
+            {% for code, name in state_list %}
+            <option value="{{ code }}">{{ name }}</option>
+            {% endfor %}
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Amount paid or owed</label>
+        <input type="text" id="ag-amount" placeholder="$18,000 financed + $1,200/year maintenance">
+      </div>
+
+      <div class="form-group">
+        <label>What happened — what were you told that was false or misleading?</label>
+        <textarea id="ag-description" rows="5" placeholder="Examples: The salesperson told me the timeshare would appreciate in value like real estate. I was told I could rent it for $3,000/week whenever I wasn't using it. I was pressured for 4 hours and told the offer expired that day. I was not given time to read the contract. I was told there were no maintenance fee increases..."></textarea>
+      </div>
+
+      <button class="btn btn-primary" onclick="generateAG()">⚖️ Generate Complaint Narrative</button>
+    </div>
+
+    <div id="ag-letter-container" style="display:none">
+      <div class="card-title" style="margin-top:4px;"><span class="icon">📄</span> Your Complaint Narrative</div>
+      <div class="letter-output" id="ag-letter-output"></div>
+      <div class="copy-row">
+        <button class="btn btn-secondary" onclick="copyLetter('ag-letter-output')">📋 Copy</button>
+        <button class="btn btn-secondary" onclick="printLetter('ag-letter-output')">🖨️ Print</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title"><span class="icon">📚</span> Legitimate Secondary Resources</div>
+      <div class="resource-grid">
+        <div class="resource-item">
+          <div class="res-name">Timeshare Users Group (TUG)</div>
+          <div class="res-desc">Forum community of real timeshare owners sharing exit experiences, resale listings, and advice. No upfront fees to post.</div>
+          <a href="https://www.tug2.net" target="_blank" rel="noopener">→ tug2.net</a>
+        </div>
+        <div class="resource-item">
+          <div class="res-name">RedWeek</div>
+          <div class="res-desc">Legitimate timeshare resale and rental platform. If you need to sell, this is one of the few real markets.</div>
+          <a href="https://www.redweek.com" target="_blank" rel="noopener">→ redweek.com</a>
+        </div>
+        <div class="resource-item">
+          <div class="res-name">AARP Fraud Watch</div>
+          <div class="res-desc">Resources on timeshare exit scams. Especially useful for older adults who are frequently targeted.</div>
+          <a href="https://www.aarp.org/money/scams-fraud/timeshare-exit/" target="_blank" rel="noopener">→ aarp.org/money/scams-fraud</a>
+        </div>
+        <div class="resource-item">
+          <div class="res-name">Legal Aid (Free Attorneys)</div>
+          <div class="res-desc">If you cannot afford an attorney, search for legal aid in your state. Some states have free legal clinics for consumer fraud cases.</div>
+          <a href="https://www.lsc.gov/about-lsc/what-legal-aid/get-legal-help" target="_blank" rel="noopener">→ lsc.gov — find free legal help</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="result-card yellow">
+      <div class="result-title">⚠️ The Resale Reality</div>
+      <p style="font-size:14px; line-height:1.7;">The timeshare secondary market is essentially worthless. Timeshares are routinely listed on eBay for $1 — with the seller offering to pay the transfer fee — and still don't sell. Do not expect to recover your original investment through resale. The goal is exit, not recovery. Focus on deed-back programs and direct negotiation, where the resort absorbs the cost of taking the property back rather than you absorbing the cost of giving it away.</p>
+    </div>
+
+  </div>
+  <!-- /resources panel -->
+
+</main>
+
+<!-- ── Footer ────────────────────────────────────────── -->
+<footer class="footer">
+  <div class="footer-law">The information needed to exit a timeshare is public law. It has always been free.</div>
+  <div>AIIT-THRESI Research Initiative | Rhet Dillard Wike | Council Hill, Oklahoma | 2026</div>
+  <div style="margin-top:6px;">This app does not provide legal advice. It provides information. For complex situations, consult a licensed attorney in your state.</div>
+</footer>
+
+<script>
+// ── Tab navigation ─────────────────────────────────────────
+function showTab(tab) {
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+  document.getElementById('panel-' + tab).classList.add('active');
+  // Activate the matching tab button
+  const tabs = ['triage','rescission','deedback','scam','states','resources'];
+  const tabBtns = document.querySelectorAll('.tab');
+  const idx = tabs.indexOf(tab);
+  if (idx >= 0 && tabBtns[idx]) tabBtns[idx].classList.add('active');
+}
+
+// ── Triage logic ──────────────────────────────────────────
+let triageHistory = [];
+
+function triageNext(target) {
+  // Hide all triage elements
+  document.querySelectorAll('[id^="triage-"], [id^="result-"]').forEach(el => {
+    el.style.display = 'none';
+  });
+
+  if (target.startsWith('result-') || target.endsWith('-path')) {
+    const resultId = target.startsWith('result-') ? target : 'result-' + target;
+    const el = document.getElementById(resultId);
+    if (el) el.style.display = 'block';
+  } else {
+    const el = document.getElementById('triage-' + target);
+    if (el) el.style.display = 'block';
+  }
+}
+
+// ── Letter generation ─────────────────────────────────────
+async function generateLetter(type, payload, outputId, containerId) {
+  const btn = event.target;
+  btn.disabled = true;
+  btn.innerHTML = '<span class="spinner"></span> Generating...';
+
+  const container = document.getElementById(containerId);
+  const output = document.getElementById(outputId);
+  container.style.display = 'block';
+  output.textContent = '';
+  output.className = 'letter-output generating';
+  output.textContent = 'Generating your letter...';
+
+  try {
+    const response = await fetch('/api/generate-letter', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ type, ...payload })
+    });
+
+    output.textContent = '';
+    output.className = 'letter-output has-content';
+
+    const reader = response.body.getReader();
+    const decoder = new TextDecoder();
+
+    while (true) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      output.textContent += decoder.decode(value, { stream: true });
+      output.scrollTop = output.scrollHeight;
+    }
+  } catch (e) {
+    output.textContent = 'Error generating letter. Please check your connection and try again.';
+    output.className = 'letter-output';
+  }
+
+  btn.disabled = false;
+  btn.innerHTML = btn.innerHTML.replace('<span class="spinner"></span> Generating...', '');
+  container.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function generateRescission() {
+  const payload = {
+    names: document.getElementById('r-names').value,
+    purchase_date: document.getElementById('r-purchase-date').value,
+    address: document.getElementById('r-address').value,
+    phone: document.getElementById('r-phone').value,
+    email: document.getElementById('r-email').value,
+    resort: document.getElementById('r-resort').value,
+    contract_num: document.getElementById('r-contract').value,
+    amount_paid: document.getElementById('r-amount').value,
+    state: document.getElementById('r-state').value,
+    rescission_address: document.getElementById('r-rescission-addr').value
+  };
+  generateLetter('rescission', payload, 'r-letter-output', 'r-letter-container');
+}
+
+function generateDeedback() {
+  const payload = {
+    names: document.getElementById('d-names').value,
+    year_purchased: document.getElementById('d-year').value,
+    address: document.getElementById('d-address').value,
+    phone: document.getElementById('d-phone').value,
+    email: document.getElementById('d-email').value,
+    resort: document.getElementById('d-resort').value,
+    contract_num: document.getElementById('d-contract').value,
+    loan_status: document.getElementById('d-loan').value,
+    fees_current: document.getElementById('d-fees').value,
+    reason: document.getElementById('d-reason').value
+  };
+  generateLetter('deedback', payload, 'd-letter-output', 'd-letter-container');
+}
+
+function generateAG() {
+  const payload = {
+    names: document.getElementById('ag-names').value,
+    purchase_date: document.getElementById('ag-purchase-date').value,
+    address: document.getElementById('ag-address').value,
+    resort: document.getElementById('ag-resort').value,
+    state: document.getElementById('ag-state').value,
+    amount_paid: document.getElementById('ag-amount').value,
+    description: document.getElementById('ag-description').value
+  };
+  generateLetter('ag_complaint', payload, 'ag-letter-output', 'ag-letter-container');
+}
+
+// ── Scam checker ──────────────────────────────────────────
+async function runScamCheck() {
+  const company = document.getElementById('sc-company').value;
+  const details = document.getElementById('sc-details').value;
+
+  const output = document.getElementById('scam-output');
+  output.style.display = 'block';
+  output.textContent = 'Analyzing...';
+
+  const btn = event.target;
+  btn.disabled = true;
+
+  try {
+    const response = await fetch('/api/scam-check', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ company, details })
+    });
+
+    output.textContent = '';
+    const reader = response.body.getReader();
+    const decoder = new TextDecoder();
+
+    while (true) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      output.textContent += decoder.decode(value, { stream: true });
+    }
+  } catch(e) {
+    output.textContent = 'Error connecting to analysis service.';
+  }
+
+  btn.disabled = false;
+}
+
+// ── State lookup ──────────────────────────────────────────
+let currentStateData = null;
+
+async function loadState() {
+  const code = document.getElementById('state-select').value;
+  if (!code) return;
+
+  const response = await fetch('/api/state/' + code);
+  currentStateData = await response.json();
+
+  const card = document.getElementById('state-result-card');
+  const daysEl = document.getElementById('state-days');
+  const days = currentStateData.days;
+
+  daysEl.textContent = days + ' days';
+  if (days >= 10) {
+    daysEl.className = 'days-big safe';
+    card.className = 'result-card green';
+  } else if (days >= 5) {
+    daysEl.className = 'days-big warning';
+    card.className = 'result-card yellow';
+  } else {
+    daysEl.className = 'days-big danger';
+    card.className = 'result-card red';
+  }
+
+  document.getElementById('state-day-type').textContent = currentStateData.day_type + ' days';
+  document.getElementById('state-name').textContent = currentStateData.name;
+  document.getElementById('state-notes').textContent = currentStateData.notes;
+  document.getElementById('state-ag-link').href = currentStateData.ag_url;
+
+  document.getElementById('state-result').style.display = 'block';
+  calculateDeadline();
+}
+
+function calculateDeadline() {
+  if (!currentStateData) return;
+  const signDateVal = document.getElementById('sign-date').value;
+  if (!signDateVal) {
+    document.getElementById('deadline-calc').style.display = 'none';
+    return;
+  }
+
+  const signDate = new Date(signDateVal + 'T12:00:00');
+  const today = new Date();
+  today.setHours(12, 0, 0, 0);
+
+  const days = currentStateData.days;
+  const dayType = currentStateData.day_type;
+
+  let deadline = new Date(signDate);
+  if (dayType === 'business') {
+    let added = 0;
+    while (added < days) {
+      deadline.setDate(deadline.getDate() + 1);
+      const dow = deadline.getDay();
+      if (dow !== 0 && dow !== 6) added++;
+    }
+  } else {
+    deadline.setDate(deadline.getDate() + days);
+  }
+
+  const fmt = d => d.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+  const diffMs = deadline - today;
+  const diffDays = Math.round(diffMs / (1000 * 60 * 60 * 24));
+
+  document.getElementById('dc-signed').textContent = fmt(signDate);
+  document.getElementById('dc-period').textContent = days + ' ' + dayType + ' days';
+  document.getElementById('dc-deadline').textContent = fmt(deadline);
+  document.getElementById('dc-today').textContent = fmt(today);
+
+  const statusEl = document.getElementById('dc-status');
+  if (diffDays > 0) {
+    statusEl.textContent = '✅ ' + diffDays + ' day' + (diffDays === 1 ? '' : 's') + ' remaining — ACT NOW';
+    statusEl.className = 'val';
+  } else if (diffDays === 0) {
+    statusEl.textContent = '🚨 DEADLINE IS TODAY — Mail certified mail TODAY';
+    statusEl.className = 'val';
+  } else {
+    statusEl.textContent = '❌ Window expired ' + Math.abs(diffDays) + ' day' + (Math.abs(diffDays) === 1 ? '' : 's') + ' ago';
+    statusEl.className = 'val expired';
+  }
+
+  document.getElementById('deadline-calc').style.display = 'block';
+}
+
+// ── Deed-back company selector ────────────────────────────
+async function selectCompany(key, btn) {
+  document.querySelectorAll('.company-btn').forEach(b => b.classList.remove('selected'));
+  btn.classList.add('selected');
+
+  const response = await fetch('/api/deedback/' + key);
+  const data = await response.json();
+
+  const box = document.getElementById('company-info');
+  document.getElementById('ci-program').textContent = data.program;
+  document.getElementById('ci-phone').innerHTML = '📞 ' + data.phone + (data.url ? ` | <a href="${data.url}" target="_blank" rel="noopener" style="color:var(--blue)">→ Website</a>` : '');
+  document.getElementById('ci-notes').textContent = data.notes;
+
+  const reqs = document.getElementById('ci-reqs');
+  reqs.innerHTML = '<strong style="color:var(--text); display:block; margin-bottom:4px;">Eligibility requirements:</strong>';
+  data.eligibility.forEach(r => {
+    reqs.innerHTML += `<span>${r}</span>`;
+  });
+
+  // Auto-fill resort in the deed-back form
+  document.getElementById('d-resort').value = data.name;
+
+  box.classList.add('visible');
+}
+
+// ── Utility ───────────────────────────────────────────────
+function copyLetter(id) {
+  const text = document.getElementById(id).textContent;
+  navigator.clipboard.writeText(text).then(() => {
+    const btn = event.target;
+    const orig = btn.textContent;
+    btn.textContent = '✅ Copied';
+    setTimeout(() => btn.textContent = orig, 2000);
+  });
+}
+
+function printLetter(id) {
+  const text = document.getElementById(id).textContent;
+  const win = window.open('', '_blank');
+  win.document.write(`
+    <html><head><title>Letter</title>
+    <style>body{font-family:'Courier New',monospace;font-size:12pt;margin:1in;white-space:pre-wrap;line-height:1.7;}</style>
+    </head><body>${text.replace(/</g,'&lt;').replace(/>/g,'&gt;')}</body></html>
+  `);
+  win.document.close();
+  win.print();
+}
+</script>
+
+</body>
+</html>
