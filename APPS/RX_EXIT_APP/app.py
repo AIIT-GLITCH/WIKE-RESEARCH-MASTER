@@ -67,18 +67,29 @@ def index():
     drugs = get_drugs()
     featured = []
     for key, d in drugs.items():
-        if d.get('cost_plus') and d['retail_avg'] > 20:
-            savings_pct = round((1 - d['cost_plus'] / d['retail_avg']) * 100)
+        if d.get('_meta'): continue
+        best_price = None
+        if d.get('cost_plus'):
+            best_price = d['cost_plus']
+        elif d.get('goodrx_low'):
+            best_price = d['goodrx_low']
+        if best_price and d.get('retail_avg', 0) > 20:
+            savings_pct = round((1 - best_price / d['retail_avg']) * 100)
             featured.append({
                 'key': key,
                 'name': d['name'],
                 'condition': d['condition'],
                 'retail': d['retail_avg'],
-                'best': d['cost_plus'],
-                'savings_pct': savings_pct
+                'best': best_price,
+                'best_source': 'Cost Plus' if d.get('winner') == 'cost_plus' else ('GoodRx' if d.get('winner') == 'goodrx' else 'Multiple'),
+                'goodrx_low': d.get('goodrx_low'),
+                'cost_plus': d.get('cost_plus'),
+                'winner': d.get('winner', 'goodrx'),
+                'savings_pct': savings_pct,
+                'walmart_4': d.get('walmart_4', False)
             })
     featured.sort(key=lambda x: -x['savings_pct'])
-    return render_template('index.html', featured=featured, pap_programs=PAP_PROGRAMS)
+    return render_template('index.html', featured=featured, pap_programs=PAP_PROGRAMS, total_drugs=len([k for k in drugs if k != '_meta']))
 
 @app.route('/api/drug/<key>')
 def drug_info(key):
