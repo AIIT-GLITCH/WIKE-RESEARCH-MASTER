@@ -1,0 +1,182 @@
+{
+  "metformin": {
+    "name": "Metformin (Glucophage)",
+    "condition": "Type 2 Diabetes",
+    "retail_avg": 67,
+    "cost_plus": 3.60,
+    "goodrx_low": 8,
+    "generic": true,
+    "cost_plus_url": "https://costplusdrugs.com/medications/metformin-500mg-oral-tablet/",
+    "notes": "One of the most dramatic examples. $3.60 vs $67 retail. Always use Cost Plus or GoodRx."
+  },
+  "lisinopril": {
+    "name": "Lisinopril",
+    "condition": "Blood Pressure / Heart Failure",
+    "retail_avg": 30,
+    "cost_plus": 0.78,
+    "goodrx_low": 4,
+    "generic": true,
+    "cost_plus_url": "https://costplusdrugs.com/medications/lisinopril-10mg-oral-tablet/",
+    "notes": "78 cents/month at Cost Plus. There is no reason to pay retail for this."
+  },
+  "atorvastatin": {
+    "name": "Atorvastatin (Lipitor)",
+    "condition": "High Cholesterol",
+    "retail_avg": 150,
+    "cost_plus": 6.00,
+    "goodrx_low": 10,
+    "generic": true,
+    "cost_plus_url": "https://costplusdrugs.com/medications/atorvastatin-20mg-oral-tablet/",
+    "notes": "Generic Lipitor. $6 vs $150. Always use the generic."
+  },
+  "imatinib": {
+    "name": "Imatinib (Gleevec)",
+    "condition": "Leukemia / GIST",
+    "retail_avg": 10000,
+    "cost_plus": 47,
+    "goodrx_low": 200,
+    "generic": true,
+    "cost_plus_url": "https://costplusdrugs.com/medications/imatinib-400mg-oral-tablet/",
+    "notes": "The drug that proved the model. $47/month vs $10,000+ brand. This is why Cost Plus exists."
+  },
+  "sildenafil": {
+    "name": "Sildenafil (Viagra)",
+    "condition": "Erectile Dysfunction / Pulmonary Hypertension",
+    "retail_avg": 60,
+    "cost_plus": 1.90,
+    "goodrx_low": 12,
+    "generic": true,
+    "cost_plus_url": "https://costplusdrugs.com/medications/sildenafil-20mg-oral-tablet/",
+    "notes": "$1.90/pill vs $60+. Generic sildenafil is identical to Viagra."
+  },
+  "escitalopram": {
+    "name": "Escitalopram (Lexapro)",
+    "condition": "Depression / Anxiety",
+    "retail_avg": 100,
+    "cost_plus": 6.00,
+    "goodrx_low": 12,
+    "generic": true,
+    "cost_plus_url": "https://costplusdrugs.com/medications/escitalopram-10mg-oral-tablet/",
+    "notes": "Generic Lexapro. $6 vs $100. Mental health medications should never cost this much."
+  },
+  "sertraline": {
+    "name": "Sertraline (Zoloft)",
+    "condition": "Depression / Anxiety / PTSD",
+    "retail_avg": 80,
+    "cost_plus": 5.40,
+    "goodrx_low": 10,
+    "generic": true,
+    "cost_plus_url": "https://costplusdrugs.com/medications/sertraline-50mg-oral-tablet/",
+    "notes": "Generic Zoloft. Under $6/month."
+  },
+  "duloxetine": {
+    "name": "Duloxetine (Cymbalta)",
+    "condition": "Depression / Nerve Pain / Fibromyalgia",
+    "retail_avg": 200,
+    "cost_plus": 22.00,
+    "goodrx_low": 30,
+    "generic": true,
+    "cost_plus_url": "https://costplusdrugs.com/medications/duloxetine-30mg-oral-capsule/",
+    "notes": "Generic Cymbalta. $22 vs $200."
+  },
+  "amlodipine": {
+    "name": "Amlodipine (Norvasc)",
+    "condition": "Blood Pressure / Angina",
+    "retail_avg": 40,
+    "cost_plus": 0.90,
+    "goodrx_low": 5,
+    "generic": true,
+    "cost_plus_url": "https://costplusdrugs.com/medications/amlodipine-5mg-oral-tablet/",
+    "notes": "90 cents/month. Generic calcium channel blocker."
+  },
+  "omeprazole": {
+    "name": "Omeprazole (Prilosec)",
+    "condition": "Acid Reflux / GERD / Ulcers",
+    "retail_avg": 35,
+    "cost_plus": 2.10,
+    "goodrx_low": 6,
+    "generic": true,
+    "cost_plus_url": "https://costplusdrugs.com/medications/omeprazole-20mg-oral-capsule/",
+    "notes": "$2.10 vs $35. Also available OTC — sometimes cheapest just to buy over the counter."
+  },
+  "levothyroxine": {
+    "name": "Levothyroxine (Synthroid)",
+    "condition": "Hypothyroidism",
+    "retail_avg": 45,
+    "cost_plus": 2.40,
+    "goodrx_low": 8,
+    "generic": true,
+    "cost_plus_url": "https://costplusdrugs.com/medications/levothyroxine-50mcg-oral-tablet/",
+    "notes": "$2.40/month. Most people on Synthroid can switch to generic levothyroxine."
+  },
+  "bupropion": {
+    "name": "Bupropion (Wellbutrin)",
+    "condition": "Depression / Smoking Cessation",
+    "retail_avg": 120,
+    "cost_plus": 9.00,
+    "goodrx_low": 15,
+    "generic": true,
+    "cost_plus_url": "https://costplusdrugs.com/medications/bupropion-150mg-oral-tablet/",
+    "notes": "Generic Wellbutrin. $9 vs $120."
+  },
+  "losartan": {
+    "name": "Losartan (Cozaar)",
+    "condition": "Blood Pressure / Kidney Protection",
+    "retail_avg": 55,
+    "cost_plus": 3.60,
+    "goodrx_low": 9,
+    "generic": true,
+    "cost_plus_url": "https://costplusdrugs.com/medications/losartan-50mg-oral-tablet/",
+    "notes": "$3.60/month. ARB blood pressure medication."
+  },
+  "gabapentin": {
+    "name": "Gabapentin (Neurontin)",
+    "condition": "Nerve Pain / Seizures / Restless Legs",
+    "retail_avg": 90,
+    "cost_plus": 8.40,
+    "goodrx_low": 15,
+    "generic": true,
+    "cost_plus_url": "https://costplusdrugs.com/medications/gabapentin-300mg-oral-capsule/",
+    "notes": "Generic Neurontin. $8.40 vs $90."
+  },
+  "insulin": {
+    "name": "Insulin (various)",
+    "condition": "Diabetes",
+    "retail_avg": 300,
+    "cost_plus": null,
+    "goodrx_low": 25,
+    "generic": false,
+    "cost_plus_url": null,
+    "notes": "Insulin is complex — varies by type. Walmart sells ReliOn insulin OTC for $25/vial (NPH, Regular). Manufacturer patient assistance programs (Eli Lilly, Novo Nordisk, Sanofi) provide free insulin to qualifying patients. Mark Cuban's team is working on insulin. Also look for state insulin pricing caps — many states now cap at $35/month."
+  },
+  "ozempic": {
+    "name": "Semaglutide (Ozempic / Wegovy)",
+    "condition": "Type 2 Diabetes / Weight Loss",
+    "retail_avg": 900,
+    "cost_plus": null,
+    "goodrx_low": 800,
+    "generic": false,
+    "cost_plus_url": null,
+    "notes": "No generic available yet. Novo Nordisk PAP provides free medication to qualifying patients (income under 400% FPL). Compounding pharmacies offer semaglutide at $200-$400/month — legal during shortage designation but verify current FDA status. NeedyMeds.org has complete PAP info."
+  },
+  "eliquis": {
+    "name": "Apixaban (Eliquis)",
+    "condition": "Blood Clots / AFib / Stroke Prevention",
+    "retail_avg": 550,
+    "cost_plus": null,
+    "goodrx_low": 480,
+    "generic": false,
+    "cost_plus_url": null,
+    "notes": "Brand only — no generic in US yet (expected 2026-2028). Bristol-Myers Squibb PAP: free medication for uninsured/underinsured patients. Also ask your doctor about warfarin — much cheaper and equally effective for many conditions, just requires monitoring."
+  },
+  "humira": {
+    "name": "Adalimumab (Humira)",
+    "condition": "Rheumatoid Arthritis / Crohn's / Psoriasis",
+    "retail_avg": 6000,
+    "cost_plus": null,
+    "goodrx_low": 1200,
+    "generic": true,
+    "cost_plus_url": null,
+    "notes": "Biosimilars now available (Hadlima, Hyrimoz, Cyltezo) at dramatically lower cost. AbbVie PAP provides free Humira to qualifying patients. Ask your doctor specifically about biosimilar substitution — same mechanism, fraction of the cost."
+  }
+}
