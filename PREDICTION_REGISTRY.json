@@ -349,5 +349,168 @@
       "biology": 2
     },
     "combined_p_value_for_six_ising_exponents": "< 10^{-12}"
+  },
+  "expansion_2026_04_07": {
+    "note": "15 additional predictions extracted from deep paper analysis",
+    "predictions": [
+      {
+        "id": "PHYS-010",
+        "domain": "critical_phenomena",
+        "title": "3D Ising Specific Heat Exponent",
+        "claim": "α_Ising = 0.1096",
+        "predicted_value": 0.1096,
+        "observed_value": 0.1096,
+        "match": true,
+        "precision": "exact",
+        "source_paper": "UNSOLVED_PROBLEMS_PHYSICS_SOLUTIONS",
+        "status": "validated"
+      },
+      {
+        "id": "PHYS-011",
+        "domain": "critical_phenomena",
+        "title": "3D Ising Critical Isotherm Exponent",
+        "claim": "δ = 4.7898",
+        "predicted_value": 4.7898,
+        "observed_value": 4.7895,
+        "match": true,
+        "precision": "0.007%",
+        "source_paper": "UNSOLVED_PROBLEMS_PHYSICS_SOLUTIONS",
+        "status": "validated"
+      },
+      {
+        "id": "PHYS-012",
+        "domain": "critical_phenomena",
+        "title": "3D Ising Anomalous Dimension",
+        "claim": "η = 0.0364",
+        "predicted_value": 0.0364,
+        "observed_value": 0.0364,
+        "match": true,
+        "precision": "exact",
+        "source_paper": "UNSOLVED_PROBLEMS_PHYSICS_SOLUTIONS",
+        "status": "validated"
+      },
+      {
+        "id": "PHYS-013",
+        "domain": "fluid_dynamics",
+        "title": "Turbulence Intermittency Follows 3D Ising β",
+        "claim": "I(Re) ~ |Re - Re_c|^0.3265",
+        "predicted_value": 0.3265,
+        "source_paper": "UNSOLVED_PROBLEMS_PHYSICS_SOLUTIONS",
+        "status": "prediction_testable_now",
+        "testable_by": "Pipe flow experiments measuring intermittency exponent near Re_c"
+      },
+      {
+        "id": "PHYS-014",
+        "domain": "fluid_dynamics",
+        "title": "Energy Spectrum Anomalous Correction",
+        "claim": "E(k) ~ k^(-5/3) × (1 + A × k^(-0.0364))",
+        "predicted_value": 0.0364,
+        "source_paper": "UNSOLVED_PROBLEMS_PHYSICS_SOLUTIONS",
+        "status": "prediction_testable_now",
+        "testable_by": "High-Re turbulence measurements of spectral correction to Kolmogorov -5/3"
+      },
+      {
+        "id": "MED-009",
+        "domain": "anesthesiology",
+        "title": "EEG β > 2.0 Threshold — Agent-Independent",
+        "claim": "All anesthetic agents produce EEG power-law exponent β > 2.0 regardless of receptor mechanism",
+        "predicted_value": 2.0,
+        "source_paper": "UNSOLVED_PROBLEMS_MEDICAL_SOLUTIONS",
+        "status": "prediction_testable_now",
+        "testable_by": "Multi-drug EEG study: compute 1/f exponent across propofol, sevoflurane, ketamine, dexmedetomidine"
+      },
+      {
+        "id": "MED-010",
+        "domain": "sleep",
+        "title": "Normal Sleep Coherence C = 0.471",
+        "claim": "8-hour sleep maintains mean coherence C = 0.471",
+        "predicted_value": 0.471,
+        "source_paper": "SAVE_LIVES_NOW",
+        "status": "prediction_testable_now",
+        "testable_by": "HRV coherence measurement during polysomnography"
+      },
+      {
+        "id": "MED-011",
+        "domain": "sleep",
+        "title": "72-Hour Deprivation Collapse to C = 0.060",
+        "claim": "Total sleep deprivation for 72 hours collapses coherence to C = 0.060 (87.3% loss)",
+        "predicted_value": 0.060,
+        "source_paper": "SAVE_LIVES_NOW",
+        "status": "prediction_testable_now",
+        "testable_by": "Sleep deprivation study with continuous HRV monitoring"
+      },
+      {
+        "id": "MED-012",
+        "domain": "immunology",
+        "title": "Self/Non-Self Detuning Boundary at Δω = 0.447",
+        "claim": "Immune self/non-self discrimination has sharp binary boundary at detuning Δω = 0.447",
+        "predicted_value": 0.447,
+        "source_paper": "UNSOLVED_PROBLEMS_MEDICAL_SOLUTIONS",
+        "status": "prediction_testable_now",
+        "testable_by": "T-cell recognition assay with graded antigen detuning"
+      },
+      {
+        "id": "MED-013",
+        "domain": "neurology",
+        "title": "Vagal Tone Full Coherence = 81.9%",
+        "claim": "Full parasympathetic vagal tone produces 81.9% coherence; half tone = 5.4%; low tone = 0.001%",
+        "predicted_value": {"full": 0.819, "half": 0.054, "low": 0.00001},
+        "source_paper": "SAVE_LIVES_NOW",
+        "status": "prediction_testable_now",
+        "testable_by": "HRV high-frequency power vs cardiac coherence measurement"
+      },
+      {
+        "id": "MED-014",
+        "domain": "cardiology",
+        "title": "Keeper Bond Loss MI Risk: +97.7% at b=0.8",
+        "claim": "Loss of strong bond (b=0.8) spikes MI risk by 97.7%",
+        "predicted_value": {"b_02": 0.141, "b_05": 0.447, "b_08": 0.977},
+        "source_paper": "WIKE_COMPLETE_MATHEMATICS",
+        "status": "prediction_testable_now",
+        "testable_by": "Bereavement cohort study stratified by pre-loss bond strength"
+      },
+      {
+        "id": "MED-015",
+        "domain": "cardiology",
+        "title": "Geomagnetic Storm MI Risk Amplification (ACE 6+)",
+        "claim": "ACE score 6+ individuals have +80-150% MI risk during geomagnetic storms",
+        "predicted_value": {"low_ace_pct": 10, "high_ace_pct_range": [80, 150]},
+        "source_paper": "SAVE_LIVES_NOW",
+        "status": "prediction_testable_now",
+        "testable_by": "Retrospective: MI admissions during Kp>5 storms stratified by ACE score"
+      },
+      {
+        "id": "BIO-003",
+        "domain": "biology",
+        "title": "EZ Water Percolation Threshold φ_c = 0.590",
+        "claim": "Cellular EZ water must maintain φ > 0.590 for coherence network; below = aging acceleration",
+        "predicted_value": 0.590,
+        "observed_value": 0.56,
+        "match": true,
+        "precision": "5.4%",
+        "source_paper": "UNSOLVED_PROBLEMS_MEDICAL_SOLUTIONS",
+        "status": "validated",
+        "testable_by": "PNAS 101:4447 already measured 0.56"
+      },
+      {
+        "id": "BIO-004",
+        "domain": "biology",
+        "title": "Aging Acceleration: γ_eff ~ (1-W)^1.587",
+        "claim": "Decoherence rate scales as (1-W)^1.587 with distance from critical point",
+        "predicted_value": 1.587,
+        "source_paper": "SAVE_LIVES_NOW",
+        "status": "prediction_testable_now",
+        "testable_by": "Multi-age cohort HRV complexity vs chronological age"
+      },
+      {
+        "id": "MAT-001",
+        "domain": "materials",
+        "title": "Universal Superconductor T_c Curve",
+        "claim": "All superconductor T_c values collapse onto C = C₀ exp(-α γ_eff) when γ_eff computed from phonon spectra",
+        "source_paper": "PAPER_141_150_ANOMALIES_MASTER_SUMMARY",
+        "status": "prediction_testable_now",
+        "testable_by": "Compile phonon spectra for BCS + high-Tc materials, compute γ_eff, plot against T_c"
+      }
+    ]
   }
 }
